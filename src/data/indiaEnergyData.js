@@ -1,0 +1,672 @@
+// Generated renewable energy dataset definitions & metadata for India 2006-2047
+export const ZONES = {
+  'South': {
+    name: 'South',
+    costMultiplier: 1.00,
+    description: 'Peninsular India: High Solar irradiation, coastal wind, and hydro assets.',
+    states: [
+      'Andaman And Nicobar Islands', 'Andhra Pradesh', 'Karnataka', 'Kerala',
+      'Lakshadweep', 'Puducherry', 'Tamil Nadu', 'Telangana'
+    ]
+  },
+  'North': {
+    name: 'North',
+    costMultiplier: 1.02,
+    description: 'Northern Plains & Himalayas: Expansive agricultural biomass and solar corridors.',
+    states: [
+      'Chandigarh', 'Delhi', 'Haryana', 'Himachal Pradesh',
+      'Jammu And Kashmir', 'Punjab', 'Uttar Pradesh', 'Uttarakhand'
+    ]
+  },
+  'West': {
+    name: 'West',
+    costMultiplier: 0.98,
+    description: 'Western Corridor: Thar desert ultra-mega solar parks, Kutch wind farms, strong GSDP.',
+    states: ['Goa', 'Gujarat', 'Maharashtra', 'Rajasthan']
+  },
+  'East': {
+    name: 'East',
+    costMultiplier: 1.05,
+    description: 'Eastern Basin: Abundant water reservoirs, river hydro, and emerging solar.',
+    states: ['Bihar', 'Jharkhand', 'Odisha', 'West Bengal']
+  },
+  'Central': {
+    name: 'Central',
+    costMultiplier: 1.00,
+    description: 'Heart of India: Plateau solar parks and heavy agro-biomass potential.',
+    states: ['Chhattisgarh', 'Madhya Pradesh']
+  },
+  'North-East': {
+    name: 'North-East',
+    costMultiplier: 1.15,
+    description: 'Himalayan foothills: Massive run-of-the-river small hydro & eco-energy.',
+    states: [
+      'Arunachal Pradesh', 'Assam', 'Manipur', 'Meghalaya',
+      'Mizoram', 'Nagaland', 'Sikkim', 'Tripura'
+    ]
+  }
+};
+
+export const BENCHMARKS = {
+  solar: {
+    id: 'solar',
+    name: 'Solar Power',
+    capex: 4.50, // Crore INR / MW
+    cuf: 0.21,   // 21%
+    lcoe: 2.50,  // INR / kWh
+    color: '#F59E0B',
+    lightColor: 'rgba(245, 158, 11, 0.2)',
+    borderColor: '#D97706',
+    iconName: 'SunMedium'
+  },
+  wind: {
+    id: 'wind',
+    name: 'Wind Power',
+    capex: 6.50,
+    cuf: 0.30,
+    lcoe: 3.10,
+    color: '#06B6D4',
+    lightColor: 'rgba(6, 182, 212, 0.2)',
+    borderColor: '#0891B2',
+    iconName: 'Wind'
+  },
+  bio: {
+    id: 'bio',
+    name: 'Bio-Mass Power',
+    capex: 6.00,
+    cuf: 0.75,
+    lcoe: 4.50,
+    color: '#10B981',
+    lightColor: 'rgba(16, 185, 129, 0.2)',
+    borderColor: '#059669',
+    iconName: 'Leaf'
+  },
+  hydro: {
+    id: 'hydro',
+    name: 'Small Hydro Power',
+    capex: 8.50,
+    cuf: 0.45,
+    lcoe: 3.80,
+    color: '#3B82F6',
+    lightColor: 'rgba(59, 130, 246, 0.2)',
+    borderColor: '#2563EB',
+    iconName: 'Droplets'
+  },
+  waste: {
+    id: 'waste',
+    name: 'Waste to Energy',
+    capex: 11.00,
+    cuf: 0.75,
+    lcoe: 6.20,
+    color: '#A855F7',
+    lightColor: 'rgba(168, 85, 247, 0.2)',
+    borderColor: '#7E22CE',
+    iconName: 'Recycle'
+  }
+};
+
+export const STATE_STATS_2024 = {
+  "Andaman And Nicobar Islands": {
+    "state": "Andaman And Nicobar Islands",
+    "zone": "South",
+    "pop2024": 403767.0,
+    "gsdp2024": 8761.05,
+    "solar2024": 29.4887809753418,
+    "wind2024": 8.481456461595371e-05,
+    "hydro2024": 5.25,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 34.73886578990641
+  },
+  "Andhra Pradesh": {
+    "state": "Andhra Pradesh",
+    "zone": "South",
+    "pop2024": 53408066.0,
+    "gsdp2024": 802778.75,
+    "solar2024": 9419.33,
+    "wind2024": 4096.65,
+    "hydro2024": 163.31,
+    "bio2024": 574.39,
+    "waste2024": 53.16,
+    "total2024": 14306.84
+  },
+  "Arunachal Pradesh": {
+    "state": "Arunachal Pradesh",
+    "zone": "North-East",
+    "pop2024": 1575754.0,
+    "gsdp2024": 20826.859375,
+    "solar2024": 11.228792190551758,
+    "wind2024": 0.0001494663592893,
+    "hydro2024": 133.11,
+    "bio2024": 144.9,
+    "waste2024": 0.0,
+    "total2024": 289.23894165691104
+  },
+  "Assam": {
+    "state": "Assam",
+    "zone": "North-East",
+    "pop2024": 36046480.0,
+    "gsdp2024": 297780.90625,
+    "solar2024": 192.29,
+    "wind2024": 2.0,
+    "hydro2024": 34.11,
+    "bio2024": 156.18,
+    "waste2024": 0.0,
+    "total2024": 384.58
+  },
+  "Bihar": {
+    "state": "Bihar",
+    "zone": "East",
+    "pop2024": 128592632.0,
+    "gsdp2024": 475828.34375,
+    "solar2024": 239.23,
+    "wind2024": 112.5,
+    "hydro2024": 70.7,
+    "bio2024": 140.22,
+    "waste2024": 1.32,
+    "total2024": 563.97
+  },
+  "Chandigarh": {
+    "state": "Chandigarh",
+    "zone": "North",
+    "pop2024": 1243555.0,
+    "gsdp2024": 35801.57421875,
+    "solar2024": 55.16874313354492,
+    "wind2024": 0.0,
+    "hydro2024": 0.0,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 55.16874313354492
+  },
+  "Chhattisgarh": {
+    "state": "Chhattisgarh",
+    "zone": "Central",
+    "pop2024": 30524288.0,
+    "gsdp2024": 285029.34375,
+    "solar2024": 1530.39,
+    "wind2024": 272.09,
+    "hydro2024": 76.0,
+    "bio2024": 275.0,
+    "waste2024": 0.41,
+    "total2024": 2153.89
+  },
+  "Delhi": {
+    "state": "Delhi",
+    "zone": "North",
+    "pop2024": 21751870.0,
+    "gsdp2024": 692922.5625,
+    "solar2024": 211.1187896728516,
+    "wind2024": 0.0,
+    "hydro2024": 0.0,
+    "bio2024": 0.0,
+    "waste2024": 58.99868392944336,
+    "total2024": 270.1174736022949
+  },
+  "Goa": {
+    "state": "Goa",
+    "zone": "West",
+    "pop2024": 1582567.0,
+    "gsdp2024": 64177.52734375,
+    "solar2024": 45.47,
+    "wind2024": 1.94,
+    "hydro2024": 0.05,
+    "bio2024": 1.94,
+    "waste2024": 0.0,
+    "total2024": 49.4
+  },
+  "Gujarat": {
+    "state": "Gujarat",
+    "zone": "West",
+    "pop2024": 72366697.0,
+    "gsdp2024": 1358385.0,
+    "solar2024": 25471.72,
+    "wind2024": 11722.72,
+    "hydro2024": 91.64,
+    "bio2024": 112.48,
+    "waste2024": 7.5,
+    "total2024": 37406.06
+  },
+  "Haryana": {
+    "state": "Haryana",
+    "zone": "North",
+    "pop2024": 30573527.0,
+    "gsdp2024": 629641.25,
+    "solar2024": 1832.92,
+    "wind2024": 151.4,
+    "hydro2024": 73.5,
+    "bio2024": 283.7,
+    "waste2024": 11.2,
+    "total2024": 2352.7200000000003
+  },
+  "Himachal Pradesh": {
+    "state": "Himachal Pradesh",
+    "zone": "North",
+    "pop2024": 7504551.0,
+    "gsdp2024": 132829.5625,
+    "solar2024": 1075.14,
+    "wind2024": 9.2,
+    "hydro2024": 969.71,
+    "bio2024": 10.2,
+    "waste2024": 0.0,
+    "total2024": 2064.25
+  },
+  "Jammu And Kashmir": {
+    "state": "Jammu And Kashmir",
+    "zone": "North",
+    "pop2024": 13701069.0,
+    "gsdp2024": 240580.56,
+    "solar2024": 235.37,
+    "wind2024": 0.0,
+    "hydro2024": 169.93,
+    "bio2024": 65.44,
+    "waste2024": 0.0,
+    "total2024": 470.74
+  },
+  "Jharkhand": {
+    "state": "Jharkhand",
+    "zone": "East",
+    "pop2024": 39963170.0,
+    "gsdp2024": 273037.71875,
+    "solar2024": 185.55,
+    "wind2024": 19.1,
+    "hydro2024": 4.05,
+    "bio2024": 19.1,
+    "waste2024": 0.0,
+    "total2024": 227.8
+  },
+  "Karnataka": {
+    "state": "Karnataka",
+    "zone": "South",
+    "pop2024": 68115063.0,
+    "gsdp2024": 1221552.625,
+    "solar2024": 17752.74,
+    "wind2024": 6019.61,
+    "hydro2024": 1280.73,
+    "bio2024": 1907.72,
+    "waste2024": 19.42,
+    "total2024": 26980.22
+  },
+  "Kerala": {
+    "state": "Kerala",
+    "zone": "South",
+    "pop2024": 35919969.0,
+    "gsdp2024": 624511.0,
+    "solar2024": 1365.31,
+    "wind2024": 63.5,
+    "hydro2024": 276.52,
+    "bio2024": 2.5,
+    "waste2024": 0.23,
+    "total2024": 1708.06
+  },
+  "Lakshadweep": {
+    "state": "Lakshadweep",
+    "zone": "South",
+    "pop2024": 69459.0,
+    "gsdp2024": 598.88,
+    "solar2024": 0.0,
+    "wind2024": 0.0,
+    "hydro2024": 0.0,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 0.0
+  },
+  "Madhya Pradesh": {
+    "state": "Madhya Pradesh",
+    "zone": "Central",
+    "pop2024": 87610397.0,
+    "gsdp2024": 659193.375,
+    "solar2024": 7098.37,
+    "wind2024": 2844.29,
+    "hydro2024": 123.71,
+    "bio2024": 134.94,
+    "waste2024": 15.4,
+    "total2024": 10216.71
+  },
+  "Maharashtra": {
+    "state": "Maharashtra",
+    "zone": "West",
+    "pop2024": 127360459.0,
+    "gsdp2024": 2011148.0,
+    "solar2024": 14483.12,
+    "wind2024": 5207.98,
+    "hydro2024": 382.28,
+    "bio2024": 2643.19,
+    "waste2024": 46.2,
+    "total2024": 22762.77
+  },
+  "Manipur": {
+    "state": "Manipur",
+    "zone": "North-East",
+    "pop2024": 3252823.0,
+    "gsdp2024": 23546.046875,
+    "solar2024": 12.248730659484863,
+    "wind2024": 0.0,
+    "hydro2024": 5.449999809265137,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 17.69873046875
+  },
+  "Meghalaya": {
+    "state": "Meghalaya",
+    "zone": "North-East",
+    "pop2024": 3378892.0,
+    "gsdp2024": 26408.681640625,
+    "solar2024": 0.0,
+    "wind2024": 0.0,
+    "hydro2024": 0.0,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 0.0
+  },
+  "Mizoram": {
+    "state": "Mizoram",
+    "zone": "North-East",
+    "pop2024": 1250181.0,
+    "gsdp2024": 25893.203125,
+    "solar2024": 7.8987627029418945,
+    "wind2024": 0.0,
+    "hydro2024": 36.47021865844727,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 44.36898136138917
+  },
+  "Nagaland": {
+    "state": "Nagaland",
+    "zone": "North-East",
+    "pop2024": 2252573.0,
+    "gsdp2024": 20233.349609375,
+    "solar2024": 0.0,
+    "wind2024": 0.0,
+    "hydro2024": 0.0,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 0.0
+  },
+  "Odisha": {
+    "state": "Odisha",
+    "zone": "East",
+    "pop2024": 46566109.0,
+    "gsdp2024": 504537.03125,
+    "solar2024": 451.23870849609375,
+    "wind2024": 0.0001108096039388,
+    "hydro2024": 106.62873840332033,
+    "bio2024": 59.21965789794922,
+    "waste2024": 0.0,
+    "total2024": 617.0872156069672
+  },
+  "Puducherry": {
+    "state": "Puducherry",
+    "zone": "South",
+    "pop2024": 1682909.0,
+    "gsdp2024": 29579.6484375,
+    "solar2024": 13.688671112060549,
+    "wind2024": 0.0,
+    "hydro2024": 0.0,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 13.688671112060549
+  },
+  "Punjab": {
+    "state": "Punjab",
+    "zone": "North",
+    "pop2024": 30926357.0,
+    "gsdp2024": 438706.40625,
+    "solar2024": 1100.06884765625,
+    "wind2024": 0.0,
+    "hydro2024": 176.09873962402344,
+    "bio2024": 473.4493103027344,
+    "waste2024": 18.199312210083008,
+    "total2024": 1767.8162097930908
+  },
+  "Rajasthan": {
+    "state": "Rajasthan",
+    "zone": "West",
+    "pop2024": 81897401.0,
+    "gsdp2024": 769105.625,
+    "solar2024": 12564.8671875,
+    "wind2024": 4326.81884765625,
+    "hydro2024": 23.850000381469727,
+    "bio2024": 121.25050354003906,
+    "waste2024": 3.829235792160034,
+    "total2024": 17040.61577486992
+  },
+  "Sikkim": {
+    "state": "Sikkim",
+    "zone": "North-East",
+    "pop2024": 694024.0,
+    "gsdp2024": 24169.505859375,
+    "solar2024": 4.678801536560059,
+    "wind2024": 0.0,
+    "hydro2024": 52.10987091064453,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 56.78867244720459
+  },
+  "Tamil Nadu": {
+    "state": "Tamil Nadu",
+    "zone": "South",
+    "pop2024": 77089106.0,
+    "gsdp2024": 1495971.0,
+    "solar2024": 5067.1787109375,
+    "wind2024": 9866.3662109375,
+    "hydro2024": 123.04986572265624,
+    "bio2024": 1012.6494750976562,
+    "waste2024": 30.048791885375977,
+    "total2024": 16099.293054580688
+  },
+  "Telangana": {
+    "state": "Telangana",
+    "zone": "South",
+    "pop2024": 38151079.0,
+    "gsdp2024": 752994.5,
+    "solar2024": 4520.478515625,
+    "wind2024": 128.09979248046875,
+    "hydro2024": 90.86991119384766,
+    "bio2024": 160.09957885742188,
+    "waste2024": 59.63872528076172,
+    "total2024": 4959.1865234375
+  },
+  "Tripura": {
+    "state": "Tripura",
+    "zone": "North-East",
+    "pop2024": 4184280.0,
+    "gsdp2024": 52136.265625,
+    "solar2024": 14.888741493225098,
+    "wind2024": 0.0,
+    "hydro2024": 16.010000228881836,
+    "bio2024": 0.0,
+    "waste2024": 0.0,
+    "total2024": 30.898741722106934
+  },
+  "Uttar Pradesh": {
+    "state": "Uttar Pradesh",
+    "zone": "North",
+    "pop2024": 238078417.0,
+    "gsdp2024": 1147555.0,
+    "solar2024": 2244.4287109375,
+    "wind2024": 0.0,
+    "hydro2024": 49.09936141967773,
+    "bio2024": 2117.259521484375,
+    "waste2024": 72.72886657714844,
+    "total2024": 4483.516460418701
+  },
+  "Uttarakhand": {
+    "state": "Uttarakhand",
+    "zone": "North",
+    "pop2024": 11755469.0,
+    "gsdp2024": 193652.671875,
+    "solar2024": 573.5387573242188,
+    "wind2024": 0.0,
+    "hydro2024": 218.81895446777344,
+    "bio2024": 130.22056579589844,
+    "waste2024": 9.219246864318848,
+    "total2024": 931.7975244522095
+  },
+  "West Bengal": {
+    "state": "West Bengal",
+    "zone": "East",
+    "pop2024": 99563100.0,
+    "gsdp2024": 850812.125,
+    "solar2024": 165.99874877929688,
+    "wind2024": 0.0001874875451903,
+    "hydro2024": 98.49974822998048,
+    "bio2024": 319.9197082519531,
+    "waste2024": 2.528870105743408,
+    "total2024": 586.9472628545191
+  }
+};
+
+export const HISTORICAL_NATIONAL = [
+  {
+    "Year": 2006,
+    "Installed - Solar Power": 2.11,
+    "Installed - Wind Power": 7093.990000000001,
+    "Installed - Small Hydro Power": 1975.5999999999995,
+    "Installed - Bio-Mass Power": 1140.13,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2007,
+    "Installed - Solar Power": 2.12,
+    "Installed - Wind Power": 8757.4,
+    "Installed - Small Hydro Power": 2178.4041822635336,
+    "Installed - Bio-Mass Power": 1406.63,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2008,
+    "Installed - Solar Power": 2.12,
+    "Installed - Wind Power": 10242.300000000001,
+    "Installed - Small Hydro Power": 2180.8500000000004,
+    "Installed - Bio-Mass Power": 1752.33,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2009,
+    "Installed - Solar Power": 10.299999999999999,
+    "Installed - Wind Power": 11929.25,
+    "Installed - Small Hydro Power": 2735.43,
+    "Installed - Bio-Mass Power": 2199.63,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2010,
+    "Installed - Solar Power": 35.150000000000006,
+    "Installed - Wind Power": 14155.85,
+    "Installed - Small Hydro Power": 3042.92,
+    "Installed - Bio-Mass Power": 2664.63,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2011,
+    "Installed - Solar Power": 941.24,
+    "Installed - Wind Power": 17352.66,
+    "Installed - Small Hydro Power": 3395.3300000000004,
+    "Installed - Bio-Mass Power": 3135.33,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2012,
+    "Installed - Solar Power": 1685.69,
+    "Installed - Wind Power": 19047.16,
+    "Installed - Small Hydro Power": 3632.27,
+    "Installed - Bio-Mass Power": 3601.03,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2013,
+    "Installed - Solar Power": 2631.14,
+    "Installed - Wind Power": 21132.1,
+    "Installed - Small Hydro Power": 3803.7000000000003,
+    "Installed - Bio-Mass Power": 3970.13,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2014,
+    "Installed - Solar Power": 3743.2,
+    "Installed - Wind Power": 23440.0,
+    "Installed - Small Hydro Power": 4055.37,
+    "Installed - Bio-Mass Power": 4418.55,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2015,
+    "Installed - Solar Power": 6700.56,
+    "Installed - Wind Power": 26862.36,
+    "Installed - Small Hydro Power": 4273.48,
+    "Installed - Bio-Mass Power": 4831.33,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2016,
+    "Installed - Solar Power": 12217.09,
+    "Installed - Wind Power": 32275.47,
+    "Installed - Small Hydro Power": 4379.87,
+    "Installed - Bio-Mass Power": 8181.7,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2017,
+    "Installed - Solar Power": 21635.41,
+    "Installed - Wind Power": 34140.700000000004,
+    "Installed - Small Hydro Power": 4485.82,
+    "Installed - Bio-Mass Power": 9363.61,
+    "Installed - Waste to Energy": 0.0
+  },
+  {
+    "Year": 2018,
+    "Installed - Solar Power": 28160.780000000002,
+    "Installed - Wind Power": 35621.67,
+    "Installed - Small Hydro Power": 4593.16,
+    "Installed - Bio-Mass Power": 9778.31,
+    "Installed - Waste to Energy": 138.3
+  },
+  {
+    "Year": 2019,
+    "Installed - Solar Power": 34602.5,
+    "Installed - Wind Power": 37739.450000000004,
+    "Installed - Small Hydro Power": 4683.17,
+    "Installed - Bio-Mass Power": 9875.31,
+    "Installed - Waste to Energy": 147.64
+  },
+  {
+    "Year": 2020,
+    "Installed - Solar Power": 41145.0,
+    "Installed - Wind Power": 39242.75,
+    "Installed - Small Hydro Power": 4786.81,
+    "Installed - Bio-Mass Power": 10145.92,
+    "Installed - Waste to Energy": 387.59
+  },
+  {
+    "Year": 2021,
+    "Installed - Solar Power": 53905.35,
+    "Installed - Wind Power": 40353.28,
+    "Installed - Small Hydro Power": 4848.9,
+    "Installed - Bio-Mass Power": 10205.61,
+    "Installed - Waste to Energy": 476.75
+  },
+  {
+    "Year": 2022,
+    "Installed - Solar Power": 54076.20700073242,
+    "Installed - Wind Power": 40905.10538365229,
+    "Installed - Small Hydro Power": 4746.055409049988,
+    "Installed - Bio-Mass Power": 10587.458321228027,
+    "Installed - Waste to Energy": 380.5717326450348
+  },
+  {
+    "Year": 2023,
+    "Installed - Solar Power": 96959.13700073241,
+    "Installed - Wind Power": 42163.25538365229,
+    "Installed - Small Hydro Power": 4817.105409049988,
+    "Installed - Bio-Mass Power": 10768.518321228028,
+    "Installed - Waste to Energy": 389.11173264503475
+  },
+  {
+    "Year": 2024,
+    "Installed - Solar Power": 107975.15700073242,
+    "Installed - Wind Power": 44844.26538365229,
+    "Installed - Small Hydro Power": 4851.555409049988,
+    "Installed - Bio-Mass Power": 10865.968321228027,
+    "Installed - Waste to Energy": 410.0317326450348
+  }
+];

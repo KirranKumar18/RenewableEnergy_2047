@@ -1,0 +1,342 @@
+{
+  "Andaman And Nicobar Islands": {
+    "zone": "South",
+    "pop_latest": 403767.0,
+    "gsdp_latest": 8761.05,
+    "solar": 29.4887809753418,
+    "wind": 8.481456461595371e-05,
+    "bio": 0.0,
+    "hydro": 5.25,
+    "waste": 0.0
+  },
+  "Andhra Pradesh": {
+    "zone": "South",
+    "pop_latest": 53408066.0,
+    "gsdp_latest": 802778.75,
+    "solar": 9419.33,
+    "wind": 4096.65,
+    "bio": 574.39,
+    "hydro": 163.31,
+    "waste": 53.16
+  },
+  "Arunachal Pradesh": {
+    "zone": "North-East",
+    "pop_latest": 1575754.0,
+    "gsdp_latest": 20826.859375,
+    "solar": 11.228792190551758,
+    "wind": 0.0001494663592893,
+    "bio": 144.9,
+    "hydro": 133.11,
+    "waste": 0.0
+  },
+  "Assam": {
+    "zone": "North-East",
+    "pop_latest": 36046480.0,
+    "gsdp_latest": 297780.90625,
+    "solar": 192.29,
+    "wind": 2.0,
+    "bio": 156.18,
+    "hydro": 34.11,
+    "waste": 0.0
+  },
+  "Bihar": {
+    "zone": "East",
+    "pop_latest": 128592632.0,
+    "gsdp_latest": 475828.34375,
+    "solar": 239.23,
+    "wind": 112.5,
+    "bio": 140.22,
+    "hydro": 70.7,
+    "waste": 1.32
+  },
+  "Chandigarh": {
+    "zone": "North",
+    "pop_latest": 1243555.0,
+    "gsdp_latest": 35801.57421875,
+    "solar": 55.16874313354492,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 0.0,
+    "waste": 0.0
+  },
+  "Chhattisgarh": {
+    "zone": "Central",
+    "pop_latest": 30524288.0,
+    "gsdp_latest": 285029.34375,
+    "solar": 1530.39,
+    "wind": 272.09,
+    "bio": 275.0,
+    "hydro": 76.0,
+    "waste": 0.41
+  },
+  "Delhi": {
+    "zone": "North",
+    "pop_latest": 21751870.0,
+    "gsdp_latest": 692922.5625,
+    "solar": 211.1187896728516,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 0.0,
+    "waste": 58.99868392944336
+  },
+  "Goa": {
+    "zone": "West",
+    "pop_latest": 1582567.0,
+    "gsdp_latest": 64177.52734375,
+    "solar": 45.47,
+    "wind": 1.94,
+    "bio": 1.94,
+    "hydro": 0.05,
+    "waste": 0.0
+  },
+  "Gujarat": {
+    "zone": "West",
+    "pop_latest": 72366697.0,
+    "gsdp_latest": 1358385.0,
+    "solar": 25471.72,
+    "wind": 11722.72,
+    "bio": 112.48,
+    "hydro": 91.64,
+    "waste": 7.5
+  },
+  "Haryana": {
+    "zone": "North",
+    "pop_latest": 30573527.0,
+    "gsdp_latest": 629641.25,
+    "solar": 1832.92,
+    "wind": 151.4,
+    "bio": 283.7,
+    "hydro": 73.5,
+    "waste": 11.2
+  },
+  "Himachal Pradesh": {
+    "zone": "North",
+    "pop_latest": 7504551.0,
+    "gsdp_latest": 132829.5625,
+    "solar": 1075.14,
+    "wind": 9.2,
+    "bio": 10.2,
+    "hydro": 969.71,
+    "waste": 0.0
+  },
+  "Jammu And Kashmir": {
+    "zone": "North",
+    "pop_latest": 13701069.0,
+    "gsdp_latest": 240580.56,
+    "solar": 235.37,
+    "wind": 0.0,
+    "bio": 65.44,
+    "hydro": 169.93,
+    "waste": 0.0
+  },
+  "Jharkhand": {
+    "zone": "East",
+    "pop_latest": 39963170.0,
+    "gsdp_latest": 273037.71875,
+    "solar": 185.55,
+    "wind": 19.1,
+    "bio": 19.1,
+    "hydro": 4.05,
+    "waste": 0.0
+  },
+  "Karnataka": {
+    "zone": "South",
+    "pop_latest": 68115063.0,
+    "gsdp_latest": 1221552.625,
+    "solar": 17752.74,
+    "wind": 6019.61,
+    "bio": 1907.72,
+    "hydro": 1280.73,
+    "waste": 19.42
+  },
+  "Kerala": {
+    "zone": "South",
+    "pop_latest": 35919969.0,
+    "gsdp_latest": 624511.0,
+    "solar": 1365.31,
+    "wind": 63.5,
+    "bio": 2.5,
+    "hydro": 276.52,
+    "waste": 0.23
+  },
+  "Lakshadweep": {
+    "zone": "South",
+    "pop_latest": 69459.0,
+    "gsdp_latest": 598.88,
+    "solar": 0.0,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 0.0,
+    "waste": 0.0
+  },
+  "Madhya Pradesh": {
+    "zone": "Central",
+    "pop_latest": 87610397.0,
+    "gsdp_latest": 659193.375,
+    "solar": 7098.37,
+    "wind": 2844.29,
+    "bio": 134.94,
+    "hydro": 123.71,
+    "waste": 15.4
+  },
+  "Maharashtra": {
+    "zone": "West",
+    "pop_latest": 127360459.0,
+    "gsdp_latest": 2011148.0,
+    "solar": 14483.12,
+    "wind": 5207.98,
+    "bio": 2643.19,
+    "hydro": 382.28,
+    "waste": 46.2
+  },
+  "Manipur": {
+    "zone": "North-East",
+    "pop_latest": 3252823.0,
+    "gsdp_latest": 23546.046875,
+    "solar": 12.248730659484863,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 5.449999809265137,
+    "waste": 0.0
+  },
+  "Meghalaya": {
+    "zone": "North-East",
+    "pop_latest": 3378892.0,
+    "gsdp_latest": 26408.681640625,
+    "solar": 0.0,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 0.0,
+    "waste": 0.0
+  },
+  "Mizoram": {
+    "zone": "North-East",
+    "pop_latest": 1250181.0,
+    "gsdp_latest": 25893.203125,
+    "solar": 7.8987627029418945,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 36.47021865844727,
+    "waste": 0.0
+  },
+  "Nagaland": {
+    "zone": "North-East",
+    "pop_latest": 2252573.0,
+    "gsdp_latest": 20233.349609375,
+    "solar": 0.0,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 0.0,
+    "waste": 0.0
+  },
+  "Odisha": {
+    "zone": "East",
+    "pop_latest": 46566109.0,
+    "gsdp_latest": 504537.03125,
+    "solar": 451.23870849609375,
+    "wind": 0.0001108096039388,
+    "bio": 59.21965789794922,
+    "hydro": 106.62873840332033,
+    "waste": 0.0
+  },
+  "Puducherry": {
+    "zone": "South",
+    "pop_latest": 1682909.0,
+    "gsdp_latest": 29579.6484375,
+    "solar": 13.688671112060549,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 0.0,
+    "waste": 0.0
+  },
+  "Punjab": {
+    "zone": "North",
+    "pop_latest": 30926357.0,
+    "gsdp_latest": 438706.40625,
+    "solar": 1100.06884765625,
+    "wind": 0.0,
+    "bio": 473.4493103027344,
+    "hydro": 176.09873962402344,
+    "waste": 18.199312210083008
+  },
+  "Rajasthan": {
+    "zone": "West",
+    "pop_latest": 81897401.0,
+    "gsdp_latest": 769105.625,
+    "solar": 12564.8671875,
+    "wind": 4326.81884765625,
+    "bio": 121.25050354003906,
+    "hydro": 23.850000381469727,
+    "waste": 3.829235792160034
+  },
+  "Sikkim": {
+    "zone": "North-East",
+    "pop_latest": 694024.0,
+    "gsdp_latest": 24169.505859375,
+    "solar": 4.678801536560059,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 52.10987091064453,
+    "waste": 0.0
+  },
+  "Tamil Nadu": {
+    "zone": "South",
+    "pop_latest": 77089106.0,
+    "gsdp_latest": 1495971.0,
+    "solar": 5067.1787109375,
+    "wind": 9866.3662109375,
+    "bio": 1012.6494750976562,
+    "hydro": 123.04986572265624,
+    "waste": 30.048791885375977
+  },
+  "Telangana": {
+    "zone": "South",
+    "pop_latest": 38151079.0,
+    "gsdp_latest": 752994.5,
+    "solar": 4520.478515625,
+    "wind": 128.09979248046875,
+    "bio": 160.09957885742188,
+    "hydro": 90.86991119384766,
+    "waste": 59.63872528076172
+  },
+  "Tripura": {
+    "zone": "North-East",
+    "pop_latest": 4184280.0,
+    "gsdp_latest": 52136.265625,
+    "solar": 14.888741493225098,
+    "wind": 0.0,
+    "bio": 0.0,
+    "hydro": 16.010000228881836,
+    "waste": 0.0
+  },
+  "Uttar Pradesh": {
+    "zone": "North",
+    "pop_latest": 238078417.0,
+    "gsdp_latest": 1147555.0,
+    "solar": 2244.4287109375,
+    "wind": 0.0,
+    "bio": 2117.259521484375,
+    "hydro": 49.09936141967773,
+    "waste": 72.72886657714844
+  },
+  "Uttarakhand": {
+    "zone": "North",
+    "pop_latest": 11755469.0,
+    "gsdp_latest": 193652.671875,
+    "solar": 573.5387573242188,
+    "wind": 0.0,
+    "bio": 130.22056579589844,
+    "hydro": 218.81895446777344,
+    "waste": 9.219246864318848
+  },
+  "West Bengal": {
+    "zone": "East",
+    "pop_latest": 99563100.0,
+    "gsdp_latest": 850812.125,
+    "solar": 165.99874877929688,
+    "wind": 0.0001874875451903,
+    "bio": 319.9197082519531,
+    "hydro": 98.49974822998048,
+    "waste": 2.528870105743408
+  }
+}

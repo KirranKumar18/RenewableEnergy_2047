@@ -1,7 +1,7 @@
 {
   "name": "forecast-model",
   "version": "1.0.0",
-  "description": "",
+  "description": "Renewable Energy 2047 - India Renewable Energy Capacity & Cost Forecasting Dashboard (ExxonMobil Innothon)",
   "homepage": "https://github.com/KirranKumar18/RenewableEnergy_2047#readme",
   "bugs": {
     "url": "https://github.com/KirranKumar18/RenewableEnergy_2047/issues"
@@ -10,11 +10,30 @@
     "type": "git",
     "url": "git+https://github.com/KirranKumar18/RenewableEnergy_2047.git"
   },
-  "license": "ISC",
-  "author": "",
-  "type": "commonjs",
-  "main": "index.js",
+  "license": "MIT",
+  "author": "Kirran Kumar",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "canvas-confetti": "^1.9.4",
+    "chart.js": "^4.5.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.16.0",
+    "react": "^19.2.4",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.4",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.5",
+    "@vitejs/plugin-react": "^5.1.4",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.3.5",
+    "vite": "^7.3.1"
   }
 }

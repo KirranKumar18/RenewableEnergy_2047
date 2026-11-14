@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* Leaflet requires its own CSS */
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  body {
+    background-color: #030712;
+    color: #f8fafc;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: #0f172a; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 9999px; }
+  ::-webkit-scrollbar-thumb:hover { background: #475569; }
+}
+
+/* Leaflet tooltip override for dark theme */
+.state-tooltip {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid rgba(100, 116, 139, 0.4) !important;
+  border-radius: 8px !important;
+  padding: 6px 10px !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5) !important;
+  color: #f8fafc !important;
+  font-size: 12px !important;
+}
+.state-tooltip::before {
+  border-top-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+/* Leaflet zoom controls dark theme */
+.leaflet-control-zoom a {
+  background: rgba(15, 23, 42, 0.9) !important;
+  color: #e2e8f0 !important;
+  border-color: rgba(51, 65, 85, 0.5) !important;
+  font-weight: 700 !important;
+}
+.leaflet-control-zoom a:hover {
+  background: rgba(30, 41, 59, 0.95) !important;
+  color: #10b981 !important;
+}
+
+/* Leaflet container override */
+.leaflet-container {
+  background: #0f172a !important;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
+}
+
+/* Attribution styling */
+.leaflet-control-attribution {
+  background: rgba(15, 23, 42, 0.8) !important;
+  color: #64748b !important;
+  font-size: 9px !important;
+}
+.leaflet-control-attribution a {
+  color: #94a3b8 !important;
+}
