@@ -1,0 +1,20 @@
+{
+  "name": "forecast-model",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/KirranKumar18/RenewableEnergy_2047#readme",
+  "bugs": {
+    "url": "https://github.com/KirranKumar18/RenewableEnergy_2047/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KirranKumar18/RenewableEnergy_2047.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
