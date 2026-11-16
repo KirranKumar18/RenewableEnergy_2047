@@ -1,14 +1,15 @@
 import React from 'react';
-import { Zap, IndianRupee, Sun, Gauge } from 'lucide-react';
+import { Zap, IndianRupee, Sun, Gauge, TrendingUp } from 'lucide-react';
 
 export default function KpiStrip({ data, loading }) {
   if (!data || loading) {
     return (
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {[...Array(4)].map((_, i) => (
-          <div key={i} className="bg-slate-900/80 border border-slate-800 rounded-xl p-4 animate-pulse">
-            <div className="h-3 w-20 bg-slate-800 rounded mb-3" />
-            <div className="h-7 w-28 bg-slate-800 rounded" />
+          <div key={i} className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm animate-pulse">
+            <div className="h-3 w-24 bg-slate-200 rounded mb-3" />
+            <div className="h-8 w-32 bg-slate-200 rounded mb-2" />
+            <div className="h-3 w-16 bg-slate-100 rounded" />
           </div>
         ))}
       </div>
@@ -20,62 +21,82 @@ export default function KpiStrip({ data, loading }) {
 
   const cards = [
     {
-      label: 'Total Capacity',
-      value: `${(cap.total || 0).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`,
+      label: 'Total Predicted Capacity',
+      value: (cap.total || 0).toLocaleString('en-IN', { maximumFractionDigits: 0 }),
       unit: 'MW',
-      sub: `${((cap.total||0)/1000).toFixed(2)} GW`,
+      sub: `${((cap.total || 0) / 1000).toFixed(2)} GW Projected`,
       icon: Zap,
       accent: 'emerald',
+      iconBg: 'bg-emerald-50 text-emerald-600 border-emerald-100',
+      badge: 'All 5 Sources',
     },
     {
       label: 'Annual Generation',
-      value: `${(fin.totalGenerationGWh || 0).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`,
+      value: (fin.totalGenerationGWh || 0).toLocaleString('en-IN', { maximumFractionDigits: 0 }),
       unit: 'GWh',
-      sub: `${(fin.totalGenerationGWh || 0).toLocaleString('en-IN')} MU`,
+      sub: `${(fin.totalGenerationGWh || 0).toLocaleString('en-IN')} Million Units (MU)`,
       icon: Sun,
-      accent: 'cyan',
+      accent: 'sky',
+      iconBg: 'bg-sky-50 text-sky-600 border-sky-100',
+      badge: 'CUF Weighted',
     },
     {
-      label: 'Total CAPEX',
+      label: 'Total Setup Cost (CAPEX)',
       value: `₹${(fin.totalCapexCr || 0).toLocaleString('en-IN', { maximumFractionDigits: 0 })}`,
       unit: 'Cr',
-      sub: `₹${((fin.totalCapexCr||0)/1e5).toFixed(2)} Lakh Cr`,
+      sub: `₹${((fin.totalCapexCr || 0) / 1e5).toFixed(2)} Lakh Crore`,
       icon: IndianRupee,
       accent: 'amber',
+      iconBg: 'bg-amber-50 text-amber-600 border-amber-100',
+      badge: 'CERC Benchmarks',
     },
     {
-      label: 'Blended Tariff',
+      label: 'Blended Unit Tariff',
       value: `₹${(fin.blendedLcoe || 0).toFixed(2)}`,
       unit: '/kWh',
       sub: 'Levelized Cost of Energy',
       icon: Gauge,
       accent: 'blue',
+      iconBg: 'bg-blue-50 text-blue-600 border-blue-100',
+      badge: 'Levelized LCOE',
     },
   ];
 
-  const accentMap = {
-    emerald: { bg: 'bg-emerald-500/10', text: 'text-emerald-400', glow: 'shadow-emerald-500/10', border: 'border-emerald-500/25' },
-    cyan:    { bg: 'bg-cyan-500/10',    text: 'text-cyan-400',    glow: 'shadow-cyan-500/10',    border: 'border-cyan-500/25' },
-    amber:   { bg: 'bg-amber-500/10',   text: 'text-amber-400',   glow: 'shadow-amber-500/10',   border: 'border-amber-500/25' },
-    blue:    { bg: 'bg-blue-500/10',    text: 'text-blue-400',    glow: 'shadow-blue-500/10',    border: 'border-blue-500/25' },
-  };
-
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
       {cards.map((c, i) => {
-        const a = accentMap[c.accent];
         const Icon = c.icon;
         return (
-          <div key={i} className={`bg-slate-900/80 border ${a.border} rounded-xl p-4 shadow-lg ${a.glow} group hover:scale-[1.02] transition-transform`}>
-            <div className="flex items-center justify-between mb-2">
-              <span className={`text-[11px] font-semibold ${a.text}`}>{c.label}</span>
-              <Icon className={`w-4 h-4 ${a.text}`} />
+          <div
+            key={i}
+            className="bg-white border border-slate-200/90 rounded-2xl p-5 shadow-sm hover:shadow-md transition-shadow group relative overflow-hidden"
+          >
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-xs font-bold uppercase tracking-wider text-slate-500">
+                {c.label}
+              </span>
+              <div className={`w-8 h-8 rounded-xl flex items-center justify-center border ${c.iconBg}`}>
+                <Icon className="w-4 h-4" />
+              </div>
             </div>
-            <div className="flex items-baseline gap-1">
-              <span className="text-xl font-extrabold text-white font-mono tracking-tight">{c.value}</span>
-              <span className={`text-xs font-semibold ${a.text}`}>{c.unit}</span>
+
+            <div className="flex items-baseline gap-1.5">
+              <span className="text-2xl lg:text-3xl font-black text-slate-900 font-mono tracking-tight">
+                {c.value}
+              </span>
+              <span className="text-xs font-bold text-slate-600">
+                {c.unit}
+              </span>
             </div>
-            <p className="text-[10px] text-slate-500 mt-1.5 font-mono">{c.sub}</p>
+
+            <div className="mt-3 pt-2.5 border-t border-slate-100 flex items-center justify-between text-xs">
+              <span className="text-slate-500 font-medium font-mono text-[11px] truncate">
+                {c.sub}
+              </span>
+              <span className="text-[10px] font-semibold text-slate-400 bg-slate-50 px-1.5 py-0.5 rounded border border-slate-100 flex-shrink-0">
+                {c.badge}
+              </span>
+            </div>
           </div>
         );
       })}
