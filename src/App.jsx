@@ -259,7 +259,8 @@ export default function App() {
     if (topDriver) insights.push({ mark: topDriver.mw >= 0 ? t.pos : t.neg, title: 'Biggest driver: ' + topDriver.label.charAt(0).toLowerCase() + topDriver.label.slice(1), text: `${topDriver.mw >= 0 ? 'Adds' : 'Removes'} ${capStr(Math.abs(topDriver.mw))} compared with the average scenario${topDriver.value && scope === 'state' ? ', at ' + topDriver.value : ''}.` });
 
     // scenario bar
-    const g24L = sc.gsdp.base_crore / 1e5, defL = sc.gsdp.default_crore / 1e5, usedL = sc.gsdp.used_crore / 1e5;
+    // The slider follows the local value while dragging; the server's echo lags behind and would snap it back.
+    const g24L = sc.gsdp.base_crore / 1e5, defL = sc.gsdp.default_crore / 1e5, usedL = gsdpL != null && !flat ? gsdpL : sc.gsdp.used_crore / 1e5;
     const gMax = g24L * Math.pow(1.2, Math.max(1, n));
     const scen = {
       locked: flat, status: flat ? 'Reported data' : anyCustom ? 'Custom scenario' : 'Default projection', anyCustom,
@@ -299,7 +300,7 @@ export default function App() {
       },
       levels, crumbs, years
     };
-  }, [meta, sc, ex, exBusy, scope, sel, zone, year, n, tech, perPerson, hover, hy, hc, popCr, popUsed, popDefault, popDefOf, scopeStates, edit, t]);
+  }, [meta, sc, ex, exBusy, scope, sel, zone, year, n, tech, perPerson, hover, hy, hc, gsdpL, popCr, popUsed, popDefault, popDefOf, scopeStates, edit, t]);
 
   const pageStyle = { ...cssVars(t), height: '100vh', minHeight: 640, minWidth: 1200, display: 'flex', flexDirection: 'column', background: 'var(--bg)', color: 'var(--text)' };
 
