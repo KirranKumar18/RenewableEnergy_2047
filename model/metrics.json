@@ -2,67 +2,67 @@
  "scoring": "WAPE % on fresh (changed) test values; cutoffs [2016, 2018, 2020]",
  "backtest": {
   "2016|v2 convergence (production)": {
-   "Solar Power": 45.09,
-   "Wind Power": 10.09,
+   "Solar Power": 47.47,
+   "Wind Power": 9.91,
    "Bio-Mass Power": 20.06,
    "Small Hydro Power": 10.47,
    "Waste to Energy": 100.0,
-   "Total WAPE (fresh)": 30.61,
-   "Total WAPE (all values)": 33.06
+   "Total WAPE (fresh)": 31.88,
+   "Total WAPE (all values)": 34.78
   },
   "2016|v2 without transmission term": {
-   "Solar Power": 45.09,
-   "Wind Power": 10.09,
+   "Solar Power": 47.47,
+   "Wind Power": 9.91,
    "Bio-Mass Power": 20.06,
    "Small Hydro Power": 10.47,
    "Waste to Energy": 100.0,
-   "Total WAPE (fresh)": 30.61,
-   "Total WAPE (all values)": 33.06
+   "Total WAPE (fresh)": 31.88,
+   "Total WAPE (all values)": 34.78
   },
   "2016|v2 + transmission, joint fit": {
-   "Solar Power": 45.09,
-   "Wind Power": 10.09,
+   "Solar Power": 47.47,
+   "Wind Power": 9.91,
    "Bio-Mass Power": 20.06,
    "Small Hydro Power": 10.47,
    "Waste to Energy": 100.0,
-   "Total WAPE (fresh)": 30.61,
-   "Total WAPE (all values)": 33.06
+   "Total WAPE (fresh)": 31.88,
+   "Total WAPE (all values)": 34.78
   },
   "2016|v2 pure (v2 dynamics for every tech)": {
-   "Solar Power": 45.09,
-   "Wind Power": 10.09,
-   "Bio-Mass Power": 23.06,
-   "Small Hydro Power": 12.37,
+   "Solar Power": 47.47,
+   "Wind Power": 9.91,
+   "Bio-Mass Power": 20.89,
+   "Small Hydro Power": 12.36,
    "Waste to Energy": 100.0,
-   "Total WAPE (fresh)": 30.88,
-   "Total WAPE (all values)": 33.59
+   "Total WAPE (fresh)": 31.99,
+   "Total WAPE (all values)": 35.13
   },
   "2016|v2, trend half-life 2y": {
-   "Solar Power": 50.05,
-   "Wind Power": 9.79,
+   "Solar Power": 50.39,
+   "Wind Power": 9.85,
    "Bio-Mass Power": 20.06,
    "Small Hydro Power": 10.47,
    "Waste to Energy": 100.0,
-   "Total WAPE (fresh)": 33.28,
-   "Total WAPE (all values)": 32.82
+   "Total WAPE (fresh)": 33.49,
+   "Total WAPE (all values)": 33.19
   },
   "2016|v2, trend half-life 5y": {
-   "Solar Power": 76.66,
-   "Wind Power": 11.05,
+   "Solar Power": 58.58,
+   "Wind Power": 10.23,
    "Bio-Mass Power": 20.06,
    "Small Hydro Power": 10.47,
    "Waste to Energy": 100.0,
-   "Total WAPE (fresh)": 48.58,
-   "Total WAPE (all values)": 56.75
+   "Total WAPE (fresh)": 38.2,
+   "Total WAPE (all values)": 47.59
   },
   "2016|v2, no catch-up term": {
-   "Solar Power": 61.19,
-   "Wind Power": 11.19,
+   "Solar Power": 58.53,
+   "Wind Power": 11.49,
    "Bio-Mass Power": 20.06,
    "Small Hydro Power": 10.47,
    "Waste to Energy": 100.0,
-   "Total WAPE (fresh)": 39.98,
-   "Total WAPE (all values)": 44.76
+   "Total WAPE (fresh)": 38.59,
+   "Total WAPE (all values)": 42.23
   },
   "2016|v1 GSDP elasticity": {
    "Solar Power": 66.82,
@@ -82,77 +82,68 @@
    "Total WAPE (fresh)": 52.57,
    "Total WAPE (all values)": 48.05
   },
-  "2016|Original tree ensemble": {
-   "Solar Power": 79.73,
-   "Wind Power": 25.68,
-   "Bio-Mass Power": 37.85,
-   "Small Hydro Power": 20.56,
-   "Waste to Energy": 100.0,
-   "Total WAPE (fresh)": 56.83,
-   "Total WAPE (all values)": 61.97
-  },
   "2018|v2 convergence (production)": {
-   "Solar Power": 41.07,
-   "Wind Power": 12.57,
+   "Solar Power": 42.05,
+   "Wind Power": 12.53,
    "Bio-Mass Power": 15.76,
    "Small Hydro Power": 8.66,
-   "Waste to Energy": 68.55,
-   "Total WAPE (fresh)": 30.37,
-   "Total WAPE (all values)": 34.35
-  },
-  "2018|v2 without transmission term": {
-   "Solar Power": 41.07,
-   "Wind Power": 12.57,
-   "Bio-Mass Power": 15.76,
-   "Small Hydro Power": 8.66,
-   "Waste to Energy": 68.55,
-   "Total WAPE (fresh)": 30.37,
-   "Total WAPE (all values)": 34.35
-  },
-  "2018|v2 + transmission, joint fit": {
-   "Solar Power": 41.07,
-   "Wind Power": 12.57,
-   "Bio-Mass Power": 15.76,
-   "Small Hydro Power": 8.66,
-   "Waste to Energy": 68.55,
-   "Total WAPE (fresh)": 30.37,
-   "Total WAPE (all values)": 34.35
-  },
-  "2018|v2 pure (v2 dynamics for every tech)": {
-   "Solar Power": 41.07,
-   "Wind Power": 12.57,
-   "Bio-Mass Power": 23.41,
-   "Small Hydro Power": 12.98,
    "Waste to Energy": 68.55,
    "Total WAPE (fresh)": 30.96,
-   "Total WAPE (all values)": 35.57
+   "Total WAPE (all values)": 34.6
+  },
+  "2018|v2 without transmission term": {
+   "Solar Power": 42.05,
+   "Wind Power": 12.53,
+   "Bio-Mass Power": 15.76,
+   "Small Hydro Power": 8.66,
+   "Waste to Energy": 68.55,
+   "Total WAPE (fresh)": 30.96,
+   "Total WAPE (all values)": 34.6
+  },
+  "2018|v2 + transmission, joint fit": {
+   "Solar Power": 42.05,
+   "Wind Power": 12.53,
+   "Bio-Mass Power": 15.76,
+   "Small Hydro Power": 8.66,
+   "Waste to Energy": 68.55,
+   "Total WAPE (fresh)": 30.96,
+   "Total WAPE (all values)": 34.6
+  },
+  "2018|v2 pure (v2 dynamics for every tech)": {
+   "Solar Power": 42.05,
+   "Wind Power": 12.53,
+   "Bio-Mass Power": 24.12,
+   "Small Hydro Power": 12.99,
+   "Waste to Energy": 68.55,
+   "Total WAPE (fresh)": 31.6,
+   "Total WAPE (all values)": 35.83
   },
   "2018|v2, trend half-life 2y": {
-   "Solar Power": 43.03,
-   "Wind Power": 12.5,
+   "Solar Power": 44.16,
+   "Wind Power": 12.52,
    "Bio-Mass Power": 15.76,
    "Small Hydro Power": 8.66,
    "Waste to Energy": 68.55,
-   "Total WAPE (fresh)": 31.56,
-   "Total WAPE (all values)": 31.75
+   "Total WAPE (fresh)": 32.26,
+   "Total WAPE (all values)": 32.32
   },
   "2018|v2, trend half-life 5y": {
-   "Solar Power": 59.72,
-   "Wind Power": 12.64,
+   "Solar Power": 50.49,
+   "Wind Power": 12.53,
    "Bio-Mass Power": 15.76,
    "Small Hydro Power": 8.66,
    "Waste to Energy": 68.55,
-   "Total WAPE (fresh)": 41.86,
-   "Total WAPE (all values)": 48.6
+   "Total WAPE (fresh)": 36.15,
+   "Total WAPE (all values)": 43.21
   },
   "2018|v2, no catch-up term": {
-   "Solar Power": 50.02,
-   "Wind Power": 13.07,
+   "Solar Power": 44.27,
+   "Wind Power": 13.31,
    "Bio-Mass Power": 15.76,
    "Small Hydro Power": 8.66,
    "Waste to Energy": 68.55,
-   "Total WAPE (fresh)": 36.02,
-   "Total WAPE (all values)": 40.0
+   "Total WAPE (fresh)": 32.56,
+   "Total WAPE (all values)": 35.74
   },
   "2018|v1 GSDP elasticity": {
    "Solar Power": 46.14,
@@ -172,77 +163,68 @@
    "Total WAPE (fresh)": 41.57,
    "Total WAPE (all values)": 35.5
   },
-  "2018|Original tree ensemble": {
-   "Solar Power": 63.3,
-   "Wind Power": 22.23,
-   "Bio-Mass Power": 25.49,
-   "Small Hydro Power": 18.04,
-   "Waste to Energy": 75.97,
-   "Total WAPE (fresh)": 47.75,
-   "Total WAPE (all values)": 48.67
-  },
   "2020|v2 convergence (production)": {
-   "Solar Power": 33.99,
-   "Wind Power": 9.24,
+   "Solar Power": 32.42,
+   "Wind Power": 8.78,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 26.0,
-   "Total WAPE (all values)": 25.25
+   "Total WAPE (fresh)": 24.84,
+   "Total WAPE (all values)": 25.4
   },
   "2020|v2 without transmission term": {
-   "Solar Power": 42.53,
-   "Wind Power": 9.58,
+   "Solar Power": 43.46,
+   "Wind Power": 9.19,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 31.83,
-   "Total WAPE (all values)": 29.01
+   "Total WAPE (fresh)": 32.36,
+   "Total WAPE (all values)": 30.3
   },
   "2020|v2 + transmission, joint fit": {
-   "Solar Power": 34.09,
-   "Wind Power": 8.79,
+   "Solar Power": 32.35,
+   "Wind Power": 8.3,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 25.96,
-   "Total WAPE (all values)": 25.32
+   "Total WAPE (fresh)": 24.67,
+   "Total WAPE (all values)": 25.38
   },
   "2020|v2 pure (v2 dynamics for every tech)": {
-   "Solar Power": 42.53,
-   "Wind Power": 9.58,
-   "Bio-Mass Power": 7.81,
-   "Small Hydro Power": 24.6,
+   "Solar Power": 43.46,
+   "Wind Power": 9.19,
+   "Bio-Mass Power": 7.17,
+   "Small Hydro Power": 24.39,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 31.9,
-   "Total WAPE (all values)": 29.73
+   "Total WAPE (fresh)": 32.39,
+   "Total WAPE (all values)": 30.96
   },
   "2020|v2, trend half-life 2y": {
-   "Solar Power": 37.77,
-   "Wind Power": 9.22,
+   "Solar Power": 35.37,
+   "Wind Power": 8.78,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 28.54,
-   "Total WAPE (all values)": 26.31
+   "Total WAPE (fresh)": 26.82,
+   "Total WAPE (all values)": 25.89
   },
   "2020|v2, trend half-life 5y": {
-   "Solar Power": 29.83,
-   "Wind Power": 9.27,
+   "Solar Power": 30.12,
+   "Wind Power": 8.77,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 23.22,
-   "Total WAPE (all values)": 24.21
+   "Total WAPE (fresh)": 23.29,
+   "Total WAPE (all values)": 25.44
   },
   "2020|v2, no catch-up term": {
-   "Solar Power": 31.13,
-   "Wind Power": 8.02,
+   "Solar Power": 29.51,
+   "Wind Power": 8.08,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 23.78,
-   "Total WAPE (all values)": 24.55
+   "Total WAPE (fresh)": 22.71,
+   "Total WAPE (all values)": 26.49
   },
   "2020|v1 GSDP elasticity": {
    "Solar Power": 44.33,
@@ -261,71 +243,71 @@
    "Waste to Energy": 21.19,
    "Total WAPE (fresh)": 39.93,
    "Total WAPE (all values)": 29.87
-  },
-  "2020|Original tree ensemble": {
-   "Solar Power": 61.18,
-   "Wind Power": 26.03,
-   "Bio-Mass Power": 20.97,
-   "Small Hydro Power": 19.41,
-   "Waste to Energy": 34.54,
-   "Total WAPE (fresh)": 49.23,
-   "Total WAPE (all values)": 47.12
   }
  },
  "mean": {
   "v2 + transmission, joint fit": {
-   "Solar Power": 40.08,
-   "Wind Power": 10.48,
+   "Solar Power": 40.63,
+   "Wind Power": 10.24,
    "Bio-Mass Power": 15.91,
    "Small Hydro Power": 8.51,
    "Waste to Energy": 63.25,
-   "Total WAPE (fresh)": 28.98,
-   "Total WAPE (all values)": 30.91
+   "Total WAPE (fresh)": 29.17,
+   "Total WAPE (all values)": 31.59
   },
   "v2 convergence (production)": {
-   "Solar Power": 40.05,
-   "Wind Power": 10.63,
+   "Solar Power": 40.65,
+   "Wind Power": 10.4,
    "Bio-Mass Power": 15.91,
    "Small Hydro Power": 8.51,
    "Waste to Energy": 63.25,
-   "Total WAPE (fresh)": 28.99,
-   "Total WAPE (all values)": 30.89
-  },
-  "v2 without transmission term": {
-   "Solar Power": 42.89,
-   "Wind Power": 10.75,
-   "Bio-Mass Power": 15.91,
-   "Small Hydro Power": 8.51,
-   "Waste to Energy": 63.25,
-   "Total WAPE (fresh)": 30.93,
-   "Total WAPE (all values)": 32.14
+   "Total WAPE (fresh)": 29.23,
+   "Total WAPE (all values)": 31.59
   },
   "v2, trend half-life 2y": {
-   "Solar Power": 43.62,
+   "Solar Power": 43.31,
+   "Wind Power": 10.38,
+   "Bio-Mass Power": 15.91,
+   "Small Hydro Power": 8.51,
+   "Waste to Energy": 63.25,
+   "Total WAPE (fresh)": 30.86,
+   "Total WAPE (all values)": 30.46
+  },
+  "v2, no catch-up term": {
+   "Solar Power": 44.1,
+   "Wind Power": 10.96,
+   "Bio-Mass Power": 15.91,
+   "Small Hydro Power": 8.51,
+   "Waste to Energy": 63.25,
+   "Total WAPE (fresh)": 31.29,
+   "Total WAPE (all values)": 34.82
+  },
+  "v2 without transmission term": {
+   "Solar Power": 44.33,
+   "Wind Power": 10.54,
+   "Bio-Mass Power": 15.91,
+   "Small Hydro Power": 8.51,
+   "Waste to Energy": 63.25,
+   "Total WAPE (fresh)": 31.73,
+   "Total WAPE (all values)": 33.23
+  },
+  "v2 pure (v2 dynamics for every tech)": {
+   "Solar Power": 44.33,
+   "Wind Power": 10.54,
+   "Bio-Mass Power": 17.4,
+   "Small Hydro Power": 16.58,
+   "Waste to Energy": 63.25,
+   "Total WAPE (fresh)": 31.99,
+   "Total WAPE (all values)": 33.97
+  },
+  "v2, trend half-life 5y": {
+   "Solar Power": 46.39,
    "Wind Power": 10.51,
    "Bio-Mass Power": 15.91,
    "Small Hydro Power": 8.51,
    "Waste to Energy": 63.25,
-   "Total WAPE (fresh)": 31.12,
-   "Total WAPE (all values)": 30.29
-  },
-  "v2 pure (v2 dynamics for every tech)": {
-   "Solar Power": 42.89,
-   "Wind Power": 10.75,
-   "Bio-Mass Power": 18.09,
-   "Small Hydro Power": 16.65,
-   "Waste to Energy": 63.25,
-   "Total WAPE (fresh)": 31.25,
-   "Total WAPE (all values)": 32.97
-  },
-  "v2, no catch-up term": {
-   "Solar Power": 47.45,
-   "Wind Power": 10.76,
-   "Bio-Mass Power": 15.91,
-   "Small Hydro Power": 8.51,
-   "Waste to Energy": 63.25,
-   "Total WAPE (fresh)": 33.26,
-   "Total WAPE (all values)": 36.44
+   "Total WAPE (fresh)": 32.55,
+   "Total WAPE (all values)": 38.75
   },
   "v1 GSDP elasticity": {
    "Solar Power": 52.43,
@@ -336,15 +318,6 @@
    "Total WAPE (fresh)": 37.13,
    "Total WAPE (all values)": 39.46
   },
-  "v2, trend half-life 5y": {
-   "Solar Power": 55.4,
-   "Wind Power": 10.99,
-   "Bio-Mass Power": 15.91,
-   "Small Hydro Power": 8.51,
-   "Waste to Energy": 63.25,
-   "Total WAPE (fresh)": 37.89,
-   "Total WAPE (all values)": 43.19
-  },
   "Naive last value": {
    "Solar Power": 63.71,
    "Wind Power": 15.41,
@@ -353,15 +326,6 @@
    "Waste to Energy": 63.25,
    "Total WAPE (fresh)": 44.69,
    "Total WAPE (all values)": 37.81
-  },
-  "Original tree ensemble": {
-   "Solar Power": 68.07,
-   "Wind Power": 24.65,
-   "Bio-Mass Power": 28.1,
-   "Small Hydro Power": 19.34,
-   "Waste to Energy": 70.17,
-   "Total WAPE (fresh)": 51.27,
-   "Total WAPE (all values)": 52.59
   }
  },
  "recent_cutoffs": [
@@ -371,31 +335,31 @@
  ],
  "recent_backtest": {
   "2020|v2 convergence (production)": {
-   "Solar Power": 33.99,
-   "Wind Power": 9.24,
+   "Solar Power": 32.42,
+   "Wind Power": 8.78,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 26.0,
-   "Total WAPE (all values)": 25.25
+   "Total WAPE (fresh)": 24.84,
+   "Total WAPE (all values)": 25.4
   },
   "2020|v2 without transmission term": {
-   "Solar Power": 42.53,
-   "Wind Power": 9.58,
+   "Solar Power": 43.46,
+   "Wind Power": 9.19,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 31.83,
-   "Total WAPE (all values)": 29.01
+   "Total WAPE (fresh)": 32.36,
+   "Total WAPE (all values)": 30.3
   },
   "2020|v2 + transmission, joint fit": {
-   "Solar Power": 34.09,
-   "Wind Power": 8.79,
+   "Solar Power": 32.35,
+   "Wind Power": 8.3,
    "Bio-Mass Power": 11.91,
    "Small Hydro Power": 6.4,
    "Waste to Energy": 21.19,
-   "Total WAPE (fresh)": 25.96,
-   "Total WAPE (all values)": 25.32
+   "Total WAPE (fresh)": 24.67,
+   "Total WAPE (all values)": 25.38
   },
   "2020|v1 GSDP elasticity": {
    "Solar Power": 44.33,
@@ -416,31 +380,31 @@
    "Total WAPE (all values)": 29.87
   },
   "2021|v2 convergence (production)": {
-   "Solar Power": 34.13,
-   "Wind Power": 10.42,
+   "Solar Power": 35.73,
+   "Wind Power": 9.72,
    "Bio-Mass Power": 8.08,
    "Small Hydro Power": 6.68,
    "Waste to Energy": 21.8,
-   "Total WAPE (fresh)": 26.5,
-   "Total WAPE (all values)": 26.88
+   "Total WAPE (fresh)": 27.45,
+   "Total WAPE (all values)": 28.59
   },
   "2021|v2 without transmission term": {
-   "Solar Power": 42.91,
-   "Wind Power": 10.08,
+   "Solar Power": 46.04,
+   "Wind Power": 9.34,
    "Bio-Mass Power": 8.08,
    "Small Hydro Power": 6.68,
    "Waste to Energy": 21.8,
-   "Total WAPE (fresh)": 32.47,
-   "Total WAPE (all values)": 26.35
+   "Total WAPE (fresh)": 34.46,
+   "Total WAPE (all values)": 27.82
   },
   "2021|v2 + transmission, joint fit": {
-   "Solar Power": 34.46,
-   "Wind Power": 10.36,
+   "Solar Power": 35.56,
+   "Wind Power": 9.81,
    "Bio-Mass Power": 8.08,
    "Small Hydro Power": 6.68,
    "Waste to Energy": 21.8,
-   "Total WAPE (fresh)": 26.72,
-   "Total WAPE (all values)": 26.76
+   "Total WAPE (fresh)": 27.35,
+   "Total WAPE (all values)": 28.57
   },
   "2021|v1 GSDP elasticity": {
    "Solar Power": 41.61,
@@ -461,31 +425,31 @@
    "Total WAPE (all values)": 24.52
   },
   "2022|v2 convergence (production)": {
-   "Solar Power": 44.9,
-   "Wind Power": 8.67,
+   "Solar Power": 47.33,
+   "Wind Power": 8.43,
    "Bio-Mass Power": 6.56,
    "Small Hydro Power": 4.8,
-   "Waste to Energy": 31.42,
-   "Total WAPE (fresh)": 35.19,
-   "Total WAPE (all values)": 27.66
+   "Waste to Energy": 31.45,
+   "Total WAPE (fresh)": 36.94,
+   "Total WAPE (all values)": 30.0
   },
   "2022|v2 without transmission term": {
-   "Solar Power": 52.5,
-   "Wind Power": 10.84,
+   "Solar Power": 56.01,
+   "Wind Power": 10.99,
    "Bio-Mass Power": 6.56,
    "Small Hydro Power": 4.8,
-   "Waste to Energy": 31.42,
-   "Total WAPE (fresh)": 41.22,
-   "Total WAPE (all values)": 28.92
+   "Waste to Energy": 31.45,
+   "Total WAPE (fresh)": 43.84,
+   "Total WAPE (all values)": 31.41
   },
   "2022|v2 + transmission, joint fit": {
-   "Solar Power": 44.65,
-   "Wind Power": 7.67,
+   "Solar Power": 47.12,
+   "Wind Power": 7.23,
    "Bio-Mass Power": 6.56,
    "Small Hydro Power": 4.8,
-   "Waste to Energy": 31.42,
-   "Total WAPE (fresh)": 34.81,
-   "Total WAPE (all values)": 27.36
+   "Waste to Energy": 31.45,
+   "Total WAPE (fresh)": 36.54,
+   "Total WAPE (all values)": 29.71
   },
   "2022|v1 GSDP elasticity": {
    "Solar Power": 55.06,
@@ -508,31 +472,22 @@
  },
  "recent_mean": {
   "v2 + transmission, joint fit": {
-   "Solar Power": 37.74,
-   "Wind Power": 8.94,
+   "Solar Power": 38.34,
+   "Wind Power": 8.45,
    "Bio-Mass Power": 8.85,
    "Small Hydro Power": 5.96,
-   "Waste to Energy": 24.8,
-   "Total WAPE (fresh)": 29.16,
-   "Total WAPE (all values)": 26.48
+   "Waste to Energy": 24.81,
+   "Total WAPE (fresh)": 29.52,
+   "Total WAPE (all values)": 27.89
   },
   "v2 convergence (production)": {
-   "Solar Power": 37.67,
-   "Wind Power": 9.44,
+   "Solar Power": 38.5,
+   "Wind Power": 8.98,
    "Bio-Mass Power": 8.85,
    "Small Hydro Power": 5.96,
-   "Waste to Energy": 24.8,
-   "Total WAPE (fresh)": 29.23,
-   "Total WAPE (all values)": 26.6
-  },
-  "v2 without transmission term": {
-   "Solar Power": 45.98,
-   "Wind Power": 10.17,
-   "Bio-Mass Power": 8.85,
-   "Small Hydro Power": 5.96,
-   "Waste to Energy": 24.8,
-   "Total WAPE (fresh)": 35.17,
-   "Total WAPE (all values)": 28.09
+   "Waste to Energy": 24.81,
+   "Total WAPE (fresh)": 29.74,
+   "Total WAPE (all values)": 28.0
   },
   "v1 GSDP elasticity": {
    "Solar Power": 47.0,
@@ -542,6 +497,15 @@
    "Waste to Energy": 25.58,
    "Total WAPE (fresh)": 35.38,
    "Total WAPE (all values)": 33.94
+  },
+  "v2 without transmission term": {
+   "Solar Power": 48.51,
+   "Wind Power": 9.84,
+   "Bio-Mass Power": 8.85,
+   "Small Hydro Power": 5.96,
+   "Waste to Energy": 24.81,
+   "Total WAPE (fresh)": 36.88,
+   "Total WAPE (all values)": 29.84
   },
   "Naive last value": {
    "Solar Power": 57.84,
@@ -555,34 +519,34 @@
  },
  "v2_params": {
   "Solar Power": {
-   "beta": 0.15422402797098794,
-   "kappa": 0.13224023073796254,
-   "gamma": 0.02667040057340014,
-   "a_ref": 0.2353149621632146,
+   "beta": 0.48535688381084957,
+   "kappa": 0.1204896036767787,
+   "gamma": 0.03346143933394499,
+   "a_ref": 0.20943142889915978,
    "n_pairs": 216
   },
   "Wind Power": {
-   "beta": 1.0627378244232384,
-   "kappa": 0.032437536056002796,
-   "gamma": 0.009596196674472967,
-   "a_ref": -0.020045179255275422,
+   "beta": 0.9802291393736577,
+   "kappa": 0.03093354910578713,
+   "gamma": 0.009959679866836811,
+   "a_ref": -0.015103273819678265,
    "n_pairs": 123
   },
   "Bio-Mass Power": {
-   "beta": 0.6516760739155145,
-   "kappa": 0.07304284863785414,
+   "beta": 0.7322396221903331,
+   "kappa": 0.06669768805658699,
    "gamma": 0.0,
-   "a_ref": 0.06168876405676893,
+   "a_ref": 0.05794497505114641,
    "n_pairs": 167,
    "dynamics": "v1",
    "v1_elasticity": 0.2588,
    "v1_decay": 0.25
   },
   "Small Hydro Power": {
-   "beta": 0.7098514286018545,
+   "beta": 0.7116398168058303,
    "kappa": 0.0,
    "gamma": 0.0,
-   "a_ref": -0.021156224749243616,
+   "a_ref": -0.020661889484566532,
    "n_pairs": 172,
    "dynamics": "v1",
    "v1_elasticity": 0.0,
@@ -592,50 +556,50 @@
    "beta": 0.0,
    "kappa": 0.0,
    "gamma": 0.0,
-   "a_ref": -0.06331158326988923,
+   "a_ref": -0.0447569234381325,
    "n_pairs": 27
   }
  },
  "national_forecast_gw_v2": {
   "2024": {
-   "Solar Power": 130.8,
-   "Wind Power": 49.7,
+   "Solar Power": 131.1,
+   "Wind Power": 49.1,
    "Bio-Mass Power": 10.9,
    "Small Hydro Power": 4.9,
-   "Waste to Energy": 0.5,
-   "Total": 196.8
+   "Waste to Energy": 0.6,
+   "Total": 196.5
   },
   "2030": {
-   "Solar Power": 300.9,
-   "Wind Power": 66.9,
+   "Solar Power": 309.8,
+   "Wind Power": 64.2,
    "Bio-Mass Power": 11.2,
    "Small Hydro Power": 4.9,
-   "Waste to Energy": 0.5,
-   "Total": 384.3
+   "Waste to Energy": 0.6,
+   "Total": 390.6
   },
   "2035": {
-   "Solar Power": 360.5,
-   "Wind Power": 84.7,
+   "Solar Power": 398.5,
+   "Wind Power": 79.1,
    "Bio-Mass Power": 11.3,
    "Small Hydro Power": 4.9,
-   "Waste to Energy": 0.5,
-   "Total": 461.9
+   "Waste to Energy": 0.6,
+   "Total": 494.2
   },
   "2040": {
-   "Solar Power": 393.3,
-   "Wind Power": 108.9,
+   "Solar Power": 473.6,
+   "Wind Power": 98.8,
    "Bio-Mass Power": 11.3,
    "Small Hydro Power": 4.9,
-   "Waste to Energy": 0.5,
-   "Total": 518.8
+   "Waste to Energy": 0.6,
+   "Total": 589.1
   },
   "2047": {
-   "Solar Power": 423.9,
-   "Wind Power": 156.8,
+   "Solar Power": 579.7,
+   "Wind Power": 137.3,
    "Bio-Mass Power": 11.3,
    "Small Hydro Power": 4.9,
-   "Waste to Energy": 0.5,
-   "Total": 597.4
+   "Waste to Energy": 0.6,
+   "Total": 733.7
   }
  },
  "national_forecast_gw_v1": {

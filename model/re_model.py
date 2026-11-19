@@ -36,11 +36,34 @@ TECH_KEY = {"Solar Power": "solar", "Wind Power": "wind", "Bio-Mass Power": "bio
 
 
 # ───────────────────────────── data ─────────────────────────────
+
+# Zones follow the five Regional Load Despatch Centre regions of the national grid. The source CSV has
+# a sixth "Central" zone and puts a few states elsewhere; this table overrides its Zone column.
+# Ladakh and Dadra & Nagar Haveli and Daman & Diu are grid members but have no rows in the dataset.
+GRID_REGIONS = {
+    "North": ["Jammu And Kashmir", "Ladakh", "Himachal Pradesh", "Punjab", "Haryana", "Rajasthan",
+              "Uttar Pradesh", "Uttarakhand", "Delhi", "Chandigarh"],                          # NRLDC
+    "West": ["Gujarat", "Madhya Pradesh", "Chhattisgarh", "Maharashtra", "Goa",
+             "Dadra And Nagar Haveli And Daman And Diu"],                                        # WRLDC
+    "South": ["Andhra Pradesh", "Telangana", "Karnataka", "Kerala", "Tamil Nadu", "Puducherry",
+              "Lakshadweep"],                                                                    # SRLDC
+    "East": ["Bihar", "Jharkhand", "Odisha", "West Bengal", "Sikkim", "Andaman And Nicobar Islands"],  # ERLDC
+    "North-East": ["Arunachal Pradesh", "Assam", "Manipur", "Meghalaya", "Mizoram", "Nagaland",
+                   "Tripura"],                                                                   # NERLDC
+}
+STATE_REGION = {s: z for z, states in GRID_REGIONS.items() for s in states}
+
+
+def apply_grid_regions(df: pd.DataFrame) -> pd.DataFrame:
+    missing = sorted(set(df.State) - set(STATE_REGION))
+    if missing:
+        raise ValueError(f"States with no grid region: {missing}")
+    return df.assign(Zone=df.State.map(STATE_REGION))
 def load_data(path: Path = DATA_CSV) -> pd.DataFrame:
     df = pd.read_csv(path)
     df.columns = [c.replace("Installed - ", "") for c in df.columns]
     df = df.rename(columns={"GSDP (crore INR)": "GSDP"}).sort_values(["State", "Year"]).reset_index(drop=True)
-    return impute_placeholder_gsdp(splice_gsdp(df))
+    return impute_placeholder_gsdp(splice_gsdp(apply_grid_regions(df)))
 
 
 def splice_gsdp(df: pd.DataFrame) -> pd.DataFrame:

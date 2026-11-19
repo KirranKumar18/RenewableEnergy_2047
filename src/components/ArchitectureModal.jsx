@@ -42,7 +42,7 @@ export default function ArchitectureModal({ isOpen, onClose }) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
             <div className="bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
               <span className="font-semibold text-white block">Zone (Required Dropdown)</span>
-              <span className="text-slate-400 text-[11px]">South, North, West, East, Central, North-East</span>
+              <span className="text-slate-400 text-[11px]">North, West, South, East, North-East (grid regions)</span>
             </div>
             <div className="bg-slate-900/80 p-2.5 rounded-xl border border-slate-800">
               <span className="font-semibold text-white block">State (Optional Dropdown)</span>

@@ -40,14 +40,15 @@ export const GEO_TO_MODEL_NAME = {
   'West Bengal':                                'West Bengal',
 };
 
+// Zones are the five grid regions (NRLDC, WRLDC, SRLDC, ERLDC, NERLDC); see GRID_REGIONS in model/re_model.py.
 export const STATE_TO_ZONE = {
-  'Andaman And Nicobar Islands': 'South',
+  'Andaman And Nicobar Islands': 'East',
   'Andhra Pradesh': 'South',
   'Arunachal Pradesh': 'North-East',
   'Assam': 'North-East',
   'Bihar': 'East',
   'Chandigarh': 'North',
-  'Chhattisgarh': 'Central',
+  'Chhattisgarh': 'West',
   'Delhi': 'North',
   'Goa': 'West',
   'Gujarat': 'West',
@@ -58,7 +59,7 @@ export const STATE_TO_ZONE = {
   'Karnataka': 'South',
   'Kerala': 'South',
   'Lakshadweep': 'South',
-  'Madhya Pradesh': 'Central',
+  'Madhya Pradesh': 'West',
   'Maharashtra': 'West',
   'Manipur': 'North-East',
   'Meghalaya': 'North-East',
@@ -67,8 +68,8 @@ export const STATE_TO_ZONE = {
   'Odisha': 'East',
   'Puducherry': 'South',
   'Punjab': 'North',
-  'Rajasthan': 'West',
-  'Sikkim': 'North-East',
+  'Rajasthan': 'North',
+  'Sikkim': 'East',
   'Tamil Nadu': 'South',
   'Telangana': 'South',
   'Tripura': 'North-East',
@@ -107,13 +108,6 @@ export const ZONE_COLORS = {
     textColor: '#991b1b',
     label: 'East Zone'
   },
-  'Central': {
-    fill: '#8b5cf6',
-    border: '#7c3aed',
-    lightBg: '#f5f3ff',
-    textColor: '#5b21b6',
-    label: 'Central Zone'
-  },
   'North-East': {
     fill: '#ec4899',
     border: '#db2777',
@@ -125,19 +119,18 @@ export const ZONE_COLORS = {
 
 export const ZONE_TO_STATES = {
   'South': [
-    'Andaman And Nicobar Islands', 'Andhra Pradesh', 'Karnataka', 'Kerala',
+    'Andhra Pradesh', 'Karnataka', 'Kerala',
     'Lakshadweep', 'Puducherry', 'Tamil Nadu', 'Telangana'
   ],
   'North': [
     'Chandigarh', 'Delhi', 'Haryana', 'Himachal Pradesh',
-    'Jammu And Kashmir', 'Punjab', 'Uttar Pradesh', 'Uttarakhand'
+    'Jammu And Kashmir', 'Punjab', 'Rajasthan', 'Uttar Pradesh', 'Uttarakhand'
   ],
-  'West': ['Goa', 'Gujarat', 'Maharashtra', 'Rajasthan'],
-  'East': ['Bihar', 'Jharkhand', 'Odisha', 'West Bengal'],
-  'Central': ['Chhattisgarh', 'Madhya Pradesh'],
+  'West': ['Chhattisgarh', 'Goa', 'Gujarat', 'Madhya Pradesh', 'Maharashtra'],
+  'East': ['Andaman And Nicobar Islands', 'Bihar', 'Jharkhand', 'Odisha', 'Sikkim', 'West Bengal'],
   'North-East': [
     'Arunachal Pradesh', 'Assam', 'Manipur', 'Meghalaya',
-    'Mizoram', 'Nagaland', 'Sikkim', 'Tripura'
+    'Mizoram', 'Nagaland', 'Tripura'
   ],
 };
 
@@ -255,7 +248,7 @@ const CERC_SPECS = {
 
 const ZONE_MULT = {
   'South': 1.00, 'North': 1.02, 'West': 0.98,
-  'East': 1.03, 'North-East': 1.15, 'Central': 1.00
+  'East': 1.03, 'North-East': 1.15
 };
 
 /**

@@ -48,7 +48,7 @@ COST_BENCHMARKS = {
     "hydro": {"capex_cr_per_mw": 10.5, "cuf": 0.45, "lcoe_inr_per_kwh": 4.1},
     "waste": {"capex_cr_per_mw": 11.0, "cuf": 0.70, "lcoe_inr_per_kwh": 6.2},
 }
-ZONE_MULTIPLIERS = {"North": 1.02, "South": 1.0, "West": 0.98, "East": 1.03, "North-East": 1.15, "Central": 1.0}
+ZONE_MULTIPLIERS = {"North": 1.02, "South": 1.0, "West": 0.98, "East": 1.03, "North-East": 1.15}
 NAMES = {"solar": "Solar Power", "wind": "Wind Power", "bio": "Bio-Mass Power", "hydro": "Small Hydro Power",
          "waste": "Waste to Energy"}
 COLORS = {"solar": "#F59E0B", "wind": "#06B6D4", "bio": "#10B981", "hydro": "#3B82F6", "waste": "#A855F7"}

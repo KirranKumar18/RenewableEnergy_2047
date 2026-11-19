@@ -83,7 +83,7 @@
  },
  "states": {
   "Andaman And Nicobar Islands": {
-   "zone": "South",
+   "zone": "East",
    "year": 2024,
    "gsdp": 9432.55127052233,
    "population": 403767.0,
@@ -161,7 +161,7 @@
    }
   },
   "Chhattisgarh": {
-   "zone": "Central",
+   "zone": "West",
    "year": 2024,
    "gsdp": 300514.27939906623,
    "population": 30524288.0,
@@ -304,7 +304,7 @@
    }
   },
   "Madhya Pradesh": {
-   "zone": "Central",
+   "zone": "West",
    "year": 2024,
    "gsdp": 696305.9687460007,
    "population": 87610397.0,
@@ -421,7 +421,7 @@
    }
   },
   "Rajasthan": {
-   "zone": "West",
+   "zone": "North",
    "year": 2024,
    "gsdp": 811964.8636680281,
    "population": 81897401.0,
@@ -434,7 +434,7 @@
    }
   },
   "Sikkim": {
-   "zone": "North-East",
+   "zone": "East",
    "year": 2024,
    "gsdp": 25644.615401470055,
    "population": 694024.0,
