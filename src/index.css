@@ -1,78 +1,23 @@
 @import "tailwindcss";
 
-/* Leaflet stylesheet */
-@import "leaflet/dist/leaflet.css";
-
 @layer base {
+  html, body, #root { height: 100%; }
   body {
-    background-color: #f8fafc;
-    color: #0f172a;
-    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Barlow, system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 15px;
+    line-height: 1.45;
+    font-variant-numeric: tabular-nums;
     -webkit-font-smoothing: antialiased;
   }
-
-  ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-  ::-webkit-scrollbar-track {
-    background: #f1f5f9;
-  }
-  ::-webkit-scrollbar-thumb {
-    background: #cbd5e1;
-    border-radius: 9999px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: #94a3b8;
-  }
+  button, input, select { font: inherit; }
+  button { cursor: pointer; }
+  button:disabled, input:disabled { cursor: default; }
+  input[type="range"] { accent-color: var(--gold); cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 }
 
-/* Light theme Leaflet styling */
-.leaflet-container {
-  background: #f8fafc !important;
-  font-family: 'Plus Jakarta Sans', system-ui, sans-serif !important;
-}
-
-/* Rich State Forecast Hover Tooltip (Light Theme) */
-.state-forecast-tooltip {
-  background: #ffffff !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 12px !important;
-  padding: 0 !important;
-  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.15), 0 8px 10px -6px rgba(15, 23, 42, 0.1) !important;
-  color: #0f172a !important;
-  opacity: 1 !important;
-}
-.state-forecast-tooltip::before {
-  border-top-color: #ffffff !important;
-}
-
-/* Zoom controls in light theme */
-.leaflet-control-zoom {
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 8px !important;
-  overflow: hidden !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
-}
-.leaflet-control-zoom a {
-  background: #ffffff !important;
-  color: #334155 !important;
-  border-bottom: 1px solid #f1f5f9 !important;
-  font-weight: 700 !important;
-  transition: all 0.15s ease !important;
-}
-.leaflet-control-zoom a:hover {
-  background: #f1f5f9 !important;
-  color: #059669 !important;
-}
-
-/* Clean attribution */
-.leaflet-control-attribution {
-  background: rgba(255, 255, 255, 0.85) !important;
-  backdrop-filter: blur(4px) !important;
-  color: #94a3b8 !important;
-  font-size: 10px !important;
-  border-radius: 4px !important;
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
 }

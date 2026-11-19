@@ -21,10 +21,10 @@ export default function ControlsHeader({
   const zc = ZONE_COLORS[zone] || { fill: '#059669', textColor: '#065f46', lightBg: '#ecfdf5' };
 
   const milestones = [
-    { year: 2025, label: 'Base' },
-    { year: 2028, label: 'Current' },
-    { year: 2030, label: '500 GW' },
+    { year: 2024, label: 'Latest data' },
+    { year: 2030, label: '500 GW target' },
     { year: 2035, label: 'Horizon' },
+    { year: 2047, label: 'Viksit Bharat' },
   ];
 
   const formatPop = (v) => {
@@ -41,7 +41,7 @@ export default function ControlsHeader({
   };
 
   return (
-    <header className="bg-white border-b border-slate-200/90 shadow-xs sticky top-0 z-40">
+    <header className="bg-white border-b border-slate-200/90 shadow-xs sticky top-0 z-[1200]">
       {/* Top Brand Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between border-b border-slate-100">
         <div className="flex items-center gap-3">
@@ -165,6 +165,7 @@ export default function ControlsHeader({
               {milestones.map(m => (
                 <button
                   key={m.year}
+                  title={m.label}
                   onClick={() => setYear(m.year)}
                   className={`px-2 py-0.5 rounded text-[11px] font-bold transition ${
                     year === m.year
@@ -178,8 +179,8 @@ export default function ControlsHeader({
             </div>
             <input
               type="range"
-              min={2025}
-              max={2035}
+              min={2024}
+              max={2047}
               value={year}
               onChange={(e) => setYear(Number(e.target.value))}
               className="w-16 h-1.5 bg-slate-200 rounded appearance-none cursor-pointer accent-amber-500 hidden md:inline-block ml-1"

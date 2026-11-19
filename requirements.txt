@@ -1,0 +1,6 @@
+# Runtime dependencies of the forecast API (backend_api.py), used by the Vercel Python function.
+# Training and the explainability report also need: scikit-learn, shap, matplotlib (see model/train.py, model/explain.py).
+# Running the API locally also needs: uvicorn
+fastapi>=0.110
+numpy>=1.24
+pandas>=2.0
