@@ -179,9 +179,47 @@ export const STATE_DEFAULTS = {
   'West Bengal': { pop: 102000000, gsdp: 1750000, baseSolar: 210, baseWind: 0, baseHydro: 185, baseBio: 310, baseWaste: 0 },
 };
 
+// ─── Server data (v2 model) ───
+// Filled from the backend once it is reachable; the client-side formulas below are only a fallback.
+let SERVER_META = null;
+const SERVER_MAP = {};
+
+export function setServerMeta(meta) { SERVER_META = meta; }
+export function setServerMap(year, states) { SERVER_MAP[year] = states; }
+export function getServerMeta() { return SERVER_META; }
+
+const POP_GROWTH = 0.0102;
+
+function serverProjection(st, year) {
+  const s = SERVER_META?.states?.[st];
+  if (!s) return null;
+  const by = SERVER_META.base_year;
+  const years = Object.keys(s.gsdp).map(Number);
+  let gsdp;
+  if (year <= by) {
+    const y = Math.max(...years.filter(v => v <= year), Math.min(...years));
+    gsdp = s.gsdp[y];
+  } else {
+    gsdp = s.gsdp[by] * Math.pow(1 + s.gsdp_cagr, year - by);
+  }
+  return { population: s.population * Math.pow(1 + POP_GROWTH, year - by), gsdp };
+}
+
 export function getAutoProjection(zone, state, year) {
+  // v2 baseline: the dataset's 2024 GSDP grown at the state's own recent rate
+  if (SERVER_META) {
+    const list = state ? [state] : (SERVER_META.zones?.[zone] || []);
+    const parts = list.map(st => serverProjection(st, year)).filter(Boolean);
+    if (parts.length) {
+      return {
+        population: Math.round(parts.reduce((a, p) => a + p.population, 0)),
+        gsdp: Math.round(parts.reduce((a, p) => a + p.gsdp, 0)),
+      };
+    }
+  }
+
   const deltaYears = Math.max(0, year - 2024);
-  const popGR = 0.0102;
+  const popGR = POP_GROWTH;
   const gsdpGR = 0.095;
   let bp = 0, bg = 0;
 
@@ -225,6 +263,22 @@ const ZONE_MULT = {
  * without waiting on any asynchronous network call!
  */
 export function getStateForecast(stateName, zoneName, year = 2028) {
+  const srv = SERVER_MAP[year]?.[stateName];
+  if (srv) {
+    return {
+      state: stateName,
+      zone: srv.zone,
+      year,
+      source: 'v2',
+      totalMW: srv.totalMW,
+      totalGW: (srv.totalMW / 1000).toFixed(2),
+      totalCapexCr: srv.totalCapexCr,
+      totalGenerationGWh: srv.totalGenerationGWh,
+      blendedLcoe: srv.blendedLcoe,
+      co2OffsetMT: Math.round((srv.totalGenerationGWh * 820 / 1e6) * 100) / 100,
+      breakdown: srv.breakdown,
+    };
+  }
   const d = STATE_DEFAULTS[stateName] || {
     pop: 40000000, gsdp: 1000000,
     baseSolar: 1000, baseWind: 500, baseHydro: 50, baseBio: 100, baseWaste: 10

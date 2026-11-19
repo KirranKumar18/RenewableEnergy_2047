@@ -18,13 +18,17 @@ export default function StateForecastInspector({
   const zone = activeState ? STATE_TO_ZONE[activeState] : selectedZone;
   const zc = ZONE_COLORS[zone] || { fill: '#059669', lightBg: '#ecfdf5', textColor: '#065f46' };
 
-  if (activeState) {
+  // Hovering previews a state on its default GSDP path. Otherwise show the live prediction,
+  // so this card always agrees with the KPI cards (it reflects any GSDP the user typed in).
+  const liveMatches = livePrediction && livePrediction.inputs?.year === year &&
+    (selectedState ? livePrediction.inputs?.state === selectedState : true);
+  if (isHovering || (activeState && !liveMatches)) {
     forecastData = getStateForecast(activeState, zone, year);
   } else if (livePrediction) {
     const cap = livePrediction.predicted_capacity_mw || {};
     const fin = livePrediction.financial_analysis || {};
     forecastData = {
-      state: 'Entire Zone',
+      state: activeState || 'Entire Zone',
       zone: selectedZone,
       year,
       totalMW: cap.total || 0,

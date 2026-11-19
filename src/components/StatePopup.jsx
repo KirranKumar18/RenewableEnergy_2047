@@ -86,7 +86,7 @@ export default function StatePopup({ data, stateName, zone, onClose }) {
         </div>
 
         <div className="mt-3 pt-2 text-[10px] text-slate-400 text-center font-mono border-t border-slate-100">
-          Source: india_energy_forecast_model.pkl MultiOutput VotingRegressor
+          Source: {data.model_used}
         </div>
       </div>
     </div>

@@ -1,0 +1,11 @@
+.venv
+node_modules
+dist
+reports
+data
+model/experiments
+model/external
+*.pkl
+data_dump.json
+state_data.json
+Desc.md

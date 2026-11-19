@@ -1,0 +1,5051 @@
+{
+ "window": 8,
+ "span": 2,
+ "min_mw": 10.0,
+ "decay_points": 7,
+ "max_decay": 0.25,
+ "min_estimates": 3,
+ "base_year": 2024,
+ "elasticity": {
+  "Solar Power": 3.5197,
+  "Wind Power": 0.2825,
+  "Bio-Mass Power": 0.2588,
+  "Small Hydro Power": 0.0,
+  "Waste to Energy": 0.0066
+ },
+ "decay": {
+  "Solar Power": 0.1086,
+  "Wind Power": 0.2444,
+  "Bio-Mass Power": 0.25,
+  "Small Hydro Power": 0.25,
+  "Waste to Energy": 0.25
+ },
+ "elasticity_history": {
+  "Solar Power": {
+   "2014": 8.5271,
+   "2015": 7.4927,
+   "2016": 7.5359,
+   "2017": 7.4756,
+   "2018": 6.8468,
+   "2019": 6.2841,
+   "2020": 6.1762,
+   "2021": 5.9148,
+   "2022": 4.8104,
+   "2023": 4.2232,
+   "2024": 3.5197
+  },
+  "Wind Power": {
+   "2014": 2.2409,
+   "2015": 2.0753,
+   "2016": 2.0492,
+   "2017": 1.8831,
+   "2018": 1.5053,
+   "2019": 1.3159,
+   "2020": 1.2837,
+   "2021": 1.2172,
+   "2022": 0.9741,
+   "2023": 0.6068,
+   "2024": 0.2825
+  },
+  "Bio-Mass Power": {
+   "2014": 2.2614,
+   "2015": 1.9753,
+   "2016": 2.2153,
+   "2017": 2.4592,
+   "2018": 2.2616,
+   "2019": 1.8621,
+   "2020": 1.4976,
+   "2021": 1.2609,
+   "2022": 1.1302,
+   "2023": 0.6913,
+   "2024": 0.2588
+  },
+  "Small Hydro Power": {
+   "2014": 0.468,
+   "2015": 0.4447,
+   "2016": 0.322,
+   "2017": 0.1899,
+   "2018": 0.1198,
+   "2019": 0.0909,
+   "2020": 0.0584,
+   "2021": 0.0275,
+   "2022": 0.0055,
+   "2023": 0.0014,
+   "2024": 0.0
+  },
+  "Waste to Energy": {
+   "2020": 9.4277,
+   "2021": 7.5886,
+   "2022": 0.6587,
+   "2023": 0.0,
+   "2024": 0.0066
+  }
+ },
+ "states": {
+  "Andaman And Nicobar Islands": {
+   "zone": "South",
+   "year": 2024,
+   "gsdp": 9432.55127052233,
+   "population": 403767.0,
+   "capacity": {
+    "Solar Power": 29.488780975341797,
+    "Wind Power": 8.481456461595371e-05,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Andhra Pradesh": {
+   "zone": "South",
+   "year": 2024,
+   "gsdp": 854906.9790769415,
+   "population": 53408066.0,
+   "capacity": {
+    "Solar Power": 9419.33,
+    "Wind Power": 4096.65,
+    "Bio-Mass Power": 574.39,
+    "Small Hydro Power": 163.31,
+    "Waste to Energy": 53.16
+   }
+  },
+  "Arunachal Pradesh": {
+   "zone": "North-East",
+   "year": 2024,
+   "gsdp": 21845.967809102567,
+   "population": 1575754.0,
+   "capacity": {
+    "Solar Power": 11.228792190551758,
+    "Wind Power": 0.0001494663592893,
+    "Bio-Mass Power": 144.9,
+    "Small Hydro Power": 133.11,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Assam": {
+   "zone": "North-East",
+   "year": 2024,
+   "gsdp": 316183.547208275,
+   "population": 36046480.0,
+   "capacity": {
+    "Solar Power": 192.29,
+    "Wind Power": 2.0,
+    "Bio-Mass Power": 156.18,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Bihar": {
+   "zone": "East",
+   "year": 2024,
+   "gsdp": 497475.4897442743,
+   "population": 128592632.0,
+   "capacity": {
+    "Solar Power": 239.23,
+    "Wind Power": 112.5,
+    "Bio-Mass Power": 140.22,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 1.32
+   }
+  },
+  "Chandigarh": {
+   "zone": "North",
+   "year": 2024,
+   "gsdp": 38488.608799360096,
+   "population": 1243555.0,
+   "capacity": {
+    "Solar Power": 55.16874313354492,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Chhattisgarh": {
+   "zone": "Central",
+   "year": 2024,
+   "gsdp": 300514.27939906623,
+   "population": 30524288.0,
+   "capacity": {
+    "Solar Power": 1530.39,
+    "Wind Power": 272.09,
+    "Bio-Mass Power": 275.0,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.41
+   }
+  },
+  "Delhi": {
+   "zone": "North",
+   "year": 2024,
+   "gsdp": 744449.240331239,
+   "population": 21751870.0,
+   "capacity": {
+    "Solar Power": 211.11878967285156,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 58.99868392944336
+   }
+  },
+  "Goa": {
+   "zone": "West",
+   "year": 2024,
+   "gsdp": 68200.6854082335,
+   "population": 1582567.0,
+   "capacity": {
+    "Solar Power": 45.47,
+    "Wind Power": 1.94,
+    "Bio-Mass Power": 1.94,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Gujarat": {
+   "zone": "West",
+   "year": 2024,
+   "gsdp": 1402940.7982910685,
+   "population": 72366697.0,
+   "capacity": {
+    "Solar Power": 25471.72,
+    "Wind Power": 11722.72,
+    "Bio-Mass Power": 112.48,
+    "Small Hydro Power": 91.64,
+    "Waste to Energy": 7.5
+   }
+  },
+  "Haryana": {
+   "zone": "North",
+   "year": 2024,
+   "gsdp": 666936.1797511837,
+   "population": 30573527.0,
+   "capacity": {
+    "Solar Power": 1832.92,
+    "Wind Power": 151.4,
+    "Bio-Mass Power": 283.7,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 11.2
+   }
+  },
+  "Himachal Pradesh": {
+   "zone": "North",
+   "year": 2024,
+   "gsdp": 139973.71037850433,
+   "population": 7504551.0,
+   "capacity": {
+    "Solar Power": 1075.14,
+    "Wind Power": 9.2,
+    "Bio-Mass Power": 10.2,
+    "Small Hydro Power": 969.71,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Jammu And Kashmir": {
+   "zone": "North",
+   "year": 2024,
+   "gsdp": 272114.0207445282,
+   "population": 13701069.0,
+   "capacity": {
+    "Solar Power": 235.37,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 65.44,
+    "Small Hydro Power": 169.93,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Jharkhand": {
+   "zone": "East",
+   "year": 2024,
+   "gsdp": 291432.62636538973,
+   "population": 39963170.0,
+   "capacity": {
+    "Solar Power": 185.55,
+    "Wind Power": 19.1,
+    "Bio-Mass Power": 19.1,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Karnataka": {
+   "zone": "South",
+   "year": 2024,
+   "gsdp": 1251375.5803872005,
+   "population": 68115063.0,
+   "capacity": {
+    "Solar Power": 17752.74,
+    "Wind Power": 6019.61,
+    "Bio-Mass Power": 1907.72,
+    "Small Hydro Power": 1280.73,
+    "Waste to Energy": 19.42
+   }
+  },
+  "Kerala": {
+   "zone": "South",
+   "year": 2024,
+   "gsdp": 669139.3463151987,
+   "population": 35919969.0,
+   "capacity": {
+    "Solar Power": 1365.31,
+    "Wind Power": 63.5,
+    "Bio-Mass Power": 2.5,
+    "Small Hydro Power": 276.52,
+    "Waste to Energy": 0.23
+   }
+  },
+  "Lakshadweep": {
+   "zone": "South",
+   "year": 2024,
+   "gsdp": 640.3062186121725,
+   "population": 69459.0,
+   "capacity": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Madhya Pradesh": {
+   "zone": "Central",
+   "year": 2024,
+   "gsdp": 696305.9687460007,
+   "population": 87610397.0,
+   "capacity": {
+    "Solar Power": 7098.37,
+    "Wind Power": 2844.29,
+    "Bio-Mass Power": 134.94,
+    "Small Hydro Power": 123.71,
+    "Waste to Energy": 15.4
+   }
+  },
+  "Maharashtra": {
+   "zone": "West",
+   "year": 2024,
+   "gsdp": 2061549.572008104,
+   "population": 127360459.0,
+   "capacity": {
+    "Solar Power": 14483.12,
+    "Wind Power": 5207.98,
+    "Bio-Mass Power": 2643.19,
+    "Small Hydro Power": 382.28,
+    "Waste to Energy": 46.2
+   }
+  },
+  "Manipur": {
+   "zone": "North-East",
+   "year": 2024,
+   "gsdp": 24627.750754560257,
+   "population": 3252823.0,
+   "capacity": {
+    "Solar Power": 12.248730659484863,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.449999809265137,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Meghalaya": {
+   "zone": "North-East",
+   "year": 2024,
+   "gsdp": 27662.695656817115,
+   "population": 3378892.0,
+   "capacity": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Mizoram": {
+   "zone": "North-East",
+   "year": 2024,
+   "gsdp": 28125.294107891455,
+   "population": 1250181.0,
+   "capacity": {
+    "Solar Power": 7.8987627029418945,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.470218658447266,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Nagaland": {
+   "zone": "North-East",
+   "year": 2024,
+   "gsdp": 21179.780910688725,
+   "population": 2252573.0,
+   "capacity": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Odisha": {
+   "zone": "East",
+   "year": 2024,
+   "gsdp": 552848.634507052,
+   "population": 46566109.0,
+   "capacity": {
+    "Solar Power": 451.23870849609375,
+    "Wind Power": 0.0001108096039388,
+    "Bio-Mass Power": 59.21965789794922,
+    "Small Hydro Power": 106.62873840332033,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Puducherry": {
+   "zone": "South",
+   "year": 2024,
+   "gsdp": 31168.430170245254,
+   "population": 1682909.0,
+   "capacity": {
+    "Solar Power": 13.688671112060549,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Punjab": {
+   "zone": "North",
+   "year": 2024,
+   "gsdp": 455565.09134517773,
+   "population": 30926357.0,
+   "capacity": {
+    "Solar Power": 1100.06884765625,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 473.4493103027344,
+    "Small Hydro Power": 176.09873962402344,
+    "Waste to Energy": 18.199312210083008
+   }
+  },
+  "Rajasthan": {
+   "zone": "West",
+   "year": 2024,
+   "gsdp": 811964.8636680281,
+   "population": 81897401.0,
+   "capacity": {
+    "Solar Power": 12564.8671875,
+    "Wind Power": 4326.81884765625,
+    "Bio-Mass Power": 121.25050354003906,
+    "Small Hydro Power": 23.850000381469727,
+    "Waste to Energy": 3.829235792160034
+   }
+  },
+  "Sikkim": {
+   "zone": "North-East",
+   "year": 2024,
+   "gsdp": 25644.615401470055,
+   "population": 694024.0,
+   "capacity": {
+    "Solar Power": 4.678801536560059,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.10987091064453,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Tamil Nadu": {
+   "zone": "South",
+   "year": 2024,
+   "gsdp": 1573530.216720025,
+   "population": 77089106.0,
+   "capacity": {
+    "Solar Power": 5067.1787109375,
+    "Wind Power": 9866.3662109375,
+    "Bio-Mass Power": 1012.6494750976562,
+    "Small Hydro Power": 123.04986572265624,
+    "Waste to Energy": 30.048791885375977
+   }
+  },
+  "Telangana": {
+   "zone": "South",
+   "year": 2024,
+   "gsdp": 806879.1369639104,
+   "population": 38151079.0,
+   "capacity": {
+    "Solar Power": 4520.478515625,
+    "Wind Power": 128.09979248046875,
+    "Bio-Mass Power": 160.09957885742188,
+    "Small Hydro Power": 90.86991119384766,
+    "Waste to Energy": 59.63872528076172
+   }
+  },
+  "Tripura": {
+   "zone": "North-East",
+   "year": 2024,
+   "gsdp": 56316.655969480664,
+   "population": 4184280.0,
+   "capacity": {
+    "Solar Power": 14.888741493225098,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.010000228881836,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Uttar Pradesh": {
+   "zone": "North",
+   "year": 2024,
+   "gsdp": 1171422.0872413737,
+   "population": 238078417.0,
+   "capacity": {
+    "Solar Power": 2244.4287109375,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2117.259521484375,
+    "Small Hydro Power": 49.099361419677734,
+    "Waste to Energy": 72.72886657714844
+   }
+  },
+  "Uttarakhand": {
+   "zone": "North",
+   "year": 2024,
+   "gsdp": 200618.95371063237,
+   "population": 11755469.0,
+   "capacity": {
+    "Solar Power": 573.5387573242188,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.22056579589844,
+    "Small Hydro Power": 218.81895446777344,
+    "Waste to Energy": 9.219246864318848
+   }
+  },
+  "West Bengal": {
+   "zone": "East",
+   "year": 2024,
+   "gsdp": 872919.0763541477,
+   "population": 99563100.0,
+   "capacity": {
+    "Solar Power": 165.99874877929688,
+    "Wind Power": 0.0001874875451903,
+    "Bio-Mass Power": 319.9197082519531,
+    "Small Hydro Power": 98.49974822998048,
+    "Waste to Energy": 2.528870105743408
+   }
+  }
+ },
+ "history": {
+  "Andaman And Nicobar Islands": {
+   "2006": {
+    "Solar Power": 0.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.1,
+    "Wind Power": 1.1,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.1,
+    "Wind Power": 1.1,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.01,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 5.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 5.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 5.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 5.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 6.56,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 6.56,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 11.73,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 12.19,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 29.46,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 29.49,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 29.488780975341797,
+    "Wind Power": 8.481456461595371e-05,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 29.488780975341797,
+    "Wind Power": 8.481456461595371e-05,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 29.488780975341797,
+    "Wind Power": 8.481456461595371e-05,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.25,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Andhra Pradesh": {
+   "2006": {
+    "Solar Power": 0.0586150952479426,
+    "Wind Power": 71.7448765834819,
+    "Bio-Mass Power": 176.577974434427,
+    "Small Hydro Power": 104.833097850945,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0586150952479426,
+    "Wind Power": 71.8034916787298,
+    "Bio-Mass Power": 195.920955866248,
+    "Small Hydro Power": 105.993676736855,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0586150952479426,
+    "Wind Power": 71.8034916787298,
+    "Bio-Mass Power": 201.372159724307,
+    "Small Hydro Power": 105.993676736855,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0586150952479426,
+    "Wind Power": 71.8034916787298,
+    "Bio-Mass Power": 212.919333488152,
+    "Small Hydro Power": 109.510582451731,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 1.2309170002068,
+    "Wind Power": 112.24790739981,
+    "Bio-Mass Power": 212.919333488152,
+    "Small Hydro Power": 112.206876833137,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 12.7487832164275,
+    "Wind Power": 143.929366381323,
+    "Bio-Mass Power": 212.919333488152,
+    "Small Hydro Power": 127.681261978594,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 13.6866247403946,
+    "Wind Power": 262.390473877415,
+    "Bio-Mass Power": 223.176975156542,
+    "Small Hydro Power": 128.384643121569,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 131.84,
+    "Wind Power": 746.2,
+    "Bio-Mass Power": 380.75,
+    "Small Hydro Power": 221.03,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 242.86,
+    "Wind Power": 1032.0,
+    "Bio-Mass Power": 389.75,
+    "Small Hydro Power": 223.23,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 572.96,
+    "Wind Power": 1431.45,
+    "Bio-Mass Power": 380.75,
+    "Small Hydro Power": 232.98,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 1867.23,
+    "Wind Power": 3618.85,
+    "Bio-Mass Power": 378.2,
+    "Small Hydro Power": 241.98,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 2195.46,
+    "Wind Power": 3966.95,
+    "Bio-Mass Power": 477.18,
+    "Small Hydro Power": 162.11,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 3085.68,
+    "Wind Power": 4090.45,
+    "Bio-Mass Power": 477.18,
+    "Small Hydro Power": 162.11,
+    "Waste to Energy": 23.16
+   },
+   "2019": {
+    "Solar Power": 3610.02,
+    "Wind Power": 4092.45,
+    "Bio-Mass Power": 477.18,
+    "Small Hydro Power": 162.11,
+    "Waste to Energy": 23.16
+   },
+   "2020": {
+    "Solar Power": 4291.34,
+    "Wind Power": 4096.65,
+    "Bio-Mass Power": 483.67,
+    "Small Hydro Power": 162.11,
+    "Waste to Energy": 52.37
+   },
+   "2021": {
+    "Solar Power": 4386.76,
+    "Wind Power": 4096.65,
+    "Bio-Mass Power": 483.67,
+    "Small Hydro Power": 162.11,
+    "Waste to Energy": 82.37
+   },
+   "2022": {
+    "Solar Power": 4386.76,
+    "Wind Power": 4096.65,
+    "Bio-Mass Power": 566.04,
+    "Small Hydro Power": 162.11,
+    "Waste to Energy": 53.16
+   },
+   "2023": {
+    "Solar Power": 9360.18,
+    "Wind Power": 4096.65,
+    "Bio-Mass Power": 566.03,
+    "Small Hydro Power": 163.31,
+    "Waste to Energy": 53.16
+   },
+   "2024": {
+    "Solar Power": 9419.33,
+    "Wind Power": 4096.65,
+    "Bio-Mass Power": 574.39,
+    "Small Hydro Power": 163.31,
+    "Waste to Energy": 53.16
+   }
+  },
+  "Arunachal Pradesh": {
+   "2006": {
+    "Solar Power": 0.02,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 45.24,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.02,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 45.24,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.02,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 45.24,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.03,
+    "Wind Power": 136.1,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 73.42,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 78.84,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 79.23,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 103.91,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 103.91,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 104.61,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.27,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 104.61,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.27,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 104.61,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 5.39,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 104.61,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 5.39,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 131.11,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 5.61,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 131.11,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 10.16,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 131.11,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 11.23,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 131.11,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 11.228792190551758,
+    "Wind Power": 0.0001494663592893,
+    "Bio-Mass Power": 11.23,
+    "Small Hydro Power": 131.11,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 11.228792190551758,
+    "Wind Power": 0.0001494663592893,
+    "Bio-Mass Power": 144.75,
+    "Small Hydro Power": 133.11,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 11.228792190551758,
+    "Wind Power": 0.0001494663592893,
+    "Bio-Mass Power": 144.9,
+    "Small Hydro Power": 133.11,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Assam": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 2.11,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 27.11,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 27.11,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 27.11,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 27.11,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.11,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.11,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 11.78,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 12.45,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 22.4,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 41.23,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 51.56,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 117.94,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2.0,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 154.05,
+    "Wind Power": 2.0,
+    "Bio-Mass Power": 117.94,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 184.04,
+    "Wind Power": 2.0,
+    "Bio-Mass Power": 147.93,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 192.29,
+    "Wind Power": 2.0,
+    "Bio-Mass Power": 156.18,
+    "Small Hydro Power": 34.11,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Bihar": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 50.4,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 50.4,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 50.4,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 54.6,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 9.5,
+    "Small Hydro Power": 59.8,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 15.5,
+    "Small Hydro Power": 64.3,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 43.3,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 43.42,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 5.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 43.42,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 108.52,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 113.0,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 142.45,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 121.2,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 142.45,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 121.2,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 151.57,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 121.2,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 180.23,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 124.7,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 1.0
+   },
+   "2021": {
+    "Solar Power": 190.63,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 124.7,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 1.32
+   },
+   "2022": {
+    "Solar Power": 190.63,
+    "Wind Power": 112.5,
+    "Bio-Mass Power": 126.02,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 1.32
+   },
+   "2023": {
+    "Solar Power": 389.6,
+    "Wind Power": 112.5,
+    "Bio-Mass Power": 126.02,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 1.32
+   },
+   "2024": {
+    "Solar Power": 239.23,
+    "Wind Power": 112.5,
+    "Bio-Mass Power": 140.22,
+    "Small Hydro Power": 70.7,
+    "Waste to Energy": 1.32
+   }
+  },
+  "Chandigarh": {
+   "2013": {
+    "Solar Power": 2.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 4.5,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 6.81,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 17.32,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 25.2,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 34.71,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 40.55,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 45.97,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 55.17,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 55.16874313354492,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 55.16874313354492,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 55.16874313354492,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Chhattisgarh": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 113.3,
+    "Small Hydro Power": 18.05,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 146.3,
+    "Small Hydro Power": 18.05,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 156.1,
+    "Small Hydro Power": 18.05,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 199.9,
+    "Small Hydro Power": 19.05,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 231.9,
+    "Small Hydro Power": 19.05,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 4.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 249.9,
+    "Small Hydro Power": 20.25,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 4.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 249.9,
+    "Small Hydro Power": 52.0,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 7.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 264.9,
+    "Small Hydro Power": 52.0,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 7.6,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 264.9,
+    "Small Hydro Power": 52.0,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 93.58,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 279.9,
+    "Small Hydro Power": 52.0,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 128.86,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 228.0,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 231.35,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 230.5,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 231.35,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 230.5,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 231.35,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 244.5,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 445.21,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 244.9,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.41
+   },
+   "2021": {
+    "Solar Power": 518.08,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 274.59,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.41
+   },
+   "2022": {
+    "Solar Power": 518.08,
+    "Wind Power": 272.09,
+    "Bio-Mass Power": 275.0,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.41
+   },
+   "2023": {
+    "Solar Power": 1299.82,
+    "Wind Power": 272.09,
+    "Bio-Mass Power": 275.0,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.41
+   },
+   "2024": {
+    "Solar Power": 1530.39,
+    "Wind Power": 272.09,
+    "Bio-Mass Power": 275.0,
+    "Small Hydro Power": 76.0,
+    "Waste to Energy": 0.41
+   }
+  },
+  "Delhi": {
+   "2009": {
+    "Solar Power": 0.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 2.14,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 2.53,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 2.56,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 5.15,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 5.47,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 14.28,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 40.27,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 69.57,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 126.89,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 52.0
+   },
+   "2019": {
+    "Solar Power": 165.16,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 52.0
+   },
+   "2020": {
+    "Solar Power": 194.43,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 52.0
+   },
+   "2021": {
+    "Solar Power": 211.12,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 59.0
+   },
+   "2022": {
+    "Solar Power": 211.11878967285156,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 58.99868392944336
+   },
+   "2023": {
+    "Solar Power": 211.11878967285156,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 58.99868392944336
+   },
+   "2024": {
+    "Solar Power": 211.11878967285156,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 58.99868392944336
+   }
+  },
+  "Goa": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.71,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 0.91,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 3.92,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 4.78,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.34
+   },
+   "2020": {
+    "Solar Power": 7.56,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.34
+   },
+   "2021": {
+    "Solar Power": 19.95,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.34
+   },
+   "2022": {
+    "Solar Power": 19.95,
+    "Wind Power": 0.34,
+    "Bio-Mass Power": 0.34,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 26.88,
+    "Wind Power": 0.34,
+    "Bio-Mass Power": 0.34,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 45.47,
+    "Wind Power": 1.94,
+    "Bio-Mass Power": 1.94,
+    "Small Hydro Power": 0.05,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Gujarat": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 636.6,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 7.0,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 1252.9,
+    "Bio-Mass Power": 0.5,
+    "Small Hydro Power": 7.0,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 1566.5,
+    "Bio-Mass Power": 0.5,
+    "Small Hydro Power": 7.0,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 1863.63,
+    "Bio-Mass Power": 0.5,
+    "Small Hydro Power": 12.6,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 5.0,
+    "Wind Power": 2176.43,
+    "Bio-Mass Power": 0.5,
+    "Small Hydro Power": 15.6,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 604.89,
+    "Wind Power": 2966.28,
+    "Bio-Mass Power": 20.5,
+    "Small Hydro Power": 15.6,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 857.9,
+    "Wind Power": 3174.58,
+    "Bio-Mass Power": 30.5,
+    "Small Hydro Power": 15.6,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 916.4,
+    "Wind Power": 3454.3,
+    "Bio-Mass Power": 43.9,
+    "Small Hydro Power": 15.6,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 1000.05,
+    "Wind Power": 3645.0,
+    "Bio-Mass Power": 55.9,
+    "Small Hydro Power": 16.6,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 1119.17,
+    "Wind Power": 4037.5,
+    "Bio-Mass Power": 56.3,
+    "Small Hydro Power": 16.6,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 1249.37,
+    "Wind Power": 5340.62,
+    "Bio-Mass Power": 65.3,
+    "Small Hydro Power": 16.6,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 1588.0,
+    "Wind Power": 5613.42,
+    "Bio-Mass Power": 65.3,
+    "Small Hydro Power": 28.6,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 2440.13,
+    "Wind Power": 6073.07,
+    "Bio-Mass Power": 77.3,
+    "Small Hydro Power": 61.3,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 2948.37,
+    "Wind Power": 7541.52,
+    "Bio-Mass Power": 77.3,
+    "Small Hydro Power": 68.95,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 4469.87,
+    "Wind Power": 8561.82,
+    "Bio-Mass Power": 77.3,
+    "Small Hydro Power": 82.69,
+    "Waste to Energy": 22.57
+   },
+   "2021": {
+    "Solar Power": 7180.03,
+    "Wind Power": 9209.22,
+    "Bio-Mass Power": 77.3,
+    "Small Hydro Power": 89.39,
+    "Waste to Energy": 31.96
+   },
+   "2022": {
+    "Solar Power": 7180.03,
+    "Wind Power": 9209.22,
+    "Bio-Mass Power": 109.26,
+    "Small Hydro Power": 89.39,
+    "Waste to Energy": 7.5
+   },
+   "2023": {
+    "Solar Power": 19435.85,
+    "Wind Power": 9978.92,
+    "Bio-Mass Power": 110.73,
+    "Small Hydro Power": 91.64,
+    "Waste to Energy": 7.5
+   },
+   "2024": {
+    "Solar Power": 25471.72,
+    "Wind Power": 11722.72,
+    "Bio-Mass Power": 112.48,
+    "Small Hydro Power": 91.64,
+    "Waste to Energy": 7.5
+   }
+  },
+  "Haryana": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 6.0,
+    "Small Hydro Power": 62.7,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 6.0,
+    "Small Hydro Power": 62.7,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 6.0,
+    "Small Hydro Power": 62.7,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 7.8,
+    "Small Hydro Power": 70.1,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 35.8,
+    "Small Hydro Power": 70.1,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 16.8,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 35.8,
+    "Small Hydro Power": 70.1,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 7.8,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 45.3,
+    "Small Hydro Power": 70.1,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 10.3,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 45.3,
+    "Small Hydro Power": 70.1,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 12.8,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 52.3,
+    "Small Hydro Power": 71.5,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 15.39,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 45.3,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 81.4,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 96.4,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 216.85,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 205.66,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 224.52,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 205.66,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 252.14,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 205.66,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 472.26,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 210.66,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 6.09
+   },
+   "2021": {
+    "Solar Power": 910.63,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 240.66,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 17.34
+   },
+   "2022": {
+    "Solar Power": 910.63,
+    "Wind Power": 151.4,
+    "Bio-Mass Power": 258.0,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 11.2
+   },
+   "2023": {
+    "Solar Power": 1362.09,
+    "Wind Power": 151.4,
+    "Bio-Mass Power": 259.43,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 11.2
+   },
+   "2024": {
+    "Solar Power": 1832.92,
+    "Wind Power": 151.4,
+    "Bio-Mass Power": 283.7,
+    "Small Hydro Power": 73.5,
+    "Waste to Energy": 11.2
+   }
+  },
+  "Himachal Pradesh": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 141.62,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 162.62,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 162.62,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 330.32,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 393.47,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 527.66,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 587.91,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 638.91,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 723.91,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.2,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 793.31,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.73,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 831.81,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 0.73,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 7.2,
+    "Small Hydro Power": 853.11,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 22.68,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 7.2,
+    "Small Hydro Power": 860.61,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 32.93,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 7.2,
+    "Small Hydro Power": 911.51,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 50.28,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 9.2,
+    "Small Hydro Power": 936.11,
+    "Waste to Energy": 1.0
+   },
+   "2021": {
+    "Solar Power": 76.16,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 9.2,
+    "Small Hydro Power": 954.11,
+    "Waste to Energy": 1.0
+   },
+   "2022": {
+    "Solar Power": 76.16,
+    "Wind Power": 9.2,
+    "Bio-Mass Power": 10.2,
+    "Small Hydro Power": 954.11,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 1067.4,
+    "Wind Power": 9.2,
+    "Bio-Mass Power": 10.2,
+    "Small Hydro Power": 969.71,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 1075.14,
+    "Wind Power": 9.2,
+    "Bio-Mass Power": 10.2,
+    "Small Hydro Power": 969.71,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Jammu And Kashmir": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 111.83,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 109.372501076045,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 111.83,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 129.33,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 129.33,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 130.53,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 130.53,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 147.53,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 156.53,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 1.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 156.53,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 1.36,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 158.03,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 1.36,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 179.03,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 14.83,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 179.03,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 19.3,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 180.48,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 42.13,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 185.98,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 54.73,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 184.32,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 191.61,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 46.93,
+    "Small Hydro Power": 144.68,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 196.12,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 49.44,
+    "Small Hydro Power": 146.68,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 235.37,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 65.44,
+    "Small Hydro Power": 169.93,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Jharkhand": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 4.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 16.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 16.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 16.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 16.19,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 23.27,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 25.67,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 4.3,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 34.95,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 4.3,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 38.4,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 4.3,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 69.86,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 4.3,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 88.79,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 4.3,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 97.14,
+    "Wind Power": 4.3,
+    "Bio-Mass Power": 4.3,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 114.19,
+    "Wind Power": 4.3,
+    "Bio-Mass Power": 4.3,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 185.55,
+    "Wind Power": 19.1,
+    "Bio-Mass Power": 19.1,
+    "Small Hydro Power": 4.05,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Karnataka": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 821.1,
+    "Bio-Mass Power": 254.28,
+    "Small Hydro Power": 416.5,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 1011.4,
+    "Bio-Mass Power": 262.28,
+    "Small Hydro Power": 464.0,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 1327.4,
+    "Bio-Mass Power": 294.18,
+    "Small Hydro Power": 464.0,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 6.0,
+    "Wind Power": 1472.8,
+    "Bio-Mass Power": 336.18,
+    "Small Hydro Power": 640.45,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 6.0,
+    "Wind Power": 1726.85,
+    "Bio-Mass Power": 365.18,
+    "Small Hydro Power": 783.35,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 9.0,
+    "Wind Power": 1933.5,
+    "Bio-Mass Power": 441.18,
+    "Small Hydro Power": 882.45,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 14.0,
+    "Wind Power": 2135.15,
+    "Bio-Mass Power": 491.38,
+    "Small Hydro Power": 963.76,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 31.0,
+    "Wind Power": 2318.2,
+    "Bio-Mass Power": 603.28,
+    "Small Hydro Power": 1031.66,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 77.22,
+    "Wind Power": 2638.0,
+    "Bio-Mass Power": 664.28,
+    "Small Hydro Power": 1129.73,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 145.46,
+    "Wind Power": 2869.15,
+    "Bio-Mass Power": 872.18,
+    "Small Hydro Power": 1217.73,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 1027.84,
+    "Wind Power": 3751.4,
+    "Bio-Mass Power": 1452.0,
+    "Small Hydro Power": 1225.73,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 4944.12,
+    "Wind Power": 4608.4,
+    "Bio-Mass Power": 1768.8,
+    "Small Hydro Power": 1230.73,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 6095.56,
+    "Wind Power": 4694.9,
+    "Bio-Mass Power": 1798.8,
+    "Small Hydro Power": 1254.73,
+    "Waste to Energy": 1.0
+   },
+   "2019": {
+    "Solar Power": 7277.93,
+    "Wind Power": 4790.6,
+    "Bio-Mass Power": 1881.8,
+    "Small Hydro Power": 1280.73,
+    "Waste to Energy": 1.0
+   },
+   "2020": {
+    "Solar Power": 7383.88,
+    "Wind Power": 4938.6,
+    "Bio-Mass Power": 1887.3,
+    "Small Hydro Power": 1280.73,
+    "Waste to Energy": 14.62
+   },
+   "2021": {
+    "Solar Power": 7590.81,
+    "Wind Power": 5130.9,
+    "Bio-Mass Power": 1887.3,
+    "Small Hydro Power": 1280.73,
+    "Waste to Energy": 14.85
+   },
+   "2022": {
+    "Solar Power": 7590.81,
+    "Wind Power": 5130.9,
+    "Bio-Mass Power": 1902.15,
+    "Small Hydro Power": 1280.73,
+    "Waste to Energy": 1.0
+   },
+   "2023": {
+    "Solar Power": 16719.23,
+    "Wind Power": 5294.95,
+    "Bio-Mass Power": 1902.15,
+    "Small Hydro Power": 1280.73,
+    "Waste to Energy": 1.0
+   },
+   "2024": {
+    "Solar Power": 17752.74,
+    "Wind Power": 6019.61,
+    "Bio-Mass Power": 1907.72,
+    "Small Hydro Power": 1280.73,
+    "Waste to Energy": 19.42
+   }
+  },
+  "Kerala": {
+   "2006": {
+    "Solar Power": 0.02,
+    "Wind Power": 2.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 98.12,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.02,
+    "Wind Power": 10.5,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 123.12,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.02,
+    "Wind Power": 27.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 123.12,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.03,
+    "Wind Power": 27.75,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 133.87,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.03,
+    "Wind Power": 35.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 136.87,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.84,
+    "Wind Power": 35.1,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 149.67,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.03,
+    "Wind Power": 35.1,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 158.42,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.03,
+    "Wind Power": 35.2,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 158.42,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.03,
+    "Wind Power": 35.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 168.92,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 13.05,
+    "Wind Power": 43.5,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 198.92,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 74.2,
+    "Wind Power": 51.5,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 213.02,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 107.94,
+    "Wind Power": 52.5,
+    "Bio-Mass Power": 0.72,
+    "Small Hydro Power": 219.02,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 138.59,
+    "Wind Power": 52.5,
+    "Bio-Mass Power": 0.72,
+    "Small Hydro Power": 222.02,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 142.23,
+    "Wind Power": 62.5,
+    "Bio-Mass Power": 0.72,
+    "Small Hydro Power": 222.02,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 277.4,
+    "Wind Power": 62.5,
+    "Bio-Mass Power": 2.27,
+    "Small Hydro Power": 230.02,
+    "Waste to Energy": 0.23
+   },
+   "2021": {
+    "Solar Power": 363.18,
+    "Wind Power": 62.5,
+    "Bio-Mass Power": 2.27,
+    "Small Hydro Power": 242.52,
+    "Waste to Energy": 0.23
+   },
+   "2022": {
+    "Solar Power": 363.18,
+    "Wind Power": 62.5,
+    "Bio-Mass Power": 2.5,
+    "Small Hydro Power": 242.52,
+    "Waste to Energy": 0.23
+   },
+   "2023": {
+    "Solar Power": 1092.95,
+    "Wind Power": 62.5,
+    "Bio-Mass Power": 2.5,
+    "Small Hydro Power": 266.52,
+    "Waste to Energy": 0.23
+   },
+   "2024": {
+    "Solar Power": 1365.31,
+    "Wind Power": 63.5,
+    "Bio-Mass Power": 2.5,
+    "Small Hydro Power": 276.52,
+    "Waste to Energy": 0.23
+   }
+  },
+  "Lakshadweep": {
+   "2006": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.76,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.76,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.71,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 0.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 3.27,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 3.27,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Madhya Pradesh": {
+   "2006": {
+    "Solar Power": 0.1,
+    "Wind Power": 57.3,
+    "Bio-Mass Power": 1.0,
+    "Small Hydro Power": 51.16,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.1,
+    "Wind Power": 187.7,
+    "Bio-Mass Power": 1.0,
+    "Small Hydro Power": 71.16,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.1,
+    "Wind Power": 212.8,
+    "Bio-Mass Power": 1.0,
+    "Small Hydro Power": 71.16,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.1,
+    "Wind Power": 229.4,
+    "Bio-Mass Power": 1.0,
+    "Small Hydro Power": 71.16,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.1,
+    "Wind Power": 275.9,
+    "Bio-Mass Power": 1.0,
+    "Small Hydro Power": 86.16,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 2.1,
+    "Wind Power": 376.4,
+    "Bio-Mass Power": 8.5,
+    "Small Hydro Power": 86.16,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 37.32,
+    "Wind Power": 386.0,
+    "Bio-Mass Power": 16.0,
+    "Small Hydro Power": 86.16,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 347.17,
+    "Wind Power": 423.4,
+    "Bio-Mass Power": 26.0,
+    "Small Hydro Power": 86.16,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 558.58,
+    "Wind Power": 880.0,
+    "Bio-Mass Power": 36.0,
+    "Small Hydro Power": 86.16,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 776.37,
+    "Wind Power": 2141.1,
+    "Bio-Mass Power": 35.0,
+    "Small Hydro Power": 86.16,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 857.04,
+    "Wind Power": 2497.79,
+    "Bio-Mass Power": 93.0,
+    "Small Hydro Power": 86.16,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 1305.35,
+    "Wind Power": 2519.89,
+    "Bio-Mass Power": 105.35,
+    "Small Hydro Power": 86.16,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 1840.16,
+    "Wind Power": 2519.89,
+    "Bio-Mass Power": 105.35,
+    "Small Hydro Power": 95.91,
+    "Waste to Energy": 15.4
+   },
+   "2019": {
+    "Solar Power": 2258.46,
+    "Wind Power": 2519.89,
+    "Bio-Mass Power": 105.35,
+    "Small Hydro Power": 95.91,
+    "Waste to Energy": 15.4
+   },
+   "2020": {
+    "Solar Power": 2544.71,
+    "Wind Power": 2519.89,
+    "Bio-Mass Power": 107.35,
+    "Small Hydro Power": 99.71,
+    "Waste to Energy": 20.31
+   },
+   "2021": {
+    "Solar Power": 2717.95,
+    "Wind Power": 2519.89,
+    "Bio-Mass Power": 107.35,
+    "Small Hydro Power": 99.71,
+    "Waste to Energy": 23.98
+   },
+   "2022": {
+    "Solar Power": 2717.95,
+    "Wind Power": 2519.89,
+    "Bio-Mass Power": 131.33,
+    "Small Hydro Power": 99.71,
+    "Waste to Energy": 15.4
+   },
+   "2023": {
+    "Solar Power": 5905.08,
+    "Wind Power": 2844.29,
+    "Bio-Mass Power": 134.94,
+    "Small Hydro Power": 123.71,
+    "Waste to Energy": 15.4
+   },
+   "2024": {
+    "Solar Power": 7098.37,
+    "Wind Power": 2844.29,
+    "Bio-Mass Power": 134.94,
+    "Small Hydro Power": 123.71,
+    "Waste to Energy": 15.4
+   }
+  },
+  "Maharashtra": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 1487.7,
+    "Bio-Mass Power": 76.0,
+    "Small Hydro Power": 209.33,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 1755.9,
+    "Bio-Mass Power": 114.0,
+    "Small Hydro Power": 211.33,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 1938.9,
+    "Bio-Mass Power": 185.5,
+    "Small Hydro Power": 211.33,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 2077.75,
+    "Bio-Mass Power": 218.5,
+    "Small Hydro Power": 245.33,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 4.0,
+    "Wind Power": 2316.75,
+    "Bio-Mass Power": 403.0,
+    "Small Hydro Power": 275.13,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 20.0,
+    "Wind Power": 2733.3,
+    "Bio-Mass Power": 603.7,
+    "Small Hydro Power": 281.33,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 100.0,
+    "Wind Power": 3021.85,
+    "Bio-Mass Power": 756.9,
+    "Small Hydro Power": 299.93,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 249.25,
+    "Wind Power": 4100.4,
+    "Bio-Mass Power": 940.4,
+    "Small Hydro Power": 327.43,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 360.75,
+    "Wind Power": 4446.0,
+    "Bio-Mass Power": 1033.4,
+    "Small Hydro Power": 335.43,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 385.76,
+    "Wind Power": 4654.15,
+    "Bio-Mass Power": 1220.78,
+    "Small Hydro Power": 339.88,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 452.37,
+    "Wind Power": 4771.33,
+    "Bio-Mass Power": 2065.0,
+    "Small Hydro Power": 346.18,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 1239.18,
+    "Wind Power": 4783.93,
+    "Bio-Mass Power": 2186.4,
+    "Small Hydro Power": 373.18,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 1633.54,
+    "Wind Power": 4794.13,
+    "Bio-Mass Power": 2516.1,
+    "Small Hydro Power": 375.57,
+    "Waste to Energy": 12.59
+   },
+   "2019": {
+    "Solar Power": 1801.8,
+    "Wind Power": 5000.33,
+    "Bio-Mass Power": 2516.1,
+    "Small Hydro Power": 379.58,
+    "Waste to Energy": 12.59
+   },
+   "2020": {
+    "Solar Power": 2323.79,
+    "Wind Power": 5000.33,
+    "Bio-Mass Power": 2584.4,
+    "Small Hydro Power": 379.58,
+    "Waste to Energy": 47.75
+   },
+   "2021": {
+    "Solar Power": 2631.02,
+    "Wind Power": 5012.83,
+    "Bio-Mass Power": 2584.4,
+    "Small Hydro Power": 381.08,
+    "Waste to Energy": 47.75
+   },
+   "2022": {
+    "Solar Power": 2631.02,
+    "Wind Power": 5012.83,
+    "Bio-Mass Power": 2632.15,
+    "Small Hydro Power": 381.08,
+    "Waste to Energy": 35.16
+   },
+   "2023": {
+    "Solar Power": 12757.5,
+    "Wind Power": 5012.83,
+    "Bio-Mass Power": 2640.69,
+    "Small Hydro Power": 381.08,
+    "Waste to Energy": 43.7
+   },
+   "2024": {
+    "Solar Power": 14483.12,
+    "Wind Power": 5207.98,
+    "Bio-Mass Power": 2643.19,
+    "Small Hydro Power": 382.28,
+    "Waste to Energy": 46.2
+   }
+  },
+  "Manipur": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 0.06,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 3.44,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 5.16,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 11.39,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 12.25,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.45,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 12.248730659484863,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.449999809265137,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 12.248730659484863,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.449999809265137,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 12.248730659484863,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 5.449999809265137,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Meghalaya": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 30.71,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.01,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 0.02,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 13.8,
+    "Small Hydro Power": 31.03,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 0.12,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 13.8,
+    "Small Hydro Power": 32.53,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 0.12,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 13.8,
+    "Small Hydro Power": 32.53,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 3.85,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 13.8,
+    "Small Hydro Power": 32.53,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 4.15,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 13.8,
+    "Small Hydro Power": 32.53,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Mizoram": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 17.47,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 17.47,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 17.47,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.74,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 41.47,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 0.2,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 0.5,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 1.52,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 6.98,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 7.9,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.47,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 7.8987627029418945,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.470218658447266,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 7.8987627029418945,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.470218658447266,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 7.8987627029418945,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 36.470218658447266,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Nagaland": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 20.67,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 28.67,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 28.67,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 28.67,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 28.67,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 28.67,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 28.67,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 29.67,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 29.67,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 30.67,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.5,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 30.67,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 1.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 30.67,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 1.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 30.67,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 1.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 30.67,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 2.91,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 30.67,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 3.04,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 30.67,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Odisha": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 3.2,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 7.3,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 3.2,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 32.3,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 3.2,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 32.3,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 64.3,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 64.3,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 13.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 20.0,
+    "Small Hydro Power": 64.3,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 13.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 20.0,
+    "Small Hydro Power": 64.3,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 30.5,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 20.0,
+    "Small Hydro Power": 64.63,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 31.76,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 20.0,
+    "Small Hydro Power": 64.63,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 66.92,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 20.0,
+    "Small Hydro Power": 64.63,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 79.42,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 50.4,
+    "Small Hydro Power": 64.63,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 79.57,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 59.22,
+    "Small Hydro Power": 64.63,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 394.73,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 59.22,
+    "Small Hydro Power": 64.63,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 397.84,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 59.22,
+    "Small Hydro Power": 64.63,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 425.53,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 59.22,
+    "Small Hydro Power": 88.63,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 451.24,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 59.22,
+    "Small Hydro Power": 106.63,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 451.23870849609375,
+    "Wind Power": 0.0001108096039388,
+    "Bio-Mass Power": 59.21965789794922,
+    "Small Hydro Power": 106.62873840332033,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 451.23870849609375,
+    "Wind Power": 0.0001108096039388,
+    "Bio-Mass Power": 59.21965789794922,
+    "Small Hydro Power": 106.62873840332033,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 451.23870849609375,
+    "Wind Power": 0.0001108096039388,
+    "Bio-Mass Power": 59.21965789794922,
+    "Small Hydro Power": 106.62873840332033,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Puducherry": {
+   "2006": {
+    "Solar Power": 0.02,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.02,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.02,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.79,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.03,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.08,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 0.16,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 3.14,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 5.51,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 9.51,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 13.69,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 13.688671112060549,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 13.688671112060549,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 13.688671112060549,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Punjab": {
+   "2006": {
+    "Solar Power": 0.32,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 28.0,
+    "Small Hydro Power": 123.9,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.32,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 28.0,
+    "Small Hydro Power": 123.911681187488,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.32,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 28.0,
+    "Small Hydro Power": 123.9,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 1.33,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 62.5,
+    "Small Hydro Power": 132.55,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 2.33,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 74.5,
+    "Small Hydro Power": 154.5,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 9.33,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 90.5,
+    "Small Hydro Power": 154.5,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 9.33,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 124.5,
+    "Small Hydro Power": 154.5,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 16.85,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 140.5,
+    "Small Hydro Power": 156.2,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 185.27,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 140.5,
+    "Small Hydro Power": 157.4,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 405.06,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 155.5,
+    "Small Hydro Power": 170.9,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 793.95,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 179.0,
+    "Small Hydro Power": 170.9,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 905.62,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 317.1,
+    "Small Hydro Power": 173.55,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 905.62,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 317.1,
+    "Small Hydro Power": 173.55,
+    "Waste to Energy": 9.25
+   },
+   "2019": {
+    "Solar Power": 947.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 317.1,
+    "Small Hydro Power": 173.55,
+    "Waste to Energy": 10.75
+   },
+   "2020": {
+    "Solar Power": 982.3,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 473.45,
+    "Small Hydro Power": 173.55,
+    "Waste to Energy": 18.2
+   },
+   "2021": {
+    "Solar Power": 1100.07,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 473.45,
+    "Small Hydro Power": 176.1,
+    "Waste to Energy": 18.2
+   },
+   "2022": {
+    "Solar Power": 1100.06884765625,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 473.4493103027344,
+    "Small Hydro Power": 176.09873962402344,
+    "Waste to Energy": 18.199312210083008
+   },
+   "2023": {
+    "Solar Power": 1100.06884765625,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 473.4493103027344,
+    "Small Hydro Power": 176.09873962402344,
+    "Waste to Energy": 18.199312210083008
+   },
+   "2024": {
+    "Solar Power": 1100.06884765625,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 473.4493103027344,
+    "Small Hydro Power": 176.09873962402344,
+    "Waste to Energy": 18.199312210083008
+   }
+  },
+  "Rajasthan": {
+   "2006": {
+    "Solar Power": 0.15,
+    "Wind Power": 469.8,
+    "Bio-Mass Power": 23.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.15,
+    "Wind Power": 538.8,
+    "Bio-Mass Power": 23.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.15,
+    "Wind Power": 738.4,
+    "Bio-Mass Power": 31.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.15,
+    "Wind Power": 1088.3,
+    "Bio-Mass Power": 31.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 5.15,
+    "Wind Power": 1525.0,
+    "Bio-Mass Power": 73.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 197.65,
+    "Wind Power": 2070.65,
+    "Bio-Mass Power": 83.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 552.9,
+    "Wind Power": 2684.65,
+    "Bio-Mass Power": 91.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 730.1,
+    "Wind Power": 2784.9,
+    "Bio-Mass Power": 101.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 942.1,
+    "Wind Power": 3309.0,
+    "Bio-Mass Power": 111.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 1269.93,
+    "Wind Power": 3993.95,
+    "Bio-Mass Power": 108.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 1812.93,
+    "Wind Power": 4281.72,
+    "Bio-Mass Power": 119.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 2332.77,
+    "Wind Power": 4297.72,
+    "Bio-Mass Power": 121.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 3226.79,
+    "Wind Power": 4299.72,
+    "Bio-Mass Power": 121.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 5137.91,
+    "Wind Power": 4299.72,
+    "Bio-Mass Power": 121.3,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 5925.6,
+    "Wind Power": 4326.82,
+    "Bio-Mass Power": 121.25,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 3.83
+   },
+   "2021": {
+    "Solar Power": 12564.87,
+    "Wind Power": 4326.82,
+    "Bio-Mass Power": 121.25,
+    "Small Hydro Power": 23.85,
+    "Waste to Energy": 3.83
+   },
+   "2022": {
+    "Solar Power": 12564.8671875,
+    "Wind Power": 4326.81884765625,
+    "Bio-Mass Power": 121.25050354003906,
+    "Small Hydro Power": 23.850000381469727,
+    "Waste to Energy": 3.829235792160034
+   },
+   "2023": {
+    "Solar Power": 12564.8671875,
+    "Wind Power": 4326.81884765625,
+    "Bio-Mass Power": 121.25050354003906,
+    "Small Hydro Power": 23.850000381469727,
+    "Waste to Energy": 3.829235792160034
+   },
+   "2024": {
+    "Solar Power": 12564.8671875,
+    "Wind Power": 4326.81884765625,
+    "Bio-Mass Power": 121.25050354003906,
+    "Small Hydro Power": 23.850000381469727,
+    "Waste to Energy": 3.829235792160034
+   }
+  },
+  "Sikkim": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 39.11,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 39.11,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 39.11,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 47.11,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 0.01,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 0.07,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 1.94,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 4.68,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.11,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 4.678801536560059,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.10987091064453,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 4.678801536560059,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.10987091064453,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 4.678801536560059,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 52.10987091064453,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Tamil Nadu": {
+   "2006": {
+    "Solar Power": 0.05,
+    "Wind Power": 3492.79,
+    "Bio-Mass Power": 215.5,
+    "Small Hydro Power": 89.7,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.05,
+    "Wind Power": 3873.4,
+    "Bio-Mass Power": 290.5,
+    "Small Hydro Power": 89.7,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.05,
+    "Wind Power": 4304.5,
+    "Bio-Mass Power": 333.7,
+    "Small Hydro Power": 89.7,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.05,
+    "Wind Power": 4906.72,
+    "Bio-Mass Power": 395.7,
+    "Small Hydro Power": 90.05,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 5.05,
+    "Wind Power": 5904.12,
+    "Bio-Mass Power": 488.2,
+    "Small Hydro Power": 96.55,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 15.05,
+    "Wind Power": 6987.58,
+    "Bio-Mass Power": 532.7,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 17.11,
+    "Wind Power": 7162.18,
+    "Bio-Mass Power": 538.7,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 98.36,
+    "Wind Power": 7269.5,
+    "Bio-Mass Power": 571.3,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 142.58,
+    "Wind Power": 7455.0,
+    "Bio-Mass Power": 662.3,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 1061.82,
+    "Wind Power": 7613.86,
+    "Bio-Mass Power": 641.9,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 1691.83,
+    "Wind Power": 7861.46,
+    "Bio-Mass Power": 878.0,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 1908.57,
+    "Wind Power": 8197.09,
+    "Bio-Mass Power": 954.55,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 2575.22,
+    "Wind Power": 8968.91,
+    "Bio-Mass Power": 997.55,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 6.4
+   },
+   "2019": {
+    "Solar Power": 3915.88,
+    "Wind Power": 9304.34,
+    "Bio-Mass Power": 997.55,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 6.4
+   },
+   "2020": {
+    "Solar Power": 4527.47,
+    "Wind Power": 9608.04,
+    "Bio-Mass Power": 1012.65,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 27.26
+   },
+   "2021": {
+    "Solar Power": 5067.18,
+    "Wind Power": 9866.37,
+    "Bio-Mass Power": 1012.65,
+    "Small Hydro Power": 123.05,
+    "Waste to Energy": 30.05
+   },
+   "2022": {
+    "Solar Power": 5067.1787109375,
+    "Wind Power": 9866.3662109375,
+    "Bio-Mass Power": 1012.6494750976562,
+    "Small Hydro Power": 123.04986572265624,
+    "Waste to Energy": 30.048791885375977
+   },
+   "2023": {
+    "Solar Power": 5067.1787109375,
+    "Wind Power": 9866.3662109375,
+    "Bio-Mass Power": 1012.6494750976562,
+    "Small Hydro Power": 123.04986572265624,
+    "Waste to Energy": 30.048791885375977
+   },
+   "2024": {
+    "Solar Power": 5067.1787109375,
+    "Wind Power": 9866.3662109375,
+    "Bio-Mass Power": 1012.6494750976562,
+    "Small Hydro Power": 123.04986572265624,
+    "Waste to Energy": 30.048791885375977
+   }
+  },
+  "Telangana": {
+   "2006": {
+    "Solar Power": 0.0413849047520573,
+    "Wind Power": 50.6551234165182,
+    "Bio-Mass Power": 124.672025565573,
+    "Small Hydro Power": 74.0169021490545,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0413849047520573,
+    "Wind Power": 50.6965083212702,
+    "Bio-Mass Power": 138.329044133752,
+    "Small Hydro Power": 74.8363232631453,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0413849047520573,
+    "Wind Power": 50.6965083212702,
+    "Bio-Mass Power": 142.177840275693,
+    "Small Hydro Power": 74.8363232631453,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0413849047520573,
+    "Wind Power": 50.6965083212702,
+    "Bio-Mass Power": 150.330666511848,
+    "Small Hydro Power": 77.3194175482687,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.869082999793204,
+    "Wind Power": 79.2520926001897,
+    "Bio-Mass Power": 150.330666511848,
+    "Small Hydro Power": 79.2231231668633,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 9.00121678357247,
+    "Wind Power": 101.620633618677,
+    "Bio-Mass Power": 150.330666511848,
+    "Small Hydro Power": 90.1487380214064,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 9.66337525960539,
+    "Wind Power": 185.259526122585,
+    "Bio-Mass Power": 157.573024843458,
+    "Small Hydro Power": 90.6453568784311,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 61.25,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 527.84,
+    "Wind Power": 77.7,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 1286.98,
+    "Wind Power": 100.8,
+    "Bio-Mass Power": 158.1,
+    "Small Hydro Power": 0.0,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 3291.25,
+    "Wind Power": 100.8,
+    "Bio-Mass Power": 159.1,
+    "Small Hydro Power": 90.87,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 3592.09,
+    "Wind Power": 128.1,
+    "Bio-Mass Power": 159.1,
+    "Small Hydro Power": 90.87,
+    "Waste to Energy": 18.5
+   },
+   "2019": {
+    "Solar Power": 3620.75,
+    "Wind Power": 128.1,
+    "Bio-Mass Power": 159.1,
+    "Small Hydro Power": 90.87,
+    "Waste to Energy": 26.0
+   },
+   "2020": {
+    "Solar Power": 3961.54,
+    "Wind Power": 128.1,
+    "Bio-Mass Power": 160.1,
+    "Small Hydro Power": 90.87,
+    "Waste to Energy": 50.38
+   },
+   "2021": {
+    "Solar Power": 4520.48,
+    "Wind Power": 128.1,
+    "Bio-Mass Power": 160.1,
+    "Small Hydro Power": 90.87,
+    "Waste to Energy": 59.64
+   },
+   "2022": {
+    "Solar Power": 4520.478515625,
+    "Wind Power": 128.09979248046875,
+    "Bio-Mass Power": 160.09957885742188,
+    "Small Hydro Power": 90.86991119384766,
+    "Waste to Energy": 59.63872528076172
+   },
+   "2023": {
+    "Solar Power": 4520.478515625,
+    "Wind Power": 128.09979248046875,
+    "Bio-Mass Power": 160.09957885742188,
+    "Small Hydro Power": 90.86991119384766,
+    "Waste to Energy": 59.63872528076172
+   },
+   "2024": {
+    "Solar Power": 4520.478515625,
+    "Wind Power": 128.09979248046875,
+    "Bio-Mass Power": 160.09957885742188,
+    "Small Hydro Power": 90.86991119384766,
+    "Waste to Energy": 59.63872528076172
+   }
+  },
+  "Tripura": {
+   "2006": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 0.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 5.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 5.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 5.09,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 5.09,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 5.09,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 9.41,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 13.56,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2021": {
+    "Solar Power": 14.89,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.01,
+    "Waste to Energy": 0.0
+   },
+   "2022": {
+    "Solar Power": 14.888741493225098,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.010000228881836,
+    "Waste to Energy": 0.0
+   },
+   "2023": {
+    "Solar Power": 14.888741493225098,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.010000228881836,
+    "Waste to Energy": 0.0
+   },
+   "2024": {
+    "Solar Power": 14.888741493225098,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 16.010000228881836,
+    "Waste to Energy": 0.0
+   }
+  },
+  "Uttar Pradesh": {
+   "2006": {
+    "Solar Power": 0.38,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 121.5,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.38,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 200.5,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.38,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 372.5,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.38,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 567.0,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.38,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 592.5,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 12.38,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 644.5,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 17.38,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 776.5,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 21.08,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 776.5,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 71.26,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 888.5,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 143.5,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 870.0,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 336.73,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 1933.0,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 694.41,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2115.51,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 960.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2115.51,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 1095.1,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2115.51,
+    "Small Hydro Power": 25.1,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 1836.27,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2117.26,
+    "Small Hydro Power": 49.1,
+    "Waste to Energy": 58.84
+   },
+   "2021": {
+    "Solar Power": 2244.43,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2117.26,
+    "Small Hydro Power": 49.1,
+    "Waste to Energy": 72.73
+   },
+   "2022": {
+    "Solar Power": 2244.4287109375,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2117.259521484375,
+    "Small Hydro Power": 49.099361419677734,
+    "Waste to Energy": 72.72886657714844
+   },
+   "2023": {
+    "Solar Power": 2244.4287109375,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2117.259521484375,
+    "Small Hydro Power": 49.099361419677734,
+    "Waste to Energy": 72.72886657714844
+   },
+   "2024": {
+    "Solar Power": 2244.4287109375,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 2117.259521484375,
+    "Small Hydro Power": 49.099361419677734,
+    "Waste to Energy": 72.72886657714844
+   }
+  },
+  "Uttarakhand": {
+   "2006": {
+    "Solar Power": 0.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 75.67,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 105.12,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 105.12,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 0.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 132.92,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 0.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 10.0,
+    "Small Hydro Power": 134.62,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 5.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 10.0,
+    "Small Hydro Power": 170.82,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 5.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 10.0,
+    "Small Hydro Power": 174.82,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 5.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 30.0,
+    "Small Hydro Power": 174.82,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 5.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 30.0,
+    "Small Hydro Power": 209.32,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 41.15,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 76.0,
+    "Small Hydro Power": 209.33,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 233.49,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 73.0,
+    "Small Hydro Power": 209.32,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 260.08,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.5,
+    "Small Hydro Power": 214.32,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 306.75,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.5,
+    "Small Hydro Power": 214.32,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 315.9,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.5,
+    "Small Hydro Power": 214.32,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 380.13,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.22,
+    "Small Hydro Power": 214.32,
+    "Waste to Energy": 9.22
+   },
+   "2021": {
+    "Solar Power": 573.54,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.22,
+    "Small Hydro Power": 218.82,
+    "Waste to Energy": 9.22
+   },
+   "2022": {
+    "Solar Power": 573.5387573242188,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.22056579589844,
+    "Small Hydro Power": 218.81895446777344,
+    "Waste to Energy": 9.219246864318848
+   },
+   "2023": {
+    "Solar Power": 573.5387573242188,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.22056579589844,
+    "Small Hydro Power": 218.81895446777344,
+    "Waste to Energy": 9.219246864318848
+   },
+   "2024": {
+    "Solar Power": 573.5387573242188,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 130.22056579589844,
+    "Small Hydro Power": 218.81895446777344,
+    "Waste to Energy": 9.219246864318848
+   }
+  },
+  "West Bengal": {
+   "2006": {
+    "Solar Power": 0.05,
+    "Wind Power": 1.1,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 98.4,
+    "Waste to Energy": 0.0
+   },
+   "2007": {
+    "Solar Power": 0.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 98.4,
+    "Waste to Energy": 0.0
+   },
+   "2008": {
+    "Solar Power": 0.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 0.0,
+    "Small Hydro Power": 98.4,
+    "Waste to Energy": 0.0
+   },
+   "2009": {
+    "Solar Power": 1.15,
+    "Wind Power": 4.3,
+    "Bio-Mass Power": 16.0,
+    "Small Hydro Power": 98.4,
+    "Waste to Energy": 0.0
+   },
+   "2010": {
+    "Solar Power": 1.15,
+    "Wind Power": 4.3,
+    "Bio-Mass Power": 16.0,
+    "Small Hydro Power": 98.4,
+    "Waste to Energy": 0.0
+   },
+   "2011": {
+    "Solar Power": 2.05,
+    "Wind Power": 4.3,
+    "Bio-Mass Power": 16.0,
+    "Small Hydro Power": 98.4,
+    "Waste to Energy": 0.0
+   },
+   "2012": {
+    "Solar Power": 2.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 26.0,
+    "Small Hydro Power": 98.4,
+    "Waste to Energy": 0.0
+   },
+   "2013": {
+    "Solar Power": 7.05,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 26.0,
+    "Small Hydro Power": 98.4,
+    "Waste to Energy": 0.0
+   },
+   "2014": {
+    "Solar Power": 7.21,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 26.0,
+    "Small Hydro Power": 98.5,
+    "Waste to Energy": 0.0
+   },
+   "2015": {
+    "Solar Power": 7.77,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 26.0,
+    "Small Hydro Power": 98.5,
+    "Waste to Energy": 0.0
+   },
+   "2016": {
+    "Solar Power": 26.14,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 300.0,
+    "Small Hydro Power": 98.5,
+    "Waste to Energy": 0.0
+   },
+   "2017": {
+    "Solar Power": 37.32,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 319.92,
+    "Small Hydro Power": 98.5,
+    "Waste to Energy": 0.0
+   },
+   "2018": {
+    "Solar Power": 75.95,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 319.92,
+    "Small Hydro Power": 98.5,
+    "Waste to Energy": 0.0
+   },
+   "2019": {
+    "Solar Power": 114.46,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 319.92,
+    "Small Hydro Power": 98.5,
+    "Waste to Energy": 0.0
+   },
+   "2020": {
+    "Solar Power": 162.65,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 319.92,
+    "Small Hydro Power": 98.5,
+    "Waste to Energy": 1.17
+   },
+   "2021": {
+    "Solar Power": 166.0,
+    "Wind Power": 0.0,
+    "Bio-Mass Power": 319.92,
+    "Small Hydro Power": 98.5,
+    "Waste to Energy": 2.53
+   },
+   "2022": {
+    "Solar Power": 165.99874877929688,
+    "Wind Power": 0.0001874875451903,
+    "Bio-Mass Power": 319.9197082519531,
+    "Small Hydro Power": 98.49974822998048,
+    "Waste to Energy": 2.528870105743408
+   },
+   "2023": {
+    "Solar Power": 165.99874877929688,
+    "Wind Power": 0.0001874875451903,
+    "Bio-Mass Power": 319.9197082519531,
+    "Small Hydro Power": 98.49974822998048,
+    "Waste to Energy": 2.528870105743408
+   },
+   "2024": {
+    "Solar Power": 165.99874877929688,
+    "Wind Power": 0.0001874875451903,
+    "Bio-Mass Power": 319.9197082519531,
+    "Small Hydro Power": 98.49974822998048,
+    "Waste to Energy": 2.528870105743408
+   }
+  }
+ },
+ "model_type": "gsdp_elasticity_v1",
+ "tech_keys": {
+  "Solar Power": "solar",
+  "Wind Power": "wind",
+  "Bio-Mass Power": "bio",
+  "Small Hydro Power": "hydro",
+  "Waste to Energy": "waste"
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "model": "convergence_v2",
+ "example": {
+  "state": "Gujarat",
+  "year": 2035,
+  "gsdp_cagr": 0.06,
+  "predicted_total_gw": 92.65,
+  "shap_base_value_gw": 11.41,
+  "shap_contributions_gw": {
+   "Forecast year": -0.148,
+   "GSDP growth (%/yr)": -1.767,
+   "Population (crore)": 0.0,
+   "Zone": 22.435,
+   "2024 GSDP (lakh crore)": 17.345,
+   "2024 Solar MW": 27.134,
+   "2024 Wind MW": 13.967,
+   "2024 Bio-Mass MW": -0.232,
+   "2024 Small Hydro MW": -0.056,
+   "2024 Waste-to-Energy MW": -0.007,
+   "RE transmission 2025-26": 2.568
+  },
+  "lime_weights_gw_per_std": [
+   [
+    "Zone=West",
+    35.451
+   ],
+   [
+    "2024 GSDP (lakh crore)",
+    8.081
+   ],
+   [
+    "Forecast year",
+    7.244
+   ],
+   [
+    "GSDP growth (%/yr)",
+    5.164
+   ],
+   [
+    "2024 Solar MW",
+    4.739
+   ],
+   [
+    "RE transmission 2025-26",
+    2.577
+   ],
+   [
+    "2024 Wind MW",
+    2.004
+   ],
+   [
+    "Population (crore)",
+    1.197
+   ],
+   [
+    "2024 Waste-to-Energy MW",
+    0.221
+   ],
+   [
+    "2024 Small Hydro MW",
+    0.09
+   ]
+  ],
+  "lime_local_r2": 0.726
+ },
+ "global_mean_abs_shap_total_gw": {
+  "Forecast year": 3.088,
+  "GSDP growth (%/yr)": 1.686,
+  "Population (crore)": 0.0,
+  "Zone": 5.567,
+  "2024 GSDP (lakh crore)": 4.673,
+  "2024 Solar MW": 5.597,
+  "2024 Wind MW": 3.178,
+  "2024 Bio-Mass MW": 0.452,
+  "2024 Small Hydro MW": 0.148,
+  "2024 Waste-to-Energy MW": 0.02,
+  "RE transmission 2025-26": 0.422
+ },
+ "importance_share_by_technology_pct": {
+  "Solar": {
+   "Forecast year": 12.6,
+   "GSDP growth (%/yr)": 6.3,
+   "Population (crore)": 0.0,
+   "Zone": 26.0,
+   "2024 GSDP (lakh crore)": 22.2,
+   "2024 Solar MW": 31.1,
+   "2024 Wind MW": 0.0,
+   "2024 Bio-Mass MW": 0.0,
+   "2024 Small Hydro MW": 0.0,
+   "2024 Waste-to-Energy MW": 0.0,
+   "RE transmission 2025-26": 1.9
+  },
+  "Wind": {
+   "Forecast year": 13.3,
+   "GSDP growth (%/yr)": 9.0,
+   "Population (crore)": 0.0,
+   "Zone": 14.1,
+   "2024 GSDP (lakh crore)": 11.4,
+   "2024 Solar MW": 0.0,
+   "2024 Wind MW": 50.9,
+   "2024 Bio-Mass MW": 0.0,
+   "2024 Small Hydro MW": 0.0,
+   "2024 Waste-to-Energy MW": 0.0,
+   "RE transmission 2025-26": 1.3
+  },
+  "Bio-Mass": {
+   "Forecast year": 0.7,
+   "GSDP growth (%/yr)": 1.2,
+   "Population (crore)": 0.0,
+   "Zone": 0.0,
+   "2024 GSDP (lakh crore)": 0.0,
+   "2024 Solar MW": 0.0,
+   "2024 Wind MW": 0.0,
+   "2024 Bio-Mass MW": 98.1,
+   "2024 Small Hydro MW": 0.0,
+   "2024 Waste-to-Energy MW": 0.0,
+   "RE transmission 2025-26": 0.0
+  },
+  "Small Hydro": {
+   "Forecast year": 0.0,
+   "GSDP growth (%/yr)": 0.0,
+   "Population (crore)": 0.0,
+   "Zone": 0.0,
+   "2024 GSDP (lakh crore)": 0.0,
+   "2024 Solar MW": 0.0,
+   "2024 Wind MW": 0.0,
+   "2024 Bio-Mass MW": 0.0,
+   "2024 Small Hydro MW": 100.0,
+   "2024 Waste-to-Energy MW": 0.0,
+   "RE transmission 2025-26": 0.0
+  },
+  "Waste-to-Energy": {
+   "Forecast year": 0.0,
+   "GSDP growth (%/yr)": 0.0,
+   "Population (crore)": 0.0,
+   "Zone": 0.0,
+   "2024 GSDP (lakh crore)": 0.0,
+   "2024 Solar MW": 0.0,
+   "2024 Wind MW": 0.0,
+   "2024 Bio-Mass MW": 0.0,
+   "2024 Small Hydro MW": 0.0,
+   "2024 Waste-to-Energy MW": 100.0,
+   "RE transmission 2025-26": 0.0
+  }
+ },
+ "shap_additivity_max_error_gw": 5.968558980384842e-13
+}
