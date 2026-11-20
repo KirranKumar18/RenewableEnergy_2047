@@ -172,14 +172,20 @@ export function MapOverlays({ vm, year, focus, onFocus, perPerson, onPerPerson, 
   return (
     <>
       <div style={{ position: 'absolute', left: 12, top: 12, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 8 }}>
-        <nav aria-label="Zoom level" style={{ ...overlay, position: 'static', display: 'flex', alignItems: 'center', gap: 2, padding: 3 }}>
-          {vm.crumbs.map((c, i) => (
-            <React.Fragment key={c.id}>
-              {i > 0 && <span aria-hidden="true" style={{ color: 'var(--text3)', padding: '0 2px' }}>/</span>}
-              <button type="button" aria-current={focus === c.id ? 'location' : undefined} onClick={() => onFocus(c.id)}
-                style={{ height: 32, padding: '0 10px', border: 0, borderRadius: 6, background: focus === c.id ? 'var(--panel2)' : 'transparent', color: focus === c.id ? 'var(--text)' : 'var(--ink)', fontSize: 14, fontWeight: focus === c.id ? 600 : 400 }}>{c.label}</button>
-            </React.Fragment>
-          ))}
+        {/* The highlighted crumb is the selected view (India, zone or state), not the map's zoom level:
+            zooming out with − keeps the zone or state selected. Clicking a crumb opens that view. */}
+        <nav aria-label="Selected area" style={{ ...overlay, position: 'static', display: 'flex', alignItems: 'center', gap: 2, padding: 3 }}>
+          {vm.crumbs.map((c, i) => {
+            const on = i === vm.crumbs.length - 1;
+            return (
+              <React.Fragment key={c.id}>
+                {i > 0 && <span aria-hidden="true" style={{ color: 'var(--text3)', padding: '0 2px' }}>/</span>}
+                <button type="button" aria-current={on ? 'location' : undefined} onClick={() => onFocus(c.id)}
+                  title={on && focus !== c.id ? 'Zoom back in' : undefined}
+                  style={{ height: 32, padding: '0 10px', border: 0, borderRadius: 6, background: on ? 'var(--panel2)' : 'transparent', color: on ? 'var(--text)' : 'var(--ink)', fontSize: 14, fontWeight: on ? 600 : 400 }}>{c.label}</button>
+              </React.Fragment>
+            );
+          })}
         </nav>
         <div role="group" aria-label="Map shows" style={{ ...overlay, position: 'static', display: 'flex', padding: 3 }}>
           {[[false, 'Total'], [true, 'Per person']].map(([id, label]) => (
