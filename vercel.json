@@ -10,7 +10,7 @@
     "api/index.py": {
       "maxDuration": 60,
       "memory": 1024,
-      "includeFiles": "{backend_api.py,model/*.py,model/*.json}"
+      "includeFiles": "{backend_api.py,model/*.py,model/*.json,demand_forecast/demand_forecast.json}"
     }
   }
 }

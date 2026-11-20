@@ -9,6 +9,8 @@ Powered by the v2 convergence model (model/re2047_model.json, see reports/README
     POST /api/explain      exact SHAP breakdown of that forecast (MW per input feature)
     POST /api/scenario     one call for the dashboard: every state's MW in a year with a GSDP scenario applied
                            to India, a zone or a state, plus that scope's 2024-2047 trajectory and financials
+    GET  /api/demand       India's daily electricity demand: recent history, 28-day forecast, generation mix and
+                           backtest scores (separate model in demand_forecast/; precomputed by its train.py)
 """
 from __future__ import annotations
 
@@ -39,6 +41,7 @@ MODEL_FILE = HERE / "model" / "re2047_model.json"
 _EXPLAIN_FILE = HERE / "model" / "explain_defaults.json"
 EXPLAIN_DEFAULTS = json.loads(_EXPLAIN_FILE.read_text())["scopes"] if _EXPLAIN_FILE.exists() else {}
 METRICS_FILE = HERE / "model" / "metrics.json"
+DEMAND_FILE = HERE / "demand_forecast" / "demand_forecast.json"
 
 # CERC / MNRE benchmarks (same values the original pipeline shipped with)
 COST_BENCHMARKS = {
@@ -165,6 +168,19 @@ def _data_status(states: list[str], year: int) -> dict:
 @app.get("/")
 def health():
     return {"status": "online", "model_loaded": MODEL is not None, "model": MODEL_NAME}
+
+
+@lru_cache(maxsize=4)
+def _demand(mtime: float) -> dict:
+    return json.loads(DEMAND_FILE.read_text())
+
+
+@app.get("/api/demand")
+def demand():
+    """Daily demand forecast. Read from the file written by demand_forecast/train.py (no model code runs here)."""
+    if not DEMAND_FILE.exists():
+        raise HTTPException(404, "Demand forecast not built - run demand_forecast/train.py")
+    return _demand(DEMAND_FILE.stat().st_mtime)
 
 
 @app.get("/api/meta")

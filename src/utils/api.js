@@ -25,3 +25,6 @@ export const fetchPrediction = (body) => post('/api/predict', body);
 export async function checkHealth() {
   try { return (await getHealth()).model_loaded === true; } catch { return false; }
 }
+
+// Daily electricity demand forecast (separate model, demand_forecast/).
+export const getDemand = () => request('/api/demand');

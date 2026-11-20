@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import GlobeMap from './components/GlobeMap';
 import { Header, Timeline, LeftPanel, MapOverlays, ScenarioBar, ChartsStrip, DetailPanel, StatusScreen } from './components/Panels';
+import DemandView from './components/DemandView';
 import { getMeta, getScenario, getExplain, API_BASE } from './utils/api';
 import { THEMES, TECH, ALL_ICON, MILESTONES, cssVars } from './lib/theme';
 import { capStr, crStr, crParts, capParts, genParts, fmtIN, pct, signPct, sum, nice } from './lib/format';
@@ -10,6 +11,12 @@ const POP_GROWTH = 0.008; // same yearly population growth the backend's feature
 export default function App() {
   const [themeName, setThemeName] = useState('atlas');
   const t = THEMES[themeName];
+  // Two views: the state capacity forecast to 2047 and India's daily electricity demand (#demand).
+  const [view, setView] = useState(() => (window.location.hash === '#demand' ? 'demand' : 'capacity'));
+  const pickView = useCallback((v) => {
+    setView(v);
+    window.history.replaceState(null, '', v === 'demand' ? '#demand' : window.location.pathname + window.location.search);
+  }, []);
 
   const [meta, setMeta] = useState(null);
   const [metaErr, setMetaErr] = useState(null);
@@ -308,8 +315,17 @@ export default function App() {
     <Header t={t} themeName={themeName} onTheme={() => setThemeName(themeName === 'night' ? 'atlas' : 'night')}
       scope={scope} onScope={pickScope} sel={sel} states={meta ? Object.keys(meta.states).sort() : []} onSelect={pickState}
       year={year} onYear={pickYear} status={vm ? { label: vm.statusLabel, dot: scErr ? t.neg : t.good } : { label: metaErr ? 'Forecast API offline' : 'Connecting to the forecast API', dot: metaErr ? t.neg : t.warn }}
-      busy={scBusy} sc={sc} />
+      busy={scBusy} sc={sc} view={view} onView={pickView} />
   );
+
+  if (view === 'demand') {
+    return (
+      <div style={pageStyle}>
+        {header}
+        <DemandView t={t} />
+      </div>
+    );
+  }
 
   if (!vm) {
     return (

@@ -17,10 +17,10 @@ const Icon = ({ d, size = 16, color = 'currentColor', w = 1.8 }) => (
   </svg>
 );
 
-export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onSelect, year, onYear, status, busy }) {
+export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onSelect, year, onYear, status, busy, view = 'capacity', onView }) {
   return (
-    <header style={{ flex: '0 0 auto', height: 64, boxSizing: 'border-box', padding: '0 20px', display: 'flex', alignItems: 'center', gap: 20, background: 'var(--panel)', borderBottom: '1px solid var(--line)' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12, paddingRight: 20, borderRight: '1px solid var(--line)', height: 40 }}>
+    <header style={{ flex: '0 0 auto', height: 64, boxSizing: 'border-box', padding: '0 16px', display: 'flex', alignItems: 'center', gap: 14, background: 'var(--panel)', borderBottom: '1px solid var(--line)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 12, paddingRight: 14, borderRight: '1px solid var(--line)', height: 40 }}>
         <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
           <rect width="32" height="32" rx="7" fill="var(--ink)" />
           <path d="M7 21.5h18" fill="none" stroke="var(--onInk)" strokeWidth="1.8" strokeLinecap="round" />
@@ -32,25 +32,34 @@ export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onS
           <span style={{ fontSize: 12, color: 'var(--text3)', whiteSpace: 'nowrap' }}>Forecasts to 2047</span>
         </div>
       </div>
+      {onView && (
+        <div role="group" aria-label="View" style={segWrap}>
+          {[['capacity', 'Capacity'], ['demand', 'Demand']].map(([id, label]) => (
+            <button key={id} type="button" aria-pressed={view === id} onClick={() => onView(id)} style={{ ...segBtn, ...seg(view === id) }}>{label}</button>
+          ))}
+        </div>
+      )}
+      {view === 'capacity' && <>
       <div role="group" aria-label="Forecast scope" style={segWrap}>
         {[['india', 'India'], ['zone', 'Zone'], ['state', 'State']].map(([id, label]) => (
-          <button key={id} type="button" aria-pressed={scope === id} onClick={() => onScope(id)} style={{ ...segBtn, padding: '0 14px', ...seg(scope === id) }}>{label}</button>
+          <button key={id} type="button" aria-pressed={scope === id} onClick={() => onScope(id)} style={{ ...segBtn, padding: '0 12px', ...seg(scope === id) }}>{label}</button>
         ))}
       </div>
-      <select aria-label="State" value={sel} onChange={(e) => onSelect(e.target.value)} style={{ height: 42, width: 200, padding: '0 10px', borderRadius: 8, border: '1px solid var(--line2)', background: 'var(--panel)', color: 'var(--text)', fontWeight: 500 }}>
+      <select aria-label="State" value={sel} onChange={(e) => onSelect(e.target.value)} style={{ height: 42, width: 176, flex: '0 1 auto', minWidth: 130, padding: '0 10px', borderRadius: 8, border: '1px solid var(--line2)', background: 'var(--panel)', color: 'var(--text)', fontWeight: 500 }}>
         {states.map((s) => <option key={s} value={s}>{s.replace(' And ', ' and ')}</option>)}
       </select>
       <div role="group" aria-label="Forecast year" style={segWrap}>
         {MILESTONES.map((y) => (
-          <button key={y} type="button" aria-pressed={y === year} onClick={() => onYear(y)} style={{ ...segBtn, ...seg(y === year) }}>{y}</button>
+          <button key={y} type="button" aria-pressed={y === year} onClick={() => onYear(y)} style={{ ...segBtn, padding: '0 9px', ...seg(y === year) }}>{y}</button>
         ))}
       </div>
+      </>}
       <div style={{ flex: '1 1 0', minWidth: 0 }} />
-      <span role="status" style={{ display: 'inline-flex', alignItems: 'center', gap: 8, fontSize: 13, color: 'var(--text2)', whiteSpace: 'nowrap' }}>
-        <span style={{ width: 7, height: 7, borderRadius: '50%', background: status.dot }} />
-        {busy ? 'Updating forecast' : status.label}
-      </span>
-      <button type="button" aria-label={themeName === 'night' ? 'Switch to light theme' : 'Switch to dark theme'} onClick={onTheme} style={{ ...ghostBtn, width: 42, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
+      {view === 'capacity' && <span role="status" title={busy ? 'Updating forecast' : status.label} style={{ display: 'inline-flex', alignItems: 'center', gap: 8, flex: '0 1 auto', minWidth: 0, fontSize: 13, color: 'var(--text2)', whiteSpace: 'nowrap' }}>
+        <span style={{ flex: '0 0 auto', width: 7, height: 7, borderRadius: '50%', background: status.dot }} />
+        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis' }}>{busy ? 'Updating forecast' : status.label}</span>
+      </span>}
+      <button type="button" aria-label={themeName === 'night' ? 'Switch to light theme' : 'Switch to dark theme'} onClick={onTheme} style={{ ...ghostBtn, flex: '0 0 auto', width: 42, padding: 0, display: 'inline-flex', alignItems: 'center', justifyContent: 'center' }}>
         <Icon d={themeName === 'night' ? SUN : MOON} size={18} w={1.7} />
       </button>
     </header>
