@@ -117,16 +117,48 @@ Solar error on these cutoffs falls from 46.0% to 37.7%.
     - Blending v1 and v2 forecasts made solar worse.
     - Choosing the best model per technology fits the backtest, but when checked on a held-out cutoff it scored *worse* than plain v2 (31.8 vs 31.2). That is overfitting.
 
-**National forecast (GW):** this assumes each state's GSDP keeps growing at its recent rate.
+### GSDP for the forecast years ([`model/gsdp_projection.py`](../model/gsdp_projection.py))
 
-| | 2024 (nowcast) | 2030 | 2035 | 2040 | 2047 |
-|---|---|---|---|---|---|
-| Solar | 131 | 301 | 361 | 393 | 424 |
-| Wind | 50 | 67 | 85 | 109 | 157 |
-| Bio-mass + small hydro | 16 | 16 | 16 | 16 | 16 |
-| Total | 197 | 384 | 462 | 519 | **597** |
+**Units.** The dataset's GSDP is at **constant 2011-12 prices** (real). India's 2023 total is ₹162 lakh crore, which matches official real GDP, not current-price GDP.
+- The model learned its GSDP effects in those units, so it must be given real GSDP.
+- Government figures are at **current prices**: for example, ₹2,500 lakh crore (about $30 trillion) by 2047.
+- The dashboard therefore shows and accepts GSDP at current prices and converts:
 
-- **The transmission term raises the whole path.** Without it the totals were 189 / 322 / 388 / 437 / 506 GW.
+```
+current prices = real × 1.95 × 1.04^(year − 2024)
+```
+
+- **1.95** = official GDP for 2024-25 at current prices (₹330.68 lakh crore, MoSPI provisional estimates, 30 May 2025) ÷ this dataset's 2024 total (₹169.6 lakh crore at 2011-12 prices).
+- **4% inflation** a year (the RBI target) is an assumption.
+
+Typing ₹2,500 lakh crore into the old box, which expected 2011-12 prices, meant 12.4% real growth every year to 2047 and about 2,620 GW. That is the source of the large difference.
+
+**Projection.** Each state's GSDP is built in three steps:
+1. Start from a national real growth path, set by the GDP outlook.
+2. Add a state differential: half of the state's 2012–2024 trend gap to India (COVID years excluded), capped at ±1.5 points and fading with a 10-year half-life.
+3. Rescale every year so the states add up to the national path.
+
+**Check of the state split:** predicting each state's GSDP from 2015–2019 to 2024, given the actual national total, gives a 6.4% average error. The old rule, each state's own 10-year growth rate, gave 11.2%.
+
+| GDP outlook | Real growth | India GSDP 2047, current prices | India capacity 2047 |
+|---|---|---|---|
+| **Government 2047 target (default)** | 5.0% a year (the rate that reaches ₹2,500 lakh crore) | ₹2,500 lakh crore | 704 GW |
+| Dataset trend | 5.1% (2014–2024) | ₹2,556 lakh crore | 717 GW |
+| IMF outlook | 6.5% to 2030, easing to 5.5% by 2047. 6.5% is the IMF's medium-term potential estimate (2025 Article IV); the easing is this project's assumption | ₹3,187 lakh crore | 856 GW |
+| Viksit Bharat | 7.8% a year, the average the World Bank says India needs to reach high income by 2047 (Feb 2025) | ₹4,586 lakh crore | 1,159 GW |
+
+GSDP does not drive the 29% backtest error, because the backtest already feeds the model the actual GSDP. Projecting GSDP from each cutoff instead would raise it to 31.8%. GSDP matters for the long range, as the table shows.
+
+**National forecast (GW)**, on the default outlook:
+
+| | 2030 | 2035 | 2040 | 2047 |
+|---|---|---|---|---|
+| Solar | 308 | 394 | 466 | 562 |
+| Wind | 63 | 76 | 93 | 126 |
+| Bio-mass + small hydro | 16 | 16 | 16 | 16 |
+| Total | 388 | 487 | 576 | **704** |
+
+- **The transmission term raises the whole path.**
   - The gain comes from a higher starting point: more capacity in the stale states by 2024, and the heavy 2025–26 build-out in Rajasthan (3,451 km) and Gujarat (1,830 km).
   - It persists because later growth is proportional to capacity. Catch-up spreads it: a stronger Rajasthan lifts the West zone's target, so Gujarat 2035 rises too.
 - **Bio-mass and small hydro stay roughly flat,** as they have in the data recently.

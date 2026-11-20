@@ -1,6 +1,6 @@
 """
-Precompute the SHAP breakdown for all of India and for each zone, on the default GSDP path, for every forecast
-year. A multi-state breakdown runs the model for every state and every feature coalition, which takes ~20 s on a
+Precompute the SHAP breakdown for all of India and for each zone, on each GDP outlook's default GSDP path
+(model/gsdp_projection.py), for every forecast year. A multi-state breakdown runs the model for every state and every feature coalition, which takes ~20 s on a
 small serverless CPU; with this file the API answers the default views instantly and only computes live when the
 user changes GSDP for a zone or all of India.
 
@@ -23,11 +23,13 @@ for zone in scopes:
     states = api._scope_states(zone)
     out["scopes"][zone] = {}
     for year in range(api.MODEL.base_year + 1, 2048):
-        gsdp = sum(api._default_gsdp(s, year) for s in states)
         pop = sum(api.MODEL.states[s]["population"] for s in states) * 1.008 ** (year - api.MODEL.base_year)
-        res = api._explain(api.PredReq(zone=zone, state=None, year=year, population=pop, gsdp_crore=gsdp))
-        res["default_gsdp_crore"] = round(gsdp, 1)
-        out["scopes"][zone][str(year)] = res
+        out["scopes"][zone][str(year)] = {}
+        for outlook in api.SCENARIOS:
+            gsdp = sum(api._default_gsdp(s, year, outlook) for s in states)
+            res = api._explain(api.PredReq(zone=zone, state=None, year=year, population=pop, gsdp_crore=gsdp))
+            res["default_gsdp_crore"] = round(gsdp, 1)
+            out["scopes"][zone][str(year)][outlook] = res
     print(f"{zone}: done ({time.time() - t0:.0f}s)")
 (ROOT / "model" / "explain_defaults.json").write_text(json.dumps(out, separators=(",", ":")))
 print("wrote model/explain_defaults.json")

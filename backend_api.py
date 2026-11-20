@@ -32,6 +32,7 @@ from re_model import TECH, TECH_KEY  # noqa: E402
 from convergence_model import ConvergenceModel, END_YEAR  # noqa: E402
 from features import CAP0, FEATURES, SHORT, Wrapped, scenarios  # noqa: E402
 from exact_shap import ExactShap  # noqa: E402
+from gsdp_projection import DEFAULT_SCENARIO, INFLATION, SCENARIOS, GsdpProjector  # noqa: E402
 
 warnings.filterwarnings("ignore")
 app = FastAPI(title="RE 2047 API", version="3.0.0")
@@ -59,6 +60,7 @@ KEYS = [TECH_KEY[t] for t in TECH]
 MODEL_NAME = "v2 convergence model (re2047_model.json)"
 
 MODEL: ConvergenceModel | None = None
+PROJ: GsdpProjector | None = None   # GSDP paths for the forecast years, per outlook (model/gsdp_projection.py)
 W: Wrapped | None = None
 EXPLAINER = None
 N_BACKGROUND = 40
@@ -73,10 +75,11 @@ class PredReq(BaseModel):
 
 
 def _init():
-    global MODEL, W, EXPLAINER
+    global MODEL, W, EXPLAINER, PROJ
     if not MODEL_FILE.exists():
         print("WARNING: model not found at", MODEL_FILE, "- run model/train.py"); return
     MODEL = ConvergenceModel.from_json(MODEL_FILE)
+    PROJ = GsdpProjector({s: v["gsdp"] for s, v in MODEL.states.items()}, MODEL.base_year)
     W = Wrapped(MODEL)
     # Exact SHAP in numpy (model/exact_shap.py), same values as shap's exact explainer, without its heavy
     # dependencies. The background is shap.sample(scenarios(W), 40, random_state=0), saved once to JSON.
@@ -102,11 +105,20 @@ def _scope_states(zone: str | None) -> list[str]:
     return MODEL.zone_states(zone or "")
 
 
-def _default_gsdp(state: str, year: int) -> float:
-    """State GSDP in `year` on its default path (its own recent growth rate)."""
-    s = MODEL.states[state]
+def _outlook(name: str | None) -> str:
+    if not name:
+        return DEFAULT_SCENARIO
+    if name not in SCENARIOS:
+        raise HTTPException(400, f"Unknown GDP outlook '{name}'. Use one of {list(SCENARIOS)}")
+    return name
+
+
+def _default_gsdp(state: str, year: int, outlook: str = DEFAULT_SCENARIO) -> float:
+    """State GSDP (crore, 2011-12 prices) in `year` on the chosen GDP outlook's path."""
     by = MODEL.base_year
-    return s["gsdp"][by] * (1 + s["gsdp_cagr"]) ** max(0, year - by)
+    if year <= by:
+        return MODEL.states[state]["gsdp"][by]
+    return PROJ.gsdp(state, year, outlook)
 
 
 def _targets(req: PredReq):
@@ -188,14 +200,21 @@ def meta():
     _need_model()
     by = MODEL.base_year
     states = {s: {"zone": v["zone"], "population": v["population"], "gsdp": {int(y): g for y, g in v["gsdp"].items()},
-                  "gsdp_cagr": v["gsdp_cagr"], "base_capacity_mw": {TECH_KEY[t]: m for t, m in MODEL.base_capacity(s).items()}}
+                  "gsdp_cagr": PROJ.cagr(s, 2047, DEFAULT_SCENARIO), "base_capacity_mw": {TECH_KEY[t]: m for t, m in MODEL.base_capacity(s).items()}}
               for s, v in MODEL.states.items()}
     zones = {z: MODEL.zone_states(z) for z in sorted({v["zone"] for v in MODEL.states.values()})}
     metrics = {}
     if METRICS_FILE.exists():
         mean = json.loads(METRICS_FILE.read_text())["mean"]
         metrics = {k: round(v["Total WAPE (fresh)"], 1) for k, v in mean.items()}
+    outlooks = [{"id": k, "label": v["label"], "short": v["short"], "note": v["note"],
+                 "india_2047_real_crore": round(PROJ.national(2047, k), 0),
+                 "india_2047_nominal_crore": round(PROJ.national(2047, k) * PROJ.nominal_factor(2047), 0)}
+                for k, v in SCENARIOS.items()]
     return {"model": MODEL_NAME, "base_year": by, "end_year": 2047, "states": states, "zones": zones,
+            "gsdp_outlooks": outlooks, "gsdp_default_outlook": DEFAULT_SCENARIO,
+            "gsdp_units": {"model": "constant 2011-12 prices", "display": "current prices",
+                           "nominal_factor_2024": round(PROJ.k, 4), "inflation": INFLATION},
             "backtest_wape_fresh": metrics,
             "tech": [{"id": k, "name": NAMES[k]} for k in KEYS],
             "benchmarks": COST_BENCHMARKS, "zone_multipliers": ZONE_MULTIPLIERS,
@@ -261,7 +280,8 @@ class ScenarioReq(BaseModel):
     zone: Optional[str] = None
     state: Optional[str] = None
     year: int = Field(ge=2024, le=2047)
-    gsdp_crore: Optional[float] = Field(default=None, gt=0, description="GSDP of the whole scope in `year`; None = default path")
+    gsdp_crore: Optional[float] = Field(default=None, gt=0, description="GSDP of the whole scope in `year`, crore at 2011-12 prices; None = the outlook's path")
+    outlook: Optional[str] = Field(default=None, description="GDP outlook for the default path: " + ", ".join(SCENARIOS))
 
 
 def _fin_multi(per_state: dict[str, np.ndarray]) -> dict:
@@ -313,16 +333,18 @@ def scenario(req: ScenarioReq):
     base = np.array([[MODEL.base_capacity(s)[t] for t in TECH] for s in names])
     zones = np.array([MODEL.states[s]["zone"] for s in names])
     gb = np.array([MODEL.states[s]["gsdp"][by] for s in names])
-    cg = np.array([MODEL.states[s]["gsdp_cagr"] for s in names])
+    outlook = _outlook(req.outlook)
     tx = np.array([MODEL.tx_forward(s) for s in names])
     mask = np.array([s in in_scope for s in names])
 
-    default_gsdp = float(sum(_default_gsdp(s, req.year) for s in scope))
+    default_gsdp = float(sum(_default_gsdp(s, req.year, outlook) for s in scope))
     factor = 1.0
     if req.gsdp_crore and n > 0:
         factor = req.gsdp_crore / default_gsdp
-    log_default = np.log1p(cg)
-    log_scen = log_default + np.where(mask, np.log(factor) / n if n > 0 else 0.0, 0.0)
+    # average yearly log-growth of each state's GSDP from the base year to the target year, on the outlook's path
+    log_default = np.array([PROJ.log_growth(s, req.year, outlook) for s in names])
+    custom_lg = np.where(mask, np.log(factor) / n if n > 0 else 0.0, 0.0)
+    log_scen = log_default + custom_lg
 
     def at_year(log_growth, k):
         if k <= 0:
@@ -337,7 +359,8 @@ def scenario(req: ScenarioReq):
     ks = np.arange(0, 2047 - by + 1)
     rows = np.repeat(idx, len(ks))
     kk = np.tile(ks, len(idx))
-    traj_all = MODEL.forecast_batch(base[rows], zones[rows], gb[rows], log_scen[rows], kk, tx[rows])
+    lg_path = np.array([[PROJ.log_growth(names[i], by + k, outlook) for k in ks] for i in idx]).ravel()
+    traj_all = MODEL.forecast_batch(base[rows], zones[rows], gb[rows], lg_path + custom_lg[rows], kk, tx[rows])
     traj = traj_all.reshape(len(idx), len(ks), 5).sum(0)
 
     def scope_fin(arr):
@@ -356,7 +379,11 @@ def scenario(req: ScenarioReq):
         "gsdp": {"base_crore": round(g24, 1), "default_crore": round(default_gsdp, 1), "used_crore": round(used, 1),
                  "default_growth_pct": round(((default_gsdp / g24) ** (1 / n) - 1) * 100, 2) if n > 0 else None,
                  "growth_pct": round(((used / g24) ** (1 / n) - 1) * 100, 2) if n > 0 else None,
-                 "custom": bool(abs(factor - 1) > 1e-9)},
+                 "custom": bool(abs(factor - 1) > 1e-9),
+                 "outlook": outlook, "outlook_label": SCENARIOS[outlook]["label"],
+                 "units": "crore at constant 2011-12 prices",
+                 "nominal_factor": round(PROJ.nominal_factor(req.year), 6),
+                 "nominal_factor_2024": round(PROJ.k, 6)},
         "population_base": pop_base,
         "states": {s: {"zone": MODEL.states[s]["zone"], "population": MODEL.states[s]["population"],
                        "mw": [round(float(v), 2) for v in mw[i]], "default_mw": [round(float(v), 2) for v in mw_def[i]]}
@@ -378,9 +405,11 @@ def explain(req: PredReq):
     if not req.state or req.state.strip() in ("", "Entire Zone"):
         # Default-path breakdowns for India and each zone are precomputed (model/precompute_explain.py).
         key = "India" if (req.zone or "").strip().lower() in ("india", "all", "all india") else req.zone
-        pre = EXPLAIN_DEFAULTS.get(key, {}).get(str(req.year))
-        if pre and abs(req.gsdp_crore / pre["default_gsdp_crore"] - 1) < 1e-4:
-            return pre
+        pre = EXPLAIN_DEFAULTS.get(key, {}).get(str(req.year)) or {}
+        # one precomputed breakdown per GDP outlook's default path (older files hold a single one)
+        for res in (pre.values() if "default_gsdp_crore" not in pre else [pre]):
+            if abs(req.gsdp_crore / res["default_gsdp_crore"] - 1) < 1e-4:
+                return res
     return _explain_cached(req.zone, req.state, req.year, round(req.population), round(req.gsdp_crore, 1))
 
 

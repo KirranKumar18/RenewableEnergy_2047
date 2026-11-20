@@ -82,6 +82,15 @@
    "Total WAPE (fresh)": 52.57,
    "Total WAPE (all values)": 48.05
   },
+  "2016|Original tree ensemble": {
+   "Solar Power": 80.07,
+   "Wind Power": 25.9,
+   "Bio-Mass Power": 37.82,
+   "Small Hydro Power": 21.02,
+   "Waste to Energy": 100.0,
+   "Total WAPE (fresh)": 57.1,
+   "Total WAPE (all values)": 62.17
+  },
   "2018|v2 convergence (production)": {
    "Solar Power": 42.05,
    "Wind Power": 12.53,
@@ -163,6 +172,15 @@
    "Total WAPE (fresh)": 41.57,
    "Total WAPE (all values)": 35.5
   },
+  "2018|Original tree ensemble": {
+   "Solar Power": 63.69,
+   "Wind Power": 22.54,
+   "Bio-Mass Power": 25.84,
+   "Small Hydro Power": 19.28,
+   "Waste to Energy": 75.91,
+   "Total WAPE (fresh)": 48.13,
+   "Total WAPE (all values)": 49.01
+  },
   "2020|v2 convergence (production)": {
    "Solar Power": 32.42,
    "Wind Power": 8.78,
@@ -243,6 +261,15 @@
    "Waste to Energy": 21.19,
    "Total WAPE (fresh)": 39.93,
    "Total WAPE (all values)": 29.87
+  },
+  "2020|Original tree ensemble": {
+   "Solar Power": 61.52,
+   "Wind Power": 25.75,
+   "Bio-Mass Power": 18.86,
+   "Small Hydro Power": 19.49,
+   "Waste to Energy": 34.22,
+   "Total WAPE (fresh)": 49.26,
+   "Total WAPE (all values)": 47.0
   }
  },
  "mean": {
@@ -326,6 +353,15 @@
    "Waste to Energy": 63.25,
    "Total WAPE (fresh)": 44.69,
    "Total WAPE (all values)": 37.81
+  },
+  "Original tree ensemble": {
+   "Solar Power": 68.42,
+   "Wind Power": 24.73,
+   "Bio-Mass Power": 27.51,
+   "Small Hydro Power": 19.93,
+   "Waste to Energy": 70.04,
+   "Total WAPE (fresh)": 51.5,
+   "Total WAPE (all values)": 52.72
   }
  },
  "recent_cutoffs": [
@@ -570,36 +606,36 @@
    "Total": 196.5
   },
   "2030": {
-   "Solar Power": 309.8,
-   "Wind Power": 64.2,
+   "Solar Power": 308.2,
+   "Wind Power": 63.0,
    "Bio-Mass Power": 11.2,
    "Small Hydro Power": 4.9,
    "Waste to Energy": 0.6,
-   "Total": 390.6
+   "Total": 387.9
   },
   "2035": {
-   "Solar Power": 398.5,
-   "Wind Power": 79.1,
+   "Solar Power": 394.4,
+   "Wind Power": 76.2,
    "Bio-Mass Power": 11.3,
    "Small Hydro Power": 4.9,
    "Waste to Energy": 0.6,
-   "Total": 494.2
+   "Total": 487.3
   },
   "2040": {
-   "Solar Power": 473.6,
-   "Wind Power": 98.8,
+   "Solar Power": 465.5,
+   "Wind Power": 93.4,
    "Bio-Mass Power": 11.3,
    "Small Hydro Power": 4.9,
    "Waste to Energy": 0.6,
-   "Total": 589.1
+   "Total": 575.6
   },
   "2047": {
-   "Solar Power": 579.7,
-   "Wind Power": 137.3,
+   "Solar Power": 561.5,
+   "Wind Power": 125.9,
    "Bio-Mass Power": 11.3,
    "Small Hydro Power": 4.9,
    "Waste to Energy": 0.6,
-   "Total": 733.7
+   "Total": 704.2
   }
  },
  "national_forecast_gw_v1": {

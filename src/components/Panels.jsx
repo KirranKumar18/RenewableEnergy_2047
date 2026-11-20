@@ -224,22 +224,32 @@ export function MapOverlays({ vm, year, focus, onFocus, perPerson, onPerPerson, 
   );
 }
 
-export function ScenarioBar({ s, year, onGsdpText, onGsdpSlide, onPopText, onPopSlide, onBlur, onReset }) {
+export function ScenarioBar({ s, year, onGsdpText, onGsdpSlide, onPopText, onPopSlide, onBlur, onReset, onOutlook }) {
   const field = { height: 42, padding: '0 10px', borderRadius: 8, border: '1px solid var(--line2)', background: 'var(--bg)', color: 'var(--text)', fontSize: 16, fontWeight: 600 };
   const tag = s.anyCustom ? { border: '1px solid var(--gold)', color: 'var(--gold)' } : { border: '1px solid var(--line2)', color: 'var(--text2)' };
   return (
-    <section aria-labelledby="inputs-h" style={{ flex: '0 0 auto', padding: '10px 20px', background: 'var(--panel)', borderTop: `1px solid ${s.anyCustom ? 'var(--gold)' : 'var(--line)'}`, display: 'grid', gridTemplateColumns: 'minmax(150px, 0.8fr) minmax(0, 1.2fr) minmax(0, 1.1fr) auto', alignItems: 'center', gap: 20 }}>
+    <section aria-labelledby="inputs-h" style={{ flex: '0 0 auto', padding: '10px 20px', background: 'var(--panel)', borderTop: `1px solid ${s.anyCustom ? 'var(--gold)' : 'var(--line)'}`, display: 'grid', gridTemplateColumns: 'minmax(220px, 1fr) minmax(0, 1.2fr) minmax(0, 1fr) auto', alignItems: 'center', gap: 20 }}>
       <div style={{ minWidth: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
           <h2 id="inputs-h" style={{ ...h2, fontSize: 18 }}>Scenario</h2>
           <span style={{ display: 'inline-flex', alignItems: 'center', height: 22, padding: '0 8px', borderRadius: 4, fontSize: 12, fontWeight: 600, whiteSpace: 'nowrap', ...tag }}>{s.status}</span>
         </div>
         <p style={{ ...sub, fontSize: 12 }} title={s.note}>{s.scopeNote}</p>
+        {s.outlooks.length > 0 && onOutlook && (
+          <label style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 6, fontSize: 12, color: 'var(--text2)', whiteSpace: 'nowrap' }}>
+            GDP outlook
+            <select value={s.outlook} disabled={s.locked} onChange={(e) => onOutlook(e.target.value)}
+              title={(s.outlooks.find((o) => o.id === s.outlook) || {}).note}
+              style={{ height: 28, minWidth: 0, flex: '1 1 auto', padding: '0 6px', borderRadius: 6, border: '1px solid var(--line2)', background: 'var(--panel)', color: 'var(--text)', fontSize: 12, fontWeight: 500 }}>
+              {s.outlooks.map((o) => <option key={o.id} value={o.id} title={o.note}>{o.label}</option>)}
+            </select>
+          </label>
+        )}
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 3, minWidth: 0 }}>
-        <label htmlFor="in-gsdp" style={{ fontSize: 13, color: 'var(--text2)' }}>GSDP in {year}, ₹ lakh crore</label>
+        <label htmlFor="in-gsdp" style={{ fontSize: 13, color: 'var(--text2)' }}>GSDP in {year}, ₹ lakh crore (current prices)</label>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <input id="in-gsdp" type="number" inputMode="decimal" min="0" step="0.1" value={s.gsdpText} disabled={s.locked} onChange={(e) => onGsdpText(e.target.value)} onBlur={onBlur} style={{ ...field, flex: '0 0 96px', width: 96, height: 38 }} />
+          <input id="in-gsdp" type="number" inputMode="decimal" min="0" step="1" value={s.gsdpText} disabled={s.locked} onChange={(e) => onGsdpText(e.target.value)} onBlur={onBlur} style={{ ...field, flex: '0 0 96px', width: 96, height: 38 }} />
           <input type="range" aria-label="GSDP" min={s.gsdpMin} max={s.gsdpMax} step={s.gsdpStep} value={s.gsdpVal} disabled={s.locked} onChange={(e) => onGsdpSlide(+e.target.value)} style={{ flex: '1 1 auto', minWidth: 60 }} />
         </div>
         <span style={{ fontSize: 12, color: s.gsdpHintCol, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={s.gsdpHint}>{s.gsdpHint}</span>

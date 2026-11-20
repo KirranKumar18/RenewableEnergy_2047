@@ -82,6 +82,7 @@ class ConvergenceModel:
     tx: dict = field(default_factory=dict)              # state -> {year: demeaned log transmission index}
     tx_km: dict = field(default_factory=dict)           # state -> {year: km of renewable-related lines}
     tx_last: int | None = None                          # last year with transmission reports
+    gsdp_outlook: str | None = None                     # GDP outlook behind gsdp_cagr (model/gsdp_projection.py)
 
     # ───────────── fitting ─────────────
     def _zone_int_hist(self, df: pd.DataFrame, t: str) -> dict:

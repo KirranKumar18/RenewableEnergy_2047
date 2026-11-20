@@ -30,7 +30,8 @@ export default function App() {
   const [hy, setHy] = useState(null);
   const [hc, setHc] = useState(null);
   const [more, setMore] = useState(false);
-  const [gsdpL, setGsdpL] = useState(null);   // scope GSDP override, lakh crore
+  const [gsdpL, setGsdpL] = useState(null);   // scope GSDP override, lakh crore at 2011-12 prices (the model's unit)
+  const [outlook, setOutlook] = useState(null); // GDP outlook for the default GSDP path; null = the API default
   const [popCr, setPopCr] = useState(null);   // scope population override, crore
   const [edit, setEdit] = useState({ field: null, text: '' });
 
@@ -55,13 +56,13 @@ export default function App() {
     const ctl = new AbortController();
     const id = setTimeout(() => {
       setScBusy(true);
-      getScenario({ scope, zone, state: sel, year, gsdp_crore: gsdpL != null && year > 2024 ? gsdpL * 1e5 : null }, ctl.signal)
+      getScenario({ scope, zone, state: sel, year, outlook, gsdp_crore: gsdpL != null && year > 2024 ? gsdpL * 1e5 : null }, ctl.signal)
         .then((d) => { setSc(d); setScErr(null); })
         .catch((e) => { if (e.name !== 'AbortError') setScErr(String(e.message || e)); })
         .finally(() => setScBusy(false));
     }, 180);
     return () => { clearTimeout(id); ctl.abort(); };
-  }, [meta, scope, zone, sel, year, gsdpL]);
+  }, [meta, scope, zone, sel, year, gsdpL, outlook]);
 
   const n = year - 2024;
   const scopeStates = sc ? sc.scope_states : [];
@@ -276,13 +277,20 @@ export default function App() {
     // The slider follows the local value while dragging; the server's echo lags behind and would snap it back.
     const g24L = sc.gsdp.base_crore / 1e5, defL = sc.gsdp.default_crore / 1e5, usedL = gsdpL != null && !flat ? gsdpL : sc.gsdp.used_crore / 1e5;
     const gMax = g24L * Math.pow(1.2, Math.max(1, n));
+    // GSDP is shown and typed at current prices (what government figures use); the model works at 2011-12 prices.
+    const nf = sc.gsdp.nominal_factor || 1;
+    const nomStr = (realL) => fmtIN(realL * nf, realL * nf >= 100 ? 0 : 2);
+    const outlooks = meta.gsdp_outlooks || [];
+    const curOutlook = sc.gsdp.outlook || meta.gsdp_default_outlook;
     const scen = {
       locked: flat, status: flat ? 'Reported data' : anyCustom ? 'Custom scenario' : 'Default projection', anyCustom,
       scopeNote: isIndia ? 'Sliders set GSDP and population for all of India. Every state scales by the same factor.'
         : isZone ? `Sliders set GSDP and population for the ${zone} zone. Each member state scales by the same factor.`
           : `Sliders set GSDP and population for ${sel} only.`,
-      gsdpText: edit.field === 'g' ? edit.text : usedL.toFixed(2), gsdpMin: g24L, gsdpMax: gMax, gsdpStep: Math.max(0.001, (gMax - g24L) / 400), gsdpVal: Math.min(gMax, Math.max(g24L, usedL)),
-      gsdpHint: `Projected ₹${fmtIN(defL, 2)} lakh Cr. ${sc.gsdp.growth_pct != null ? sc.gsdp.growth_pct.toFixed(1) + '% growth a year' : ''}${custom ? ` (default ${sc.gsdp.default_growth_pct.toFixed(1)}%)` : ''}`,
+      gsdpText: edit.field === 'g' ? edit.text : (usedL * nf).toFixed(usedL * nf >= 100 ? 0 : 2), nf, gsdpMin: g24L, gsdpMax: gMax, gsdpStep: Math.max(0.001, (gMax - g24L) / 400), gsdpVal: Math.min(gMax, Math.max(g24L, usedL)),
+      gsdpHint: flat ? `₹${nomStr(usedL)} lakh Cr at current prices (₹${fmtIN(usedL, 2)} lakh Cr at 2011-12 prices).`
+        : `${custom ? 'Your input' : sc.gsdp.outlook_label + ' path'}: ${sc.gsdp.growth_pct.toFixed(1)}% real growth a year${custom ? ` (outlook ${sc.gsdp.default_growth_pct.toFixed(1)}%, ₹${nomStr(defL)} lakh Cr)` : ''}. At 2011-12 prices ₹${fmtIN(usedL, 2)} lakh Cr.`,
+      outlooks: outlooks.map((o) => ({ id: o.id, label: o.label, short: o.short, note: o.note, nominal2047: o.india_2047_nominal_crore })), outlook: curOutlook,
       gsdpHintCol: custom ? t.gold : t.text3,
       popText: edit.field === 'p' ? edit.text : (popUsed / 1e7).toFixed(2), popMin: popDefault * 0.5 / 1e7, popMax: popDefault * 1.5 / 1e7, popStep: Math.max(0.001, popDefault / 1e7 / 200), popVal: popUsed / 1e7,
       popHint: `Projected ${fmtIN(popDefault / 1e7, 2)} Cr${popCustom ? `. ${signPct((popUsed / popDefault - 1) * 100)} on projection` : ''}`,
@@ -310,7 +318,7 @@ export default function App() {
       hero: {
         kicker: isIndia ? `${scopeStates.length} states and union territories, ${year}` : isZone ? `${scopeStates.length} states, ${year}` : `${zone} zone, ${year}`,
         title: scopeName,
-        sub: flat ? '2024 reported data, with the model nowcast where reports are stale.' : custom ? `Forecast with GSDP growing ${sc.gsdp.growth_pct.toFixed(1)}% a year.` : 'Model forecast with GSDP at its recent growth rate.'
+        sub: flat ? '2024 reported data, with the model nowcast where reports are stale.' : custom ? `Forecast with GSDP growing ${sc.gsdp.growth_pct.toFixed(1)}% a year in real terms.` : `Model forecast with GSDP on the ${sc.gsdp.outlook_label} path (${sc.gsdp.growth_pct.toFixed(1)}% real growth a year).`
       },
       levels, crumbs, years
     };
@@ -360,7 +368,8 @@ export default function App() {
               onZoomIn={() => setFocus(vm.levels[Math.min(vm.levels.length - 1, li + 1)])} onZoomOut={() => setFocus(vm.levels[Math.max(0, li - 1)])} onReset={() => pickScope('india')} />
           </section>
           <ScenarioBar s={vm.scen} year={year}
-            onGsdpText={(txt) => { setEdit({ field: 'g', text: txt }); const v = parseFloat(txt); if (v > 0) setGsdpL(Math.max(vm.scen.g24L, Math.min(vm.scen.gsdpMax, v))); }}
+            onGsdpText={(txt) => { setEdit({ field: 'g', text: txt }); const v = parseFloat(txt) / vm.scen.nf; if (v > 0) setGsdpL(Math.max(vm.scen.g24L, Math.min(vm.scen.gsdpMax, v))); }}
+            onOutlook={(o) => { setOutlook(o); setGsdpL(null); setEdit({ field: null, text: '' }); }}
             onGsdpSlide={(v) => { setEdit({ field: null, text: '' }); setGsdpL(v); }}
             onPopText={(txt) => { setEdit({ field: 'p', text: txt }); const v = parseFloat(txt); if (v > 0) setPopCr(v); }}
             onPopSlide={(v) => { setEdit({ field: null, text: '' }); setPopCr(v); }}

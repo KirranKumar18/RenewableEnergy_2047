@@ -25,6 +25,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from re_model import TECH, ElasticityModel, fresh_mask, load_data  # noqa: E402
 from convergence_model import ConvergenceModel  # noqa: E402
+from gsdp_projection import DEFAULT_SCENARIO, SCENARIOS, apply_to_model  # noqa: E402
 
 warnings.filterwarnings("ignore")
 HERE = Path(__file__).resolve().parent
@@ -98,7 +99,8 @@ def _no_catchup(m):
 
 
 def national_path(model, years):
-    """Each state's GSDP grows at its own recent CAGR; sum forecasts nationally (GW)."""
+    """Sum each state's forecast nationally (GW), with GSDP on the model's default path (the default GDP outlook
+    for v2; each state's recent CAGR for v1)."""
     out = {}
     for y in years:
         tot = dict.fromkeys(TECH, 0.0)
@@ -142,7 +144,9 @@ def main():
     print(mean2.round(1).to_string())
 
     v1 = ElasticityModel().fit(df); v1.to_json(HERE / "re2047_model_v1.json")
-    v2 = ConvergenceModel().fit(df); v2.to_json(HERE / "re2047_model.json")
+    v2 = ConvergenceModel().fit(df)
+    apply_to_model(v2, DEFAULT_SCENARIO)   # default GSDP path = the default GDP outlook (model/gsdp_projection.py)
+    v2.to_json(HERE / "re2047_model.json")
 
     print(f"\nv2 fitted on all data (base year {v2.base_year}, trend half-life {v2.half_life} y)")
     for t in TECH:
@@ -163,7 +167,7 @@ def main():
 
     YEARS = [2024, 2030, 2035, 2040, 2047]
     n2, n1 = national_path(v2, YEARS), national_path(v1, YEARS)
-    print("\nNational forecast, GW — v2 (each state's GSDP at its recent CAGR)")
+    print(f"\nNational forecast, GW — v2 (GSDP on the '{SCENARIOS[DEFAULT_SCENARIO]['label']}' outlook)")
     print(n2.to_string())
     print("\nv1 for reference")
     print(n1.to_string())
