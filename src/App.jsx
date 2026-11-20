@@ -84,6 +84,8 @@ export default function App() {
   const fresh = () => { resetInputs(); setHover(null); };
   const pickState = (s) => { if (s !== sel || scope === 'india') resetInputs(); setSel(s); setHover(null); setScope(scope === 'zone' ? 'zone' : 'state'); setFocus(scope === 'zone' ? 'zone' : 'state'); };
   const pickScope = (s) => { if (s !== scope) resetInputs(); setScope(s); setFocus(s); };
+  // Map breadcrumbs: "India" and the zone open that level's view (not just zoom); the state crumb zooms back in.
+  const pickCrumb = (id) => { if (id === 'india' || id === 'zone') pickScope(id); else setFocus(id); };
   const pickYear = (y) => { setYear(y); setHy(null); setEdit({ field: null, text: '' }); setGsdpL(null); setPopCr(null); };
 
   const vm = useMemo(() => {
@@ -139,9 +141,14 @@ export default function App() {
 
     const hovering = hover && hover !== sel && sc.states[hover];
     const scopeVal = perPerson ? (tk < 0 ? total : capArr[tk]) * 1e6 / popUsed : (tk < 0 ? total : capArr[tk]);
-    const tip = hovering
-      ? { kind: metricName + ', pointer', name: hover, val: fmtV(valOf(hover)) }
-      : { kind: metricName + ' in ' + year, name: scopeName, val: fmtV(scopeVal) };
+    // India view: the card always shows India; the state under the pointer is a second line (click it to open it).
+    const sideState = isIndia && hover && sc.states[hover] ? hover : null;
+    const tip = isIndia
+      ? { kind: metricName + ' in ' + year, name: scopeName, val: fmtV(scopeVal),
+          sub: sideState ? { name: sideState, val: fmtV(valOf(sideState)) } : null }
+      : hovering
+        ? { kind: metricName + ', pointer', name: hover, val: fmtV(valOf(hover)) }
+        : { kind: metricName + ' in ' + year, name: scopeName, val: fmtV(scopeVal) };
 
     // trajectory
     const years = sc.trajectory.years;
@@ -349,8 +356,8 @@ export default function App() {
             <GlobeMap th={t} values={vm.mapVals} bins={vm.bins} selected={vm.isIndia ? '' : sel} zone={zone}
               zoneOf={Object.fromEntries(vm.names.map((s) => [s, sc.states[s].zone]))} scope={vm.isZone ? 'zone' : 'state'} focus={focus}
               hovered={hover} onPick={pickState} onHover={(s) => setHover(s)} valueLabel={vm.fmtV} />
-            <MapOverlays vm={vm} year={year} focus={focus} onFocus={setFocus} perPerson={perPerson} onPerPerson={setPerPerson}
-              onZoomIn={() => setFocus(vm.levels[Math.min(vm.levels.length - 1, li + 1)])} onZoomOut={() => setFocus(vm.levels[Math.max(0, li - 1)])} onReset={() => setFocus('india')} />
+            <MapOverlays vm={vm} year={year} focus={focus} onFocus={pickCrumb} perPerson={perPerson} onPerPerson={setPerPerson}
+              onZoomIn={() => setFocus(vm.levels[Math.min(vm.levels.length - 1, li + 1)])} onZoomOut={() => setFocus(vm.levels[Math.max(0, li - 1)])} onReset={() => pickScope('india')} />
           </section>
           <ScenarioBar s={vm.scen} year={year}
             onGsdpText={(txt) => { setEdit({ field: 'g', text: txt }); const v = parseFloat(txt); if (v > 0) setGsdpL(Math.max(vm.scen.g24L, Math.min(vm.scen.gsdpMax, v))); }}

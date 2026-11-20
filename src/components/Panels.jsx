@@ -191,6 +191,17 @@ export function MapOverlays({ vm, year, focus, onFocus, perPerson, onPerPerson, 
         <div style={{ fontSize: 12, color: 'var(--text3)' }}>{vm.tip.kind}</div>
         <div style={{ fontWeight: 600, fontSize: 14 }}>{vm.tip.name}</div>
         <div style={{ fontFamily: COND, fontSize: 26, fontWeight: 600, lineHeight: 1.1, color: 'var(--gold)' }}>{vm.tip.val}</div>
+        {vm.isIndia && (vm.tip.sub ? (
+          <div style={{ marginTop: 8, paddingTop: 8, borderTop: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 2 }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', gap: 12, fontSize: 13 }}>
+              <span style={{ color: 'var(--text2)' }}>{vm.tip.sub.name.replace(' And ', ' and ')}</span>
+              <span style={{ fontFamily: COND, fontSize: 16, fontWeight: 600 }}>{vm.tip.sub.val}</span>
+            </div>
+            <span style={{ fontSize: 12, color: 'var(--text3)' }}>Click to zoom in and see its details</span>
+          </div>
+        ) : (
+          <div style={{ marginTop: 6, fontSize: 12, color: 'var(--text3)' }}>Point at a state to compare it; click to zoom in.</div>
+        ))}
       </div>
       <div title={vm.legendNote} style={{ ...overlay, left: 12, bottom: 12, display: 'flex', flexDirection: 'column', gap: 3, padding: '8px 10px', fontSize: 12, color: 'var(--text2)' }}>
         <span style={{ fontWeight: 600, color: 'var(--text)' }}>{vm.metricName}, {year}</span>
