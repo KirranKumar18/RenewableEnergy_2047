@@ -1,0 +1,7 @@
+component,model,mae_pp,solar_mae_pp,wind_mae_pp,solar_k,solar_t0,wind_k,wind_t0,params
+mix_scurve,Least Squares (Baseline),0.448,0.505,0.391,0.188,2032.3,0.037,2040.8,"{""loss"": ""linear"", ""reg_k"": 0.0}"
+mix_scurve,Huber Robust S-Curve,0.448,0.505,0.391,0.188,2032.3,0.024,2051.0,"{""loss"": ""huber"", ""reg_k"": 0.0, ""f_scale"": 0.004}"
+mix_scurve,Soft-L1 Robust S-Curve,0.451,0.511,0.39,0.189,2032.3,0.026,2049.2,"{""loss"": ""soft_l1"", ""reg_k"": 0.0, ""f_scale"": 0.004}"
+mix_scurve,L2-Reg S-Curve (reg=1e-4),0.448,0.505,0.391,0.188,2032.3,0.037,2040.6,"{""loss"": ""linear"", ""reg_k"": 0.0001}"
+mix_scurve,L2-Reg S-Curve (reg=5e-4),0.448,0.505,0.391,0.188,2032.3,0.039,2039.8,"{""loss"": ""linear"", ""reg_k"": 0.0005}"
+mix_scurve,Huber + L2-Reg (reg=2e-4),0.448,0.505,0.391,0.188,2032.3,0.026,2049.5,"{""loss"": ""huber"", ""reg_k"": 0.0002, ""f_scale"": 0.004}"

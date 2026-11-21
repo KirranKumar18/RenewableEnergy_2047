@@ -1,0 +1,9 @@
+component,model,wape_pct,solar_wind_wape_pct,mae_pp
+state_re_share,5-Yr Avg Share (Baseline),13.79,14.75,3.1
+state_re_share,Last-Yr Share (Naive Lag1),7.95,6.35,1.74
+state_re_share,Ridge ML (CV-tuned),10.55,8.83,2.18
+state_re_share,HuberRegressor (Robust ML),8.09,6.35,1.76
+state_re_share,ElasticNet ML (Share+Mom),10.42,8.72,2.1
+state_re_share,RandomForest (ML),11.11,10.21,2.07
+state_re_share,GradientBoosting (ML),12.76,10.65,2.46
+state_re_share,LightGBM (ML),12.35,9.62,2.35

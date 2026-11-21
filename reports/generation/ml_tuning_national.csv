@@ -1,0 +1,9 @@
+component,model,mape_1_5,bias,h1,h3,h5,beta,gamma,sigma,r2,best_params
+national,OLS (Baseline),2.496,-0.92,1.54,2.69,2.96,0.586,2.2172,0.0203,0.503,{}
+national,Ridge (Nested CV),2.563,-0.473,1.5,2.84,2.97,0.554,2.5808,0.0203,0.502,"{""alpha"": 1.0}"
+national,BayesianRidge (ML),2.809,0.307,1.53,3.14,3.56,0.5136,3.0374,0.0205,0.496,{}
+national,HuberRegressor (Robust ML),2.824,-1.27,1.76,2.99,3.43,0.5836,2.3788,0.0203,0.503,"{""epsilon"": 2.0, ""alpha"": 1.0}"
+national,ElasticNet (Nested CV),2.42,-0.374,1.45,2.96,2.35,0.5492,2.5734,0.0203,0.501,"{""alpha"": 0.002, ""l1_ratio"": 0.8}"
+national,Time-Weighted Ridge (CV),2.663,-0.255,1.57,3.14,2.83,0.5231,2.6526,0.0204,0.496,"{""half_life"": 12.0, ""alpha"": 1.0}"
+national,RandomForest (Direct),3.933,1.839,1.72,4.56,5.0,,,,,{}
+national,GradientBoosting (Direct),3.529,1.038,1.69,4.16,4.2,,,,,{}

@@ -147,7 +147,12 @@ def anchors(path, hist, h26):
         yrs8 = np.arange(2019, BASE + 1)
         for c in ("nuclear", "hydro", "small_hydro", "bio", "waste"):
             slope = np.polyfit(yrs8, hist.loc[yrs8, c], 1)[0]          # recent share trend, carried on at half speed
-            out[c] = np.maximum(0.0, h26[c] + 0.5 * slope * (T - BASE))
+            if slope >= 0:
+                out[c] = h26[c] + 0.5 * slope * (T - BASE)
+            else:
+                # Exponential share decay (same initial slope at BASE, never drags absolute TWh into a late-horizon crash)
+                r = max(0.5 * slope / max(h26[c], 1e-6), -0.040)
+                out[c] = h26[c] * np.exp(r * (T - BASE))
         out["gas"] = h26["gas"]
     out["coal"] = 1 - out.drop(columns="coal").sum(axis=1)
     return out, info

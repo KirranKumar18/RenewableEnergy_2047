@@ -30,7 +30,7 @@ function AllSourcesDashboard({ data, G, dataErr, onRetry, themeName, onTheme, da
   const [hc, setHc] = useState(null);
   const [more, setMore] = useState(false);
   const [outlook, setOutlook] = useState('dataset');
-  const [mix, setMix] = useState('balanced');
+  const [mix, setMix] = useState('trend');
   const [growth, setGrowth] = useState(null);           // custom real GDP growth, % a year (scope)
   const [popCr, setPopCr] = useState(null);             // custom population, crore (scope)
   const [edit, setEdit] = useState({ field: null, text: '' });
@@ -59,7 +59,10 @@ function AllSourcesDashboard({ data, G, dataErr, onRetry, themeName, onTheme, da
     const drv0 = G.drivers(outlook, sc, BASE);
     const popDef = drv.pop * 1e6;                                      // persons
     const yIdx = drv.inc * drv.pop / drv0.pop;                         // real GDP/GSDP index on the base year
-    const gDef = n > 0 ? (Math.pow(yIdx, 1 / n) - 1) * 100 : 0;
+    const dPrev = G.drivers(outlook, sc, Math.max(FIRST, year - 1));
+    const dCurr = G.drivers(outlook, sc, Math.max(FIRST + 1, year));
+    const gHist = ((dCurr.inc * dCurr.pop) / Math.max(dPrev.inc * dPrev.pop, 1e-9) - 1) * 100;
+    const gDef = n > 0 ? (Math.pow(yIdx, 1 / n) - 1) * 100 : gHist;
     const custom = !flat && growth != null, popCustom = !flat && popCr != null;
     const anyCustom = custom || popCustom;
     const popUsed = popCustom ? popCr * 1e7 : popDef;
@@ -197,9 +200,9 @@ function AllSourcesDashboard({ data, G, dataErr, onRetry, themeName, onTheme, da
       { label: 'Proposed production', val: twhParts(prodTotal)[0], unit: 'TWh', delta: 'Resource-based mix, ' + M.mixes[mix].label.toLowerCase(), muted: true, ...spark(at(prodScope)) },
       { label: prodTotal >= total ? 'Net exports' : 'Net imports', val: fmtIN(Math.abs(prodTotal - total), 0), unit: 'TWh', delta: flat ? 'Reported year' : `${fmtIN(Math.abs(prodTotal - total) / Math.max(total, 1e-9) * 100, 0)}% of the need`, muted: true, ...spark(at((y) => prodScope(y) - defTotal(y))) },
     ]).concat([
-      { label: 'Generation per person', val: fmtIN(perCap, 0), unit: 'kWh a year', delta: popCustom ? 'Uses your population' : 'UN WPP 2024 population', muted: true, ...spark(at((y) => needOf(y) * 1e3 / popAt(y))) },
-      { label: 'Population', val: fmtIN(popUsed / 1e7, 1), unit: 'crore', delta: popCustom ? signPct((popUsed / popDef - 1) * 100) + ' on projection' : 'Projected', muted: true, ...spark(at((y) => popAt(y))) },
-      { label: 'Urban share', val: fmtIN(drv.urban, 1), unit: '%', delta: `${fmtIN(drv0.urban, 1)}% in ${fy(BASE)}`, muted: true, ...spark(at((y) => G.drivers(outlook, sc, y).urban)) },
+      { label: 'Generation per person', val: fmtIN(perCap, 0), unit: 'kWh a year', delta: popCustom ? 'Uses your population' : 'GitHub dataset projection', muted: true, ...spark(at((y) => needOf(y) * 1e3 / popAt(y))) },
+      { label: 'Population', val: fmtIN(popUsed / 1e7, 1), unit: 'crore', delta: popCustom ? signPct((popUsed / popDef - 1) * 100) + ' on projection' : 'GitHub dataset projection', muted: true, ...spark(at((y) => popAt(y))) },
+      { label: isIndia ? 'Real GDP per person' : 'Real GSDP per person', val: '×' + fmtIN(drv.inc / Math.max(drv0.inc, 1e-9), 2), unit: `on ${fy(BASE)}`, delta: `${data.outlooks[outlook].label}`, muted: true, ...spark(at((y) => G.drivers(outlook, sc, y).inc / Math.max(drv0.inc, 1e-9))) },
       { label: isIndia ? 'Coal share of generation' : 'Clean share of production', val: fmtIN(isIndia ? shares[0] : cs, 0), unit: '%', delta: isIndia ? `${fmtIN(grouped(mixAt(BASE))[0] / sum(grouped(mixAt(BASE))) * 100, 0)}% in ${fy(BASE)}` : `${fmtIN(cs0, 0)}% in ${fy(BASE)}`, muted: true, ...spark(at((y) => { const a = grouped(mixAt(y)); return isIndia ? a[0] / sum(a) * 100 : cleanShare(a); })) },
     ]).map((o) => ({ ...o, dcol: o.muted ? t.text3 : dcol }));
 
@@ -243,9 +246,9 @@ function AllSourcesDashboard({ data, G, dataErr, onRetry, themeName, onTheme, da
       locked: flat, status: flat ? 'Reported data' : anyCustom ? 'Custom scenario' : 'Default projection', anyCustom,
       scopeNote: isIndia ? 'Inputs set GDP growth and population for all of India.' : `Inputs set GSDP growth and population for ${scopeName}. They move its production need; the proposed plants stay as planned.`,
       outlooks, outlook, mixes: Object.entries(M.mixes).map(([id, m]) => ({ id, label: m.label, note: m.note })), mix,
-      gLabel: `Real ${isIndia ? 'GDP' : 'GSDP'} growth, ${BASE} to ${year}, % a year`, gInputStep: 0.1, gAria: isIndia ? 'GDP growth' : 'GSDP growth',
+      gLabel: flat ? `Real ${isIndia ? 'GDP' : 'GSDP'} growth in ${fy(year)}, % a year` : `Real ${isIndia ? 'GDP' : 'GSDP'} growth, ${BASE} to ${year}, % a year`, gInputStep: 0.1, gAria: isIndia ? 'GDP growth' : 'GSDP growth',
       gsdpText: edit.field === 'g' ? edit.text : gUsed.toFixed(1), nf: 1, gsdpMin: 2, gsdpMax: 11, gsdpStep: 0.1, gsdpVal: Math.min(11, Math.max(2, gUsed)),
-      gsdpHint: flat ? 'Reported year.' : `${custom ? 'Your input' : data.outlooks[outlook].label + ' outlook'}: ${gUsed.toFixed(1)}% a year${custom ? ` (outlook ${gDef.toFixed(1)}%)` : ''}. Generation responds with elasticity ${beta}.`,
+      gsdpHint: flat ? `Reported year (${gUsed.toFixed(1)}% real growth in dataset). Choose a forecast year to adjust.` : `${custom ? 'Your input' : data.outlooks[outlook].label + ' outlook'}: ${gUsed.toFixed(1)}% a year${custom ? ` (outlook ${gDef.toFixed(1)}%)` : ''}. Generation responds with elasticity ${beta}.`,
       gsdpHintCol: custom ? t.gold : t.text3,
       popText: edit.field === 'p' ? edit.text : (popUsed / 1e7).toFixed(2), popMin: popDefCr * 0.8, popMax: popDefCr * 1.2, popStep: Math.max(0.001, popDefCr / 400), popVal: popUsed / 1e7,
       popHint: `Projected ${fmtIN(popDefCr, 2)} Cr${popCustom ? `. ${signPct((popUsed / popDef - 1) * 100)} on projection` : ''}`,
@@ -257,7 +260,8 @@ function AllSourcesDashboard({ data, G, dataErr, onRetry, themeName, onTheme, da
 
     // ---- accuracy and table
     const B2 = M.backtest;
-    const acc = [['Generation model (in use)', B2.mape.model], ['Without urbanization', B2.mape.model_no_urban], ['Naive 5-year trend', B2.mape.naive_trend]]
+    const acc = [['Generation model (in use)', B2.mape.model], ['Naive 5-year trend', B2.mape.naive_trend]]
+      .filter(([, v]) => v != null)
       .map(([name, v], i) => ({ name, value: v.toFixed(1) + '%', w: Math.min(100, v / 10 * 100) + '%', color: i === 0 ? t.gold : t.muted }));
     const g0arr = grouped(mixAt(BASE));
     const table = TECH.map((x, k) => ({ name: x.name, color: t.tech[k], cells: [fmtIN(genArr[k], 1), pct(shares[k]), fmtIN(g0arr[k], 1), g0arr[k] > 0 ? '×' + fmtIN(genArr[k] / g0arr[k], 1) : '–'] }));
@@ -268,10 +272,10 @@ function AllSourcesDashboard({ data, G, dataErr, onRetry, themeName, onTheme, da
       legendNote: 'Colour bands are fixed to the default forecast, so your GDP and population inputs shift the colours.',
       mixTitle: 'Generation mix', mixSub: `${scopeName}, ${fy(year)}${flat ? ' (reported)' : ', proposed mix'}. Choose a source to shade the map by it.`,
       topTitle: 'Leading states', topSub: `Ranked by ${metricLower} in ${year}. Select one to fly to it.`,
-      topM, mixRows, tip, tl, trajInfo, costMix, zoneBars, zoneTitle: `Production need by region, ${fy(year)}`, zoneSub: 'Population, income and urbanization. Select one to open it.',
+      topM, mixRows, tip, tl, trajInfo, costMix, zoneBars, zoneTitle: `Production need by region, ${fy(year)}`, zoneSub: 'Population and income (GitHub dataset). Select one to open it.',
       costBars, costHero, tiles, why, insights, scen, acc,
-      accSub: `Mean absolute error of national generation 1–5 years ahead (rolling origins FY2013–FY2021, actual GDP given). Regional split: ${B2.regional_wape.model}% vs ${B2.regional_wape.naive_share}% for fixed shares.`,
-      accNote: `Elasticity of generation per person to income per person ${M.model.beta} ± ${M.model.beta_se}; urbanization ${M.model.gamma} ± ${M.model.gamma_se}. Fitted on ${M.model.fit_years}. ${M.rule}`,
+      accSub: `Mean absolute error of national generation 1–5 years ahead (rolling origins FY2013–FY2021, GitHub dataset GDP & population). Regional split: ${B2.regional_wape.model}% vs ${B2.regional_wape.naive_share}% for fixed shares.`,
+      accNote: `Elasticity of generation per person to income per person ${M.model.beta} ± ${M.model.beta_se}. Fitted on ${M.model.fit_years} using NPP generation and GitHub dataset (Population & GSDP). ${M.rule}`,
       statusLabel: `Generation model, ${B2.mape.model}% backtest error`,
       tableTitle: `Generation by source, ${fy(year)}`, tableHead: ['Source', 'TWh', 'Share', 'TWh ' + BASE, 'Growth'], table,
       tableNote: !isIndia ? `${isState ? regionOfScope + ' region strengths' : 'Strengths'}: ${strat.strengths.join('; ')}.` : `Mix pathway: ${M.mixes[mix].label}. Hydro = large + small hydro; Bio & waste = biomass, bagasse and waste-to-energy.`,

@@ -31,7 +31,7 @@ export default function RenewablesDashboard({ data, G, dataErr, onRetry, themeNa
   const [hc, setHc] = useState(null);
   const [more, setMore] = useState(false);
   const [outlook, setOutlook] = useState('dataset');
-  const [mix, setMix] = useState('balanced');
+  const [mix, setMix] = useState('trend');
   const [growth, setGrowth] = useState(null);           // custom real GDP/GSDP growth, % a year (scope)
   const [popCr, setPopCr] = useState(null);             // custom population, crore (scope)
   const [edit, setEdit] = useState({ field: null, text: '' });
@@ -64,7 +64,10 @@ export default function RenewablesDashboard({ data, G, dataErr, onRetry, themeNa
     const drv0 = G.drivers(outlook, sc, BASE);
     const popDef = drv.pop * 1e6;                                      // persons
     const yIdx = drv.inc * drv.pop / drv0.pop;                         // real GDP/GSDP index on the base year
-    const gDef = n > 0 ? (Math.pow(yIdx, 1 / n) - 1) * 100 : 0;
+    const dPrev = G.drivers(outlook, sc, Math.max(FIRST, year - 1));
+    const dCurr = G.drivers(outlook, sc, Math.max(FIRST + 1, year));
+    const gHist = ((dCurr.inc * dCurr.pop) / Math.max(dPrev.inc * dPrev.pop, 1e-9) - 1) * 100;
+    const gDef = n > 0 ? (Math.pow(yIdx, 1 / n) - 1) * 100 : gHist;
     const custom = !flat && growth != null, popCustom = !flat && popCr != null;
     const anyCustom = custom || popCustom;
     const popUsed = popCustom ? popCr * 1e7 : popDef;
@@ -211,12 +214,6 @@ export default function RenewablesDashboard({ data, G, dataErr, onRetry, themeNa
     const reNatTotal = sum(groupedRenewable(G.natMix(outlook, mix, year))) * (isIndia ? ratio : 1);
     const natReAt = (y) => sum(groupedRenewable(G.natMix(outlook, mix, y)));
     const baseTot = sum(g0arr);
-    const baseShare = (idx) => (baseTot > 0 ? g0arr[idx] / baseTot * 100 : 0);
-    const shareAt = (y, idxs) => {
-      const a = groupedRenewable(mixAt(y));
-      const s = sum(a);
-      return s > 0 ? idxs.reduce((acc, idx) => acc + a[idx], 0) / s * 100 : 0;
-    };
     const natShareCur = reNatTotal > 0 ? total / reNatTotal * 100 : 0;
     const natShareBase = natReAt(BASE) > 0 ? baseTot / natReAt(BASE) * 100 : 0;
     const tiles = (isIndia ? [
@@ -224,11 +221,8 @@ export default function RenewablesDashboard({ data, G, dataErr, onRetry, themeNa
     ] : [
       { label: "Share of India's RE", val: fmtIN(natShareCur, natShareCur < 10 ? 1 : 0), unit: '%', delta: `${fmtIN(natShareBase, natShareBase < 10 ? 1 : 0)}% in ${fy(BASE)}`, muted: true, ...spark(at((y) => { const nt = natReAt(y); return nt > 0 ? needOf(y) / nt * 100 : 0; })) },
     ]).concat([
-      { label: 'Solar share of RE', val: fmtIN(shares[0], 0), unit: '%', delta: `${fmtIN(baseShare(0), 0)}% in ${fy(BASE)}`, ...spark(at((y) => shareAt(y, [0]))) },
-      { label: 'Wind share of RE', val: fmtIN(shares[1], 0), unit: '%', delta: `${fmtIN(baseShare(1), 0)}% in ${fy(BASE)}`, muted: true, ...spark(at((y) => shareAt(y, [1]))) },
-      { label: 'Renewable per person', val: fmtIN(perCap, 0), unit: 'kWh a year', delta: popCustom ? 'Uses your population' : 'UN WPP 2024 population', muted: true, ...spark(at((y) => needOf(y) * 1e3 / popAt(y))) },
-      { label: 'Population', val: fmtIN(popUsed / 1e7, 1), unit: 'crore', delta: popCustom ? signPct((popUsed / popDef - 1) * 100) + ' on projection' : 'Projected', muted: true, ...spark(at((y) => popAt(y))) },
-      { label: 'Hydro, bio & waste', val: fmtIN(shares[2] + shares[3] + shares[4], 0), unit: '%', delta: `${fmtIN(baseShare(2) + baseShare(3) + baseShare(4), 0)}% in ${fy(BASE)}`, muted: true, ...spark(at((y) => shareAt(y, [2, 3, 4]))) },
+      { label: 'Renewable per person', val: fmtIN(perCap, 0), unit: 'kWh a year', delta: popCustom ? 'Uses your population' : 'GitHub dataset projection', muted: true, ...spark(at((y) => needOf(y) * 1e3 / popAt(y))) },
+      { label: 'Population', val: fmtIN(popUsed / 1e7, 1), unit: 'crore', delta: popCustom ? signPct((popUsed / popDef - 1) * 100) + ' on projection' : 'GitHub dataset projection', muted: true, ...spark(at((y) => popAt(y))) },
     ]).map((o) => ({ ...o, dcol: o.muted ? t.text3 : dcol }));
 
     // ---- why this forecast: exact additive renewable breakdown by source since FY2025-26
@@ -281,9 +275,9 @@ export default function RenewablesDashboard({ data, G, dataErr, onRetry, themeNa
       outlooks, outlook,
       mixes: Object.entries(M.mixes).map(([id, m]) => ({ id, label: m.label, note: `${m.label} renewable generation trajectory.` })),
       mix,
-      gLabel: `Real ${econ} growth, ${BASE} to ${year}, % a year`, gInputStep: 0.1, gAria: `${econ} growth`,
+      gLabel: flat ? `Real ${econ} growth in ${fy(year)}, % a year` : `Real ${econ} growth, ${BASE} to ${year}, % a year`, gInputStep: 0.1, gAria: `${econ} growth`,
       gsdpText: edit.field === 'g' ? edit.text : gUsed.toFixed(1), nf: 1, gsdpMin: 2, gsdpMax: 11, gsdpStep: 0.1, gsdpVal: Math.min(11, Math.max(2, gUsed)),
-      gsdpHint: flat ? 'Reported year.' : `${custom ? 'Your input' : data.outlooks[outlook].label + ' outlook'}: ${gUsed.toFixed(1)}% a year${custom ? ` (outlook ${gDef.toFixed(1)}%)` : ''}. Generation responds with elasticity ${beta}.`,
+      gsdpHint: flat ? `Reported year (${gUsed.toFixed(1)}% real growth in dataset). Choose a forecast year to adjust.` : `${custom ? 'Your input' : data.outlooks[outlook].label + ' outlook'}: ${gUsed.toFixed(1)}% a year${custom ? ` (outlook ${gDef.toFixed(1)}%)` : ''}. Generation responds with elasticity ${beta}.`,
       gsdpHintCol: custom ? t.gold : t.text3,
       popText: edit.field === 'p' ? edit.text : (popUsed / 1e7).toFixed(2), popMin: popDefCr * 0.8, popMax: popDefCr * 1.2, popStep: Math.max(0.001, popDefCr / 400), popVal: popUsed / 1e7,
       popHint: `Projected ${fmtIN(popDefCr, 2)} Cr${popCustom ? `. ${signPct((popUsed / popDef - 1) * 100)} on projection` : ''}`,
@@ -295,7 +289,8 @@ export default function RenewablesDashboard({ data, G, dataErr, onRetry, themeNa
 
     // ---- accuracy and source table
     const B2 = M.backtest;
-    const acc = [['Generation model (in use)', B2.mape.model], ['Without urbanization', B2.mape.model_no_urban], ['Naive 5-year trend', B2.mape.naive_trend]]
+    const acc = [['Generation model (in use)', B2.mape.model], ['Naive 5-year trend', B2.mape.naive_trend]]
+      .filter(([, v]) => v != null)
       .map(([name, v], i) => ({ name, value: v.toFixed(1) + '%', w: Math.min(100, v / 10 * 100) + '%', color: i === 0 ? t.gold : t.muted }));
     const table = RE_TECH.map((x, k) => ({ name: x.name, color: techColors[k], cells: [fmtIN(genArr[k], 1), pct(shares[k]), fmtIN(g0arr[k], 1), g0arr[k] > 0 ? '×' + fmtIN(genArr[k] / g0arr[k], 1) : '–'] }));
 
@@ -309,8 +304,8 @@ export default function RenewablesDashboard({ data, G, dataErr, onRetry, themeNa
       zoneTitle: `Renewable generation by region, ${fy(year)}`,
       zoneSub: 'Solar, wind, hydro, bio-mass and waste-to-energy. Select one to open it.',
       costBars, costHero, tiles, why, insights, scen, acc,
-      accSub: `Mean absolute error of national generation 1–5 years ahead (rolling origins FY2013–FY2021, actual GDP given). Regional split: ${B2.regional_wape.model}% vs ${B2.regional_wape.naive_share}% for fixed shares.`,
-      accNote: `Uses the same generation forecast model (NPP + CEA RE generation + renewable_energy_dataset.csv population & GSDP drivers). Elasticity ${M.model.beta} ± ${M.model.beta_se}; urbanization ${M.model.gamma} ± ${M.model.gamma_se}. ${M.rule}`,
+      accSub: `Mean absolute error of national generation 1–5 years ahead (rolling origins FY2013–FY2021, GitHub dataset GDP & population). Regional split: ${B2.regional_wape.model}% vs ${B2.regional_wape.naive_share}% for fixed shares.`,
+      accNote: `Fitted on ${M.model.fit_years} using only NPP generation and GitHub dataset (renewable_energy_dataset.csv Population & GSDP). Elasticity ${M.model.beta} ± ${M.model.beta_se}. ${M.rule}`,
       statusLabel: `Generation model (RE), ${B2.mape.model}% backtest error`,
       tableTitle: `Renewable generation by source, ${fy(year)}`, tableHead: ['Source', 'TWh', 'Share', 'TWh ' + BASE, 'Growth'], table,
       tableNote: !isIndia

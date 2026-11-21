@@ -158,8 +158,10 @@ export function makeModel(d) {
     const parts = [
       { key: 'pop', label: 'Population growth', value: `${fmt(b.pop, 0)} → ${fmt(v.pop, 0)} million`, l: Math.log(v.pop / b.pop) },
       { key: 'inc', label: scope === 'India' ? 'Income per person (GDP)' : 'Income per person (GSDP)', value: `×${fmt(v.inc / b.inc, 2)} on ${fy(BASE)}`, l: beta * Math.log(v.inc / b.inc) },
-      { key: 'urb', label: 'Urbanization', value: `${fmt(b.urban, 1)}% → ${fmt(v.urban, 1)}% urban`, l: gamma * (v.urban - b.urban) / 100 },
     ];
+    if (Math.abs(gamma) > 1e-6) {
+      parts.push({ key: 'urb', label: 'Urbanization', value: `${fmt(b.urban, 1)}% → ${fmt(v.urban, 1)}% urban`, l: gamma * (v.urban - b.urban) / 100 });
+    }
     const lt = Math.log(total / g0);
     const rest = lt - parts.reduce((a, p) => a + p.l, 0);
     if (Math.abs(rest) > 2e-3) parts.push({ key: 'rest', label: scope === 'India' ? 'Your inputs' : isState ? 'Share of region total' : 'Share of national total', value: scope === 'India' ? '' : isState ? 'states scaled to add up to their region' : 'regions scaled to add up to India', l: rest });

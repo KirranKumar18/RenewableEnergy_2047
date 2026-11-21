@@ -387,21 +387,42 @@ export function DetailPanel({ vm, year, zone, more, onMore }) {
         <div aria-hidden="true" style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12, color: 'var(--text3)' }}><span>2024</span><span>2030</span><span>2035</span><span>2040</span><span>2047</span></div>
       </section>
 
-      <dl style={{ margin: 0, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '18px 16px', paddingTop: 18, borderTop: '1px solid var(--line)' }}>
-        {vm.tiles.map((k) => (
-          <div key={k.label}>
-            <dt style={{ fontSize: 13, color: 'var(--text2)' }}>{k.label}</dt>
-            <dd style={{ margin: '2px 0 0', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 6 }}>
-              <span style={{ whiteSpace: 'nowrap', minWidth: 0 }}><span style={{ fontFamily: COND, fontSize: 24, fontWeight: 600 }}>{k.val}</span> <span style={{ fontSize: 12, color: 'var(--text3)' }}>{k.unit}</span></span>
-              <svg width="48" height="24" viewBox="0 0 64 24" preserveAspectRatio="none" aria-hidden="true" style={{ flex: '0 0 auto', overflow: 'visible' }}>
-                <polyline points={k.pts} fill="none" stroke="var(--ink)" strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round" />
+      {vm.tiles.length === 3 ? (
+        <dl style={{ margin: 0, display: 'flex', flexDirection: 'column', gap: 14, paddingTop: 18, borderTop: '1px solid var(--line)' }}>
+          {vm.tiles.map((k, idx) => (
+            <div key={k.label} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16, paddingTop: idx ? 12 : 0, borderTop: idx ? '1px solid var(--line)' : 'none' }}>
+              <div style={{ minWidth: 0 }}>
+                <dt style={{ fontSize: 13, color: 'var(--text2)' }}>{k.label}</dt>
+                <dd style={{ margin: '2px 0 0', whiteSpace: 'nowrap' }}>
+                  <span style={{ fontFamily: COND, fontSize: 24, fontWeight: 600 }}>{k.val}</span>{' '}
+                  <span style={{ fontSize: 12, color: 'var(--text3)' }}>{k.unit}</span>
+                </dd>
+                <dd style={{ margin: 0, fontSize: 12, color: k.dcol }}>{k.delta}</dd>
+              </div>
+              <svg width="96" height="36" viewBox="0 0 64 24" preserveAspectRatio="none" aria-hidden="true" style={{ flex: '0 0 auto', overflow: 'visible' }}>
+                <polyline points={k.pts} fill="none" stroke="var(--ink)" strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round" vectorEffect="non-scaling-stroke" />
                 <circle cx={k.cx} cy={k.cy} r="2.5" fill="var(--panel)" stroke="var(--gold)" strokeWidth="1.5" />
               </svg>
-            </dd>
-            <dd style={{ margin: 0, fontSize: 12, color: k.dcol }}>{k.delta}</dd>
-          </div>
-        ))}
-      </dl>
+            </div>
+          ))}
+        </dl>
+      ) : (
+        <dl style={{ margin: 0, display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0, 1fr))', gap: '18px 16px', paddingTop: 18, borderTop: '1px solid var(--line)' }}>
+          {vm.tiles.map((k) => (
+            <div key={k.label}>
+              <dt style={{ fontSize: 13, color: 'var(--text2)' }}>{k.label}</dt>
+              <dd style={{ margin: '2px 0 0', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 6 }}>
+                <span style={{ whiteSpace: 'nowrap', minWidth: 0 }}><span style={{ fontFamily: COND, fontSize: 24, fontWeight: 600 }}>{k.val}</span> <span style={{ fontSize: 12, color: 'var(--text3)' }}>{k.unit}</span></span>
+                <svg width="48" height="24" viewBox="0 0 64 24" preserveAspectRatio="none" aria-hidden="true" style={{ flex: '0 0 auto', overflow: 'visible' }}>
+                  <polyline points={k.pts} fill="none" stroke="var(--ink)" strokeWidth="1.5" strokeLinejoin="round" strokeLinecap="round" />
+                  <circle cx={k.cx} cy={k.cy} r="2.5" fill="var(--panel)" stroke="var(--gold)" strokeWidth="1.5" />
+                </svg>
+              </dd>
+              <dd style={{ margin: 0, fontSize: 12, color: k.dcol }}>{k.delta}</dd>
+            </div>
+          ))}
+        </dl>
+      )}
 
       <section aria-labelledby="why-h" style={{ ...sect, gap: 10 }}>
         <div>
