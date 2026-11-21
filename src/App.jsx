@@ -1,24 +1,23 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import GlobeMap from './components/GlobeMap';
+import RenewablesDashboard from './components/RenewablesDashboard';
 import { Header, Timeline, LeftPanel, MapOverlays, ScenarioBar, ChartsStrip, DetailPanel, StatusScreen } from './components/Panels';
 import { THEMES, TECH, ALL_ICON, MILESTONES, cssVars } from './lib/theme';
 import { fmtIN, pct, signPct, sum, nice } from './lib/format';
 import { STATE_TO_ZONE } from './data/stateMapping';
 import { makeModel, grouped, GROUP_KEYS, CLEAN_GROUPS, fy, twhStr } from './lib/generation';
 
-// Electricity GENERATION (= production) forecast to 2047, national and for the five grid regions.
-// Challenge rule: only energy generated is used; installed capacity and consumption are not used anywhere.
-// All numbers come from public/generation_forecast.json (model/generation/forecast.py).
+// Two dashboards sharing the same generation forecast model (public/generation_forecast.json —
+// NPP + CEA RE generation + renewable_energy_dataset.csv population & GSDP drivers; no installed capacity):
+//  - "all": India Generation Outlook (all sources — coal, solar, wind, hydro, nuclear, gas, bio & waste).
+//  - "renewables": India Renewable Outlook (strictly renewable technologies — solar, wind, hydro, bio-mass, waste-to-energy).
 
 const FIRST = 2024;
 const twhParts = (v) => [fmtIN(v, Math.abs(v) >= 100 ? 0 : 1), 'TWh'];
 
-export default function App() {
-  const [themeName, setThemeName] = useState('atlas');
+function AllSourcesDashboard({ data, G, dataErr, onRetry, themeName, onTheme, dashboard, onDashboard }) {
   const t = THEMES[themeName];
 
-  const [data, setData] = useState(null);
-  const [dataErr, setDataErr] = useState(null);
   const [scope, setScope] = useState('india');          // 'india' | 'zone' (grid region) | 'state'
   const [region, setRegion] = useState('West');
   const [sel, setSel] = useState('Gujarat');            // selected state
@@ -30,20 +29,12 @@ export default function App() {
   const [hy, setHy] = useState(null);
   const [hc, setHc] = useState(null);
   const [more, setMore] = useState(false);
-  const [outlook, setOutlook] = useState('viksit');
+  const [outlook, setOutlook] = useState('dataset');
   const [mix, setMix] = useState('balanced');
   const [growth, setGrowth] = useState(null);           // custom real GDP growth, % a year (scope)
   const [popCr, setPopCr] = useState(null);             // custom population, crore (scope)
   const [edit, setEdit] = useState({ field: null, text: '' });
 
-  const load = useCallback(() => {
-    setDataErr(null);
-    fetch('/generation_forecast.json').then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(setData).catch((e) => setDataErr(String(e.message || e)));
-  }, []);
-  useEffect(() => { load(); }, [load]);
-
-  const G = useMemo(() => (data ? makeModel(data) : null), [data]);
   const resetInputs = useCallback(() => { setGrowth(null); setPopCr(null); setEdit({ field: null, text: '' }); }, []);
   const pickRegion = (r) => { if (r !== region || scope !== 'zone') resetInputs(); setRegion(r); setScope('zone'); setFocus('zone'); setHover(null); };
   const pickState = (s) => { if (!G || !G.stateRegion(s)) return; if (s !== sel || scope !== 'state') resetInputs(); setSel(s); setRegion(G.stateRegion(s)); setScope('state'); setFocus('state'); setHover(null); };
@@ -88,11 +79,9 @@ export default function App() {
 
     // ---- map: per-state production need (or proposed generation of the chosen source)
     const tk = tech === 'all' ? -1 : GROUP_KEYS.indexOf(tech);
-    // Your GDP and population inputs move every state in the selected scope (all states for India, the region's
-    // states for a region, the one state for a state). Source-specific values move only for India (the plants stay as planned).
     const inScope = (st) => isIndia || (isState && st === sel) || (isZone && G.stateRegion(st) === region);
-    const stVal = (st, y = year, custom = true) => {
-      const live = custom && anyCustom && inScope(st);
+    const stVal = (st, y = year, useCustom = true) => {
+      const live = useCustom && anyCustom && inScope(st);
       const k = live ? (tk < 0 || isIndia ? ratio : 1) : 1;
       const v = (tk < 0 ? G.stateNeed(outlook, st, y) : grouped(G.stateMix(outlook, mix, st, y))[tk]) * k;
       const pop = G.stateDrivers(outlook, st, y).pop * (live ? popUsed / popDef : 1);
@@ -163,7 +152,7 @@ export default function App() {
     const costMix = {
       title: `Net trade between regions, ${fy(year)}`,
       rows: balOrder.map((b) => { const k = regions.indexOf(b.r); return { k, name: b.r, color: b.net >= 0 ? t.pos : t.neg, val: (b.net >= 0 ? '+' : '−') + twhStr(Math.abs(b.net)), w: Math.abs(b.net) / maxBal * 100 + '%', op: hc == null || hc === k ? 1 : 0.45 }; }),
-      readout: hc != null
+      readout: hc != null && bal[hc]
         ? `${regions[hc]}: proposed ${twhStr(prodOf(regions[hc]))} vs need ${twhStr(G.need(outlook, regions[hc], year))}. ${bal[hc].net >= 0 ? 'Exports' : 'Imports'} the difference over the national grid.`
         : flat ? 'Reported years: production and need are the same by definition.' : 'Proposed production minus production need. + exports, − imports.',
       aria: 'Bar chart of net trade by region in ' + year + '. ' + balOrder.map((b) => b.r + ' ' + fmtIN(b.net, 0) + ' TWh').join(', ') + '.'
@@ -247,14 +236,14 @@ export default function App() {
     ];
 
     // ---- scenario bar
-    const outlooks = Object.entries(data.outlooks).map(([id, o]) => ({ id, label: o.label, short: o.short, note: o.note }));
+    const outlooks = ['dataset', 'viksit'].filter((id) => data.outlooks[id]).map((id) => { const o = data.outlooks[id]; return { id, label: o.label, short: o.short, note: o.note }; });
     const gUsed = custom ? growth : gDef;
     const popDefCr = popDef / 1e7;
     const scen = {
       locked: flat, status: flat ? 'Reported data' : anyCustom ? 'Custom scenario' : 'Default projection', anyCustom,
       scopeNote: isIndia ? 'Inputs set GDP growth and population for all of India.' : `Inputs set GSDP growth and population for ${scopeName}. They move its production need; the proposed plants stay as planned.`,
       outlooks, outlook, mixes: Object.entries(M.mixes).map(([id, m]) => ({ id, label: m.label, note: m.note })), mix,
-      gLabel: `Real ${isIndia ? 'GDP' : 'GSDP'} growth, ${BASE} to ${year}, % a year`,
+      gLabel: `Real ${isIndia ? 'GDP' : 'GSDP'} growth, ${BASE} to ${year}, % a year`, gInputStep: 0.1, gAria: isIndia ? 'GDP growth' : 'GSDP growth',
       gsdpText: edit.field === 'g' ? edit.text : gUsed.toFixed(1), nf: 1, gsdpMin: 2, gsdpMax: 11, gsdpStep: 0.1, gsdpVal: Math.min(11, Math.max(2, gUsed)),
       gsdpHint: flat ? 'Reported year.' : `${custom ? 'Your input' : data.outlooks[outlook].label + ' outlook'}: ${gUsed.toFixed(1)}% a year${custom ? ` (outlook ${gDef.toFixed(1)}%)` : ''}. Generation responds with elasticity ${beta}.`,
       gsdpHintCol: custom ? t.gold : t.text3,
@@ -298,7 +287,8 @@ export default function App() {
 
   const pageStyle = { ...cssVars(t), height: '100vh', minHeight: 640, minWidth: 1200, display: 'flex', flexDirection: 'column', background: 'var(--bg)', color: 'var(--text)' };
   const header = (
-    <Header t={t} themeName={themeName} onTheme={() => setThemeName(themeName === 'night' ? 'atlas' : 'night')}
+    <Header t={t} themeName={themeName} onTheme={onTheme}
+      dashboard={dashboard} onDashboard={onDashboard}
       scope={scope} onScope={pickScope} sel={scope === 'state' ? sel : region}
       states={G ? (scope === 'state' ? G.stateNames.filter((x) => STATE_TO_ZONE[x]).sort() : G.regions) : []} onSelect={scope === 'state' ? pickState : pickRegion}
       year={year} onYear={pickYear} status={vm ? { label: vm.statusLabel, dot: t.good } : { label: dataErr ? 'Forecast data missing' : 'Loading forecast', dot: dataErr ? t.neg : t.warn }}
@@ -309,7 +299,7 @@ export default function App() {
     return (
       <div style={pageStyle}>
         {header}
-        <StatusScreen error={dataErr} onRetry={load} />
+        <StatusScreen error={dataErr} onRetry={onRetry} />
       </div>
     );
   }
@@ -343,4 +333,43 @@ export default function App() {
       </main>
     </div>
   );
+}
+
+export default function App() {
+  const [themeName, setThemeName] = useState('atlas');
+  const [dashboard, setDashboard] = useState(() => (window.location.hash === '#renewables' ? 'renewables' : 'all'));
+  const [data, setData] = useState(null);
+  const [dataErr, setDataErr] = useState(null);
+
+  const load = useCallback(() => {
+    setDataErr(null);
+    fetch('/generation_forecast.json').then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(setData).catch((e) => setDataErr(String(e.message || e)));
+  }, []);
+  useEffect(() => { load(); }, [load]);
+  const G = useMemo(() => (data ? makeModel(data) : null), [data]);
+
+  const pickDashboard = useCallback((d) => {
+    setDashboard(d);
+    window.history.replaceState(null, '', d === 'renewables' ? '#renewables' : window.location.pathname + window.location.search);
+  }, []);
+
+  useEffect(() => {
+    const onHash = () => setDashboard(window.location.hash === '#renewables' ? 'renewables' : 'all');
+    window.addEventListener('hashchange', onHash);
+    return () => window.removeEventListener('hashchange', onHash);
+  }, []);
+
+  useEffect(() => {
+    document.title = dashboard === 'renewables'
+      ? 'India Renewable Outlook — Renewable generation to 2047'
+      : 'India Generation Outlook — Electricity production to 2047';
+  }, [dashboard]);
+
+  const toggleTheme = useCallback(() => setThemeName((cur) => (cur === 'night' ? 'atlas' : 'night')), []);
+
+  if (dashboard === 'renewables') {
+    return <RenewablesDashboard data={data} G={G} dataErr={dataErr} onRetry={load} themeName={themeName} onTheme={toggleTheme} dashboard={dashboard} onDashboard={pickDashboard} />;
+  }
+  return <AllSourcesDashboard data={data} G={G} dataErr={dataErr} onRetry={load} themeName={themeName} onTheme={toggleTheme} dashboard={dashboard} onDashboard={pickDashboard} />;
 }

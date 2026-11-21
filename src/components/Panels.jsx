@@ -17,21 +17,29 @@ const Icon = ({ d, size = 16, color = 'currentColor', w = 1.8 }) => (
   </svg>
 );
 
-export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onSelect, year, onYear, status, busy, view = 'capacity', onView }) {
+export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onSelect, year, onYear, status, busy, dashboard = 'all', onDashboard, milestones = MILESTONES, zoneLabel = 'Region', selectLabel, view = 'capacity', onView }) {
+  const isRe = dashboard === 'renewables';
   return (
-    <header style={{ flex: '0 0 auto', height: 64, boxSizing: 'border-box', padding: '0 16px', display: 'flex', alignItems: 'center', gap: 14, background: 'var(--panel)', borderBottom: '1px solid var(--line)' }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12, paddingRight: 14, borderRight: '1px solid var(--line)', height: 40 }}>
+    <header style={{ flex: '0 0 auto', height: 64, boxSizing: 'border-box', padding: '0 16px', display: 'flex', alignItems: 'center', gap: 10, background: 'var(--panel)', borderBottom: '1px solid var(--line)' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 10, paddingRight: 12, borderRight: '1px solid var(--line)', height: 40, flex: '0 0 auto' }}>
         <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
           <rect width="32" height="32" rx="7" fill="var(--ink)" />
           <path d="M7 21.5h18" fill="none" stroke="var(--onInk)" strokeWidth="1.8" strokeLinecap="round" />
-          <path d="M10.5 21.5a5.5 5.5 0 0 1 11 0z" fill="var(--gold)" />
+          <path d="M10.5 21.5a5.5 5.5 0 0 1 11 0z" fill={isRe ? 'var(--good)' : 'var(--gold)'} />
           <path d="M16 9.5v2.2M9.6 12.6l1.5 1.5M22.4 12.6l-1.5 1.5" fill="none" stroke="var(--onInk)" strokeWidth="1.6" strokeLinecap="round" />
         </svg>
         <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.15 }}>
-          <span style={{ fontFamily: COND, fontSize: 19, fontWeight: 600, whiteSpace: 'nowrap' }}>India Generation Outlook</span>
-          <span style={{ fontSize: 12, color: 'var(--text3)', whiteSpace: 'nowrap' }}>Electricity production to 2047</span>
+          <span style={{ fontFamily: COND, fontSize: 18, fontWeight: 600, whiteSpace: 'nowrap' }}>{isRe ? 'India Renewable Outlook' : 'India Generation Outlook'}</span>
+          <span style={{ fontSize: 12, color: 'var(--text3)', whiteSpace: 'nowrap' }}>{isRe ? 'Renewable forecasts to 2047' : 'Electricity production to 2047'}</span>
         </div>
       </div>
+      {onDashboard && (
+        <div role="group" aria-label="Dashboard" style={{ ...segWrap, flex: '0 0 auto' }}>
+          {[['all', 'All sources'], ['renewables', 'Renewables']].map(([id, label]) => (
+            <button key={id} type="button" aria-pressed={dashboard === id} onClick={() => onDashboard(id)} style={{ ...segBtn, padding: '0 10px', whiteSpace: 'nowrap', ...seg(dashboard === id) }}>{label}</button>
+          ))}
+        </div>
+      )}
       {onView && (
         <div role="group" aria-label="View" style={segWrap}>
           {[['capacity', 'Capacity'], ['demand', 'Demand']].map(([id, label]) => (
@@ -40,17 +48,17 @@ export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onS
         </div>
       )}
       {view === 'capacity' && <>
-      <div role="group" aria-label="Forecast scope" style={segWrap}>
-        {[['india', 'India'], ['zone', 'Region'], ['state', 'State']].map(([id, label]) => (
-          <button key={id} type="button" aria-pressed={scope === id} onClick={() => onScope(id)} style={{ ...segBtn, padding: '0 12px', ...seg(scope === id) }}>{label}</button>
+      <div role="group" aria-label="Forecast scope" style={{ ...segWrap, flex: '0 0 auto' }}>
+        {[['india', 'India'], ['zone', zoneLabel], ['state', 'State']].map(([id, label]) => (
+          <button key={id} type="button" aria-pressed={scope === id} onClick={() => onScope(id)} style={{ ...segBtn, padding: '0 10px', ...seg(scope === id) }}>{label}</button>
         ))}
       </div>
-      <select aria-label={scope === 'state' ? 'State' : 'Region'} value={sel} onChange={(e) => onSelect(e.target.value)} style={{ height: 42, width: 176, flex: '0 1 auto', minWidth: 130, padding: '0 10px', borderRadius: 8, border: '1px solid var(--line2)', background: 'var(--panel)', color: 'var(--text)', fontWeight: 500 }}>
+      <select aria-label={selectLabel || (scope === 'state' ? 'State' : zoneLabel)} value={sel} onChange={(e) => onSelect(e.target.value)} style={{ height: 42, width: 162, flex: '0 1 auto', minWidth: 115, padding: '0 10px', borderRadius: 8, border: '1px solid var(--line2)', background: 'var(--panel)', color: 'var(--text)', fontWeight: 500 }}>
         {states.map((s) => <option key={s} value={s}>{s.replace(' And ', ' and ')}</option>)}
       </select>
-      <div role="group" aria-label="Forecast year" style={segWrap}>
-        {MILESTONES.map((y) => (
-          <button key={y} type="button" aria-pressed={y === year} onClick={() => onYear(y)} style={{ ...segBtn, padding: '0 9px', ...seg(y === year) }}>{y}</button>
+      <div role="group" aria-label="Forecast year" style={{ ...segWrap, flex: '0 0 auto' }}>
+        {milestones.map((y) => (
+          <button key={y} type="button" aria-pressed={y === year} onClick={() => onYear(y)} style={{ ...segBtn, padding: '0 8px', ...seg(y === year) }}>{y}</button>
         ))}
       </div>
       </>}
@@ -67,24 +75,34 @@ export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onS
 }
 
 export function StatusScreen({ error, apiBase, onRetry }) {
+  const isApi = apiBase !== undefined;
   return (
     <div style={{ flex: '1 1 0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {error ? (
         <div style={{ maxWidth: 520, padding: 28, borderRadius: 12, background: 'var(--panel)', border: '1px solid var(--line)' }}>
-          <h2 style={h2}>The forecast data couldn't be loaded</h2>
-          <p style={{ margin: '8px 0 0', color: 'var(--text2)' }}>The dashboard reads every number from <code>/generation_forecast.json</code>. Rebuild it from the project folder, then try again:</p>
-          <pre style={{ margin: '12px 0', padding: '10px 12px', borderRadius: 8, background: 'var(--panel2)', fontSize: 13 }}>.venv/bin/python model/generation/forecast.py</pre>
+          <h2 style={h2}>{isApi ? "The forecast API isn't reachable" : "The forecast data couldn't be loaded"}</h2>
+          {isApi ? (
+            <>
+              <p style={{ margin: '8px 0 0', color: 'var(--text2)' }}>The renewable dashboard reads every number from the model server at <code>{(apiBase || window.location.origin) + '/api'}</code>.{apiBase ? ' Start it from the project folder, then try again:' : ' It may be starting up. Try again in a few seconds.'}</p>
+              {apiBase && <pre style={{ margin: '12px 0', padding: '10px 12px', borderRadius: 8, background: 'var(--panel2)', fontSize: 13 }}>.venv/bin/python backend_api.py</pre>}
+            </>
+          ) : (
+            <>
+              <p style={{ margin: '8px 0 0', color: 'var(--text2)' }}>The dashboard reads every number from <code>/generation_forecast.json</code>. Rebuild it from the project folder, then try again:</p>
+              <pre style={{ margin: '12px 0', padding: '10px 12px', borderRadius: 8, background: 'var(--panel2)', fontSize: 13 }}>.venv/bin/python model/generation/forecast.py</pre>
+            </>
+          )}
           <p style={{ margin: '0 0 14px', fontSize: 13, color: 'var(--text3)' }}>Details: {error}</p>
           <button type="button" onClick={onRetry} style={{ ...ghostBtn, background: 'var(--ink)', color: 'var(--onInk)', border: 0 }}>Try again</button>
         </div>
       ) : (
-        <p style={{ color: 'var(--text2)' }}>Loading forecast data</p>
+        <p style={{ color: 'var(--text2)' }}>{isApi ? 'Connecting to the forecast API' : 'Loading forecast data'}</p>
       )}
     </div>
   );
 }
 
-export function Timeline({ tl, year, onPick }) {
+export function Timeline({ tl, year, onPick, milestones = MILESTONES }) {
   const first = 2024, last = 2047;
   const at = (y) => ((y - first) / (last - first)) * 100 + '%';
   return (
@@ -101,7 +119,7 @@ export function Timeline({ tl, year, onPick }) {
           aria-valuetext={`${year}, ${tl.value}`} style={{ width: '100%', height: 28, margin: 0 }} />
         <div aria-hidden="true" style={{ position: 'relative', height: 26 }}>
           {Array.from({ length: last - first + 1 }, (_, i) => first + i).map((y, i, all) => {
-            const on = y === year, major = MILESTONES.includes(y);
+            const on = y === year, major = milestones.includes(y);
             return (
               <button key={y} type="button" tabIndex={-1} onClick={() => onPick(y)}
                 style={{ position: 'absolute', left: at(y), transform: i === 0 ? 'none' : i === all.length - 1 ? 'translateX(-100%)' : 'translateX(-50%)', display: 'flex', flexDirection: 'column', alignItems: i === 0 ? 'flex-start' : i === all.length - 1 ? 'flex-end' : 'center', gap: 1, padding: 0, border: 0, background: 'transparent' }}>
@@ -258,8 +276,8 @@ export function ScenarioBar({ s, year, onGsdpText, onGsdpSlide, onPopText, onPop
       <div style={{ display: 'flex', flexDirection: 'column', gap: 3, minWidth: 0 }}>
         <label htmlFor="in-gsdp" style={{ fontSize: 13, color: 'var(--text2)' }}>{s.gLabel || `GSDP in ${year}, ₹ lakh crore (current prices)`}</label>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <input id="in-gsdp" type="number" inputMode="decimal" step={s.gLabel ? 0.1 : 1} value={s.gsdpText} disabled={s.locked} onChange={(e) => onGsdpText(e.target.value)} onBlur={onBlur} style={{ ...field, flex: '0 0 96px', width: 96, height: 38 }} />
-          <input type="range" aria-label="GDP growth" min={s.gsdpMin} max={s.gsdpMax} step={s.gsdpStep} value={s.gsdpVal} disabled={s.locked} onChange={(e) => onGsdpSlide(+e.target.value)} style={{ flex: '1 1 auto', minWidth: 60 }} />
+          <input id="in-gsdp" type="number" inputMode="decimal" step={s.gInputStep ?? (s.gLabel ? 0.1 : 1)} value={s.gsdpText} disabled={s.locked} onChange={(e) => onGsdpText(e.target.value)} onBlur={onBlur} style={{ ...field, flex: '0 0 96px', width: 96, height: 38 }} />
+          <input type="range" aria-label={s.gAria || 'GDP growth'} min={s.gsdpMin} max={s.gsdpMax} step={s.gsdpStep} value={s.gsdpVal} disabled={s.locked} onChange={(e) => onGsdpSlide(+e.target.value)} style={{ flex: '1 1 auto', minWidth: 60 }} />
         </div>
         <span style={{ fontSize: 12, color: s.gsdpHintCol, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={s.gsdpHint}>{s.gsdpHint}</span>
       </div>
@@ -390,7 +408,7 @@ export function DetailPanel({ vm, year, zone, more, onMore }) {
           <h2 id="why-h" style={h}>Why this forecast</h2>
           <p style={{ margin: '2px 0 0', fontSize: 12, color: 'var(--text3)' }}>{w.sub || `How much each input adds to or takes away from the ${year} forecast.`}</p>
         </div>
-        {w.state === 'flat' && <p style={{ margin: 0, fontSize: 13, color: 'var(--text2)' }}>Years up to FY2025-26 are reported generation, so there is nothing to explain. Choose a later year.</p>}
+        {w.state === 'flat' && <p style={{ margin: 0, fontSize: 13, color: 'var(--text2)' }}>{w.flatMsg || 'Years up to FY2025-26 are reported generation, so there is nothing to explain. Choose a later year.'}</p>}
         {w.state === 'loading' && <p role="status" style={{ margin: 0, fontSize: 13, color: 'var(--text3)' }}>Working out the breakdown{w.slow ? '. For a zone or all of India this runs the model for every state and can take up to 20 seconds.' : '.'}</p>}
         {w.state === 'ok' && w.busy && <p role="status" style={{ margin: 0, fontSize: 12, color: 'var(--warn)' }}>Updating for your latest inputs{w.slow ? ', which can take up to 20 seconds for a zone or all of India' : ''}. The bars below are from the previous inputs.</p>}
         {w.state === 'none' && <p style={{ margin: 0, fontSize: 13, color: 'var(--text3)' }}>The breakdown isn't available for this view.</p>}

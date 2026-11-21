@@ -70,17 +70,13 @@ def usd_inr(year: int) -> float:
 VIKSIT_TARGET_2047 = VIKSIT_USD_2047 * usd_inr(2047) / 1e7   # crore at current prices
 
 SCENARIOS = {
+    "dataset": {"label": "Dataset trend", "short": None,
+                "note": "the dataset's own 2014-2024 GSDP growth, held flat"},
     "viksit": {"label": "Viksit Bharat ($30 trillion)", "short": None,
                "note": f"steady real growth that makes GDP $30 trillion in 2047 (Rs {VIKSIT_TARGET_2047 / 1e5:,.0f} lakh crore at "
                        f"Rs {usd_inr(2047):.0f} per dollar: today's Rs {USD_INR_TODAY} falling {INR_DEPRECIATION:.2%} a year)"},
-    "wb": {"label": "World Bank high-income path", "short": "7.8% a year",
-           "note": "7.8% real growth a year, the average the World Bank says India needs to reach high income by 2047"},
-    "imf": {"label": "IMF outlook", "short": "6.5% easing to 5.5%",
-            "note": "IMF medium-term potential growth of 6.5% to 2030, easing to 5.5% by 2047"},
-    "dataset": {"label": "Dataset trend", "short": None,
-                "note": "the dataset's own 2014-2024 GSDP growth, held flat"},
 }
-DEFAULT_SCENARIO = "viksit"
+DEFAULT_SCENARIO = "dataset"
 
 
 def _trend(series: pd.Series) -> float:
@@ -126,14 +122,7 @@ class GsdpProjector:
     def national_growth(self, scenario: str, year: int) -> float:
         if scenario == "viksit":
             return self.viksit_growth
-        if scenario == "wb":
-            return 0.078
-        if scenario == "dataset":
-            return self.dataset_growth
-        # imf: 6.5% through 2030, then a straight line down to 5.5% in 2047, flat after
-        if year <= 2030:
-            return 0.065
-        return 0.065 - 0.010 * min(1.0, (year - 2030) / (2047 - 2030))
+        return self.dataset_growth
 
     def _build(self, scenario: str) -> pd.DataFrame:
         """years x states, real GSDP in crore."""

@@ -11,6 +11,85 @@ export const GROUPS = {
 export const GROUP_KEYS = Object.keys(GROUPS);
 export const CLEAN_GROUPS = ['solar', 'wind', 'hydro', 'nuclear', 'other'];
 
+// Strictly renewable generation groups (excludes coal, gas, and nuclear; splits bio-mass and waste-to-energy).
+export const RE_GROUPS = {
+  solar: ['solar'],
+  wind: ['wind'],
+  hydro: ['hydro', 'small_hydro'],
+  bio: ['bio'],
+  waste: ['waste'],
+};
+export const RE_GROUP_KEYS = Object.keys(RE_GROUPS);
+export const groupedRenewable = (bySource) => RE_GROUP_KEYS.map((g) => RE_GROUPS[g].reduce((a, s) => a + ((bySource || {})[s] || 0), 0));
+
+export const RE_STRATEGY = {
+  North: {
+    role: 'Solar powerhouse with Himalayan hydro firming',
+    strengths: [
+      "Rajasthan's Thar desert and Ladakh hold ~45% of India's assessed solar potential",
+      'Himalayan rivers in Himachal Pradesh, Uttarakhand and J&K hold about a third of large-hydro potential',
+      'Wind corridors in western Rajasthan, agri-residue biomass in Punjab/Haryana/UP, and urban waste-to-energy in Delhi-NCR',
+    ],
+    actions: [
+      'Scale utility solar across Rajasthan and Ladakh and ship daytime surplus over Green Energy Corridors',
+      'Use Himalayan reservoir hydro and pumped storage to shift solar into evening peaks',
+    ],
+    policy: 'National Solar Mission, Green Energy Corridor (Phase I–II), Ladakh renewable transmission project',
+  },
+  West: {
+    role: 'Wind-solar hybrid hub and coastal wind corridor',
+    strengths: [
+      "Gujarat and Maharashtra together hold over a third of India's 120 m wind potential",
+      "Utility solar parks led by Gujarat's Khavda renewable park and strong central-west irradiance",
+      'Large bagasse cogeneration, bio-mass and municipal waste-to-energy base across Maharashtra and Gujarat',
+    ],
+    actions: [
+      'Pair Gujarat and Maharashtra wind and solar into hybrid parks with battery storage',
+      'Develop Gujarat offshore wind and strengthen inter-regional renewable transmission',
+    ],
+    policy: 'Wind-Solar Hybrid Policy, offshore wind roadmap (Gujarat coast), National Bioenergy Programme',
+  },
+  South: {
+    role: 'Wind leader with Deccan solar and pumped hydro',
+    strengths: [
+      "Tamil Nadu, Karnataka and Andhra Pradesh hold ~43% of India's 120 m wind potential",
+      'Strong Deccan plateau solar across Andhra Pradesh, Karnataka and Telangana',
+      'Western Ghats hydro and pumped storage, Gulf of Mannar offshore wind, and urban waste-to-energy',
+    ],
+    actions: [
+      'Repower ageing Tamil Nadu wind turbines and develop offshore wind in the Gulf of Mannar',
+      'Use Western Ghats pumped hydro and storage to balance seasonal monsoon wind peaks',
+    ],
+    policy: 'National Repowering Policy for wind, offshore wind bidding trajectory, Green Energy Corridor',
+  },
+  East: {
+    role: 'Hydro, bio-mass and distributed solar transition region',
+    strengths: [
+      'Teesta (Sikkim) and Odisha river basins provide hydro and pumped storage potential',
+      'Utility, floating and rooftop solar on reservoirs and reclaimed land',
+      'Bio-mass and waste-to-energy opportunities across agricultural and urban centres',
+    ],
+    actions: [
+      'Expand reservoir hydro and pumped storage in Sikkim, Odisha and Jharkhand',
+      'Scale utility and rooftop solar while building eastern–western renewable transmission links',
+    ],
+    policy: 'Green Energy Corridor (inter-state), PM-KUSUM & rooftop solar, National Bioenergy Programme',
+  },
+  'North-East': {
+    role: 'Hydro export powerhouse with hill small-hydro',
+    strengths: [
+      "Arunachal Pradesh alone holds ~40% of India's large-hydro potential (Brahmaputra basin)",
+      'Abundant small-hydro potential across the hill states',
+      'Distributed rooftop solar, local bio-mass and waste-to-energy for growing urban centres',
+    ],
+    actions: [
+      'Develop staged storage hydro on Brahmaputra tributaries with environmental and seismic review',
+      'Export firm renewable hydro over North-East-to-North/West HVDC links while adding local solar',
+    ],
+    policy: 'Hydro policy (renewable status for large hydro, 2019), NE region power master plan, HVDC corridors',
+  },
+};
+
 const sumObj = (o) => Object.values(o || {}).reduce((a, b) => a + (b || 0), 0);
 export const grouped = (bySource) => GROUP_KEYS.map((g) => GROUPS[g].reduce((a, s) => a + ((bySource || {})[s] || 0), 0));
 

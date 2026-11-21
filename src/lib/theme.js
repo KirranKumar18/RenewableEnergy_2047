@@ -45,6 +45,19 @@ export const TECH = [
 export const ALL_ICON = 'M4 20V10M10 20V4M16 20v-7M22 20H2';
 export const MILESTONES = [2026, 2030, 2035, 2040, 2047];
 
+// Strictly renewable sources (Solar, Wind, Hydro, Bio-mass, Waste-to-energy) for the Renewables generation dashboard.
+export const RE_TECH = [
+  { id: 'solar', name: 'Solar', icon: 'M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z' },
+  { id: 'wind', name: 'Wind', icon: 'M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7' },
+  { id: 'hydro', name: 'Hydro', icon: 'M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z' },
+  { id: 'bio', name: 'Bio-mass', icon: 'M5 19c0-9 6-14 15-14 0 9-5 15-14 15M5 19l7-7' },
+  { id: 'waste', name: 'Waste-to-energy', icon: 'M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4' }
+];
+export const RE_TECH_COLORS = {
+  atlas: ['#C98A00', '#2E9E8F', '#2F6BC0', '#6E9A2F', '#C2477A'],
+  night: ['#F0B23A', '#4CC2B0', '#5B95E0', '#93BE4E', '#D46A95']
+};
+
 // CSS custom properties for the page chrome, so components can use var(--text) etc.
 export function cssVars(t) {
   const v = {};

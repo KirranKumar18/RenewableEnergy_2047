@@ -442,6 +442,11 @@ def explain(req: PredReq):
         ol = _outlook(req.outlook)
         res = pre.get(ol) if "default_gsdp_crore" not in pre else None
         if res and abs(req.gsdp_crore / res["default_gsdp_crore"] - 1) < 1e-4:
+            if key == "India":
+                res = copy.deepcopy(res)
+                for c in res.get("contributions", []):
+                    c["label"] = c["label"].replace("GSDP", "GDP")
+                res["unused_features"] = [u.replace("GSDP", "GDP") for u in res.get("unused_features", [])]
             return res
     return _explain_cached(req.zone, req.state, req.year, round(req.population), round(req.gsdp_crore, 1),
                            _outlook(req.outlook))
@@ -478,7 +483,8 @@ def _explain(req: PredReq):
     shown = [str(req.year), f"{X[0, 1]:.1f}%/yr", f"{X[:, 2].sum():.2f} Cr", zone_name,
              f"₹{X[:, 4].sum():.2f}L Cr"] + [f"{X[:, CAP0 + j].sum():,.0f} MW" for j in range(5)] \
         + [f"{tx_km:,.0f} km ({tx_years})"]
-    labels = ["Forecast year", "GSDP growth", "Population", "Zone", "2024 economy size (GSDP)"] \
+    econ = "GDP" if (req.zone or "").strip().lower() in ("india", "all", "all india") and entire else "GSDP"
+    labels = ["Forecast year", f"{econ} growth", "Population", "Zone", f"2024 economy size ({econ})"] \
         + [f"Existing {SHORT[t].lower()} base (2024)" for t in TECH] + ["Renewable transmission lines built"]
     contrib = [{"feature": f, "label": lab, "value": v, "mw": round(float(vals[i].sum()), 1),
                 "by_tech": {TECH_KEY[t]: round(float(vals[i, j]), 1) for j, t in enumerate(TECH)}}
