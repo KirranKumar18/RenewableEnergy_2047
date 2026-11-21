@@ -1,0 +1,9 @@
+,value
+far_signed_err_pct,-25.8
+far_wape_pct,47.5
+far_wape_after_national_scaling_pct,48.7
+share_of_far_error_removed_by_one_national_factor_pct,7.8
+states_under_forecast_far,9.0
+states_over_forecast_far,14.0
+corr_log_error_vs_catchup_gap,0.33
+corr_log_error_vs_log_size,-0.3

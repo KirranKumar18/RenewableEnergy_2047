@@ -1,0 +1,11 @@
+column,dtype,unit,description,non_null,min,max
+State,object,text,state or union territory,635,,
+Year,int64,year,calendar/financial year label of the row,635,2006,2024
+Installed - Bio-Mass Power,float64,MW,"installed capacity, Bio-Mass Power",635,0.0,2643.19
+Installed - Small Hydro Power,float64,MW,"installed capacity, Small Hydro Power",635,0.0,1280.73
+Installed - Solar Power,float64,MW,"installed capacity, Solar Power",635,0.0,25471.72
+Installed - Wind Power,float64,MW,"installed capacity, Wind Power",635,0.0,11722.72
+Zone,object,text,grid region (as in the dataset),635,,
+Installed - Waste to Energy,float64,MW,"installed capacity, Waste to Energy",635,0.0,82.37
+Population,float64,persons,population,635,61544.0,238078417.0
+GSDP (crore INR),float64,"crore INR, constant 2011-12 prices",gross state domestic product (real); 2011 base-year break and 2024 placeholder fixed in load_data,635,270.0,2043983.0

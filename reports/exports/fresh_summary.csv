@@ -1,0 +1,171 @@
+state,source,years,fresh_values,fresh_share_pct,last_fresh_year,stale_years_since_2020
+Andaman And Nicobar Islands,Bio-mass,19,1,5.3,2006,2020 2021 2022 2023 2024
+Andaman And Nicobar Islands,Small hydro,19,1,5.3,2006,2020 2021 2022 2023 2024
+Andaman And Nicobar Islands,Solar,19,8,42.1,2021,2022 2023 2024
+Andaman And Nicobar Islands,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Andaman And Nicobar Islands,Wind,19,3,15.8,2009,2020 2021 2022 2023 2024
+Andhra Pradesh,Bio-mass,19,13,68.4,2024,2021 2023
+Andhra Pradesh,Small hydro,19,12,63.2,2023,2020 2021 2022 2024
+Andhra Pradesh,Solar,19,15,78.9,2024,2022
+Andhra Pradesh,Waste-to-energy,19,5,26.3,2022,2023 2024
+Andhra Pradesh,Wind,19,13,68.4,2020,2021 2022 2023 2024
+Arunachal Pradesh,Bio-mass,19,4,21.1,2024,2020 2021
+Arunachal Pradesh,Small hydro,19,8,42.1,2023,2020 2021 2022 2024
+Arunachal Pradesh,Solar,19,6,31.6,2021,2022 2023 2024
+Arunachal Pradesh,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Arunachal Pradesh,Wind,19,3,15.8,2010,2020 2021 2022 2023 2024
+Assam,Bio-mass,19,5,26.3,2024,2021
+Assam,Small hydro,19,4,21.1,2013,2020 2021 2022 2023 2024
+Assam,Solar,19,10,52.6,2024,
+Assam,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Assam,Wind,19,2,10.5,2022,2020 2021 2023 2024
+Bihar,Bio-mass,19,11,57.9,2024,2021 2023
+Bihar,Small hydro,19,5,26.3,2012,2020 2021 2022 2023 2024
+Bihar,Solar,19,9,47.4,2024,2022
+Bihar,Waste-to-energy,19,3,15.8,2021,2022 2023 2024
+Bihar,Wind,19,2,10.5,2022,2020 2021 2023 2024
+Chandigarh,Bio-mass,12,1,8.3,2013,2020 2021 2022 2023 2024
+Chandigarh,Small hydro,12,1,8.3,2013,2020 2021 2022 2023 2024
+Chandigarh,Solar,12,9,75.0,2021,2022 2023 2024
+Chandigarh,Waste-to-energy,12,1,8.3,2013,2020 2021 2022 2023 2024
+Chandigarh,Wind,12,1,8.3,2013,2020 2021 2022 2023 2024
+Chhattisgarh,Bio-mass,19,14,73.7,2022,2023 2024
+Chhattisgarh,Small hydro,19,5,26.3,2016,2020 2021 2022 2023 2024
+Chhattisgarh,Solar,19,11,57.9,2024,2022
+Chhattisgarh,Waste-to-energy,19,2,10.5,2020,2021 2022 2023 2024
+Chhattisgarh,Wind,19,2,10.5,2022,2020 2021 2023 2024
+Delhi,Bio-mass,16,1,6.2,2009,2020 2021 2022 2023 2024
+Delhi,Small hydro,16,1,6.2,2009,2020 2021 2022 2023 2024
+Delhi,Solar,16,13,81.2,2021,2022 2023 2024
+Delhi,Waste-to-energy,16,3,18.8,2021,2020 2022 2023 2024
+Delhi,Wind,16,1,6.2,2009,2020 2021 2022 2023 2024
+Goa,Bio-mass,19,3,15.8,2024,2020 2021 2023
+Goa,Small hydro,19,1,5.3,2006,2020 2021 2022 2023 2024
+Goa,Solar,19,9,47.4,2024,2022
+Goa,Waste-to-energy,19,3,15.8,2022,2020 2021 2023 2024
+Goa,Wind,19,3,15.8,2024,2020 2021 2023
+Gujarat,Bio-mass,19,12,63.2,2024,2020 2021
+Gujarat,Small hydro,19,10,52.6,2023,2022 2024
+Gujarat,Solar,19,15,78.9,2024,2022
+Gujarat,Waste-to-energy,19,4,21.1,2022,2023 2024
+Gujarat,Wind,19,18,94.7,2024,2022
+Haryana,Bio-mass,19,13,68.4,2024,
+Haryana,Small hydro,19,4,21.1,2015,2020 2021 2022 2023 2024
+Haryana,Solar,19,14,73.7,2024,2022
+Haryana,Waste-to-energy,19,4,21.1,2022,2023 2024
+Haryana,Wind,19,2,10.5,2022,2020 2021 2023 2024
+Himachal Pradesh,Bio-mass,19,4,21.1,2022,2021 2023 2024
+Himachal Pradesh,Small hydro,19,16,84.2,2023,2022 2024
+Himachal Pradesh,Solar,19,9,47.4,2024,2022
+Himachal Pradesh,Waste-to-energy,19,3,15.8,2022,2021 2023 2024
+Himachal Pradesh,Wind,19,2,10.5,2022,2020 2021 2023 2024
+Jammu And Kashmir,Bio-mass,19,4,21.1,2024,2020 2021
+Jammu And Kashmir,Small hydro,19,15,78.9,2024,
+Jammu And Kashmir,Solar,19,10,52.6,2024,
+Jammu And Kashmir,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Jammu And Kashmir,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Jharkhand,Bio-mass,19,3,15.8,2024,2020 2021 2022 2023
+Jharkhand,Small hydro,19,1,5.3,2006,2020 2021 2022 2023 2024
+Jharkhand,Solar,19,13,68.4,2024,
+Jharkhand,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Jharkhand,Wind,19,3,15.8,2024,2020 2021 2023
+Karnataka,Bio-mass,19,17,89.5,2024,2021 2023
+Karnataka,Small hydro,19,13,68.4,2019,2020 2021 2022 2023 2024
+Karnataka,Solar,19,15,78.9,2024,2022
+Karnataka,Waste-to-energy,19,6,31.6,2024,2023
+Karnataka,Wind,19,18,94.7,2024,2022
+Kerala,Bio-mass,19,4,21.1,2022,2021 2023 2024
+Kerala,Small hydro,19,15,78.9,2024,2022
+Kerala,Solar,19,12,63.2,2024,2022
+Kerala,Waste-to-energy,19,2,10.5,2020,2021 2022 2023 2024
+Kerala,Wind,19,13,68.4,2024,2020 2021 2022 2023
+Lakshadweep,Bio-mass,19,1,5.3,2006,2020 2021 2022 2023 2024
+Lakshadweep,Small hydro,19,1,5.3,2006,2020 2021 2022 2023 2024
+Lakshadweep,Solar,19,7,36.8,2022,2021 2023 2024
+Lakshadweep,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Lakshadweep,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Madhya Pradesh,Bio-mass,19,11,57.9,2023,2021 2024
+Madhya Pradesh,Small hydro,19,6,31.6,2023,2021 2022 2024
+Madhya Pradesh,Solar,19,14,73.7,2024,2022
+Madhya Pradesh,Waste-to-energy,19,5,26.3,2022,2023 2024
+Madhya Pradesh,Wind,19,13,68.4,2023,2020 2021 2022 2024
+Maharashtra,Bio-mass,19,17,89.5,2024,2021
+Maharashtra,Small hydro,19,15,78.9,2024,2020 2022 2023
+Maharashtra,Solar,19,15,78.9,2024,2022
+Maharashtra,Waste-to-energy,19,6,31.6,2024,2021
+Maharashtra,Wind,19,16,84.2,2024,2020 2022 2023
+Manipur,Bio-mass,19,1,5.3,2006,2020 2021 2022 2023 2024
+Manipur,Small hydro,19,1,5.3,2006,2020 2021 2022 2023 2024
+Manipur,Solar,19,7,36.8,2021,2022 2023 2024
+Manipur,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Manipur,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Meghalaya,Bio-mass,19,3,15.8,2022,2020 2021 2023 2024
+Meghalaya,Small hydro,19,4,21.1,2022,2020 2021 2023 2024
+Meghalaya,Solar,19,5,26.3,2022,2023 2024
+Meghalaya,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Meghalaya,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Mizoram,Bio-mass,19,1,5.3,2006,2020 2021 2022 2023 2024
+Mizoram,Small hydro,19,6,31.6,2017,2020 2021 2022 2023 2024
+Mizoram,Solar,19,7,36.8,2021,2022 2023 2024
+Mizoram,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Mizoram,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Nagaland,Bio-mass,19,1,5.3,2006,2020 2021 2022 2023 2024
+Nagaland,Small hydro,19,5,26.3,2022,2020 2021 2023 2024
+Nagaland,Solar,19,6,31.6,2022,2023 2024
+Nagaland,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Nagaland,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Odisha,Bio-mass,19,4,21.1,2017,2020 2021 2022 2023 2024
+Odisha,Small hydro,19,6,31.6,2021,2022 2023 2024
+Odisha,Solar,19,11,57.9,2021,2022 2023 2024
+Odisha,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Odisha,Wind,19,2,10.5,2009,2020 2021 2022 2023 2024
+Puducherry,Bio-mass,19,1,5.3,2006,2020 2021 2022 2023 2024
+Puducherry,Small hydro,19,1,5.3,2006,2020 2021 2022 2023 2024
+Puducherry,Solar,19,9,47.4,2021,2022 2023 2024
+Puducherry,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Puducherry,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Punjab,Bio-mass,19,10,52.6,2020,2021 2022 2023 2024
+Punjab,Small hydro,19,10,52.6,2021,2020 2022 2023 2024
+Punjab,Solar,19,12,63.2,2021,2022 2023 2024
+Punjab,Waste-to-energy,19,4,21.1,2020,2021 2022 2023 2024
+Punjab,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Rajasthan,Bio-mass,19,11,57.9,2020,2021 2022 2023 2024
+Rajasthan,Small hydro,19,1,5.3,2006,2020 2021 2022 2023 2024
+Rajasthan,Solar,19,13,68.4,2021,2022 2023 2024
+Rajasthan,Waste-to-energy,19,2,10.5,2020,2021 2022 2023 2024
+Rajasthan,Wind,19,14,73.7,2020,2021 2022 2023 2024
+Sikkim,Bio-mass,19,1,5.3,2006,2020 2021 2022 2023 2024
+Sikkim,Small hydro,19,3,15.8,2010,2020 2021 2022 2023 2024
+Sikkim,Solar,19,4,21.1,2021,2022 2023 2024
+Sikkim,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Sikkim,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Tamil Nadu,Bio-mass,19,14,73.7,2020,2021 2022 2023 2024
+Tamil Nadu,Small hydro,19,4,21.1,2011,2020 2021 2022 2023 2024
+Tamil Nadu,Solar,19,13,68.4,2021,2022 2023 2024
+Tamil Nadu,Waste-to-energy,19,4,21.1,2021,2022 2023 2024
+Tamil Nadu,Wind,19,16,84.2,2021,2022 2023 2024
+Telangana,Bio-mass,18,9,50.0,2020,2021 2022 2023 2024
+Telangana,Small hydro,18,8,44.4,2017,2020 2021 2022 2023 2024
+Telangana,Solar,18,12,66.7,2021,2022 2023 2024
+Telangana,Waste-to-energy,18,5,27.8,2021,2022 2023 2024
+Telangana,Wind,18,9,50.0,2018,2020 2021 2022 2023 2024
+Tripura,Bio-mass,19,1,5.3,2006,2020 2021 2022 2023 2024
+Tripura,Small hydro,19,1,5.3,2006,2020 2021 2022 2023 2024
+Tripura,Solar,19,6,31.6,2021,2022 2023 2024
+Tripura,Waste-to-energy,19,1,5.3,2006,2020 2021 2022 2023 2024
+Tripura,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Uttar Pradesh,Bio-mass,19,12,63.2,2020,2021 2022 2023 2024
+Uttar Pradesh,Small hydro,19,2,10.5,2020,2021 2022 2023 2024
+Uttar Pradesh,Solar,19,12,63.2,2021,2022 2023 2024
+Uttar Pradesh,Waste-to-energy,19,3,15.8,2021,2022 2023 2024
+Uttar Pradesh,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+Uttarakhand,Bio-mass,19,7,36.8,2020,2021 2022 2023 2024
+Uttarakhand,Small hydro,19,11,57.9,2021,2020 2022 2023 2024
+Uttarakhand,Solar,19,10,52.6,2021,2022 2023 2024
+Uttarakhand,Waste-to-energy,19,2,10.5,2020,2021 2022 2023 2024
+Uttarakhand,Wind,19,1,5.3,2006,2020 2021 2022 2023 2024
+West Bengal,Bio-mass,19,5,26.3,2017,2020 2021 2022 2023 2024
+West Bengal,Small hydro,19,2,10.5,2014,2020 2021 2022 2023 2024
+West Bengal,Solar,19,12,63.2,2021,2022 2023 2024
+West Bengal,Waste-to-energy,19,3,15.8,2021,2022 2023 2024
+West Bengal,Wind,19,4,21.1,2012,2020 2021 2022 2023 2024

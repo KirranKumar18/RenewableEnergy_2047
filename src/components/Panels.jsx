@@ -28,8 +28,8 @@ export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onS
           <path d="M16 9.5v2.2M9.6 12.6l1.5 1.5M22.4 12.6l-1.5 1.5" fill="none" stroke="var(--onInk)" strokeWidth="1.6" strokeLinecap="round" />
         </svg>
         <div style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.15 }}>
-          <span style={{ fontFamily: COND, fontSize: 19, fontWeight: 600, whiteSpace: 'nowrap' }}>India Renewable Outlook</span>
-          <span style={{ fontSize: 12, color: 'var(--text3)', whiteSpace: 'nowrap' }}>Forecasts to 2047</span>
+          <span style={{ fontFamily: COND, fontSize: 19, fontWeight: 600, whiteSpace: 'nowrap' }}>India Generation Outlook</span>
+          <span style={{ fontSize: 12, color: 'var(--text3)', whiteSpace: 'nowrap' }}>Electricity production to 2047</span>
         </div>
       </div>
       {onView && (
@@ -41,11 +41,11 @@ export function Header({ t, themeName, onTheme, scope, onScope, sel, states, onS
       )}
       {view === 'capacity' && <>
       <div role="group" aria-label="Forecast scope" style={segWrap}>
-        {[['india', 'India'], ['zone', 'Zone'], ['state', 'State']].map(([id, label]) => (
+        {[['india', 'India'], ['zone', 'Region'], ['state', 'State']].map(([id, label]) => (
           <button key={id} type="button" aria-pressed={scope === id} onClick={() => onScope(id)} style={{ ...segBtn, padding: '0 12px', ...seg(scope === id) }}>{label}</button>
         ))}
       </div>
-      <select aria-label="State" value={sel} onChange={(e) => onSelect(e.target.value)} style={{ height: 42, width: 176, flex: '0 1 auto', minWidth: 130, padding: '0 10px', borderRadius: 8, border: '1px solid var(--line2)', background: 'var(--panel)', color: 'var(--text)', fontWeight: 500 }}>
+      <select aria-label={scope === 'state' ? 'State' : 'Region'} value={sel} onChange={(e) => onSelect(e.target.value)} style={{ height: 42, width: 176, flex: '0 1 auto', minWidth: 130, padding: '0 10px', borderRadius: 8, border: '1px solid var(--line2)', background: 'var(--panel)', color: 'var(--text)', fontWeight: 500 }}>
         {states.map((s) => <option key={s} value={s}>{s.replace(' And ', ' and ')}</option>)}
       </select>
       <div role="group" aria-label="Forecast year" style={segWrap}>
@@ -71,9 +71,9 @@ export function StatusScreen({ error, apiBase, onRetry }) {
     <div style={{ flex: '1 1 0', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {error ? (
         <div style={{ maxWidth: 520, padding: 28, borderRadius: 12, background: 'var(--panel)', border: '1px solid var(--line)' }}>
-          <h2 style={h2}>The forecast API isn't reachable</h2>
-          <p style={{ margin: '8px 0 0', color: 'var(--text2)' }}>The dashboard reads every number from the model server at <code>{(apiBase || window.location.origin) + '/api'}</code>.{apiBase ? ' Start it from the project folder, then try again:' : ' It may be starting up. Try again in a few seconds.'}</p>
-          {apiBase && <pre style={{ margin: '12px 0', padding: '10px 12px', borderRadius: 8, background: 'var(--panel2)', fontSize: 13 }}>.venv/bin/python backend_api.py</pre>}
+          <h2 style={h2}>The forecast data couldn't be loaded</h2>
+          <p style={{ margin: '8px 0 0', color: 'var(--text2)' }}>The dashboard reads every number from <code>/generation_forecast.json</code>. Rebuild it from the project folder, then try again:</p>
+          <pre style={{ margin: '12px 0', padding: '10px 12px', borderRadius: 8, background: 'var(--panel2)', fontSize: 13 }}>.venv/bin/python model/generation/forecast.py</pre>
           <p style={{ margin: '0 0 14px', fontSize: 13, color: 'var(--text3)' }}>Details: {error}</p>
           <button type="button" onClick={onRetry} style={{ ...ghostBtn, background: 'var(--ink)', color: 'var(--onInk)', border: 0 }}>Try again</button>
         </div>
@@ -120,18 +120,18 @@ export function Timeline({ tl, year, onPick }) {
 
 export function LeftPanel({ vm, year, tech, onTech, onPickState }) {
   return (
-    <aside aria-label="Capacity mix and leading states" style={{ minHeight: 0, overflowY: 'auto', padding: '22px 20px', background: 'var(--panel)', borderRight: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 26 }}>
+    <aside aria-label="Generation mix and regions" style={{ minHeight: 0, overflowY: 'auto', padding: '22px 20px', background: 'var(--panel)', borderRight: '1px solid var(--line)', display: 'flex', flexDirection: 'column', gap: 26 }}>
       <section aria-labelledby="mix-h" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
         <div>
-          <h2 id="mix-h" style={h2}>Capacity mix</h2>
-          <p style={sub}>{vm.scopeName} in {year}. Choose a source to shade the map by it.</p>
+          <h2 id="mix-h" style={h2}>{vm.mixTitle}</h2>
+          <p style={sub}>{vm.mixSub}</p>
         </div>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
           {vm.mixRows.map((m) => {
             const on = tech === m.id;
             return (
               <button key={m.id} type="button" aria-pressed={on} onClick={() => onTech(m.id)}
-                style={{ display: 'grid', gridTemplateColumns: '16px minmax(0, 1fr) 70px', gridTemplateRows: 'auto 4px', alignItems: 'center', gap: '4px 10px', padding: '10px 10px 10px 12px', border: 0, borderLeft: `2px solid ${on ? 'var(--gold)' : 'transparent'}`, borderRadius: '0 6px 6px 0', background: on ? 'var(--panel2)' : 'transparent', color: 'var(--text)', textAlign: 'left' }}>
+                style={{ display: 'grid', gridTemplateColumns: '16px minmax(0, 1fr) 92px', gridTemplateRows: 'auto 4px', alignItems: 'center', gap: '4px 10px', padding: '10px 10px 10px 12px', border: 0, borderLeft: `2px solid ${on ? 'var(--gold)' : 'transparent'}`, borderRadius: '0 6px 6px 0', background: on ? 'var(--panel2)' : 'transparent', color: 'var(--text)', textAlign: 'left' }}>
                 <Icon d={m.icon} color={m.color} />
                 <span style={{ display: 'flex', justifyContent: 'space-between', gap: 8 }}><span style={{ fontWeight: on ? 600 : 400 }}>{m.name}</span><span style={{ color: 'var(--text3)' }}>{m.share}</span></span>
                 <span style={{ textAlign: 'right', fontFamily: COND, fontSize: 17, fontWeight: 600 }}>{m.val}</span>
@@ -144,8 +144,8 @@ export function LeftPanel({ vm, year, tech, onTech, onPickState }) {
       </section>
       <section aria-labelledby="top-h" style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
         <div>
-          <h2 id="top-h" style={h2}>Leading states</h2>
-          <p style={sub}>Ranked by {vm.metricLower} in {year}. Select one to fly to it.</p>
+          <h2 id="top-h" style={h2}>{vm.topTitle}</h2>
+          <p style={sub}>{vm.topSub}</p>
         </div>
         <ol style={{ margin: 0, padding: 0, listStyle: 'none' }}>
           {vm.topM.map((r) => (
@@ -224,7 +224,7 @@ export function MapOverlays({ vm, year, focus, onFocus, perPerson, onPerPerson, 
   );
 }
 
-export function ScenarioBar({ s, year, onGsdpText, onGsdpSlide, onPopText, onPopSlide, onBlur, onReset, onOutlook }) {
+export function ScenarioBar({ s, year, onGsdpText, onGsdpSlide, onPopText, onPopSlide, onBlur, onReset, onOutlook, onMix }) {
   const field = { height: 42, padding: '0 10px', borderRadius: 8, border: '1px solid var(--line2)', background: 'var(--bg)', color: 'var(--text)', fontSize: 16, fontWeight: 600 };
   const tag = s.anyCustom ? { border: '1px solid var(--gold)', color: 'var(--gold)' } : { border: '1px solid var(--line2)', color: 'var(--text2)' };
   return (
@@ -245,12 +245,21 @@ export function ScenarioBar({ s, year, onGsdpText, onGsdpSlide, onPopText, onPop
             </select>
           </label>
         )}
+        {s.mixes && onMix && (
+          <label style={{ display: 'flex', alignItems: 'center', gap: 6, marginTop: 6, fontSize: 12, color: 'var(--text2)', whiteSpace: 'nowrap' }}>
+            Mix pathway
+            <select value={s.mix} onChange={(e) => onMix(e.target.value)} title={(s.mixes.find((m) => m.id === s.mix) || {}).note}
+              style={{ height: 28, minWidth: 0, flex: '1 1 auto', padding: '0 6px', borderRadius: 6, border: '1px solid var(--line2)', background: 'var(--panel)', color: 'var(--text)', fontSize: 12, fontWeight: 500 }}>
+              {s.mixes.map((m) => <option key={m.id} value={m.id} title={m.note}>{m.label}</option>)}
+            </select>
+          </label>
+        )}
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', gap: 3, minWidth: 0 }}>
-        <label htmlFor="in-gsdp" style={{ fontSize: 13, color: 'var(--text2)' }}>GSDP in {year}, ₹ lakh crore (current prices)</label>
+        <label htmlFor="in-gsdp" style={{ fontSize: 13, color: 'var(--text2)' }}>{s.gLabel || `GSDP in ${year}, ₹ lakh crore (current prices)`}</label>
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-          <input id="in-gsdp" type="number" inputMode="decimal" min="0" step="1" value={s.gsdpText} disabled={s.locked} onChange={(e) => onGsdpText(e.target.value)} onBlur={onBlur} style={{ ...field, flex: '0 0 96px', width: 96, height: 38 }} />
-          <input type="range" aria-label="GSDP" min={s.gsdpMin} max={s.gsdpMax} step={s.gsdpStep} value={s.gsdpVal} disabled={s.locked} onChange={(e) => onGsdpSlide(+e.target.value)} style={{ flex: '1 1 auto', minWidth: 60 }} />
+          <input id="in-gsdp" type="number" inputMode="decimal" step={s.gLabel ? 0.1 : 1} value={s.gsdpText} disabled={s.locked} onChange={(e) => onGsdpText(e.target.value)} onBlur={onBlur} style={{ ...field, flex: '0 0 96px', width: 96, height: 38 }} />
+          <input type="range" aria-label="GDP growth" min={s.gsdpMin} max={s.gsdpMax} step={s.gsdpStep} value={s.gsdpVal} disabled={s.locked} onChange={(e) => onGsdpSlide(+e.target.value)} style={{ flex: '1 1 auto', minWidth: 60 }} />
         </div>
         <span style={{ fontSize: 12, color: s.gsdpHintCol, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={s.gsdpHint}>{s.gsdpHint}</span>
       </div>
@@ -260,7 +269,7 @@ export function ScenarioBar({ s, year, onGsdpText, onGsdpSlide, onPopText, onPop
           <input id="in-pop" type="number" inputMode="decimal" min="0" step="0.01" value={s.popText} disabled={s.locked} onChange={(e) => onPopText(e.target.value)} onBlur={onBlur} style={{ ...field, flex: '0 0 86px', width: 86, height: 38 }} />
           <input type="range" aria-label="Population" min={s.popMin} max={s.popMax} step={s.popStep} value={s.popVal} disabled={s.locked} onChange={(e) => onPopSlide(+e.target.value)} style={{ flex: '1 1 auto', minWidth: 60 }} />
         </div>
-        <span style={{ fontSize: 12, color: s.popHintCol, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={s.note}>{s.popHint}. Only changes per-person figures.</span>
+        <span style={{ fontSize: 12, color: s.popHintCol, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={s.note}>{s.popHint}. {s.popTail || 'Only changes per-person figures.'}</span>
       </div>
       <button type="button" onClick={onReset} disabled={!s.anyCustom} style={{ ...ghostBtn, height: 38, whiteSpace: 'nowrap', opacity: s.anyCustom ? 1 : 0.5 }}>Reset</button>
     </section>
@@ -279,11 +288,11 @@ export function ChartsStrip({ vm, year, onTrajHover, onCostHover, onZone }) {
     <section aria-label="Charts" style={{ flex: '0 0 auto', height: 280, display: 'grid', gridTemplateColumns: 'minmax(0, 1.7fr) minmax(0, 1fr) minmax(0, 1fr)', background: 'var(--panel)', borderTop: '1px solid var(--line)' }}>
       <figure style={{ ...fig, borderRight: '1px solid var(--line)' }}>
         <figcaption style={{ minWidth: 0 }}>
-          <div style={title}>Capacity by source, 2024 to 2047</div>
+          <div style={title}>{tr.title}</div>
           <div style={{ fontSize: 13, color: 'var(--text2)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} title={tr.readout}>{tr.readout}</div>
           <div style={{ fontSize: 12, color: 'var(--text3)' }}>Each source has its own scale, so small ones stay readable.</div>
         </figcaption>
-        <div role="img" aria-label={tr.aria} style={{ flex: '1 1 0', minHeight: 0, display: 'grid', gridTemplateColumns: 'repeat(5, minmax(0, 1fr))', gap: 10 }}>
+        <div role="img" aria-label={tr.aria} style={{ flex: '1 1 0', minHeight: 0, display: 'grid', gridTemplateColumns: `repeat(${tr.cells.length}, minmax(0, 1fr))`, gap: 8 }}>
           {tr.cells.map((c) => (
             <div key={c.name} style={{ minWidth: 0, display: 'flex', flexDirection: 'column', gap: 2 }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--text2)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}><span style={{ flex: '0 0 auto', width: 9, height: 9, borderRadius: 2, background: c.color }} />{c.name}</div>
@@ -304,7 +313,7 @@ export function ChartsStrip({ vm, year, onTrajHover, onCostHover, onZone }) {
         </div>
       </figure>
       <figure style={{ ...fig, borderRight: '1px solid var(--line)', gap: 10 }}>
-        <figcaption><div style={title}>Cost to generate by source, {year}</div><div style={{ fontSize: 13, color: 'var(--text2)' }}>{vm.costMix.readout}</div></figcaption>
+        <figcaption><div style={title}>{vm.costMix.title}</div><div style={{ fontSize: 13, color: 'var(--text2)' }}>{vm.costMix.readout}</div></figcaption>
         <div role="img" aria-label={vm.costMix.aria} onMouseLeave={() => onCostHover(null)} style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
           {vm.costMix.rows.map((r) => (
             <div key={r.k} onMouseEnter={() => onCostHover(r.k)} style={{ display: 'grid', gridTemplateColumns: 'minmax(70px, 104px) minmax(30px, 1fr) auto', alignItems: 'center', gap: 10, minHeight: 24, fontSize: 13, opacity: r.op, transition: 'opacity 150ms' }}>
@@ -316,7 +325,7 @@ export function ChartsStrip({ vm, year, onTrajHover, onCostHover, onZone }) {
         </div>
       </figure>
       <figure style={{ ...fig, gap: 8 }}>
-        <figcaption><div style={title}>Capacity by zone, {year}</div><div style={{ fontSize: 13, color: 'var(--text2)' }}>Select a zone to map it.</div></figcaption>
+        <figcaption><div style={title}>{vm.zoneTitle}</div><div style={{ fontSize: 13, color: 'var(--text2)' }}>{vm.zoneSub}</div></figcaption>
         <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
           {vm.zoneBars.map((z) => (
             <button key={z.z} type="button" aria-pressed={z.on} onClick={() => onZone(z)} style={{ display: 'grid', gridTemplateColumns: 'minmax(64px, 82px) minmax(30px, 1fr) auto', alignItems: 'center', gap: 10, minHeight: 30, padding: '0 4px', border: 0, borderRadius: 4, background: z.on ? 'var(--panel2)' : 'transparent', color: 'var(--text)', fontSize: 13, textAlign: 'left' }}>
@@ -351,9 +360,9 @@ export function DetailPanel({ vm, year, zone, more, onMore }) {
       </div>
 
       <section aria-labelledby="cost-h" style={sect}>
-        <h2 id="cost-h" style={h}>Cost to generate in {year}</h2>
+        <h2 id="cost-h" style={h}>{vm.costHero.title}</h2>
         <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}><span style={{ fontFamily: COND, fontSize: 46, fontWeight: 600, lineHeight: 1 }}>{vm.costHero.val}</span><span style={{ fontSize: 15, color: 'var(--text2)' }}>{vm.costHero.unit}</span></div>
-        <div style={{ fontSize: 13, color: 'var(--text3)' }}><span style={{ color: vm.costHero.dcol }}>{vm.costHero.delta}</span>. Generation multiplied by each source's LCOE, blended at {vm.costHero.lcoe}.</div>
+        <div style={{ fontSize: 13, color: 'var(--text3)' }}><span style={{ color: vm.costHero.dcol }}>{vm.costHero.delta}</span>. {vm.costHero.note}</div>
         <div role="img" aria-label={vm.costHero.aria} style={{ marginTop: 8, height: 84, display: 'flex', alignItems: 'flex-end', gap: 3, borderBottom: '1px solid var(--line2)' }}>
           {vm.costBars.map((b, i) => <span key={i} style={{ flex: '1 1 0', height: b.h, borderRadius: '2px 2px 0 0', background: b.bg, transition: 'height 300ms ease' }} />)}
         </div>
@@ -379,9 +388,9 @@ export function DetailPanel({ vm, year, zone, more, onMore }) {
       <section aria-labelledby="why-h" style={{ ...sect, gap: 10 }}>
         <div>
           <h2 id="why-h" style={h}>Why this forecast</h2>
-          <p style={{ margin: '2px 0 0', fontSize: 12, color: 'var(--text3)' }}>How much each input adds to or takes away from the {year} capacity forecast. Exact SHAP values from the model server.</p>
+          <p style={{ margin: '2px 0 0', fontSize: 12, color: 'var(--text3)' }}>{w.sub || `How much each input adds to or takes away from the ${year} forecast.`}</p>
         </div>
-        {w.state === 'flat' && <p style={{ margin: 0, fontSize: 13, color: 'var(--text2)' }}>2024 figures are reported data, or the model's nowcast where reports are stale, so there is nothing to explain. Choose a later year.</p>}
+        {w.state === 'flat' && <p style={{ margin: 0, fontSize: 13, color: 'var(--text2)' }}>Years up to FY2025-26 are reported generation, so there is nothing to explain. Choose a later year.</p>}
         {w.state === 'loading' && <p role="status" style={{ margin: 0, fontSize: 13, color: 'var(--text3)' }}>Working out the breakdown{w.slow ? '. For a zone or all of India this runs the model for every state and can take up to 20 seconds.' : '.'}</p>}
         {w.state === 'ok' && w.busy && <p role="status" style={{ margin: 0, fontSize: 12, color: 'var(--warn)' }}>Updating for your latest inputs{w.slow ? ', which can take up to 20 seconds for a zone or all of India' : ''}. The bars below are from the previous inputs.</p>}
         {w.state === 'none' && <p style={{ margin: 0, fontSize: 13, color: 'var(--text3)' }}>The breakdown isn't available for this view.</p>}
@@ -419,21 +428,21 @@ export function DetailPanel({ vm, year, zone, more, onMore }) {
 
       {more && (
         <section aria-labelledby="cm-h" style={{ ...sect, gap: 12 }}>
-          <h2 id="cm-h" style={h}>Technology breakdown, {year}</h2>
+          <h2 id="cm-h" style={h}>{vm.tableTitle}</h2>
           <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 13 }}>
-            <thead><tr>{['Source', 'MW', 'GWh', '₹ Cr capital', '₹/kWh'].map((c, i) => <th key={c} scope="col" style={{ textAlign: i ? 'right' : 'left', padding: '0 0 6px', fontSize: 12, fontWeight: 500, color: 'var(--text3)', borderBottom: '1px solid var(--line)' }}>{c}</th>)}</tr></thead>
+            <thead><tr>{vm.tableHead.map((c, i) => <th key={c} scope="col" style={{ textAlign: i ? 'right' : 'left', padding: '0 0 6px', fontSize: 12, fontWeight: 500, color: 'var(--text3)', borderBottom: '1px solid var(--line)' }}>{c}</th>)}</tr></thead>
             <tbody>
               {vm.table.map((b) => (
                 <tr key={b.name}>
                   <td style={{ padding: '8px 0', borderBottom: '1px solid var(--line)' }}><span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}><span style={{ width: 8, height: 8, borderRadius: 2, background: b.color }} />{b.name}</span></td>
-                  {[b.cap, b.gen, b.capex, b.lcoe].map((c, i) => <td key={i} style={{ padding: '8px 0', textAlign: 'right', borderBottom: '1px solid var(--line)' }}>{c}</td>)}
+                  {b.cells.map((c, i) => <td key={i} style={{ padding: '8px 0', textAlign: 'right', borderBottom: '1px solid var(--line)' }}>{c}</td>)}
                 </tr>
               ))}
             </tbody>
           </table>
-          <p style={{ margin: 0, fontSize: 12, color: 'var(--text3)' }}>Capital cost in the {zone} zone is scaled by {vm.zm} for terrain and logistics. CO₂ avoided uses 0.82 t per MWh.</p>
+          <p style={{ margin: 0, fontSize: 12, color: 'var(--text3)' }}>{vm.tableNote}</p>
           <h2 style={{ ...h, marginTop: 6 }}>Model accuracy</h2>
-          <p style={{ margin: 0, fontSize: 12, color: 'var(--text3)' }}>Average backtest error on newly reported values (WAPE), with training cut at 2016, 2018 and 2020. Lower is better.</p>
+          <p style={{ margin: 0, fontSize: 12, color: 'var(--text3)' }}>{vm.accSub} Lower is better.</p>
           {vm.acc.map((a) => (
             <div key={a.name} style={{ display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 52px', gap: '4px 12px', fontSize: 13 }}>
               <span style={{ color: 'var(--text2)' }}>{a.name}</span>
@@ -445,7 +454,7 @@ export function DetailPanel({ vm, year, zone, more, onMore }) {
         </section>
       )}
 
-      <button type="button" aria-expanded={more} onClick={onMore} style={{ ...ghostBtn, alignSelf: 'flex-start' }}>{more ? 'Show highlights' : 'Show technology table and accuracy'}</button>
+      <button type="button" aria-expanded={more} onClick={onMore} style={{ ...ghostBtn, alignSelf: 'flex-start' }}>{vm.moreLabel}</button>
     </aside>
   );
 }

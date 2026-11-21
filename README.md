@@ -1,5 +1,25 @@
-# ⚡ Renewable Energy 2047 — Capacity & Cost Forecasting Dashboard
-### ExxonMobil Innothon Challenge | Multi-Output Voting Regressor & CERC Cost Analysis
+# India Electricity Generation to 2047
+### ExxonMobil Innothon: Forecasting India's Energy Production and Strategizing its Fulfillment by 2047
+
+The dashboard and model forecast India's **electricity generation (= production)**, nationally and for the five grid regions, to 2047. They account for population growth and urbanization, and propose a region-specific generation mix (coal, gas, nuclear, hydro, solar, wind, bio, waste) based on each region's resources.
+
+**Challenge rule:** only energy generated is used. No installed-capacity or consumption data enters any forecast or comparison.
+
+- Headline (Viksit Bharat GDP outlook): **5,778 TWh in 2047**, with an 80% band of 4,755–6,905. FY2025-26 was 1,840 TWh.
+- Backtest: 2.4% mean error 1–5 years ahead, against 5.8% for a naive trend.
+- Full method, assumptions and uncertainties: [`reports/generation/README.md`](reports/generation/README.md)
+
+```bash
+.venv/bin/python model/generation/parse_cea_re.py && .venv/bin/python model/generation/build_dataset.py && .venv/bin/python model/generation/forecast.py
+npm run dev    # http://localhost:3000, a static dashboard reading public/generation_forecast.json
+```
+
+---
+
+## Archived: capacity model (not used for the challenge forecast)
+
+The sections below describe the earlier installed-capacity model. It is kept for reference only; the challenge rule rules out capacity as a forecasting basis.
+
 
 A reactive dashboard designed to forecast India's renewable energy growth through 2047 (India's Centenary Net-Zero Target) across **5 distinct energy technologies**:
 - ☀️ **Solar Power**

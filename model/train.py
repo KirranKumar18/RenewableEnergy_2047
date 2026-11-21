@@ -61,7 +61,7 @@ def backtest(df, compare=False, cutoffs=CUTOFFS, only=None):
         "v2 without transmission term": fit_predict(lambda: ConvergenceModel(tx_col=None)),
         "v2 + transmission, joint fit": fit_predict(lambda: ConvergenceModel(tx_fit="joint")),
         "v2 pure (v2 dynamics for every tech)": fit_predict(lambda: ConvergenceModel(v1_techs=[], tx_col=None)),
-        "v2, trend half-life 2y": fit_predict(lambda: ConvergenceModel(half_life=2)),
+        "v2, trend half-life 3y": fit_predict(lambda: ConvergenceModel(half_life=3)),
         "v2, trend half-life 5y": fit_predict(lambda: ConvergenceModel(half_life=5)),
         "v2, no catch-up term": fit_predict(lambda: _no_catchup(ConvergenceModel())),
         "v1 GSDP elasticity": fit_predict(ElasticityModel),

@@ -1,0 +1,49 @@
+constant,value,unit,where,note
+min_mw,10.0,,model/convergence_model.py ConvergenceModel,
+trend_years,3,,model/convergence_model.py ConvergenceModel,
+half_life,4.0,,model/convergence_model.py ConvergenceModel,
+max_gap,4.0,,model/convergence_model.py ConvergenceModel,
+ridge,0.05,,model/convergence_model.py ConvergenceModel,
+min_pairs,15,,model/convergence_model.py ConvergenceModel,
+tx_col,re_line_ckm,,model/convergence_model.py ConvergenceModel,
+tx_fit,residual,,model/convergence_model.py ConvergenceModel,
+gap_floor,,,model/convergence_model.py ConvergenceModel,
+fit_weight_power,0.0,,model/convergence_model.py ConvergenceModel,
+nowcast_techs,['Solar Power'],,model/convergence_model.py ConvergenceModel,
+v1_techs,"['Bio-Mass Power', 'Small Hydro Power']",,model/convergence_model.py ConvergenceModel,
+tx_techs,"['Solar Power', 'Wind Power']",,model/convergence_model.py ConvergenceModel,
+EPS,1.0,MW per lakh crore,model/convergence_model.py,floor inside the catch-up log ratio
+END_YEAR,2060,year,model/convergence_model.py,zone paths simulated to this year
+v1.window,8,,model/re_model.py ElasticityModel,used for bio-mass and small hydro
+v1.span,2,,model/re_model.py ElasticityModel,used for bio-mass and small hydro
+v1.min_mw,10.0,,model/re_model.py ElasticityModel,used for bio-mass and small hydro
+v1.decay_points,7,,model/re_model.py ElasticityModel,used for bio-mass and small hydro
+v1.max_decay,0.25,,model/re_model.py ElasticityModel,used for bio-mass and small hydro
+v1.min_estimates,3,,model/re_model.py ElasticityModel,used for bio-mass and small hydro
+gsdp.BASE_YEAR,2024,,model/gsdp_projection.py,
+gsdp.EXCLUDE,"(2020, 2021)",,model/gsdp_projection.py,
+gsdp.TREND_FROM,2012,,model/gsdp_projection.py,
+gsdp.SHRINK,0.5,,model/gsdp_projection.py,
+gsdp.CAP,0.015,,model/gsdp_projection.py,
+gsdp.HALF_LIFE,10.0,,model/gsdp_projection.py,
+gsdp.NOMINAL_GDP_2024,33068000.0,,model/gsdp_projection.py,
+gsdp.USD_INR_TODAY,92.65,,model/gsdp_projection.py,
+gsdp.RATE_YEAR,2026,,model/gsdp_projection.py,
+gsdp.INR_DEPRECIATION,0.0475,,model/gsdp_projection.py,
+gsdp.US_INFLATION,0.02,,model/gsdp_projection.py,
+gsdp.INFLATION,0.06845000000000012,,model/gsdp_projection.py,
+gsdp.VIKSIT_USD_2047,30000000000000.0,,model/gsdp_projection.py,
+gsdp.k_current_price_factor_2024,1.9493,x,model/gsdp_projection.py,official nominal GDP 2024-25 / dataset real 2024
+outlook.viksit.real_growth,7.1% a year,% a year,model/gsdp_projection.py,"steady real growth that makes GDP $30 trillion in 2047 (Rs 7,365 lakh crore at Rs 246 per dollar: today's Rs 92.65 falling 4.75% a year)"
+outlook.wb.real_growth,7.8% a year,% a year,model/gsdp_projection.py,"7.8% real growth a year, the average the World Bank says India needs to reach high income by 2047"
+outlook.imf.real_growth,6.5% easing to 5.5%,% a year,model/gsdp_projection.py,"IMF medium-term potential growth of 6.5% to 2030, easing to 5.5% by 2047"
+outlook.dataset.real_growth,5.1% a year,% a year,model/gsdp_projection.py,"the dataset's own 2014-2024 GSDP growth, held flat"
+POP_GROWTH,0.008,per year,"src/App.jsx, model/features.py",population is not a model input; per-person figures only
+hours_per_year,8760,h,backend_api.py,generation = MW x 8760 x CUF
+co2_factor,820,g CO2 per kWh,backend_api.py,CO2 avoided
+zone_capex_multiplier.North,1.02,x,backend_api.py,
+zone_capex_multiplier.South,1.0,x,backend_api.py,
+zone_capex_multiplier.West,0.98,x,backend_api.py,
+zone_capex_multiplier.East,1.03,x,backend_api.py,
+zone_capex_multiplier.North-East,1.15,x,backend_api.py,
+fresh_mask.tolerance,True,,model/re_model.py,float32 copies of last year's value count as repeats

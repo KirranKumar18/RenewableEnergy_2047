@@ -1,0 +1,137 @@
+state,zone,outlook,avg_real_growth_2024_47_pct,gsdp_2024_real_lakh_cr,gsdp_2024_current_lakh_cr,population_2024_crore,gsdp_2030_real_lakh_cr,gsdp_2030_current_lakh_cr,population_2030_crore,gsdp_2047_real_lakh_cr,gsdp_2047_current_lakh_cr,population_2047_crore
+Andaman And Nicobar Islands,East,Viksit Bharat ($30 trillion),7.89,0.094,0.184,0.04,0.153,0.444,0.042,0.541,4.837,0.048
+Andaman And Nicobar Islands,East,World Bank high-income path,8.58,0.094,0.184,0.04,0.159,0.461,0.042,0.626,5.597,0.048
+Andaman And Nicobar Islands,East,IMF outlook,6.89,0.094,0.184,0.04,0.148,0.429,0.042,0.436,3.899,0.048
+Andaman And Nicobar Islands,East,Dataset trend,5.87,0.094,0.184,0.04,0.137,0.396,0.042,0.351,3.133,0.048
+Andhra Pradesh,South,Viksit Bharat ($30 trillion),7.52,8.549,16.664,5.341,13.406,38.878,5.602,45.287,404.757,6.415
+Andhra Pradesh,South,World Bank high-income path,8.2,8.549,16.664,5.341,13.927,40.387,5.602,52.424,468.54,6.415
+Andhra Pradesh,South,IMF outlook,6.51,8.549,16.664,5.341,12.955,37.568,5.602,36.48,326.036,6.415
+Andhra Pradesh,South,Dataset trend,5.5,8.549,16.664,5.341,11.969,34.708,5.602,29.285,261.731,6.415
+Arunachal Pradesh,North-East,Viksit Bharat ($30 trillion),7.09,0.218,0.426,0.158,0.33,0.956,0.165,1.056,9.441,0.189
+Arunachal Pradesh,North-East,World Bank high-income path,7.78,0.218,0.426,0.158,0.342,0.993,0.165,1.224,10.935,0.189
+Arunachal Pradesh,North-East,IMF outlook,6.09,0.218,0.426,0.158,0.318,0.923,0.165,0.85,7.599,0.189
+Arunachal Pradesh,North-East,Dataset trend,5.07,0.218,0.426,0.158,0.294,0.852,0.165,0.682,6.094,0.189
+Assam,North-East,Viksit Bharat ($30 trillion),7.45,3.162,6.163,3.605,4.926,14.284,3.781,16.491,147.392,4.33
+Assam,North-East,World Bank high-income path,8.13,3.162,6.163,3.605,5.117,14.839,3.781,19.092,170.635,4.33
+Assam,North-East,IMF outlook,6.44,3.162,6.163,3.605,4.759,13.802,3.781,13.282,118.711,4.33
+Assam,North-East,Dataset trend,5.43,3.162,6.163,3.605,4.397,12.75,3.781,10.661,95.281,4.33
+Bihar,East,Viksit Bharat ($30 trillion),7.28,4.975,9.697,12.859,7.631,22.129,13.489,25.023,223.645,15.446
+Bihar,East,World Bank high-income path,7.96,4.975,9.697,12.859,7.928,22.991,13.489,28.976,258.973,15.446
+Bihar,East,IMF outlook,6.27,4.975,9.697,12.859,7.373,21.381,13.489,20.148,180.073,15.446
+Bihar,East,Dataset trend,5.26,4.975,9.697,12.859,6.81,19.748,13.489,16.165,144.474,15.446
+Chandigarh,North,Viksit Bharat ($30 trillion),7.02,0.385,0.75,0.124,0.577,1.672,0.13,1.832,16.37,0.149
+Chandigarh,North,World Bank high-income path,7.7,0.385,0.75,0.124,0.599,1.737,0.13,2.122,18.963,0.149
+Chandigarh,North,IMF outlook,6.01,0.385,0.75,0.124,0.557,1.615,0.13,1.474,13.175,0.149
+Chandigarh,North,Dataset trend,5.0,0.385,0.75,0.124,0.514,1.491,0.13,1.182,10.564,0.149
+Chhattisgarh,West,Viksit Bharat ($30 trillion),7.01,3.005,5.858,3.052,4.5,13.049,3.202,14.285,127.67,3.666
+Chhattisgarh,West,World Bank high-income path,7.7,3.005,5.858,3.052,4.676,13.559,3.202,16.547,147.891,3.666
+Chhattisgarh,West,IMF outlook,6.01,3.005,5.858,3.052,4.347,12.606,3.202,11.496,102.749,3.666
+Chhattisgarh,West,Dataset trend,4.99,3.005,5.858,3.052,4.014,11.639,3.202,9.218,82.385,3.666
+Delhi,North,Viksit Bharat ($30 trillion),7.22,7.444,14.511,2.175,11.361,32.947,2.282,37.001,330.7,2.613
+Delhi,North,World Bank high-income path,7.91,7.444,14.511,2.175,11.804,34.231,2.282,42.849,382.968,2.613
+Delhi,North,IMF outlook,6.21,7.444,14.511,2.175,10.977,31.832,2.282,29.79,266.245,2.613
+Delhi,North,Dataset trend,5.2,7.444,14.511,2.175,10.137,29.398,2.282,23.897,213.583,2.613
+Goa,West,Viksit Bharat ($30 trillion),7.21,0.682,1.329,0.158,1.04,3.015,0.166,3.381,30.216,0.19
+Goa,West,World Bank high-income path,7.89,0.682,1.329,0.158,1.08,3.132,0.166,3.915,34.992,0.19
+Goa,West,IMF outlook,6.2,0.682,1.329,0.158,1.004,2.913,0.166,2.722,24.326,0.19
+Goa,West,Dataset trend,5.19,0.682,1.329,0.158,0.928,2.69,0.166,2.183,19.514,0.19
+Gujarat,West,Viksit Bharat ($30 trillion),7.34,14.029,27.347,7.237,21.641,62.759,7.591,71.505,639.076,8.692
+Gujarat,West,World Bank high-income path,8.02,14.029,27.347,7.237,22.483,65.201,7.591,82.793,739.965,8.692
+Gujarat,West,IMF outlook,6.33,14.029,27.347,7.237,20.91,60.639,7.591,57.58,514.621,8.692
+Gujarat,West,Dataset trend,5.32,14.029,27.347,7.237,19.314,56.011,7.591,46.204,412.946,8.692
+Haryana,North,Viksit Bharat ($30 trillion),7.33,6.669,13.0,3.057,10.282,29.816,3.207,33.944,303.371,3.672
+Haryana,North,World Bank high-income path,8.02,6.669,13.0,3.057,10.682,30.977,3.207,39.302,351.266,3.672
+Haryana,North,IMF outlook,6.32,6.669,13.0,3.057,9.934,28.809,3.207,27.333,244.289,3.672
+Haryana,North,Dataset trend,5.31,6.669,13.0,3.057,9.176,26.61,3.207,21.932,196.021,3.672
+Himachal Pradesh,North,Viksit Bharat ($30 trillion),6.97,1.4,2.728,0.75,2.088,6.056,0.787,6.597,58.964,0.901
+Himachal Pradesh,North,World Bank high-income path,7.66,1.4,2.728,0.75,2.17,6.293,0.787,7.643,68.307,0.901
+Himachal Pradesh,North,IMF outlook,5.97,1.4,2.728,0.75,2.017,5.85,0.787,5.309,47.451,0.901
+Himachal Pradesh,North,Dataset trend,4.95,1.4,2.728,0.75,1.863,5.401,0.787,4.257,38.043,0.901
+Jammu And Kashmir,North,Viksit Bharat ($30 trillion),7.89,2.721,5.304,1.37,4.415,12.803,1.437,15.613,139.544,1.646
+Jammu And Kashmir,North,World Bank high-income path,8.58,2.721,5.304,1.37,4.585,13.297,1.437,18.065,161.452,1.646
+Jammu And Kashmir,North,IMF outlook,6.89,2.721,5.304,1.37,4.267,12.374,1.437,12.585,112.477,1.646
+Jammu And Kashmir,North,Dataset trend,5.87,2.721,5.304,1.37,3.944,11.437,1.437,10.112,90.372,1.646
+Jharkhand,East,Viksit Bharat ($30 trillion),7.03,2.914,5.681,3.996,4.372,12.678,4.192,13.912,124.34,4.8
+Jharkhand,East,World Bank high-income path,7.72,2.914,5.681,3.996,4.543,13.173,4.192,16.115,144.029,4.8
+Jharkhand,East,IMF outlook,6.03,2.914,5.681,3.996,4.223,12.247,4.192,11.197,100.073,4.8
+Jharkhand,East,Dataset trend,5.01,2.914,5.681,3.996,3.899,11.308,4.192,8.978,80.243,4.8
+Karnataka,South,Viksit Bharat ($30 trillion),7.18,12.514,24.393,6.812,19.031,55.188,7.145,61.69,551.352,8.182
+Karnataka,South,World Bank high-income path,7.87,12.514,24.393,6.812,19.773,57.342,7.145,71.444,638.528,8.182
+Karnataka,South,IMF outlook,6.18,12.514,24.393,6.812,18.386,53.32,7.145,49.663,443.861,8.182
+Karnataka,South,Dataset trend,5.16,12.514,24.393,6.812,16.98,49.241,7.145,39.836,356.035,8.182
+Kerala,South,Viksit Bharat ($30 trillion),6.9,6.691,13.043,3.592,9.915,28.754,3.768,31.042,277.435,4.314
+Kerala,South,World Bank high-income path,7.59,6.691,13.043,3.592,10.304,29.881,3.768,35.964,321.425,4.314
+Kerala,South,IMF outlook,5.89,6.691,13.043,3.592,9.578,27.777,3.768,24.977,223.236,4.314
+Kerala,South,Dataset trend,4.88,6.691,13.043,3.592,8.842,25.643,3.768,20.022,178.944,4.314
+Lakshadweep,South,Viksit Bharat ($30 trillion),7.55,0.006,0.012,0.007,0.01,0.029,0.007,0.034,0.306,0.008
+Lakshadweep,South,World Bank high-income path,8.24,0.006,0.012,0.007,0.01,0.03,0.007,0.04,0.354,0.008
+Lakshadweep,South,IMF outlook,6.55,0.006,0.012,0.007,0.01,0.028,0.007,0.028,0.246,0.008
+Lakshadweep,South,Dataset trend,5.54,0.006,0.012,0.007,0.009,0.026,0.007,0.022,0.198,0.008
+Madhya Pradesh,West,Viksit Bharat ($30 trillion),7.29,6.963,13.573,8.761,10.698,31.023,9.19,35.154,314.191,10.523
+Madhya Pradesh,West,World Bank high-income path,7.98,6.963,13.573,8.761,11.114,32.231,9.19,40.706,363.813,10.523
+Madhya Pradesh,West,IMF outlook,6.29,6.963,13.573,8.761,10.336,29.974,9.19,28.306,252.985,10.523
+Madhya Pradesh,West,Dataset trend,5.27,6.963,13.573,8.761,9.547,27.685,9.19,22.711,202.981,10.523
+Maharashtra,West,Viksit Bharat ($30 trillion),6.58,20.615,40.185,12.736,29.667,86.034,13.36,89.309,798.202,15.298
+Maharashtra,West,World Bank high-income path,7.27,20.615,40.185,12.736,30.835,89.422,13.36,103.515,925.17,15.298
+Maharashtra,West,IMF outlook,5.58,20.615,40.185,12.736,28.653,83.094,13.36,71.822,641.91,15.298
+Maharashtra,West,Dataset trend,4.56,20.615,40.185,12.736,26.442,76.681,13.36,57.528,514.156,15.298
+Manipur,North-East,Viksit Bharat ($30 trillion),7.08,0.246,0.48,0.325,0.371,1.076,0.341,1.188,10.619,0.391
+Manipur,North-East,World Bank high-income path,7.77,0.246,0.48,0.325,0.386,1.118,0.341,1.376,12.299,0.391
+Manipur,North-East,IMF outlook,6.08,0.246,0.48,0.325,0.359,1.04,0.341,0.956,8.547,0.391
+Manipur,North-East,Dataset trend,5.06,0.246,0.48,0.325,0.331,0.96,0.341,0.767,6.854,0.391
+Meghalaya,North-East,Viksit Bharat ($30 trillion),6.45,0.277,0.539,0.338,0.393,1.14,0.354,1.164,10.4,0.406
+Meghalaya,North-East,World Bank high-income path,7.13,0.277,0.539,0.338,0.409,1.185,0.354,1.349,12.057,0.406
+Meghalaya,North-East,IMF outlook,5.44,0.277,0.539,0.338,0.38,1.101,0.354,0.936,8.362,0.406
+Meghalaya,North-East,Dataset trend,4.43,0.277,0.539,0.338,0.35,1.016,0.354,0.749,6.695,0.406
+Mizoram,North-East,Viksit Bharat ($30 trillion),7.89,0.281,0.548,0.125,0.456,1.323,0.131,1.614,14.423,0.15
+Mizoram,North-East,World Bank high-income path,8.58,0.281,0.548,0.125,0.474,1.374,0.131,1.867,16.687,0.15
+Mizoram,North-East,IMF outlook,6.89,0.281,0.548,0.125,0.441,1.279,0.131,1.301,11.625,0.15
+Mizoram,North-East,Dataset trend,5.87,0.281,0.548,0.125,0.408,1.182,0.131,1.045,9.341,0.15
+Nagaland,North-East,Viksit Bharat ($30 trillion),6.79,0.212,0.413,0.225,0.311,0.901,0.236,0.96,8.581,0.271
+Nagaland,North-East,World Bank high-income path,7.48,0.212,0.413,0.225,0.323,0.937,0.236,1.113,9.944,0.271
+Nagaland,North-East,IMF outlook,5.79,0.212,0.413,0.225,0.3,0.871,0.236,0.772,6.904,0.271
+Nagaland,North-East,Dataset trend,4.77,0.212,0.413,0.225,0.277,0.804,0.236,0.619,5.532,0.271
+Odisha,East,Viksit Bharat ($30 trillion),7.53,5.528,10.776,4.657,8.676,25.161,4.885,29.34,262.227,5.593
+Odisha,East,World Bank high-income path,8.21,5.528,10.776,4.657,9.013,26.137,4.885,33.963,303.546,5.593
+Odisha,East,IMF outlook,6.52,5.528,10.776,4.657,8.384,24.313,4.885,23.634,211.23,5.593
+Odisha,East,Dataset trend,5.51,5.528,10.776,4.657,7.746,22.463,4.885,18.973,169.572,5.593
+Puducherry,South,Viksit Bharat ($30 trillion),7.08,0.312,0.608,0.168,0.469,1.361,0.177,1.502,13.422,0.202
+Puducherry,South,World Bank high-income path,7.76,0.312,0.608,0.168,0.488,1.414,0.177,1.739,15.546,0.202
+Puducherry,South,IMF outlook,6.07,0.312,0.608,0.168,0.453,1.315,0.177,1.209,10.803,0.202
+Puducherry,South,Dataset trend,5.06,0.312,0.608,0.168,0.419,1.214,0.177,0.969,8.663,0.202
+Punjab,North,Viksit Bharat ($30 trillion),6.77,4.556,8.88,3.093,6.668,19.336,3.244,20.532,183.501,3.715
+Punjab,North,World Bank high-income path,7.45,4.556,8.88,3.093,6.93,20.095,3.244,23.791,212.636,3.715
+Punjab,North,IMF outlook,5.76,4.556,8.88,3.093,6.44,18.677,3.244,16.517,147.618,3.715
+Punjab,North,Dataset trend,4.75,4.556,8.88,3.093,5.945,17.24,3.244,13.235,118.291,3.715
+Rajasthan,North,Viksit Bharat ($30 trillion),6.93,8.12,15.827,8.19,12.067,34.993,8.591,37.924,338.943,9.837
+Rajasthan,North,World Bank high-income path,7.62,8.12,15.827,8.19,12.539,36.364,8.591,43.935,392.669,9.837
+Rajasthan,North,IMF outlook,5.93,8.12,15.827,8.19,11.657,33.804,8.591,30.517,272.743,9.837
+Rajasthan,North,Dataset trend,4.91,8.12,15.827,8.19,10.762,31.208,8.591,24.464,218.645,9.837
+Sikkim,East,Viksit Bharat ($30 trillion),7.56,0.256,0.5,0.069,0.404,1.171,0.073,1.372,12.26,0.083
+Sikkim,East,World Bank high-income path,8.25,0.256,0.5,0.069,0.419,1.216,0.073,1.588,14.192,0.083
+Sikkim,East,IMF outlook,6.56,0.256,0.5,0.069,0.39,1.132,0.073,1.105,9.877,0.083
+Sikkim,East,Dataset trend,5.54,0.256,0.5,0.069,0.361,1.046,0.073,0.887,7.929,0.083
+Tamil Nadu,South,Viksit Bharat ($30 trillion),7.26,15.735,30.672,7.709,24.093,69.868,8.086,78.812,704.386,9.259
+Tamil Nadu,South,World Bank high-income path,7.94,15.735,30.672,7.709,25.031,72.591,8.086,91.264,815.676,9.259
+Tamil Nadu,South,IMF outlook,6.25,15.735,30.672,7.709,23.278,67.505,8.086,63.455,567.133,9.259
+Tamil Nadu,South,Dataset trend,5.24,15.735,30.672,7.709,21.499,62.347,8.086,50.908,454.995,9.259
+Telangana,South,Viksit Bharat ($30 trillion),7.45,8.069,15.728,3.815,12.569,36.451,4.002,42.083,376.114,4.582
+Telangana,South,World Bank high-income path,8.13,8.069,15.728,3.815,13.058,37.867,4.002,48.719,435.426,4.582
+Telangana,South,IMF outlook,6.44,8.069,15.728,3.815,12.145,35.222,4.002,33.894,302.926,4.582
+Telangana,South,Dataset trend,5.43,8.069,15.728,3.815,11.22,32.538,4.002,27.204,243.137,4.582
+Tripura,North-East,Viksit Bharat ($30 trillion),7.89,0.563,1.098,0.418,0.914,2.65,0.439,3.231,28.88,0.503
+Tripura,North-East,World Bank high-income path,8.58,0.563,1.098,0.418,0.949,2.752,0.439,3.739,33.414,0.503
+Tripura,North-East,IMF outlook,6.89,0.563,1.098,0.418,0.883,2.561,0.439,2.605,23.278,0.503
+Tripura,North-East,Dataset trend,5.87,0.563,1.098,0.418,0.816,2.367,0.439,2.093,18.703,0.503
+Uttar Pradesh,North,Viksit Bharat ($30 trillion),6.67,11.714,22.834,23.808,16.992,49.275,24.974,51.696,462.035,28.596
+Uttar Pradesh,North,World Bank high-income path,7.35,11.714,22.834,23.808,17.66,51.213,24.974,59.912,535.466,28.596
+Uttar Pradesh,North,IMF outlook,5.66,11.714,22.834,23.808,16.412,47.594,24.974,41.58,371.622,28.596
+Uttar Pradesh,North,Dataset trend,4.65,11.714,22.834,23.808,15.147,43.925,24.974,33.312,297.723,28.596
+Uttarakhand,North,Viksit Bharat ($30 trillion),6.71,2.006,3.911,1.176,2.921,8.47,1.233,8.93,79.812,1.412
+Uttarakhand,North,World Bank high-income path,7.39,2.006,3.911,1.176,3.036,8.803,1.233,10.349,92.491,1.412
+Uttarakhand,North,IMF outlook,5.7,2.006,3.911,1.176,2.821,8.181,1.233,7.183,64.199,1.412
+Uttarakhand,North,Dataset trend,4.69,2.006,3.911,1.176,2.604,7.551,1.233,5.755,51.437,1.412
+West Bengal,East,Viksit Bharat ($30 trillion),6.85,8.729,17.015,9.956,12.876,37.34,10.444,40.064,358.072,11.959
+West Bengal,East,World Bank high-income path,7.54,8.729,17.015,9.956,13.381,38.804,10.444,46.42,414.876,11.959
+West Bengal,East,IMF outlook,5.84,8.729,17.015,9.956,12.438,36.069,10.444,32.234,288.095,11.959
+West Bengal,East,Dataset trend,4.83,8.729,17.015,9.956,11.482,33.296,10.444,25.836,230.906,11.959

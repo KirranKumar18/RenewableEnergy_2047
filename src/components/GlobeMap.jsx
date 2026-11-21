@@ -223,7 +223,7 @@ export default function GlobeMap({ th, values, bins, selected, zone, zoneOf, sco
     return { R, lines, lonLabels, latLabels, tropic, tropicLabel, neighbours, nbLabels, states, sel, labels, seas };
   }, [v.lon, v.lat, v.R, W, H, geo, nb, values, bins, selected, hovered, zone, zoneOf, scope, th, m, valueLabel]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  const aria = 'Map of India on a globe, states shaded by forecast capacity' + (focus === 'state' ? ', zoomed to ' + selected : focus === 'zone' ? ', zoomed to the ' + zone + ' zone' : '');
+  const aria = 'Map of India on a globe, states shaded by forecast generation' + (focus === 'state' ? ', zoomed to ' + selected : focus === 'zone' ? ', zoomed to the ' + zone + ' zone' : '');
 
   return (
     <div ref={rootRef} style={{ position: 'absolute', inset: 0, overflow: 'hidden', background: m.space, color: m.fg }}>

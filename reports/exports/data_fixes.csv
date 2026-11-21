@@ -1,0 +1,12 @@
+fix,status,evidence,what_was_done,code
+Stale repeats excluded,applied,Only 34% of values change from the year before; 19 states repeat 2022 values in 2023-24,Repeated values are not used for fitting or scoring (fresh_mask),model/re_model.py fresh_mask
+Nowcast for stale states,applied,"Frozen states kept building (e.g. Rajasthan built 2,100 km of renewable transmission lines in FY23-24)","v2 sources (solar, wind) are rolled forward from the last fresh report to 2024 with the fitted growth equation",model/convergence_model.py _nowcast
+GSDP 2011 base-year break,applied,Every state jumps ~2.2x in 2011 (2004-05 to 2011-12 base),Pre-2011 values rescaled so 2010->2011 growth equals the state's median 2012-2015 growth,model/re_model.py splice_gsdp
+GSDP 2024 placeholder,applied,Every state shows -0.2% in 2024,2024 = 2023 x exp(mean log growth of the previous 3 years),model/re_model.py impute_placeholder_gsdp
+GSDP units,applied,India 2023 total Rs 162 lakh crore matches official real GDP at 2011-12 prices,Model kept in real terms; dashboard converts to current prices (x1.95 x inflation),model/gsdp_projection.py
+Missing years,applied,e.g. Telangana 2013 has no row,GSDP log-interpolated between neighbouring years,model/convergence_model.py _gsdp
+Small starting values,applied,Changes from near zero (e.g. 0 -> 5 MW) look like huge growth rates,Fitting pairs starting below 10 MW are ignored,model/convergence_model.py min_mw
+Capacity drops,applied,"e.g. Bihar solar 390 -> 239 MW (2024), Meghalaya hydro -> 0 (2022)",Forecasts never decrease,model/convergence_model.py _step
+Float32 copies counted as new reports,applied,"Rajasthan solar 12564.87 (2021) -> 12564.867188 (2022-24); 59 such copies, 52 in 2022",fresh_mask(tolerance=True) treats changes <= 0.01 MW / 1 ppm as repeats; average backtest error 29.6% -> 26.7% (reports/error_fixes/step4),model/re_model.py; model/experiments/frozen_data.py
+Wind/bio-mass/small hydro repeats are real pauses,applied,After a run of repeats the next report jumps 3.4x a normal year for solar but 0.4-0.8x for the others,"nowcast_techs=['Solar Power'] fills stale years for solar only; with the copy fix and a 4-year trend half-life, error 26.1% (reports/error_fixes/step_combined)",model/convergence_model.py nowcast_techs
+Demand data gaps,applied (demand model),25 missing days; some days built from < 100 readings,Filled from total generation (within 1% of demand) or interpolation; never scored,demand_forecast/data.py

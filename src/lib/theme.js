@@ -6,7 +6,7 @@ export const THEMES = {
     line: '#DDE3E8', line2: '#C6CFD7', track: '#E6EBEF', muted: '#B4C0CA',
     text: '#17212B', text2: '#46535F', text3: '#5E6B77',
     gold: '#C8661B', ink: '#1D4E89', onInk: '#FFFFFF', good: '#2F7D4F', warn: '#B4600F', pos: '#2F7D4F', neg: '#C4553A',
-    tech: ['#B86A00', '#6F5BB5', '#4F9A3A', '#2F6BC0', '#C2477A'],
+    tech: ['#4B5563', '#C98A00', '#2E9E8F', '#2F6BC0', '#C2477A', '#8E62B8', '#6E9A2F'],
     ramp: ['#FFF3B0', '#FED976', '#FEB24C', '#FD8D3C', '#E8452A', '#B10F2E'],
     map: {
       space: '#C9D6DE', oceanHi: '#D6E2E9', oceanLo: '#C3D4DE', oceanEdge: '#B6C9D4', atmos: '#FFFFFF',
@@ -20,7 +20,7 @@ export const THEMES = {
     line: '#262D36', line2: '#343D48', track: '#222931', muted: '#3E4955',
     text: '#E7EAEE', text2: '#AAB2BD', text3: '#8C95A1',
     gold: '#E39B4A', ink: '#8FB8E8', onInk: '#0F1317', good: '#7FC79A', warn: '#E39B4A', pos: '#5FB79E', neg: '#E07A5F',
-    tech: ['#C4801E', '#8873CF', '#5C9F48', '#4F84D4', '#C95C8A'],
+    tech: ['#A3ACB8', '#F0B23A', '#4CC2B0', '#5B95E0', '#D46A95', '#B392D6', '#93BE4E'],
     ramp: ['#3A2233', '#6A2238', '#A3303A', '#D4532B', '#F0902A', '#F9D660'],
     map: {
       space: '#0B0E12', oceanHi: '#16202B', oceanLo: '#111922', oceanEdge: '#0D131A', atmos: '#2F4A63',
@@ -31,15 +31,19 @@ export const THEMES = {
   }
 };
 
+// Generation sources, grouped as the challenge lists them (coal, solar, wind, hydro, nuclear, gas) plus other renewables.
+// Order matches the tech colour arrays above.
 export const TECH = [
+  { id: 'coal', name: 'Coal & lignite', icon: 'M3 21h18M5 21V11l5 3v-3l5 3V7l4 2v12M8 7V4M8 4h2' },
   { id: 'solar', name: 'Solar', icon: 'M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4M12 8a4 4 0 1 0 0 8 4 4 0 0 0 0-8z' },
   { id: 'wind', name: 'Wind', icon: 'M3 8h11a3 3 0 1 0-3-3M3 12h16a3 3 0 1 1-3 3M3 16h7' },
-  { id: 'bio', name: 'Bio-mass', icon: 'M5 19c0-9 6-14 15-14 0 9-5 15-14 15M5 19l7-7' },
-  { id: 'hydro', name: 'Small hydro', icon: 'M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z' },
-  { id: 'waste', name: 'Waste-to-energy', icon: 'M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4' }
+  { id: 'hydro', name: 'Hydro', icon: 'M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z' },
+  { id: 'nuclear', name: 'Nuclear', icon: 'M12 10.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM4 12c0-2.2 3.6-4 8-4s8 1.8 8 4-3.6 4-8 4-8-1.8-8-4z' },
+  { id: 'gas', name: 'Gas', icon: 'M12 3c1 4 5 5 5 10a5 5 0 0 1-10 0c0-3 2-4 2-6 1 1 2 2 3 2 0-2-1-4 0-6z' },
+  { id: 'other', name: 'Bio & waste', icon: 'M5 19c0-9 6-14 15-14 0 9-5 15-14 15M5 19l7-7' }
 ];
 export const ALL_ICON = 'M4 20V10M10 20V4M16 20v-7M22 20H2';
-export const MILESTONES = [2024, 2028, 2030, 2035, 2040, 2047];
+export const MILESTONES = [2026, 2030, 2035, 2040, 2047];
 
 // CSS custom properties for the page chrome, so components can use var(--text) etc.
 export function cssVars(t) {

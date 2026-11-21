@@ -13,6 +13,17 @@ To regenerate everything in this folder:
 .venv/bin/python model/explain.py           # SHAP + LIME in reports/explainability/
 ```
 
+**Headline figures (current model; README, dashboard and presentation script all use these):**
+
+| | Value |
+|---|---|
+| India, 2047 (Viksit Bharat outlook, $30 trillion GDP) | **998 GW**, generating **2,051 TWh** a year |
+| India, 2030 / 2035 | 511 GW / 696 GW |
+| India, 2024 starting point | 206 GW (169 GW reported; frozen solar states nowcast) |
+| Backtest error | **28.6%** on cutoffs 2016/2018/2020; 23.6% on 2020/2021/2022 |
+
+The tests behind the November 2026 fixes are in [`error_fixes/`](error_fixes/).
+
 The dashboard's API (`backend_api.py`) serves this same v2 model:
 
 - `/api/predict` returns forecasts and financials.
@@ -28,8 +39,10 @@ The dashboard's API (`backend_api.py`) serves this same v2 model:
 
 | Issue | Evidence | How it's handled |
 |---|---|---|
-| **Stale repeats.** Values are copied forward instead of re-reported | In 2023–24 only **15 of 34 states** report anything new. The other 19 (including Rajasthan, Tamil Nadu, Telangana and Uttar Pradesh) are frozen at 2022 values. Only 34% of all values are fresh reports. | Only *fresh* values (where the value changed) are used for fitting and scoring. Each state is nowcast from its last fresh report. ![](eda/02_reporting_freshness.png) |
-| **2022 solar gap year** | National solar goes 53.9 → 54.1 → 97.0 GW across 2021–2023, and most states repeat 2021 in 2022 | Growth is measured between consecutive fresh reports, so the 2023 catch-up counts as two years of growth |
+| **Stale repeats.** Values are copied forward instead of re-reported | In 2023–24 only **15 of 34 states** report anything new. The other 19 (including Rajasthan, Tamil Nadu, Telangana and Uttar Pradesh) are frozen. Only about a third of all values are fresh reports. | Only *fresh* values are used for fitting and scoring. ![](eda/02_reporting_freshness.png) |
+| **Copies stored at lower precision** | Rajasthan solar is 12,564.87 MW in 2021 and 12,564.867188 in 2022–24: the same number stored as float32. 59 such copies, 52 of them in 2022 | Changes of 0.01 MW or less (or under 1 part per million) count as repeats. This cut the 2022-cutoff backtest error from 37.0% to 19.7% ([step 4](error_fixes/step4_copy_flags.csv)) |
+| **2022 solar gap year** | National solar goes 53.9 → 54.1 → 97.0 GW across 2021–2023; most states' 2022 values are copies of 2021 | Growth is measured between consecutive fresh reports, so the 2023 catch-up counts as two years of growth |
+| **Repeats mean different things by source** | After a run of repeats, the next solar report jumps 3.4× a normal year's growth: a reporting delay. Wind, bio-mass and small hydro jump only 0.4–0.8×: real pauses | Only solar's stale years are nowcast. Other sources carry the last reported value forward |
 | **GSDP base-year break** | Every state jumps about 2.2× in 2011 (2004-05 → 2011-12 base series) | Pre-2011 values rescaled to the new base |
 | **2024 GSDP placeholder** | Every state shows −0.2% vs 2023 | Imputed from each state's previous 3-year growth ![](eda/03_gsdp_cleaning.png) |
 | Small drops | e.g. Bihar solar 390 → 239 MW (2024), Meghalaya hydro → 0 (2022) | Forecasts never decrease. Pairs starting below 10 MW are ignored when fitting |
@@ -46,7 +59,7 @@ The dashboard's API (`backend_api.py`) serves this same v2 model:
 The production model is **v2** ([`model/convergence_model.py`](../model/convergence_model.py)). Each technology's yearly log-growth for a state is modelled as:
 
 ```
-growth = national trend(year)                                 decelerating; fades with a 3-year half-life after 2024
+growth = national trend(year)                                 decelerating; fades with a 4-year half-life after 2024
        + beta  × GSDP growth of the state                     estimated from differences between states
        + kappa × log(zone intensity / state intensity)        catch-up toward zone peers
        + gamma × renewable transmission index(state, year)    solar and wind only; FY2018-19 .. FY2025-26
@@ -64,16 +77,28 @@ growth = national trend(year)                                 decelerating; fade
 
 - **Bio-mass and small hydro use v1's simpler approach instead.** A GSDP elasticity that fades over time, starting from the last reported value. They barely grow and show little catch-up, and v1 backtests much better for them (see section 3).
 - It is fitted with one regression per technology. The year effects are slightly regularised, and the fit uses only fresh-report pairs.
-- Each state's forecast starts from its 2024 **nowcast** rather than its frozen reported value.
-- Nationally, the nowcast puts 2024 at **197 GW**, against 169 GW reported. ![](eda/08_nowcast_stale_states.png)
+- For solar, each frozen state's forecast starts from its 2024 **nowcast** rather than its frozen reported value. Other sources start from the last reported value.
+- Nationally, the nowcast puts 2024 at **206 GW**, against 169 GW reported. ![](eda/08_nowcast_stale_states.png)
+- **Nowcast accuracy (mask test).** For the 14 states that did report solar in 2023 and 2024, those two years were hidden and nowcast instead ([step 1](error_fixes/step1_summary_copy-fix_half-life-4_nowcast-solar-only.csv)).
+  - The nowcast misses the real 2024 value by **22.4%**, under-estimating by 10%.
+  - Trusting the frozen value would miss by 66.6%.
+  - The 2024 starting point is therefore probably still somewhat low for the frozen states, but far better than the reported figure.
+- **Why a 4-year half-life.** It was chosen so the backtest's signed error 5–8 years ahead is near zero: −7% with the copy fix. With 3 years that error was −20% to −23%, so the model under-forecast the long range. Overall error barely changes ([step 2](error_fixes/step2_half_life_horizon.csv)).
+- **The remaining long-range error is per state, not national** ([step 3](error_fixes/step3_summary.csv)).
+  - One national scaling factor removes only 8% of the 5–8-year solar error.
+  - The error correlates +0.33 with the catch-up gap: laggards are pushed up too much.
+  - It correlates −0.30 with size: leaders like Gujarat and Rajasthan are held back.
+  - Reshaping the catch-up term (capping the gap, or stopping it slowing leaders) did not lower the error ([step 3b](error_fixes/step3b_catchup_fixes.csv)).
 
 | Technology | National trend now | GSDP beta | Catch-up kappa | Transmission gamma |
 |---|---|---|---|---|
-| Solar | +0.235/yr | 0.15 | 0.132 | 0.027 |
-| Wind | −0.020/yr | 1.06 | 0.032 | 0.010 |
+| Solar | +0.278/yr | 0.11 | 0.124 | 0.035 |
+| Wind | −0.023/yr | 1.06 | 0.035 | 0.009 |
 | Bio-Mass | v1 approach: GSDP elasticity 0.26, fading 25%/yr | | | |
 | Small Hydro | v1 approach: GSDP elasticity 0, so held flat | | | |
-| Waste-to-Energy | −0.063/yr | 0 | 0 (held flat; sector only appears from 2018) | |
+| Waste-to-Energy | −0.165/yr | 0 | 0 (effectively flat; sector only appears from 2018) | |
+
+All fitted values and hand-set constants are in [`exports/growth_coefficients.csv`](exports/growth_coefficients.csv) and [`exports/constants.csv`](exports/constants.csv).
 
 ## 3. Backtest
 
@@ -81,35 +106,34 @@ The models are trained up to 2016, 2018 and 2020, then forecast the later years 
 
 ![](eda/09_backtest_comparison.png)
 
-| Model | Error on fresh values (%) |
-|---|---|
-| **v2 convergence (production: transmission term; v1 approach for bio-mass and small hydro)** | **29.0** |
-| v2 without the transmission term | 30.9 |
-| v2 with v2 approach for every technology, no transmission | 31.2 |
-| v2 with trend half-life 2y / 5y | 31.1 / 37.9 |
-| v2 without catch-up | 33.3 |
-| v1 GSDP elasticity | 37.1 |
-| Assume no new capacity | 44.7 |
-| Original tree ensemble (`.pkl`) | 51.3 |
+All rows are scored on the corrected repeat flags.
 
-By technology (production model): solar 40.0%, wind 10.6%, bio-mass 15.9%, small hydro 8.5%, waste-to-energy 63.2%.
+| Model | Cutoffs 2016/18/20 | Cutoffs 2020/21/22 |
+|---|---|---|
+| **v2 production** (copy fix, 4-year half-life, solar-only nowcast) | **28.6** | **23.6** |
+| v2 with 3-year half-life | 28.2 | 24.6 |
+| v2 with 5-year half-life | 30.4 | 23.1 |
+| v2 without the transmission term | 31.4 | 32.6 |
+| v2 without catch-up | 34.1 | 22.5 |
+| v2 without the GSDP term | 30.2 | 25.3 |
+| v2, no nowcast (trust repeated values) | 28.5 | 28.0 |
+| v1 GSDP elasticity | 36.6 | 36.5 |
+| Assume no new capacity | 46.1 | 47.6 |
+| Original tree ensemble (`.pkl`) | 51.4 | |
+
+**By technology** (production, standard cutoffs): solar 39.3%, wind 10.8%, bio-mass 14.8%, small hydro 8.6%, waste-to-energy 64.5%. Per-row predictions and error by state, zone and horizon are in [`exports/`](exports/).
+
+**Other models tested and rejected** (average over both cutoff sets): gradient-boosted trees 38.6%, neural networks 36.8–61.3%, LSTM 39.3%, Transformer 37.9%. See `model/experiments/neural_net.py` and `model/experiments/sequence_models.py`.
 
 **Transmission term, on recent cutoffs.** It can only be learned once reports exist in the training window (from FY2018-19). At the 2016 and 2018 cutoffs it is therefore inactive, and the whole gain above comes from the 2020 cutoff. A second backtest with cutoffs 2020, 2021 and 2022 isolates it:
 
-| Cutoff | Without transmission | With transmission (production) |
-|---|---|---|
-| 2020 | 31.8 | 26.0 |
-| 2021 | 32.5 | 26.5 |
-| 2022 | 41.2 | 35.2 |
-| **Mean** | **35.2** | **29.2** |
-
-Solar error on these cutoffs falls from 46.0% to 37.7%.
+Without transmission the mean on these cutoffs is 32.6%; with it, 23.6%. Solar error falls from 42.2% to 29.8%.
 - **Caveats:**
   - Like GSDP, the backtest uses the transmission actually built in the forecast years.
   - Three versions were tried (renewable line km, renewable substation MVA, all substation MVA). Line km was the only one that clearly helped, so some of the gain comes from choosing the best.
   - The test sets are small (28–84 fresh solar values per cutoff) and overlap. See [`experiments/transmission_backtest.py`](../model/experiments/transmission_backtest.py).
 
-- **The catch-up term is worth about 4 points.**
+- **The catch-up term** is worth 5.5 points on the standard cutoffs, but on the recent cutoffs the model does 1.1 points better without it. Its value depends on the period.
 - **Using v1's approach for bio-mass and small hydro** cuts small hydro error from 16.6% to 8.5% and bio-mass from 18.1% to 15.9%.
   - The total only improves 0.3 points because those two are small in MW. The gain held at every cutoff (2016: 30.9→30.6, 2018: 31.0→30.4, 2020: 31.9→31.8).
   - It was the one simple option tried in [`experiments/hybrid.py`](../model/experiments/hybrid.py) that helped without tuning.
@@ -121,15 +145,18 @@ Solar error on these cutoffs falls from 46.0% to 37.7%.
 
 **Units.** The dataset's GSDP is at **constant 2011-12 prices** (real). India's 2023 total is ₹162 lakh crore, which matches official real GDP, not current-price GDP.
 - The model learned its GSDP effects in those units, so it must be given real GSDP.
-- Government figures are at **current prices**: for example, ₹2,500 lakh crore (about $30 trillion) by 2047.
+- Government figures are at **current prices** or in dollars: for example, the $30 trillion Viksit Bharat target for 2047.
 - The dashboard therefore shows and accepts GSDP at current prices and converts:
 
 ```
-current prices = real × 1.95 × 1.04^(year − 2024)
+current prices = real × 1.95 × 1.0685^(year − 2024)
+₹ per $        = 92.65 × 1.0475^(year − 2026)
 ```
 
 - **1.95** = official GDP for 2024-25 at current prices (₹330.68 lakh crore, MoSPI provisional estimates, 30 May 2025) ÷ this dataset's 2024 total (₹169.6 lakh crore at 2011-12 prices).
-- **4% inflation** a year (the RBI target) is an assumption.
+- **₹92.65/$** is today's rate. The rupee is assumed to keep falling **4.75% a year**, its average since 1991 (4.5–5%, as given by the project team). That puts it at about **₹245/$ in 2047**.
+- **6.85% Indian inflation** a year comes from 2% US inflation (the Fed target) plus the 4.75% depreciation, because a currency falls by roughly the inflation gap between the two countries.
+  - Pairing 4.75% depreciation with a lower inflation figure would make the $30 trillion target need about 10% real growth, which is implausible.
 
 Typing ₹2,500 lakh crore into the old box, which expected 2011-12 prices, meant 12.4% real growth every year to 2047 and about 2,620 GW. That is the source of the large difference.
 
@@ -140,30 +167,49 @@ Typing ₹2,500 lakh crore into the old box, which expected 2011-12 prices, mean
 
 **Check of the state split:** predicting each state's GSDP from 2015–2019 to 2024, given the actual national total, gives a 6.4% average error. The old rule, each state's own 10-year growth rate, gave 11.2%.
 
-| GDP outlook | Real growth | India GSDP 2047, current prices | India capacity 2047 |
-|---|---|---|---|
-| **Government 2047 target (default)** | 5.0% a year (the rate that reaches ₹2,500 lakh crore) | ₹2,500 lakh crore | 704 GW |
-| Dataset trend | 5.1% (2014–2024) | ₹2,556 lakh crore | 717 GW |
-| IMF outlook | 6.5% to 2030, easing to 5.5% by 2047. 6.5% is the IMF's medium-term potential estimate (2025 Article IV); the easing is this project's assumption | ₹3,187 lakh crore | 856 GW |
-| Viksit Bharat | 7.8% a year, the average the World Bank says India needs to reach high income by 2047 (Feb 2025) | ₹4,586 lakh crore | 1,159 GW |
+| GDP outlook | Real growth | India GDP 2047 | India capacity 2047 | Generation 2047 |
+|---|---|---|---|---|
+| **Viksit Bharat, $30 trillion (default)** | 7.1% a year: the steady rate that reaches $30 trillion in 2047 under the conversion above | ₹7,365 lakh crore = $30.0 trillion | **998 GW** | 2,051 TWh |
+| World Bank high-income path | 7.8% a year: the average the World Bank says India needs to reach high income by 2047 (Feb 2025) | ₹8,531 lakh crore = $34.7 trillion | 1,042 GW | 2,155 TWh |
+| IMF outlook | 6.5% to 2030, easing to 5.5% by 2047. 6.5% is the IMF's medium-term potential estimate (2025 Article IV); the easing is this project's assumption | ₹5,929 lakh crore = $24.1 trillion | 943 GW | 1,918 TWh |
+| Dataset trend | 5.1% (2014–2024) | ₹4,755 lakh crore = $19.4 trillion | 896 GW | 1,807 TWh |
 
-GSDP does not drive the 29% backtest error, because the backtest already feeds the model the actual GSDP. Projecting GSDP from each cutoff instead would raise it to 31.8%. GSDP matters for the long range, as the table shows.
+On the default path India reaches about $6.7 trillion by 2030 and $10.4 trillion by 2035.
 
-**National forecast (GW)**, on the default outlook:
+**Consistency.** Each outlook, and any GSDP typed into the dashboard, rebuilds the zone catch-up targets with the same growth.
+- Faster growth lowers every state's capacity per rupee of GSDP *and* its zone's target together, so it does not open an artificial catch-up gap.
+- An earlier version kept the targets on one fixed path, which overstated the effect of faster growth.
+
+**Can faster GDP reach the government's 2047 capacity roadmap?** The roadmap figures quoted to the project are solar above 1,100 GW plus wind and other renewables of 400–500 GW, about 1,500–1,600 GW of the non-hydro renewables this model covers. With every state on the same real growth rate, the model gives:
+
+| Real GSDP growth to 2047 | 5% | 7% | 7.8% | 9% | 10% | 11% | 12% |
+|---|---|---|---|---|---|---|---|
+| Capacity 2047 (GW) | 889 | 987 | 1,037 | 1,125 | 1,213 | 1,318 | 1,444 |
+
+Even 12% real growth every year for 23 years gives about 1,450 GW, so GDP alone cannot reach the roadmap. Solar's fitted GSDP effect is small (0.11).
+- The model learns how capacity grew alongside GSDP and regional catch-up in 2006–2024.
+- The roadmap is a planned build-out that is much faster than that history.
+- The gap is therefore policy ambition the data cannot show, not a GDP error.
+
+GSDP does not drive the backtest error, because the backtest already feeds the model the actual GSDP. Projecting GSDP from each cutoff instead raises it to 32.7%. GSDP matters for the long range, as the tables show.
+
+**National forecast (GW)**, on the default outlook (Viksit Bharat, $30 trillion, 7.1% real growth):
 
 | | 2030 | 2035 | 2040 | 2047 |
 |---|---|---|---|---|
-| Solar | 308 | 394 | 466 | 562 |
-| Wind | 63 | 76 | 93 | 126 |
+| Solar | 430 | 594 | 701 | 794 |
+| Wind | 64 | 86 | 117 | 187 |
 | Bio-mass + small hydro | 16 | 16 | 16 | 16 |
-| Total | 388 | 487 | 576 | **704** |
+| Total | 511 | 696 | 835 | **998** |
+
+Generation in 2047 is 2,051 TWh. The full year-by-year table for every outlook is [`exports/national_capacity.csv`](exports/national_capacity.csv), and the chart is ![](viksit_bharat_capacity_generation.png)
 
 - **The transmission term raises the whole path.**
   - The gain comes from a higher starting point: more capacity in the stale states by 2024, and the heavy 2025–26 build-out in Rajasthan (3,451 km) and Gujarat (1,830 km).
   - It persists because later growth is proportional to capacity. Catch-up spreads it: a stronger Rajasthan lifts the West zone's target, so Gujarat 2035 rises too.
 - **Bio-mass and small hydro stay roughly flat,** as they have in the data recently.
 
-The biggest uncertainty is how quickly the national trend fades. A 5-year half-life instead of 3 roughly doubles the solar growth still to come by 2047.
+The biggest uncertainty is how quickly the national trend fades. A 5-year half-life gives 1,292 GW in 2047 and a 3-year half-life 782 GW, against 998 GW with the chosen 4 years.
 
 ### Check against real-time generation (outside data, used only to check)
 
@@ -179,11 +225,12 @@ A peak-output lower bound still gives a rough check on the near-term forecast:
 | 15 Mar 2026 | 75.3 GW | 11.8 GW |
 | 15 May 2026 | 72.9 GW | 14.3 GW |
 | 16 Nov 2026 | 86.9 GW | 5.2 GW |
-| **Model, 2026 installed** | **214 GW** | **57 GW** |
+| **Model, 2026 installed** | **266 GW** | about 50 GW |
 
-- **Solar:** installed capacity must be above the highest output seen. The 2026 forecast passes this test, with peak output about 40% of forecast capacity.
-  - That ratio is at the low end of plausible: the all-India peak never reaches full capacity, and most rooftop solar doesn't appear in grid data. It hints that the transmission term may push 2026 somewhat high.
-  - Without the term the forecast was 172 GW, a ratio of about half.
+- **Solar:** installed capacity must be above the highest output seen, and the 2026 forecast passes that test.
+  - Peak output is only about **33%** of forecast capacity. That is low even allowing for rooftop solar missing from grid data, so the 2026 forecast is probably high.
+  - The likely cause is the 2025–26 transmission boost combined with the steeper 2022–24 trend the copy fix revealed.
+  - The mask test points the other way for 2024 (the nowcast is 10% low), so the overshoot builds up in 2025–26.
 - **Wind:** output varies too much with the season for a useful check.
 
 ## 4. Explainability (SHAP and LIME)
@@ -200,10 +247,9 @@ These come from [`model/explain.py`](../model/explain.py). SHAP values are exact
 
 ![](explainability/shap_importance_by_technology.png)
 
-**Example: Gujarat 2035, GSDP +6%/yr → 92.7 GW** (71.4 GW without the transmission term).
-- **SHAP** explains the gap from the average scenario (11.4 GW): solar base +27.1, zone (West) +22.4, GSDP size +17.3, wind base +14.0, and Gujarat's own 2025–26 transmission +2.6.
-- **Why zone grew:** the West zone's target is higher now that Rajasthan's capacity is higher.
-- **LIME**, with a local R² of 0.73, says what would move this forecast most from here: zone, then GSDP size, then forecast year.
+**Example: Gujarat 2035, GSDP +6%/yr → 95.1 GW.**
+- **SHAP** explains the gap from the average scenario (16.5 GW): solar base +28.4, GSDP size +19.4, zone (West) +14.7, wind base +13.2, and Gujarat's own 2025–26 transmission +3.8.
+- **LIME**, with a local R² of 0.50, ranks zone as the biggest lever from here.
 
 ![](explainability/shap_waterfall_Gujarat_2035.png)
 
@@ -211,7 +257,8 @@ These come from [`model/explain.py`](../model/explain.py). SHAP values are exact
 
 - **The data only partly covers 2023–24,** so nowcasts for the 19 frozen states are model estimates, not observations. The transmission term helps, but they are still estimates.
 - **The transmission term depends on a heuristic state mapping** from agency and place names, which assigns 94% of projects. It only covers FY2018-19 to FY2025-26.
-  - Its effect on 2047 (506 → 597 GW) comes from a higher 2024–26 starting point carried forward, partly through catch-up toward higher zone levels. The backtest can't check that far ahead.
-- **The backtest only checks about 4–8 years ahead.** Behaviour out to 2047 depends on the trend half-life, which the backtest selects only weakly.
+  - Without it, 2047 would be 801 GW instead of 998 GW. The effect comes from a higher 2024–26 starting point carried forward, which the backtest can't check that far ahead.
+- **The backtest only checks about 4–8 years ahead.** The half-life was set to remove the 5–8-year bias, but 2047 is still an extrapolation: 3 years gives 782 GW, 5 years 1,292 GW.
+- **About 40% error 5–8 years ahead remains,** and it is state-specific: laggards are over-forecast and leaders under-forecast. No change to the catch-up term fixed it.
 - **Bio-mass and small hydro are close to flat by design.** Their recent growth is near zero, so the forecast can't anticipate a policy-driven revival. Waste-to-energy is too small and too recent to model, so it is held flat.
 - **Single-state forecasts catch up toward a precomputed zone path** that assumes the other states grow at their usual GSDP rate.

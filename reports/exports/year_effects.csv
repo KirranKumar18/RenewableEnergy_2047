@@ -1,0 +1,74 @@
+source,year,alpha_log_growth
+Solar,2012,0.3454
+Solar,2013,0.9125
+Solar,2014,0.5274
+Solar,2015,0.6672
+Solar,2016,0.7322
+Solar,2017,0.4007
+Solar,2018,0.3298
+Solar,2019,0.1266
+Solar,2020,0.2573
+Solar,2021,0.1842
+Solar,2022,0.5453
+Solar,2023,0.1957
+Solar,2024,0.0928
+Wind,2007,0.2069
+Wind,2008,0.2396
+Wind,2009,0.0825
+Wind,2010,-0.479
+Wind,2011,0.1021
+Wind,2012,0.1296
+Wind,2013,-0.2135
+Wind,2014,-0.2079
+Wind,2015,0.1319
+Wind,2016,0.1322
+Wind,2017,-0.0319
+Wind,2018,-0.0271
+Wind,2019,0.0
+Wind,2020,0.037
+Wind,2021,-0.0208
+Wind,2022,-0.061
+Wind,2023,-0.061
+Wind,2024,0.0523
+Bio-mass,2007,0.1867
+Bio-mass,2008,0.1871
+Bio-mass,2009,0.1811
+Bio-mass,2010,0.158
+Bio-mass,2011,0.0901
+Bio-mass,2012,0.2214
+Bio-mass,2013,-0.372
+Bio-mass,2014,-0.063
+Bio-mass,2015,0.0722
+Bio-mass,2016,0.3167
+Bio-mass,2017,0.1172
+Bio-mass,2018,-0.0657
+Bio-mass,2019,-0.0476
+Bio-mass,2020,-0.0265
+Bio-mass,2021,-0.0249
+Bio-mass,2022,-0.075
+Bio-mass,2023,0.2751
+Bio-mass,2024,-0.0438
+Small hydro,2007,0.04
+Small hydro,2008,-0.0074
+Small hydro,2009,0.0834
+Small hydro,2010,0.0102
+Small hydro,2011,0.0312
+Small hydro,2012,0.1149
+Small hydro,2013,-0.2243
+Small hydro,2014,-0.2092
+Small hydro,2015,0.0309
+Small hydro,2016,-0.0584
+Small hydro,2017,-0.1117
+Small hydro,2018,0.0647
+Small hydro,2019,-0.1297
+Small hydro,2020,-0.0433
+Small hydro,2021,-0.1151
+Small hydro,2022,-0.7552
+Small hydro,2023,0.5033
+Small hydro,2024,0.0357
+Waste-to-energy,2019,0.2136
+Waste-to-energy,2020,0.3096
+Waste-to-energy,2021,0.2876
+Waste-to-energy,2022,-0.7973
+Waste-to-energy,2023,0.2301
+Waste-to-energy,2024,0.0709

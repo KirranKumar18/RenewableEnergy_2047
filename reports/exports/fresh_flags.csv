@@ -1,0 +1,3176 @@
+state,year,source,value_mw,flag
+Andaman And Nicobar Islands,2006,Solar,0.1,fresh
+Andaman And Nicobar Islands,2006,Wind,0.0,fresh
+Andaman And Nicobar Islands,2006,Bio-mass,0.0,fresh
+Andaman And Nicobar Islands,2006,Small hydro,5.25,fresh
+Andaman And Nicobar Islands,2006,Waste-to-energy,0.0,fresh
+Andaman And Nicobar Islands,2007,Solar,0.1,stale (repeat of previous year)
+Andaman And Nicobar Islands,2007,Wind,1.1,fresh
+Andaman And Nicobar Islands,2007,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2007,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2008,Solar,0.1,stale (repeat of previous year)
+Andaman And Nicobar Islands,2008,Wind,1.1,stale (repeat of previous year)
+Andaman And Nicobar Islands,2008,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2008,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2009,Solar,0.1,stale (repeat of previous year)
+Andaman And Nicobar Islands,2009,Wind,0.0,fresh
+Andaman And Nicobar Islands,2009,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2009,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2010,Solar,0.1,stale (repeat of previous year)
+Andaman And Nicobar Islands,2010,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2010,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2010,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2011,Solar,0.01,fresh
+Andaman And Nicobar Islands,2011,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2011,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2011,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2012,Solar,5.1,fresh
+Andaman And Nicobar Islands,2012,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2012,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2012,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2013,Solar,5.1,stale (repeat of previous year)
+Andaman And Nicobar Islands,2013,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2013,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2013,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2014,Solar,5.1,stale (repeat of previous year)
+Andaman And Nicobar Islands,2014,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2014,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2014,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2015,Solar,5.1,stale (repeat of previous year)
+Andaman And Nicobar Islands,2015,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2015,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2015,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2016,Solar,6.56,fresh
+Andaman And Nicobar Islands,2016,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2016,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2016,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2017,Solar,6.56,stale (repeat of previous year)
+Andaman And Nicobar Islands,2017,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2017,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2017,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2018,Solar,11.73,fresh
+Andaman And Nicobar Islands,2018,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2018,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2018,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2019,Solar,12.19,fresh
+Andaman And Nicobar Islands,2019,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2019,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2019,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2020,Solar,29.46,fresh
+Andaman And Nicobar Islands,2020,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2020,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2020,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2021,Solar,29.49,fresh
+Andaman And Nicobar Islands,2021,Wind,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2021,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2021,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2022,Solar,29.488781,stale (repeat of previous year)
+Andaman And Nicobar Islands,2022,Wind,8.5e-05,stale (repeat of previous year)
+Andaman And Nicobar Islands,2022,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2022,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2023,Solar,29.488781,stale (repeat of previous year)
+Andaman And Nicobar Islands,2023,Wind,8.5e-05,stale (repeat of previous year)
+Andaman And Nicobar Islands,2023,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2023,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2024,Solar,29.488781,stale (repeat of previous year)
+Andaman And Nicobar Islands,2024,Wind,8.5e-05,stale (repeat of previous year)
+Andaman And Nicobar Islands,2024,Bio-mass,0.0,stale (repeat of previous year)
+Andaman And Nicobar Islands,2024,Small hydro,5.25,stale (repeat of previous year)
+Andaman And Nicobar Islands,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2006,Solar,0.058615,fresh
+Andhra Pradesh,2006,Wind,71.744877,fresh
+Andhra Pradesh,2006,Bio-mass,176.577974,fresh
+Andhra Pradesh,2006,Small hydro,104.833098,fresh
+Andhra Pradesh,2006,Waste-to-energy,0.0,fresh
+Andhra Pradesh,2007,Solar,0.058615,stale (repeat of previous year)
+Andhra Pradesh,2007,Wind,71.803492,fresh
+Andhra Pradesh,2007,Bio-mass,195.920956,fresh
+Andhra Pradesh,2007,Small hydro,105.993677,fresh
+Andhra Pradesh,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2008,Solar,0.058615,stale (repeat of previous year)
+Andhra Pradesh,2008,Wind,71.803492,stale (repeat of previous year)
+Andhra Pradesh,2008,Bio-mass,201.37216,fresh
+Andhra Pradesh,2008,Small hydro,105.993677,stale (repeat of previous year)
+Andhra Pradesh,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2009,Solar,0.058615,stale (repeat of previous year)
+Andhra Pradesh,2009,Wind,71.803492,stale (repeat of previous year)
+Andhra Pradesh,2009,Bio-mass,212.919333,fresh
+Andhra Pradesh,2009,Small hydro,109.510582,fresh
+Andhra Pradesh,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2010,Solar,1.230917,fresh
+Andhra Pradesh,2010,Wind,112.247907,fresh
+Andhra Pradesh,2010,Bio-mass,212.919333,stale (repeat of previous year)
+Andhra Pradesh,2010,Small hydro,112.206877,fresh
+Andhra Pradesh,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2011,Solar,12.748783,fresh
+Andhra Pradesh,2011,Wind,143.929366,fresh
+Andhra Pradesh,2011,Bio-mass,212.919333,stale (repeat of previous year)
+Andhra Pradesh,2011,Small hydro,127.681262,fresh
+Andhra Pradesh,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2012,Solar,13.686625,fresh
+Andhra Pradesh,2012,Wind,262.390474,fresh
+Andhra Pradesh,2012,Bio-mass,223.176975,fresh
+Andhra Pradesh,2012,Small hydro,128.384643,fresh
+Andhra Pradesh,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2013,Solar,131.84,fresh
+Andhra Pradesh,2013,Wind,746.2,fresh
+Andhra Pradesh,2013,Bio-mass,380.75,fresh
+Andhra Pradesh,2013,Small hydro,221.03,fresh
+Andhra Pradesh,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2014,Solar,242.86,fresh
+Andhra Pradesh,2014,Wind,1032.0,fresh
+Andhra Pradesh,2014,Bio-mass,389.75,fresh
+Andhra Pradesh,2014,Small hydro,223.23,fresh
+Andhra Pradesh,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2015,Solar,572.96,fresh
+Andhra Pradesh,2015,Wind,1431.45,fresh
+Andhra Pradesh,2015,Bio-mass,380.75,fresh
+Andhra Pradesh,2015,Small hydro,232.98,fresh
+Andhra Pradesh,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2016,Solar,1867.23,fresh
+Andhra Pradesh,2016,Wind,3618.85,fresh
+Andhra Pradesh,2016,Bio-mass,378.2,fresh
+Andhra Pradesh,2016,Small hydro,241.98,fresh
+Andhra Pradesh,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2017,Solar,2195.46,fresh
+Andhra Pradesh,2017,Wind,3966.95,fresh
+Andhra Pradesh,2017,Bio-mass,477.18,fresh
+Andhra Pradesh,2017,Small hydro,162.11,fresh
+Andhra Pradesh,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Andhra Pradesh,2018,Solar,3085.68,fresh
+Andhra Pradesh,2018,Wind,4090.45,fresh
+Andhra Pradesh,2018,Bio-mass,477.18,stale (repeat of previous year)
+Andhra Pradesh,2018,Small hydro,162.11,stale (repeat of previous year)
+Andhra Pradesh,2018,Waste-to-energy,23.16,fresh
+Andhra Pradesh,2019,Solar,3610.02,fresh
+Andhra Pradesh,2019,Wind,4092.45,fresh
+Andhra Pradesh,2019,Bio-mass,477.18,stale (repeat of previous year)
+Andhra Pradesh,2019,Small hydro,162.11,stale (repeat of previous year)
+Andhra Pradesh,2019,Waste-to-energy,23.16,stale (repeat of previous year)
+Andhra Pradesh,2020,Solar,4291.34,fresh
+Andhra Pradesh,2020,Wind,4096.65,fresh
+Andhra Pradesh,2020,Bio-mass,483.67,fresh
+Andhra Pradesh,2020,Small hydro,162.11,stale (repeat of previous year)
+Andhra Pradesh,2020,Waste-to-energy,52.37,fresh
+Andhra Pradesh,2021,Solar,4386.76,fresh
+Andhra Pradesh,2021,Wind,4096.65,stale (repeat of previous year)
+Andhra Pradesh,2021,Bio-mass,483.67,stale (repeat of previous year)
+Andhra Pradesh,2021,Small hydro,162.11,stale (repeat of previous year)
+Andhra Pradesh,2021,Waste-to-energy,82.37,fresh
+Andhra Pradesh,2022,Solar,4386.76,stale (repeat of previous year)
+Andhra Pradesh,2022,Wind,4096.65,stale (repeat of previous year)
+Andhra Pradesh,2022,Bio-mass,566.04,fresh
+Andhra Pradesh,2022,Small hydro,162.11,stale (repeat of previous year)
+Andhra Pradesh,2022,Waste-to-energy,53.16,fresh
+Andhra Pradesh,2023,Solar,9360.18,fresh
+Andhra Pradesh,2023,Wind,4096.65,stale (repeat of previous year)
+Andhra Pradesh,2023,Bio-mass,566.03,stale (repeat of previous year)
+Andhra Pradesh,2023,Small hydro,163.31,fresh
+Andhra Pradesh,2023,Waste-to-energy,53.16,stale (repeat of previous year)
+Andhra Pradesh,2024,Solar,9419.33,fresh
+Andhra Pradesh,2024,Wind,4096.65,stale (repeat of previous year)
+Andhra Pradesh,2024,Bio-mass,574.39,fresh
+Andhra Pradesh,2024,Small hydro,163.31,stale (repeat of previous year)
+Andhra Pradesh,2024,Waste-to-energy,53.16,stale (repeat of previous year)
+Arunachal Pradesh,2006,Solar,0.02,fresh
+Arunachal Pradesh,2006,Wind,0.0,fresh
+Arunachal Pradesh,2006,Bio-mass,0.0,fresh
+Arunachal Pradesh,2006,Small hydro,45.24,fresh
+Arunachal Pradesh,2006,Waste-to-energy,0.0,fresh
+Arunachal Pradesh,2007,Solar,0.02,stale (repeat of previous year)
+Arunachal Pradesh,2007,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2007,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2007,Small hydro,45.24,stale (repeat of previous year)
+Arunachal Pradesh,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2008,Solar,0.02,stale (repeat of previous year)
+Arunachal Pradesh,2008,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2008,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2008,Small hydro,45.24,stale (repeat of previous year)
+Arunachal Pradesh,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2009,Solar,0.03,stale (repeat of previous year)
+Arunachal Pradesh,2009,Wind,136.1,fresh
+Arunachal Pradesh,2009,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2009,Small hydro,73.42,fresh
+Arunachal Pradesh,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2010,Solar,0.03,stale (repeat of previous year)
+Arunachal Pradesh,2010,Wind,0.0,fresh
+Arunachal Pradesh,2010,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2010,Small hydro,78.84,fresh
+Arunachal Pradesh,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2011,Solar,0.03,stale (repeat of previous year)
+Arunachal Pradesh,2011,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2011,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2011,Small hydro,79.23,fresh
+Arunachal Pradesh,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2012,Solar,0.03,stale (repeat of previous year)
+Arunachal Pradesh,2012,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2012,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2012,Small hydro,103.91,fresh
+Arunachal Pradesh,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2013,Solar,0.03,stale (repeat of previous year)
+Arunachal Pradesh,2013,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2013,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2013,Small hydro,103.91,stale (repeat of previous year)
+Arunachal Pradesh,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2014,Solar,0.03,stale (repeat of previous year)
+Arunachal Pradesh,2014,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2014,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2014,Small hydro,104.61,fresh
+Arunachal Pradesh,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2015,Solar,0.27,fresh
+Arunachal Pradesh,2015,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2015,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2015,Small hydro,104.61,stale (repeat of previous year)
+Arunachal Pradesh,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2016,Solar,0.27,stale (repeat of previous year)
+Arunachal Pradesh,2016,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2016,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2016,Small hydro,104.61,stale (repeat of previous year)
+Arunachal Pradesh,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2017,Solar,5.39,fresh
+Arunachal Pradesh,2017,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2017,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2017,Small hydro,104.61,stale (repeat of previous year)
+Arunachal Pradesh,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2018,Solar,5.39,stale (repeat of previous year)
+Arunachal Pradesh,2018,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2018,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2018,Small hydro,131.11,fresh
+Arunachal Pradesh,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2019,Solar,5.61,fresh
+Arunachal Pradesh,2019,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2019,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2019,Small hydro,131.11,stale (repeat of previous year)
+Arunachal Pradesh,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2020,Solar,10.16,fresh
+Arunachal Pradesh,2020,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2020,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2020,Small hydro,131.11,stale (repeat of previous year)
+Arunachal Pradesh,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2021,Solar,11.23,fresh
+Arunachal Pradesh,2021,Wind,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2021,Bio-mass,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2021,Small hydro,131.11,stale (repeat of previous year)
+Arunachal Pradesh,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2022,Solar,11.228792,stale (repeat of previous year)
+Arunachal Pradesh,2022,Wind,0.000149,stale (repeat of previous year)
+Arunachal Pradesh,2022,Bio-mass,11.23,fresh
+Arunachal Pradesh,2022,Small hydro,131.11,stale (repeat of previous year)
+Arunachal Pradesh,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2023,Solar,11.228792,stale (repeat of previous year)
+Arunachal Pradesh,2023,Wind,0.000149,stale (repeat of previous year)
+Arunachal Pradesh,2023,Bio-mass,144.75,fresh
+Arunachal Pradesh,2023,Small hydro,133.11,fresh
+Arunachal Pradesh,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Arunachal Pradesh,2024,Solar,11.228792,stale (repeat of previous year)
+Arunachal Pradesh,2024,Wind,0.000149,stale (repeat of previous year)
+Arunachal Pradesh,2024,Bio-mass,144.9,fresh
+Arunachal Pradesh,2024,Small hydro,133.11,stale (repeat of previous year)
+Arunachal Pradesh,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2006,Solar,0.0,fresh
+Assam,2006,Wind,0.0,fresh
+Assam,2006,Bio-mass,0.0,fresh
+Assam,2006,Small hydro,2.11,fresh
+Assam,2006,Waste-to-energy,0.0,fresh
+Assam,2007,Solar,0.0,stale (repeat of previous year)
+Assam,2007,Wind,0.0,stale (repeat of previous year)
+Assam,2007,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2007,Small hydro,27.11,fresh
+Assam,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2008,Solar,0.0,stale (repeat of previous year)
+Assam,2008,Wind,0.0,stale (repeat of previous year)
+Assam,2008,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2008,Small hydro,27.11,stale (repeat of previous year)
+Assam,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2009,Solar,0.0,stale (repeat of previous year)
+Assam,2009,Wind,0.0,stale (repeat of previous year)
+Assam,2009,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2009,Small hydro,27.11,stale (repeat of previous year)
+Assam,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2010,Solar,0.0,stale (repeat of previous year)
+Assam,2010,Wind,0.0,stale (repeat of previous year)
+Assam,2010,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2010,Small hydro,27.11,stale (repeat of previous year)
+Assam,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2011,Solar,0.0,stale (repeat of previous year)
+Assam,2011,Wind,0.0,stale (repeat of previous year)
+Assam,2011,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2011,Small hydro,31.11,fresh
+Assam,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2012,Solar,0.0,stale (repeat of previous year)
+Assam,2012,Wind,0.0,stale (repeat of previous year)
+Assam,2012,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2012,Small hydro,31.11,stale (repeat of previous year)
+Assam,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2013,Solar,0.0,stale (repeat of previous year)
+Assam,2013,Wind,0.0,stale (repeat of previous year)
+Assam,2013,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2013,Small hydro,34.11,fresh
+Assam,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2014,Solar,0.0,stale (repeat of previous year)
+Assam,2014,Wind,0.0,stale (repeat of previous year)
+Assam,2014,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2014,Small hydro,34.11,stale (repeat of previous year)
+Assam,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2015,Solar,0.0,stale (repeat of previous year)
+Assam,2015,Wind,0.0,stale (repeat of previous year)
+Assam,2015,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2015,Small hydro,34.11,stale (repeat of previous year)
+Assam,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2016,Solar,11.78,fresh
+Assam,2016,Wind,0.0,stale (repeat of previous year)
+Assam,2016,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2016,Small hydro,34.11,stale (repeat of previous year)
+Assam,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2017,Solar,12.45,fresh
+Assam,2017,Wind,0.0,stale (repeat of previous year)
+Assam,2017,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2017,Small hydro,34.11,stale (repeat of previous year)
+Assam,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2018,Solar,22.4,fresh
+Assam,2018,Wind,0.0,stale (repeat of previous year)
+Assam,2018,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2018,Small hydro,34.11,stale (repeat of previous year)
+Assam,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2019,Solar,41.23,fresh
+Assam,2019,Wind,0.0,stale (repeat of previous year)
+Assam,2019,Bio-mass,0.0,stale (repeat of previous year)
+Assam,2019,Small hydro,34.11,stale (repeat of previous year)
+Assam,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2020,Solar,51.56,fresh
+Assam,2020,Wind,0.0,stale (repeat of previous year)
+Assam,2020,Bio-mass,2.0,fresh
+Assam,2020,Small hydro,34.11,stale (repeat of previous year)
+Assam,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2021,Solar,117.94,fresh
+Assam,2021,Wind,0.0,stale (repeat of previous year)
+Assam,2021,Bio-mass,2.0,stale (repeat of previous year)
+Assam,2021,Small hydro,34.11,stale (repeat of previous year)
+Assam,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2022,Solar,154.05,fresh
+Assam,2022,Wind,2.0,fresh
+Assam,2022,Bio-mass,117.94,fresh
+Assam,2022,Small hydro,34.11,stale (repeat of previous year)
+Assam,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2023,Solar,184.04,fresh
+Assam,2023,Wind,2.0,stale (repeat of previous year)
+Assam,2023,Bio-mass,147.93,fresh
+Assam,2023,Small hydro,34.11,stale (repeat of previous year)
+Assam,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Assam,2024,Solar,192.29,fresh
+Assam,2024,Wind,2.0,stale (repeat of previous year)
+Assam,2024,Bio-mass,156.18,fresh
+Assam,2024,Small hydro,34.11,stale (repeat of previous year)
+Assam,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2006,Solar,0.0,fresh
+Bihar,2006,Wind,0.0,fresh
+Bihar,2006,Bio-mass,0.0,fresh
+Bihar,2006,Small hydro,50.4,fresh
+Bihar,2006,Waste-to-energy,0.0,fresh
+Bihar,2007,Solar,0.0,stale (repeat of previous year)
+Bihar,2007,Wind,0.0,stale (repeat of previous year)
+Bihar,2007,Bio-mass,0.0,stale (repeat of previous year)
+Bihar,2007,Small hydro,50.4,stale (repeat of previous year)
+Bihar,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2008,Solar,0.0,stale (repeat of previous year)
+Bihar,2008,Wind,0.0,stale (repeat of previous year)
+Bihar,2008,Bio-mass,0.0,stale (repeat of previous year)
+Bihar,2008,Small hydro,50.4,stale (repeat of previous year)
+Bihar,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2009,Solar,0.0,stale (repeat of previous year)
+Bihar,2009,Wind,0.0,stale (repeat of previous year)
+Bihar,2009,Bio-mass,0.0,stale (repeat of previous year)
+Bihar,2009,Small hydro,54.6,fresh
+Bihar,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2010,Solar,0.0,stale (repeat of previous year)
+Bihar,2010,Wind,0.0,stale (repeat of previous year)
+Bihar,2010,Bio-mass,9.5,fresh
+Bihar,2010,Small hydro,59.8,fresh
+Bihar,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2011,Solar,0.0,stale (repeat of previous year)
+Bihar,2011,Wind,0.0,stale (repeat of previous year)
+Bihar,2011,Bio-mass,15.5,fresh
+Bihar,2011,Small hydro,64.3,fresh
+Bihar,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2012,Solar,0.0,stale (repeat of previous year)
+Bihar,2012,Wind,0.0,stale (repeat of previous year)
+Bihar,2012,Bio-mass,43.3,fresh
+Bihar,2012,Small hydro,70.7,fresh
+Bihar,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2013,Solar,0.0,stale (repeat of previous year)
+Bihar,2013,Wind,0.0,stale (repeat of previous year)
+Bihar,2013,Bio-mass,0.0,fresh
+Bihar,2013,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2014,Solar,0.0,stale (repeat of previous year)
+Bihar,2014,Wind,0.0,stale (repeat of previous year)
+Bihar,2014,Bio-mass,43.42,fresh
+Bihar,2014,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2015,Solar,5.1,fresh
+Bihar,2015,Wind,0.0,stale (repeat of previous year)
+Bihar,2015,Bio-mass,43.42,stale (repeat of previous year)
+Bihar,2015,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2016,Solar,108.52,fresh
+Bihar,2016,Wind,0.0,stale (repeat of previous year)
+Bihar,2016,Bio-mass,113.0,fresh
+Bihar,2016,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2017,Solar,142.45,fresh
+Bihar,2017,Wind,0.0,stale (repeat of previous year)
+Bihar,2017,Bio-mass,121.2,fresh
+Bihar,2017,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2018,Solar,142.45,stale (repeat of previous year)
+Bihar,2018,Wind,0.0,stale (repeat of previous year)
+Bihar,2018,Bio-mass,121.2,stale (repeat of previous year)
+Bihar,2018,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2019,Solar,151.57,fresh
+Bihar,2019,Wind,0.0,stale (repeat of previous year)
+Bihar,2019,Bio-mass,121.2,stale (repeat of previous year)
+Bihar,2019,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Bihar,2020,Solar,180.23,fresh
+Bihar,2020,Wind,0.0,stale (repeat of previous year)
+Bihar,2020,Bio-mass,124.7,fresh
+Bihar,2020,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2020,Waste-to-energy,1.0,fresh
+Bihar,2021,Solar,190.63,fresh
+Bihar,2021,Wind,0.0,stale (repeat of previous year)
+Bihar,2021,Bio-mass,124.7,stale (repeat of previous year)
+Bihar,2021,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2021,Waste-to-energy,1.32,fresh
+Bihar,2022,Solar,190.63,stale (repeat of previous year)
+Bihar,2022,Wind,112.5,fresh
+Bihar,2022,Bio-mass,126.02,fresh
+Bihar,2022,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2022,Waste-to-energy,1.32,stale (repeat of previous year)
+Bihar,2023,Solar,389.6,fresh
+Bihar,2023,Wind,112.5,stale (repeat of previous year)
+Bihar,2023,Bio-mass,126.02,stale (repeat of previous year)
+Bihar,2023,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2023,Waste-to-energy,1.32,stale (repeat of previous year)
+Bihar,2024,Solar,239.23,fresh
+Bihar,2024,Wind,112.5,stale (repeat of previous year)
+Bihar,2024,Bio-mass,140.22,fresh
+Bihar,2024,Small hydro,70.7,stale (repeat of previous year)
+Bihar,2024,Waste-to-energy,1.32,stale (repeat of previous year)
+Chandigarh,2013,Solar,2.0,fresh
+Chandigarh,2013,Wind,0.0,fresh
+Chandigarh,2013,Bio-mass,0.0,fresh
+Chandigarh,2013,Small hydro,0.0,fresh
+Chandigarh,2013,Waste-to-energy,0.0,fresh
+Chandigarh,2014,Solar,4.5,fresh
+Chandigarh,2014,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2014,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2014,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2015,Solar,6.81,fresh
+Chandigarh,2015,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2015,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2015,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2016,Solar,17.32,fresh
+Chandigarh,2016,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2016,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2016,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2017,Solar,25.2,fresh
+Chandigarh,2017,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2017,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2017,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2018,Solar,34.71,fresh
+Chandigarh,2018,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2018,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2018,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2019,Solar,40.55,fresh
+Chandigarh,2019,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2019,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2019,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2020,Solar,45.97,fresh
+Chandigarh,2020,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2020,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2020,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2021,Solar,55.17,fresh
+Chandigarh,2021,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2021,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2021,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2022,Solar,55.168743,stale (repeat of previous year)
+Chandigarh,2022,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2022,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2022,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2023,Solar,55.168743,stale (repeat of previous year)
+Chandigarh,2023,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2023,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2023,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Chandigarh,2024,Solar,55.168743,stale (repeat of previous year)
+Chandigarh,2024,Wind,0.0,stale (repeat of previous year)
+Chandigarh,2024,Bio-mass,0.0,stale (repeat of previous year)
+Chandigarh,2024,Small hydro,0.0,stale (repeat of previous year)
+Chandigarh,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2006,Solar,0.0,fresh
+Chhattisgarh,2006,Wind,0.0,fresh
+Chhattisgarh,2006,Bio-mass,113.3,fresh
+Chhattisgarh,2006,Small hydro,18.05,fresh
+Chhattisgarh,2006,Waste-to-energy,0.0,fresh
+Chhattisgarh,2007,Solar,0.0,stale (repeat of previous year)
+Chhattisgarh,2007,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2007,Bio-mass,146.3,fresh
+Chhattisgarh,2007,Small hydro,18.05,stale (repeat of previous year)
+Chhattisgarh,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2008,Solar,0.0,stale (repeat of previous year)
+Chhattisgarh,2008,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2008,Bio-mass,156.1,fresh
+Chhattisgarh,2008,Small hydro,18.05,stale (repeat of previous year)
+Chhattisgarh,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2009,Solar,0.0,stale (repeat of previous year)
+Chhattisgarh,2009,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2009,Bio-mass,199.9,fresh
+Chhattisgarh,2009,Small hydro,19.05,fresh
+Chhattisgarh,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2010,Solar,0.0,stale (repeat of previous year)
+Chhattisgarh,2010,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2010,Bio-mass,231.9,fresh
+Chhattisgarh,2010,Small hydro,19.05,stale (repeat of previous year)
+Chhattisgarh,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2011,Solar,4.0,fresh
+Chhattisgarh,2011,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2011,Bio-mass,249.9,fresh
+Chhattisgarh,2011,Small hydro,20.25,fresh
+Chhattisgarh,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2012,Solar,4.0,stale (repeat of previous year)
+Chhattisgarh,2012,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2012,Bio-mass,249.9,stale (repeat of previous year)
+Chhattisgarh,2012,Small hydro,52.0,fresh
+Chhattisgarh,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2013,Solar,7.1,fresh
+Chhattisgarh,2013,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2013,Bio-mass,264.9,fresh
+Chhattisgarh,2013,Small hydro,52.0,stale (repeat of previous year)
+Chhattisgarh,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2014,Solar,7.6,fresh
+Chhattisgarh,2014,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2014,Bio-mass,264.9,stale (repeat of previous year)
+Chhattisgarh,2014,Small hydro,52.0,stale (repeat of previous year)
+Chhattisgarh,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2015,Solar,93.58,fresh
+Chhattisgarh,2015,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2015,Bio-mass,279.9,fresh
+Chhattisgarh,2015,Small hydro,52.0,stale (repeat of previous year)
+Chhattisgarh,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2016,Solar,128.86,fresh
+Chhattisgarh,2016,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2016,Bio-mass,228.0,fresh
+Chhattisgarh,2016,Small hydro,76.0,fresh
+Chhattisgarh,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2017,Solar,231.35,fresh
+Chhattisgarh,2017,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2017,Bio-mass,230.5,fresh
+Chhattisgarh,2017,Small hydro,76.0,stale (repeat of previous year)
+Chhattisgarh,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2018,Solar,231.35,stale (repeat of previous year)
+Chhattisgarh,2018,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2018,Bio-mass,230.5,stale (repeat of previous year)
+Chhattisgarh,2018,Small hydro,76.0,stale (repeat of previous year)
+Chhattisgarh,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2019,Solar,231.35,stale (repeat of previous year)
+Chhattisgarh,2019,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2019,Bio-mass,244.5,fresh
+Chhattisgarh,2019,Small hydro,76.0,stale (repeat of previous year)
+Chhattisgarh,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Chhattisgarh,2020,Solar,445.21,fresh
+Chhattisgarh,2020,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2020,Bio-mass,244.9,fresh
+Chhattisgarh,2020,Small hydro,76.0,stale (repeat of previous year)
+Chhattisgarh,2020,Waste-to-energy,0.41,fresh
+Chhattisgarh,2021,Solar,518.08,fresh
+Chhattisgarh,2021,Wind,0.0,stale (repeat of previous year)
+Chhattisgarh,2021,Bio-mass,274.59,fresh
+Chhattisgarh,2021,Small hydro,76.0,stale (repeat of previous year)
+Chhattisgarh,2021,Waste-to-energy,0.41,stale (repeat of previous year)
+Chhattisgarh,2022,Solar,518.08,stale (repeat of previous year)
+Chhattisgarh,2022,Wind,272.09,fresh
+Chhattisgarh,2022,Bio-mass,275.0,fresh
+Chhattisgarh,2022,Small hydro,76.0,stale (repeat of previous year)
+Chhattisgarh,2022,Waste-to-energy,0.41,stale (repeat of previous year)
+Chhattisgarh,2023,Solar,1299.82,fresh
+Chhattisgarh,2023,Wind,272.09,stale (repeat of previous year)
+Chhattisgarh,2023,Bio-mass,275.0,stale (repeat of previous year)
+Chhattisgarh,2023,Small hydro,76.0,stale (repeat of previous year)
+Chhattisgarh,2023,Waste-to-energy,0.41,stale (repeat of previous year)
+Chhattisgarh,2024,Solar,1530.39,fresh
+Chhattisgarh,2024,Wind,272.09,stale (repeat of previous year)
+Chhattisgarh,2024,Bio-mass,275.0,stale (repeat of previous year)
+Chhattisgarh,2024,Small hydro,76.0,stale (repeat of previous year)
+Chhattisgarh,2024,Waste-to-energy,0.41,stale (repeat of previous year)
+Delhi,2009,Solar,0.05,fresh
+Delhi,2009,Wind,0.0,fresh
+Delhi,2009,Bio-mass,0.0,fresh
+Delhi,2009,Small hydro,0.0,fresh
+Delhi,2009,Waste-to-energy,0.0,fresh
+Delhi,2010,Solar,2.14,fresh
+Delhi,2010,Wind,0.0,stale (repeat of previous year)
+Delhi,2010,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2010,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Delhi,2011,Solar,2.53,fresh
+Delhi,2011,Wind,0.0,stale (repeat of previous year)
+Delhi,2011,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2011,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Delhi,2012,Solar,2.56,fresh
+Delhi,2012,Wind,0.0,stale (repeat of previous year)
+Delhi,2012,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2012,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Delhi,2013,Solar,5.15,fresh
+Delhi,2013,Wind,0.0,stale (repeat of previous year)
+Delhi,2013,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2013,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Delhi,2014,Solar,5.47,fresh
+Delhi,2014,Wind,0.0,stale (repeat of previous year)
+Delhi,2014,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2014,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Delhi,2015,Solar,14.28,fresh
+Delhi,2015,Wind,0.0,stale (repeat of previous year)
+Delhi,2015,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2015,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Delhi,2016,Solar,40.27,fresh
+Delhi,2016,Wind,0.0,stale (repeat of previous year)
+Delhi,2016,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2016,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Delhi,2017,Solar,69.57,fresh
+Delhi,2017,Wind,0.0,stale (repeat of previous year)
+Delhi,2017,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2017,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Delhi,2018,Solar,126.89,fresh
+Delhi,2018,Wind,0.0,stale (repeat of previous year)
+Delhi,2018,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2018,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2018,Waste-to-energy,52.0,fresh
+Delhi,2019,Solar,165.16,fresh
+Delhi,2019,Wind,0.0,stale (repeat of previous year)
+Delhi,2019,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2019,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2019,Waste-to-energy,52.0,stale (repeat of previous year)
+Delhi,2020,Solar,194.43,fresh
+Delhi,2020,Wind,0.0,stale (repeat of previous year)
+Delhi,2020,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2020,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2020,Waste-to-energy,52.0,stale (repeat of previous year)
+Delhi,2021,Solar,211.12,fresh
+Delhi,2021,Wind,0.0,stale (repeat of previous year)
+Delhi,2021,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2021,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2021,Waste-to-energy,59.0,fresh
+Delhi,2022,Solar,211.11879,stale (repeat of previous year)
+Delhi,2022,Wind,0.0,stale (repeat of previous year)
+Delhi,2022,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2022,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2022,Waste-to-energy,58.998684,stale (repeat of previous year)
+Delhi,2023,Solar,211.11879,stale (repeat of previous year)
+Delhi,2023,Wind,0.0,stale (repeat of previous year)
+Delhi,2023,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2023,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2023,Waste-to-energy,58.998684,stale (repeat of previous year)
+Delhi,2024,Solar,211.11879,stale (repeat of previous year)
+Delhi,2024,Wind,0.0,stale (repeat of previous year)
+Delhi,2024,Bio-mass,0.0,stale (repeat of previous year)
+Delhi,2024,Small hydro,0.0,stale (repeat of previous year)
+Delhi,2024,Waste-to-energy,58.998684,stale (repeat of previous year)
+Goa,2006,Solar,0.0,fresh
+Goa,2006,Wind,0.0,fresh
+Goa,2006,Bio-mass,0.0,fresh
+Goa,2006,Small hydro,0.05,fresh
+Goa,2006,Waste-to-energy,0.0,fresh
+Goa,2007,Solar,0.0,stale (repeat of previous year)
+Goa,2007,Wind,0.0,stale (repeat of previous year)
+Goa,2007,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2007,Small hydro,0.05,stale (repeat of previous year)
+Goa,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2008,Solar,0.0,stale (repeat of previous year)
+Goa,2008,Wind,0.0,stale (repeat of previous year)
+Goa,2008,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2008,Small hydro,0.05,stale (repeat of previous year)
+Goa,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2009,Solar,0.0,stale (repeat of previous year)
+Goa,2009,Wind,0.0,stale (repeat of previous year)
+Goa,2009,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2009,Small hydro,0.05,stale (repeat of previous year)
+Goa,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2010,Solar,0.0,stale (repeat of previous year)
+Goa,2010,Wind,0.0,stale (repeat of previous year)
+Goa,2010,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2010,Small hydro,0.05,stale (repeat of previous year)
+Goa,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2011,Solar,0.0,stale (repeat of previous year)
+Goa,2011,Wind,0.0,stale (repeat of previous year)
+Goa,2011,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2011,Small hydro,0.05,stale (repeat of previous year)
+Goa,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2012,Solar,0.0,stale (repeat of previous year)
+Goa,2012,Wind,0.0,stale (repeat of previous year)
+Goa,2012,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2012,Small hydro,0.05,stale (repeat of previous year)
+Goa,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2013,Solar,0.0,stale (repeat of previous year)
+Goa,2013,Wind,0.0,stale (repeat of previous year)
+Goa,2013,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2013,Small hydro,0.05,stale (repeat of previous year)
+Goa,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2014,Solar,0.0,stale (repeat of previous year)
+Goa,2014,Wind,0.0,stale (repeat of previous year)
+Goa,2014,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2014,Small hydro,0.05,stale (repeat of previous year)
+Goa,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2015,Solar,0.0,stale (repeat of previous year)
+Goa,2015,Wind,0.0,stale (repeat of previous year)
+Goa,2015,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2015,Small hydro,0.05,stale (repeat of previous year)
+Goa,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2016,Solar,0.71,fresh
+Goa,2016,Wind,0.0,stale (repeat of previous year)
+Goa,2016,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2016,Small hydro,0.05,stale (repeat of previous year)
+Goa,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2017,Solar,0.91,fresh
+Goa,2017,Wind,0.0,stale (repeat of previous year)
+Goa,2017,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2017,Small hydro,0.05,stale (repeat of previous year)
+Goa,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2018,Solar,3.92,fresh
+Goa,2018,Wind,0.0,stale (repeat of previous year)
+Goa,2018,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2018,Small hydro,0.05,stale (repeat of previous year)
+Goa,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2019,Solar,4.78,fresh
+Goa,2019,Wind,0.0,stale (repeat of previous year)
+Goa,2019,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2019,Small hydro,0.05,stale (repeat of previous year)
+Goa,2019,Waste-to-energy,0.34,fresh
+Goa,2020,Solar,7.56,fresh
+Goa,2020,Wind,0.0,stale (repeat of previous year)
+Goa,2020,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2020,Small hydro,0.05,stale (repeat of previous year)
+Goa,2020,Waste-to-energy,0.34,stale (repeat of previous year)
+Goa,2021,Solar,19.95,fresh
+Goa,2021,Wind,0.0,stale (repeat of previous year)
+Goa,2021,Bio-mass,0.0,stale (repeat of previous year)
+Goa,2021,Small hydro,0.05,stale (repeat of previous year)
+Goa,2021,Waste-to-energy,0.34,stale (repeat of previous year)
+Goa,2022,Solar,19.95,stale (repeat of previous year)
+Goa,2022,Wind,0.34,fresh
+Goa,2022,Bio-mass,0.34,fresh
+Goa,2022,Small hydro,0.05,stale (repeat of previous year)
+Goa,2022,Waste-to-energy,0.0,fresh
+Goa,2023,Solar,26.88,fresh
+Goa,2023,Wind,0.34,stale (repeat of previous year)
+Goa,2023,Bio-mass,0.34,stale (repeat of previous year)
+Goa,2023,Small hydro,0.05,stale (repeat of previous year)
+Goa,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Goa,2024,Solar,45.47,fresh
+Goa,2024,Wind,1.94,fresh
+Goa,2024,Bio-mass,1.94,fresh
+Goa,2024,Small hydro,0.05,stale (repeat of previous year)
+Goa,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2006,Solar,0.0,fresh
+Gujarat,2006,Wind,636.6,fresh
+Gujarat,2006,Bio-mass,0.0,fresh
+Gujarat,2006,Small hydro,7.0,fresh
+Gujarat,2006,Waste-to-energy,0.0,fresh
+Gujarat,2007,Solar,0.0,stale (repeat of previous year)
+Gujarat,2007,Wind,1252.9,fresh
+Gujarat,2007,Bio-mass,0.5,fresh
+Gujarat,2007,Small hydro,7.0,stale (repeat of previous year)
+Gujarat,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2008,Solar,0.0,stale (repeat of previous year)
+Gujarat,2008,Wind,1566.5,fresh
+Gujarat,2008,Bio-mass,0.5,stale (repeat of previous year)
+Gujarat,2008,Small hydro,7.0,stale (repeat of previous year)
+Gujarat,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2009,Solar,0.0,stale (repeat of previous year)
+Gujarat,2009,Wind,1863.63,fresh
+Gujarat,2009,Bio-mass,0.5,stale (repeat of previous year)
+Gujarat,2009,Small hydro,12.6,fresh
+Gujarat,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2010,Solar,5.0,fresh
+Gujarat,2010,Wind,2176.43,fresh
+Gujarat,2010,Bio-mass,0.5,stale (repeat of previous year)
+Gujarat,2010,Small hydro,15.6,fresh
+Gujarat,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2011,Solar,604.89,fresh
+Gujarat,2011,Wind,2966.28,fresh
+Gujarat,2011,Bio-mass,20.5,fresh
+Gujarat,2011,Small hydro,15.6,stale (repeat of previous year)
+Gujarat,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2012,Solar,857.9,fresh
+Gujarat,2012,Wind,3174.58,fresh
+Gujarat,2012,Bio-mass,30.5,fresh
+Gujarat,2012,Small hydro,15.6,stale (repeat of previous year)
+Gujarat,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2013,Solar,916.4,fresh
+Gujarat,2013,Wind,3454.3,fresh
+Gujarat,2013,Bio-mass,43.9,fresh
+Gujarat,2013,Small hydro,15.6,stale (repeat of previous year)
+Gujarat,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2014,Solar,1000.05,fresh
+Gujarat,2014,Wind,3645.0,fresh
+Gujarat,2014,Bio-mass,55.9,fresh
+Gujarat,2014,Small hydro,16.6,fresh
+Gujarat,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2015,Solar,1119.17,fresh
+Gujarat,2015,Wind,4037.5,fresh
+Gujarat,2015,Bio-mass,56.3,fresh
+Gujarat,2015,Small hydro,16.6,stale (repeat of previous year)
+Gujarat,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2016,Solar,1249.37,fresh
+Gujarat,2016,Wind,5340.62,fresh
+Gujarat,2016,Bio-mass,65.3,fresh
+Gujarat,2016,Small hydro,16.6,stale (repeat of previous year)
+Gujarat,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2017,Solar,1588.0,fresh
+Gujarat,2017,Wind,5613.42,fresh
+Gujarat,2017,Bio-mass,65.3,stale (repeat of previous year)
+Gujarat,2017,Small hydro,28.6,fresh
+Gujarat,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2018,Solar,2440.13,fresh
+Gujarat,2018,Wind,6073.07,fresh
+Gujarat,2018,Bio-mass,77.3,fresh
+Gujarat,2018,Small hydro,61.3,fresh
+Gujarat,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2019,Solar,2948.37,fresh
+Gujarat,2019,Wind,7541.52,fresh
+Gujarat,2019,Bio-mass,77.3,stale (repeat of previous year)
+Gujarat,2019,Small hydro,68.95,fresh
+Gujarat,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Gujarat,2020,Solar,4469.87,fresh
+Gujarat,2020,Wind,8561.82,fresh
+Gujarat,2020,Bio-mass,77.3,stale (repeat of previous year)
+Gujarat,2020,Small hydro,82.69,fresh
+Gujarat,2020,Waste-to-energy,22.57,fresh
+Gujarat,2021,Solar,7180.03,fresh
+Gujarat,2021,Wind,9209.22,fresh
+Gujarat,2021,Bio-mass,77.3,stale (repeat of previous year)
+Gujarat,2021,Small hydro,89.39,fresh
+Gujarat,2021,Waste-to-energy,31.96,fresh
+Gujarat,2022,Solar,7180.03,stale (repeat of previous year)
+Gujarat,2022,Wind,9209.22,stale (repeat of previous year)
+Gujarat,2022,Bio-mass,109.26,fresh
+Gujarat,2022,Small hydro,89.39,stale (repeat of previous year)
+Gujarat,2022,Waste-to-energy,7.5,fresh
+Gujarat,2023,Solar,19435.85,fresh
+Gujarat,2023,Wind,9978.92,fresh
+Gujarat,2023,Bio-mass,110.73,fresh
+Gujarat,2023,Small hydro,91.64,fresh
+Gujarat,2023,Waste-to-energy,7.5,stale (repeat of previous year)
+Gujarat,2024,Solar,25471.72,fresh
+Gujarat,2024,Wind,11722.72,fresh
+Gujarat,2024,Bio-mass,112.48,fresh
+Gujarat,2024,Small hydro,91.64,stale (repeat of previous year)
+Gujarat,2024,Waste-to-energy,7.5,stale (repeat of previous year)
+Haryana,2006,Solar,0.0,fresh
+Haryana,2006,Wind,0.0,fresh
+Haryana,2006,Bio-mass,6.0,fresh
+Haryana,2006,Small hydro,62.7,fresh
+Haryana,2006,Waste-to-energy,0.0,fresh
+Haryana,2007,Solar,0.0,stale (repeat of previous year)
+Haryana,2007,Wind,0.0,stale (repeat of previous year)
+Haryana,2007,Bio-mass,6.0,stale (repeat of previous year)
+Haryana,2007,Small hydro,62.7,stale (repeat of previous year)
+Haryana,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2008,Solar,0.0,stale (repeat of previous year)
+Haryana,2008,Wind,0.0,stale (repeat of previous year)
+Haryana,2008,Bio-mass,6.0,stale (repeat of previous year)
+Haryana,2008,Small hydro,62.7,stale (repeat of previous year)
+Haryana,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2009,Solar,0.0,stale (repeat of previous year)
+Haryana,2009,Wind,0.0,stale (repeat of previous year)
+Haryana,2009,Bio-mass,7.8,fresh
+Haryana,2009,Small hydro,70.1,fresh
+Haryana,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2010,Solar,0.0,stale (repeat of previous year)
+Haryana,2010,Wind,0.0,stale (repeat of previous year)
+Haryana,2010,Bio-mass,35.8,fresh
+Haryana,2010,Small hydro,70.1,stale (repeat of previous year)
+Haryana,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2011,Solar,16.8,fresh
+Haryana,2011,Wind,0.0,stale (repeat of previous year)
+Haryana,2011,Bio-mass,35.8,stale (repeat of previous year)
+Haryana,2011,Small hydro,70.1,stale (repeat of previous year)
+Haryana,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2012,Solar,7.8,fresh
+Haryana,2012,Wind,0.0,stale (repeat of previous year)
+Haryana,2012,Bio-mass,45.3,fresh
+Haryana,2012,Small hydro,70.1,stale (repeat of previous year)
+Haryana,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2013,Solar,10.3,fresh
+Haryana,2013,Wind,0.0,stale (repeat of previous year)
+Haryana,2013,Bio-mass,45.3,stale (repeat of previous year)
+Haryana,2013,Small hydro,70.1,stale (repeat of previous year)
+Haryana,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2014,Solar,12.8,fresh
+Haryana,2014,Wind,0.0,stale (repeat of previous year)
+Haryana,2014,Bio-mass,52.3,fresh
+Haryana,2014,Small hydro,71.5,fresh
+Haryana,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2015,Solar,15.39,fresh
+Haryana,2015,Wind,0.0,stale (repeat of previous year)
+Haryana,2015,Bio-mass,45.3,fresh
+Haryana,2015,Small hydro,73.5,fresh
+Haryana,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2016,Solar,81.4,fresh
+Haryana,2016,Wind,0.0,stale (repeat of previous year)
+Haryana,2016,Bio-mass,96.4,fresh
+Haryana,2016,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2017,Solar,216.85,fresh
+Haryana,2017,Wind,0.0,stale (repeat of previous year)
+Haryana,2017,Bio-mass,205.66,fresh
+Haryana,2017,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2018,Solar,224.52,fresh
+Haryana,2018,Wind,0.0,stale (repeat of previous year)
+Haryana,2018,Bio-mass,205.66,stale (repeat of previous year)
+Haryana,2018,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2019,Solar,252.14,fresh
+Haryana,2019,Wind,0.0,stale (repeat of previous year)
+Haryana,2019,Bio-mass,205.66,stale (repeat of previous year)
+Haryana,2019,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Haryana,2020,Solar,472.26,fresh
+Haryana,2020,Wind,0.0,stale (repeat of previous year)
+Haryana,2020,Bio-mass,210.66,fresh
+Haryana,2020,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2020,Waste-to-energy,6.09,fresh
+Haryana,2021,Solar,910.63,fresh
+Haryana,2021,Wind,0.0,stale (repeat of previous year)
+Haryana,2021,Bio-mass,240.66,fresh
+Haryana,2021,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2021,Waste-to-energy,17.34,fresh
+Haryana,2022,Solar,910.63,stale (repeat of previous year)
+Haryana,2022,Wind,151.4,fresh
+Haryana,2022,Bio-mass,258.0,fresh
+Haryana,2022,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2022,Waste-to-energy,11.2,fresh
+Haryana,2023,Solar,1362.09,fresh
+Haryana,2023,Wind,151.4,stale (repeat of previous year)
+Haryana,2023,Bio-mass,259.43,fresh
+Haryana,2023,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2023,Waste-to-energy,11.2,stale (repeat of previous year)
+Haryana,2024,Solar,1832.92,fresh
+Haryana,2024,Wind,151.4,stale (repeat of previous year)
+Haryana,2024,Bio-mass,283.7,fresh
+Haryana,2024,Small hydro,73.5,stale (repeat of previous year)
+Haryana,2024,Waste-to-energy,11.2,stale (repeat of previous year)
+Himachal Pradesh,2006,Solar,0.0,fresh
+Himachal Pradesh,2006,Wind,0.0,fresh
+Himachal Pradesh,2006,Bio-mass,0.0,fresh
+Himachal Pradesh,2006,Small hydro,141.62,fresh
+Himachal Pradesh,2006,Waste-to-energy,0.0,fresh
+Himachal Pradesh,2007,Solar,0.0,stale (repeat of previous year)
+Himachal Pradesh,2007,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2007,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2007,Small hydro,162.62,fresh
+Himachal Pradesh,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2008,Solar,0.0,stale (repeat of previous year)
+Himachal Pradesh,2008,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2008,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2008,Small hydro,162.62,stale (repeat of previous year)
+Himachal Pradesh,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2009,Solar,0.0,stale (repeat of previous year)
+Himachal Pradesh,2009,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2009,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2009,Small hydro,330.32,fresh
+Himachal Pradesh,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2010,Solar,0.0,stale (repeat of previous year)
+Himachal Pradesh,2010,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2010,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2010,Small hydro,393.47,fresh
+Himachal Pradesh,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2011,Solar,0.0,stale (repeat of previous year)
+Himachal Pradesh,2011,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2011,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2011,Small hydro,527.66,fresh
+Himachal Pradesh,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2012,Solar,0.0,stale (repeat of previous year)
+Himachal Pradesh,2012,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2012,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2012,Small hydro,587.91,fresh
+Himachal Pradesh,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2013,Solar,0.0,stale (repeat of previous year)
+Himachal Pradesh,2013,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2013,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2013,Small hydro,638.91,fresh
+Himachal Pradesh,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2014,Solar,0.0,stale (repeat of previous year)
+Himachal Pradesh,2014,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2014,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2014,Small hydro,723.91,fresh
+Himachal Pradesh,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2015,Solar,0.2,fresh
+Himachal Pradesh,2015,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2015,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2015,Small hydro,793.31,fresh
+Himachal Pradesh,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2016,Solar,0.73,fresh
+Himachal Pradesh,2016,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2016,Bio-mass,0.0,stale (repeat of previous year)
+Himachal Pradesh,2016,Small hydro,831.81,fresh
+Himachal Pradesh,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2017,Solar,0.73,stale (repeat of previous year)
+Himachal Pradesh,2017,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2017,Bio-mass,7.2,fresh
+Himachal Pradesh,2017,Small hydro,853.11,fresh
+Himachal Pradesh,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2018,Solar,22.68,fresh
+Himachal Pradesh,2018,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2018,Bio-mass,7.2,stale (repeat of previous year)
+Himachal Pradesh,2018,Small hydro,860.61,fresh
+Himachal Pradesh,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2019,Solar,32.93,fresh
+Himachal Pradesh,2019,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2019,Bio-mass,7.2,stale (repeat of previous year)
+Himachal Pradesh,2019,Small hydro,911.51,fresh
+Himachal Pradesh,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2020,Solar,50.28,fresh
+Himachal Pradesh,2020,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2020,Bio-mass,9.2,fresh
+Himachal Pradesh,2020,Small hydro,936.11,fresh
+Himachal Pradesh,2020,Waste-to-energy,1.0,fresh
+Himachal Pradesh,2021,Solar,76.16,fresh
+Himachal Pradesh,2021,Wind,0.0,stale (repeat of previous year)
+Himachal Pradesh,2021,Bio-mass,9.2,stale (repeat of previous year)
+Himachal Pradesh,2021,Small hydro,954.11,fresh
+Himachal Pradesh,2021,Waste-to-energy,1.0,stale (repeat of previous year)
+Himachal Pradesh,2022,Solar,76.16,stale (repeat of previous year)
+Himachal Pradesh,2022,Wind,9.2,fresh
+Himachal Pradesh,2022,Bio-mass,10.2,fresh
+Himachal Pradesh,2022,Small hydro,954.11,stale (repeat of previous year)
+Himachal Pradesh,2022,Waste-to-energy,0.0,fresh
+Himachal Pradesh,2023,Solar,1067.4,fresh
+Himachal Pradesh,2023,Wind,9.2,stale (repeat of previous year)
+Himachal Pradesh,2023,Bio-mass,10.2,stale (repeat of previous year)
+Himachal Pradesh,2023,Small hydro,969.71,fresh
+Himachal Pradesh,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Himachal Pradesh,2024,Solar,1075.14,fresh
+Himachal Pradesh,2024,Wind,9.2,stale (repeat of previous year)
+Himachal Pradesh,2024,Bio-mass,10.2,stale (repeat of previous year)
+Himachal Pradesh,2024,Small hydro,969.71,stale (repeat of previous year)
+Himachal Pradesh,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2006,Solar,0.0,fresh
+Jammu And Kashmir,2006,Wind,0.0,fresh
+Jammu And Kashmir,2006,Bio-mass,0.0,fresh
+Jammu And Kashmir,2006,Small hydro,111.83,fresh
+Jammu And Kashmir,2006,Waste-to-energy,0.0,fresh
+Jammu And Kashmir,2007,Solar,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2007,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2007,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2007,Small hydro,109.372501,fresh
+Jammu And Kashmir,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2008,Solar,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2008,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2008,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2008,Small hydro,111.83,fresh
+Jammu And Kashmir,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2009,Solar,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2009,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2009,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2009,Small hydro,129.33,fresh
+Jammu And Kashmir,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2010,Solar,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2010,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2010,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2010,Small hydro,129.33,stale (repeat of previous year)
+Jammu And Kashmir,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2011,Solar,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2011,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2011,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2011,Small hydro,130.53,fresh
+Jammu And Kashmir,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2012,Solar,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2012,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2012,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2012,Small hydro,130.53,stale (repeat of previous year)
+Jammu And Kashmir,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2013,Solar,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2013,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2013,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2013,Small hydro,147.53,fresh
+Jammu And Kashmir,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2014,Solar,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2014,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2014,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2014,Small hydro,156.53,fresh
+Jammu And Kashmir,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2015,Solar,1.0,fresh
+Jammu And Kashmir,2015,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2015,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2015,Small hydro,156.53,stale (repeat of previous year)
+Jammu And Kashmir,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2016,Solar,1.36,fresh
+Jammu And Kashmir,2016,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2016,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2016,Small hydro,158.03,fresh
+Jammu And Kashmir,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2017,Solar,1.36,stale (repeat of previous year)
+Jammu And Kashmir,2017,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2017,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2017,Small hydro,179.03,fresh
+Jammu And Kashmir,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2018,Solar,14.83,fresh
+Jammu And Kashmir,2018,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2018,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2018,Small hydro,179.03,stale (repeat of previous year)
+Jammu And Kashmir,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2019,Solar,19.3,fresh
+Jammu And Kashmir,2019,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2019,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2019,Small hydro,180.48,fresh
+Jammu And Kashmir,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2020,Solar,42.13,fresh
+Jammu And Kashmir,2020,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2020,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2020,Small hydro,185.98,fresh
+Jammu And Kashmir,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2021,Solar,54.73,fresh
+Jammu And Kashmir,2021,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2021,Bio-mass,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2021,Small hydro,184.32,fresh
+Jammu And Kashmir,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2022,Solar,191.61,fresh
+Jammu And Kashmir,2022,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2022,Bio-mass,46.93,fresh
+Jammu And Kashmir,2022,Small hydro,144.68,fresh
+Jammu And Kashmir,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2023,Solar,196.12,fresh
+Jammu And Kashmir,2023,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2023,Bio-mass,49.44,fresh
+Jammu And Kashmir,2023,Small hydro,146.68,fresh
+Jammu And Kashmir,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2024,Solar,235.37,fresh
+Jammu And Kashmir,2024,Wind,0.0,stale (repeat of previous year)
+Jammu And Kashmir,2024,Bio-mass,65.44,fresh
+Jammu And Kashmir,2024,Small hydro,169.93,fresh
+Jammu And Kashmir,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2006,Solar,0.0,fresh
+Jharkhand,2006,Wind,0.0,fresh
+Jharkhand,2006,Bio-mass,0.0,fresh
+Jharkhand,2006,Small hydro,4.05,fresh
+Jharkhand,2006,Waste-to-energy,0.0,fresh
+Jharkhand,2007,Solar,0.0,stale (repeat of previous year)
+Jharkhand,2007,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2007,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2007,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2008,Solar,0.0,stale (repeat of previous year)
+Jharkhand,2008,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2008,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2008,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2009,Solar,0.0,stale (repeat of previous year)
+Jharkhand,2009,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2009,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2009,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2010,Solar,0.0,stale (repeat of previous year)
+Jharkhand,2010,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2010,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2010,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2011,Solar,4.0,fresh
+Jharkhand,2011,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2011,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2011,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2012,Solar,16.0,fresh
+Jharkhand,2012,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2012,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2012,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2013,Solar,16.0,stale (repeat of previous year)
+Jharkhand,2013,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2013,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2013,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2014,Solar,16.0,stale (repeat of previous year)
+Jharkhand,2014,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2014,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2014,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2015,Solar,16.19,fresh
+Jharkhand,2015,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2015,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2015,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2016,Solar,23.27,fresh
+Jharkhand,2016,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2016,Bio-mass,0.0,stale (repeat of previous year)
+Jharkhand,2016,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2017,Solar,25.67,fresh
+Jharkhand,2017,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2017,Bio-mass,4.3,fresh
+Jharkhand,2017,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2018,Solar,34.95,fresh
+Jharkhand,2018,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2018,Bio-mass,4.3,stale (repeat of previous year)
+Jharkhand,2018,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2019,Solar,38.4,fresh
+Jharkhand,2019,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2019,Bio-mass,4.3,stale (repeat of previous year)
+Jharkhand,2019,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2020,Solar,69.86,fresh
+Jharkhand,2020,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2020,Bio-mass,4.3,stale (repeat of previous year)
+Jharkhand,2020,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2021,Solar,88.79,fresh
+Jharkhand,2021,Wind,0.0,stale (repeat of previous year)
+Jharkhand,2021,Bio-mass,4.3,stale (repeat of previous year)
+Jharkhand,2021,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2022,Solar,97.14,fresh
+Jharkhand,2022,Wind,4.3,fresh
+Jharkhand,2022,Bio-mass,4.3,stale (repeat of previous year)
+Jharkhand,2022,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2023,Solar,114.19,fresh
+Jharkhand,2023,Wind,4.3,stale (repeat of previous year)
+Jharkhand,2023,Bio-mass,4.3,stale (repeat of previous year)
+Jharkhand,2023,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Jharkhand,2024,Solar,185.55,fresh
+Jharkhand,2024,Wind,19.1,fresh
+Jharkhand,2024,Bio-mass,19.1,fresh
+Jharkhand,2024,Small hydro,4.05,stale (repeat of previous year)
+Jharkhand,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2006,Solar,0.0,fresh
+Karnataka,2006,Wind,821.1,fresh
+Karnataka,2006,Bio-mass,254.28,fresh
+Karnataka,2006,Small hydro,416.5,fresh
+Karnataka,2006,Waste-to-energy,0.0,fresh
+Karnataka,2007,Solar,0.0,stale (repeat of previous year)
+Karnataka,2007,Wind,1011.4,fresh
+Karnataka,2007,Bio-mass,262.28,fresh
+Karnataka,2007,Small hydro,464.0,fresh
+Karnataka,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2008,Solar,0.0,stale (repeat of previous year)
+Karnataka,2008,Wind,1327.4,fresh
+Karnataka,2008,Bio-mass,294.18,fresh
+Karnataka,2008,Small hydro,464.0,stale (repeat of previous year)
+Karnataka,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2009,Solar,6.0,fresh
+Karnataka,2009,Wind,1472.8,fresh
+Karnataka,2009,Bio-mass,336.18,fresh
+Karnataka,2009,Small hydro,640.45,fresh
+Karnataka,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2010,Solar,6.0,stale (repeat of previous year)
+Karnataka,2010,Wind,1726.85,fresh
+Karnataka,2010,Bio-mass,365.18,fresh
+Karnataka,2010,Small hydro,783.35,fresh
+Karnataka,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2011,Solar,9.0,fresh
+Karnataka,2011,Wind,1933.5,fresh
+Karnataka,2011,Bio-mass,441.18,fresh
+Karnataka,2011,Small hydro,882.45,fresh
+Karnataka,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2012,Solar,14.0,fresh
+Karnataka,2012,Wind,2135.15,fresh
+Karnataka,2012,Bio-mass,491.38,fresh
+Karnataka,2012,Small hydro,963.76,fresh
+Karnataka,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2013,Solar,31.0,fresh
+Karnataka,2013,Wind,2318.2,fresh
+Karnataka,2013,Bio-mass,603.28,fresh
+Karnataka,2013,Small hydro,1031.66,fresh
+Karnataka,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2014,Solar,77.22,fresh
+Karnataka,2014,Wind,2638.0,fresh
+Karnataka,2014,Bio-mass,664.28,fresh
+Karnataka,2014,Small hydro,1129.73,fresh
+Karnataka,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2015,Solar,145.46,fresh
+Karnataka,2015,Wind,2869.15,fresh
+Karnataka,2015,Bio-mass,872.18,fresh
+Karnataka,2015,Small hydro,1217.73,fresh
+Karnataka,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2016,Solar,1027.84,fresh
+Karnataka,2016,Wind,3751.4,fresh
+Karnataka,2016,Bio-mass,1452.0,fresh
+Karnataka,2016,Small hydro,1225.73,fresh
+Karnataka,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2017,Solar,4944.12,fresh
+Karnataka,2017,Wind,4608.4,fresh
+Karnataka,2017,Bio-mass,1768.8,fresh
+Karnataka,2017,Small hydro,1230.73,fresh
+Karnataka,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Karnataka,2018,Solar,6095.56,fresh
+Karnataka,2018,Wind,4694.9,fresh
+Karnataka,2018,Bio-mass,1798.8,fresh
+Karnataka,2018,Small hydro,1254.73,fresh
+Karnataka,2018,Waste-to-energy,1.0,fresh
+Karnataka,2019,Solar,7277.93,fresh
+Karnataka,2019,Wind,4790.6,fresh
+Karnataka,2019,Bio-mass,1881.8,fresh
+Karnataka,2019,Small hydro,1280.73,fresh
+Karnataka,2019,Waste-to-energy,1.0,stale (repeat of previous year)
+Karnataka,2020,Solar,7383.88,fresh
+Karnataka,2020,Wind,4938.6,fresh
+Karnataka,2020,Bio-mass,1887.3,fresh
+Karnataka,2020,Small hydro,1280.73,stale (repeat of previous year)
+Karnataka,2020,Waste-to-energy,14.62,fresh
+Karnataka,2021,Solar,7590.81,fresh
+Karnataka,2021,Wind,5130.9,fresh
+Karnataka,2021,Bio-mass,1887.3,stale (repeat of previous year)
+Karnataka,2021,Small hydro,1280.73,stale (repeat of previous year)
+Karnataka,2021,Waste-to-energy,14.85,fresh
+Karnataka,2022,Solar,7590.81,stale (repeat of previous year)
+Karnataka,2022,Wind,5130.9,stale (repeat of previous year)
+Karnataka,2022,Bio-mass,1902.15,fresh
+Karnataka,2022,Small hydro,1280.73,stale (repeat of previous year)
+Karnataka,2022,Waste-to-energy,1.0,fresh
+Karnataka,2023,Solar,16719.23,fresh
+Karnataka,2023,Wind,5294.95,fresh
+Karnataka,2023,Bio-mass,1902.15,stale (repeat of previous year)
+Karnataka,2023,Small hydro,1280.73,stale (repeat of previous year)
+Karnataka,2023,Waste-to-energy,1.0,stale (repeat of previous year)
+Karnataka,2024,Solar,17752.74,fresh
+Karnataka,2024,Wind,6019.61,fresh
+Karnataka,2024,Bio-mass,1907.72,fresh
+Karnataka,2024,Small hydro,1280.73,stale (repeat of previous year)
+Karnataka,2024,Waste-to-energy,19.42,fresh
+Kerala,2006,Solar,0.02,fresh
+Kerala,2006,Wind,2.0,fresh
+Kerala,2006,Bio-mass,0.0,fresh
+Kerala,2006,Small hydro,98.12,fresh
+Kerala,2006,Waste-to-energy,0.0,fresh
+Kerala,2007,Solar,0.02,stale (repeat of previous year)
+Kerala,2007,Wind,10.5,fresh
+Kerala,2007,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2007,Small hydro,123.12,fresh
+Kerala,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2008,Solar,0.02,stale (repeat of previous year)
+Kerala,2008,Wind,27.0,fresh
+Kerala,2008,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2008,Small hydro,123.12,stale (repeat of previous year)
+Kerala,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2009,Solar,0.03,stale (repeat of previous year)
+Kerala,2009,Wind,27.75,fresh
+Kerala,2009,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2009,Small hydro,133.87,fresh
+Kerala,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2010,Solar,0.03,stale (repeat of previous year)
+Kerala,2010,Wind,35.0,fresh
+Kerala,2010,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2010,Small hydro,136.87,fresh
+Kerala,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2011,Solar,0.84,fresh
+Kerala,2011,Wind,35.1,fresh
+Kerala,2011,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2011,Small hydro,149.67,fresh
+Kerala,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2012,Solar,0.03,fresh
+Kerala,2012,Wind,35.1,stale (repeat of previous year)
+Kerala,2012,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2012,Small hydro,158.42,fresh
+Kerala,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2013,Solar,0.03,stale (repeat of previous year)
+Kerala,2013,Wind,35.2,fresh
+Kerala,2013,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2013,Small hydro,158.42,stale (repeat of previous year)
+Kerala,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2014,Solar,0.03,stale (repeat of previous year)
+Kerala,2014,Wind,35.0,fresh
+Kerala,2014,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2014,Small hydro,168.92,fresh
+Kerala,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2015,Solar,13.05,fresh
+Kerala,2015,Wind,43.5,fresh
+Kerala,2015,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2015,Small hydro,198.92,fresh
+Kerala,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2016,Solar,74.2,fresh
+Kerala,2016,Wind,51.5,fresh
+Kerala,2016,Bio-mass,0.0,stale (repeat of previous year)
+Kerala,2016,Small hydro,213.02,fresh
+Kerala,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2017,Solar,107.94,fresh
+Kerala,2017,Wind,52.5,fresh
+Kerala,2017,Bio-mass,0.72,fresh
+Kerala,2017,Small hydro,219.02,fresh
+Kerala,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2018,Solar,138.59,fresh
+Kerala,2018,Wind,52.5,stale (repeat of previous year)
+Kerala,2018,Bio-mass,0.72,stale (repeat of previous year)
+Kerala,2018,Small hydro,222.02,fresh
+Kerala,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2019,Solar,142.23,fresh
+Kerala,2019,Wind,62.5,fresh
+Kerala,2019,Bio-mass,0.72,stale (repeat of previous year)
+Kerala,2019,Small hydro,222.02,stale (repeat of previous year)
+Kerala,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Kerala,2020,Solar,277.4,fresh
+Kerala,2020,Wind,62.5,stale (repeat of previous year)
+Kerala,2020,Bio-mass,2.27,fresh
+Kerala,2020,Small hydro,230.02,fresh
+Kerala,2020,Waste-to-energy,0.23,fresh
+Kerala,2021,Solar,363.18,fresh
+Kerala,2021,Wind,62.5,stale (repeat of previous year)
+Kerala,2021,Bio-mass,2.27,stale (repeat of previous year)
+Kerala,2021,Small hydro,242.52,fresh
+Kerala,2021,Waste-to-energy,0.23,stale (repeat of previous year)
+Kerala,2022,Solar,363.18,stale (repeat of previous year)
+Kerala,2022,Wind,62.5,stale (repeat of previous year)
+Kerala,2022,Bio-mass,2.5,fresh
+Kerala,2022,Small hydro,242.52,stale (repeat of previous year)
+Kerala,2022,Waste-to-energy,0.23,stale (repeat of previous year)
+Kerala,2023,Solar,1092.95,fresh
+Kerala,2023,Wind,62.5,stale (repeat of previous year)
+Kerala,2023,Bio-mass,2.5,stale (repeat of previous year)
+Kerala,2023,Small hydro,266.52,fresh
+Kerala,2023,Waste-to-energy,0.23,stale (repeat of previous year)
+Kerala,2024,Solar,1365.31,fresh
+Kerala,2024,Wind,63.5,fresh
+Kerala,2024,Bio-mass,2.5,stale (repeat of previous year)
+Kerala,2024,Small hydro,276.52,fresh
+Kerala,2024,Waste-to-energy,0.23,stale (repeat of previous year)
+Lakshadweep,2006,Solar,0.75,fresh
+Lakshadweep,2006,Wind,0.0,fresh
+Lakshadweep,2006,Bio-mass,0.0,fresh
+Lakshadweep,2006,Small hydro,0.0,fresh
+Lakshadweep,2006,Waste-to-energy,0.0,fresh
+Lakshadweep,2007,Solar,0.76,fresh
+Lakshadweep,2007,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2007,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2007,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2008,Solar,0.76,stale (repeat of previous year)
+Lakshadweep,2008,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2008,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2008,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2009,Solar,0.75,fresh
+Lakshadweep,2009,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2009,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2009,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2010,Solar,0.75,stale (repeat of previous year)
+Lakshadweep,2010,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2010,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2010,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2011,Solar,0.75,stale (repeat of previous year)
+Lakshadweep,2011,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2011,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2011,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2012,Solar,0.75,stale (repeat of previous year)
+Lakshadweep,2012,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2012,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2012,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2013,Solar,0.75,stale (repeat of previous year)
+Lakshadweep,2013,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2013,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2013,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2014,Solar,0.75,stale (repeat of previous year)
+Lakshadweep,2014,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2014,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2014,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2015,Solar,0.75,stale (repeat of previous year)
+Lakshadweep,2015,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2015,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2015,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2016,Solar,0.71,fresh
+Lakshadweep,2016,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2016,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2016,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2017,Solar,0.75,fresh
+Lakshadweep,2017,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2017,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2017,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2018,Solar,0.75,stale (repeat of previous year)
+Lakshadweep,2018,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2018,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2018,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2019,Solar,0.75,stale (repeat of previous year)
+Lakshadweep,2019,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2019,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2019,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2020,Solar,3.27,fresh
+Lakshadweep,2020,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2020,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2020,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2021,Solar,3.27,stale (repeat of previous year)
+Lakshadweep,2021,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2021,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2021,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2022,Solar,0.0,fresh
+Lakshadweep,2022,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2022,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2022,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2023,Solar,0.0,stale (repeat of previous year)
+Lakshadweep,2023,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2023,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2023,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Lakshadweep,2024,Solar,0.0,stale (repeat of previous year)
+Lakshadweep,2024,Wind,0.0,stale (repeat of previous year)
+Lakshadweep,2024,Bio-mass,0.0,stale (repeat of previous year)
+Lakshadweep,2024,Small hydro,0.0,stale (repeat of previous year)
+Lakshadweep,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2006,Solar,0.1,fresh
+Madhya Pradesh,2006,Wind,57.3,fresh
+Madhya Pradesh,2006,Bio-mass,1.0,fresh
+Madhya Pradesh,2006,Small hydro,51.16,fresh
+Madhya Pradesh,2006,Waste-to-energy,0.0,fresh
+Madhya Pradesh,2007,Solar,0.1,stale (repeat of previous year)
+Madhya Pradesh,2007,Wind,187.7,fresh
+Madhya Pradesh,2007,Bio-mass,1.0,stale (repeat of previous year)
+Madhya Pradesh,2007,Small hydro,71.16,fresh
+Madhya Pradesh,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2008,Solar,0.1,stale (repeat of previous year)
+Madhya Pradesh,2008,Wind,212.8,fresh
+Madhya Pradesh,2008,Bio-mass,1.0,stale (repeat of previous year)
+Madhya Pradesh,2008,Small hydro,71.16,stale (repeat of previous year)
+Madhya Pradesh,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2009,Solar,0.1,stale (repeat of previous year)
+Madhya Pradesh,2009,Wind,229.4,fresh
+Madhya Pradesh,2009,Bio-mass,1.0,stale (repeat of previous year)
+Madhya Pradesh,2009,Small hydro,71.16,stale (repeat of previous year)
+Madhya Pradesh,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2010,Solar,0.1,stale (repeat of previous year)
+Madhya Pradesh,2010,Wind,275.9,fresh
+Madhya Pradesh,2010,Bio-mass,1.0,stale (repeat of previous year)
+Madhya Pradesh,2010,Small hydro,86.16,fresh
+Madhya Pradesh,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2011,Solar,2.1,fresh
+Madhya Pradesh,2011,Wind,376.4,fresh
+Madhya Pradesh,2011,Bio-mass,8.5,fresh
+Madhya Pradesh,2011,Small hydro,86.16,stale (repeat of previous year)
+Madhya Pradesh,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2012,Solar,37.32,fresh
+Madhya Pradesh,2012,Wind,386.0,fresh
+Madhya Pradesh,2012,Bio-mass,16.0,fresh
+Madhya Pradesh,2012,Small hydro,86.16,stale (repeat of previous year)
+Madhya Pradesh,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2013,Solar,347.17,fresh
+Madhya Pradesh,2013,Wind,423.4,fresh
+Madhya Pradesh,2013,Bio-mass,26.0,fresh
+Madhya Pradesh,2013,Small hydro,86.16,stale (repeat of previous year)
+Madhya Pradesh,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2014,Solar,558.58,fresh
+Madhya Pradesh,2014,Wind,880.0,fresh
+Madhya Pradesh,2014,Bio-mass,36.0,fresh
+Madhya Pradesh,2014,Small hydro,86.16,stale (repeat of previous year)
+Madhya Pradesh,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2015,Solar,776.37,fresh
+Madhya Pradesh,2015,Wind,2141.1,fresh
+Madhya Pradesh,2015,Bio-mass,35.0,fresh
+Madhya Pradesh,2015,Small hydro,86.16,stale (repeat of previous year)
+Madhya Pradesh,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2016,Solar,857.04,fresh
+Madhya Pradesh,2016,Wind,2497.79,fresh
+Madhya Pradesh,2016,Bio-mass,93.0,fresh
+Madhya Pradesh,2016,Small hydro,86.16,stale (repeat of previous year)
+Madhya Pradesh,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2017,Solar,1305.35,fresh
+Madhya Pradesh,2017,Wind,2519.89,fresh
+Madhya Pradesh,2017,Bio-mass,105.35,fresh
+Madhya Pradesh,2017,Small hydro,86.16,stale (repeat of previous year)
+Madhya Pradesh,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Madhya Pradesh,2018,Solar,1840.16,fresh
+Madhya Pradesh,2018,Wind,2519.89,stale (repeat of previous year)
+Madhya Pradesh,2018,Bio-mass,105.35,stale (repeat of previous year)
+Madhya Pradesh,2018,Small hydro,95.91,fresh
+Madhya Pradesh,2018,Waste-to-energy,15.4,fresh
+Madhya Pradesh,2019,Solar,2258.46,fresh
+Madhya Pradesh,2019,Wind,2519.89,stale (repeat of previous year)
+Madhya Pradesh,2019,Bio-mass,105.35,stale (repeat of previous year)
+Madhya Pradesh,2019,Small hydro,95.91,stale (repeat of previous year)
+Madhya Pradesh,2019,Waste-to-energy,15.4,stale (repeat of previous year)
+Madhya Pradesh,2020,Solar,2544.71,fresh
+Madhya Pradesh,2020,Wind,2519.89,stale (repeat of previous year)
+Madhya Pradesh,2020,Bio-mass,107.35,fresh
+Madhya Pradesh,2020,Small hydro,99.71,fresh
+Madhya Pradesh,2020,Waste-to-energy,20.31,fresh
+Madhya Pradesh,2021,Solar,2717.95,fresh
+Madhya Pradesh,2021,Wind,2519.89,stale (repeat of previous year)
+Madhya Pradesh,2021,Bio-mass,107.35,stale (repeat of previous year)
+Madhya Pradesh,2021,Small hydro,99.71,stale (repeat of previous year)
+Madhya Pradesh,2021,Waste-to-energy,23.98,fresh
+Madhya Pradesh,2022,Solar,2717.95,stale (repeat of previous year)
+Madhya Pradesh,2022,Wind,2519.89,stale (repeat of previous year)
+Madhya Pradesh,2022,Bio-mass,131.33,fresh
+Madhya Pradesh,2022,Small hydro,99.71,stale (repeat of previous year)
+Madhya Pradesh,2022,Waste-to-energy,15.4,fresh
+Madhya Pradesh,2023,Solar,5905.08,fresh
+Madhya Pradesh,2023,Wind,2844.29,fresh
+Madhya Pradesh,2023,Bio-mass,134.94,fresh
+Madhya Pradesh,2023,Small hydro,123.71,fresh
+Madhya Pradesh,2023,Waste-to-energy,15.4,stale (repeat of previous year)
+Madhya Pradesh,2024,Solar,7098.37,fresh
+Madhya Pradesh,2024,Wind,2844.29,stale (repeat of previous year)
+Madhya Pradesh,2024,Bio-mass,134.94,stale (repeat of previous year)
+Madhya Pradesh,2024,Small hydro,123.71,stale (repeat of previous year)
+Madhya Pradesh,2024,Waste-to-energy,15.4,stale (repeat of previous year)
+Maharashtra,2006,Solar,0.0,fresh
+Maharashtra,2006,Wind,1487.7,fresh
+Maharashtra,2006,Bio-mass,76.0,fresh
+Maharashtra,2006,Small hydro,209.33,fresh
+Maharashtra,2006,Waste-to-energy,0.0,fresh
+Maharashtra,2007,Solar,0.0,stale (repeat of previous year)
+Maharashtra,2007,Wind,1755.9,fresh
+Maharashtra,2007,Bio-mass,114.0,fresh
+Maharashtra,2007,Small hydro,211.33,fresh
+Maharashtra,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2008,Solar,0.0,stale (repeat of previous year)
+Maharashtra,2008,Wind,1938.9,fresh
+Maharashtra,2008,Bio-mass,185.5,fresh
+Maharashtra,2008,Small hydro,211.33,stale (repeat of previous year)
+Maharashtra,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2009,Solar,0.0,stale (repeat of previous year)
+Maharashtra,2009,Wind,2077.75,fresh
+Maharashtra,2009,Bio-mass,218.5,fresh
+Maharashtra,2009,Small hydro,245.33,fresh
+Maharashtra,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2010,Solar,4.0,fresh
+Maharashtra,2010,Wind,2316.75,fresh
+Maharashtra,2010,Bio-mass,403.0,fresh
+Maharashtra,2010,Small hydro,275.13,fresh
+Maharashtra,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2011,Solar,20.0,fresh
+Maharashtra,2011,Wind,2733.3,fresh
+Maharashtra,2011,Bio-mass,603.7,fresh
+Maharashtra,2011,Small hydro,281.33,fresh
+Maharashtra,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2012,Solar,100.0,fresh
+Maharashtra,2012,Wind,3021.85,fresh
+Maharashtra,2012,Bio-mass,756.9,fresh
+Maharashtra,2012,Small hydro,299.93,fresh
+Maharashtra,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2013,Solar,249.25,fresh
+Maharashtra,2013,Wind,4100.4,fresh
+Maharashtra,2013,Bio-mass,940.4,fresh
+Maharashtra,2013,Small hydro,327.43,fresh
+Maharashtra,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2014,Solar,360.75,fresh
+Maharashtra,2014,Wind,4446.0,fresh
+Maharashtra,2014,Bio-mass,1033.4,fresh
+Maharashtra,2014,Small hydro,335.43,fresh
+Maharashtra,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2015,Solar,385.76,fresh
+Maharashtra,2015,Wind,4654.15,fresh
+Maharashtra,2015,Bio-mass,1220.78,fresh
+Maharashtra,2015,Small hydro,339.88,fresh
+Maharashtra,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2016,Solar,452.37,fresh
+Maharashtra,2016,Wind,4771.33,fresh
+Maharashtra,2016,Bio-mass,2065.0,fresh
+Maharashtra,2016,Small hydro,346.18,fresh
+Maharashtra,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2017,Solar,1239.18,fresh
+Maharashtra,2017,Wind,4783.93,fresh
+Maharashtra,2017,Bio-mass,2186.4,fresh
+Maharashtra,2017,Small hydro,373.18,fresh
+Maharashtra,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Maharashtra,2018,Solar,1633.54,fresh
+Maharashtra,2018,Wind,4794.13,fresh
+Maharashtra,2018,Bio-mass,2516.1,fresh
+Maharashtra,2018,Small hydro,375.57,fresh
+Maharashtra,2018,Waste-to-energy,12.59,fresh
+Maharashtra,2019,Solar,1801.8,fresh
+Maharashtra,2019,Wind,5000.33,fresh
+Maharashtra,2019,Bio-mass,2516.1,stale (repeat of previous year)
+Maharashtra,2019,Small hydro,379.58,fresh
+Maharashtra,2019,Waste-to-energy,12.59,stale (repeat of previous year)
+Maharashtra,2020,Solar,2323.79,fresh
+Maharashtra,2020,Wind,5000.33,stale (repeat of previous year)
+Maharashtra,2020,Bio-mass,2584.4,fresh
+Maharashtra,2020,Small hydro,379.58,stale (repeat of previous year)
+Maharashtra,2020,Waste-to-energy,47.75,fresh
+Maharashtra,2021,Solar,2631.02,fresh
+Maharashtra,2021,Wind,5012.83,fresh
+Maharashtra,2021,Bio-mass,2584.4,stale (repeat of previous year)
+Maharashtra,2021,Small hydro,381.08,fresh
+Maharashtra,2021,Waste-to-energy,47.75,stale (repeat of previous year)
+Maharashtra,2022,Solar,2631.02,stale (repeat of previous year)
+Maharashtra,2022,Wind,5012.83,stale (repeat of previous year)
+Maharashtra,2022,Bio-mass,2632.15,fresh
+Maharashtra,2022,Small hydro,381.08,stale (repeat of previous year)
+Maharashtra,2022,Waste-to-energy,35.16,fresh
+Maharashtra,2023,Solar,12757.5,fresh
+Maharashtra,2023,Wind,5012.83,stale (repeat of previous year)
+Maharashtra,2023,Bio-mass,2640.69,fresh
+Maharashtra,2023,Small hydro,381.08,stale (repeat of previous year)
+Maharashtra,2023,Waste-to-energy,43.7,fresh
+Maharashtra,2024,Solar,14483.12,fresh
+Maharashtra,2024,Wind,5207.98,fresh
+Maharashtra,2024,Bio-mass,2643.19,fresh
+Maharashtra,2024,Small hydro,382.28,fresh
+Maharashtra,2024,Waste-to-energy,46.2,fresh
+Manipur,2006,Solar,0.0,fresh
+Manipur,2006,Wind,0.0,fresh
+Manipur,2006,Bio-mass,0.0,fresh
+Manipur,2006,Small hydro,5.45,fresh
+Manipur,2006,Waste-to-energy,0.0,fresh
+Manipur,2007,Solar,0.0,stale (repeat of previous year)
+Manipur,2007,Wind,0.0,stale (repeat of previous year)
+Manipur,2007,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2007,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2008,Solar,0.0,stale (repeat of previous year)
+Manipur,2008,Wind,0.0,stale (repeat of previous year)
+Manipur,2008,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2008,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2009,Solar,0.0,stale (repeat of previous year)
+Manipur,2009,Wind,0.0,stale (repeat of previous year)
+Manipur,2009,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2009,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2010,Solar,0.0,stale (repeat of previous year)
+Manipur,2010,Wind,0.0,stale (repeat of previous year)
+Manipur,2010,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2010,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2011,Solar,0.0,stale (repeat of previous year)
+Manipur,2011,Wind,0.0,stale (repeat of previous year)
+Manipur,2011,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2011,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2012,Solar,0.0,stale (repeat of previous year)
+Manipur,2012,Wind,0.0,stale (repeat of previous year)
+Manipur,2012,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2012,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2013,Solar,0.0,stale (repeat of previous year)
+Manipur,2013,Wind,0.0,stale (repeat of previous year)
+Manipur,2013,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2013,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2014,Solar,0.0,stale (repeat of previous year)
+Manipur,2014,Wind,0.0,stale (repeat of previous year)
+Manipur,2014,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2014,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2015,Solar,0.0,stale (repeat of previous year)
+Manipur,2015,Wind,0.0,stale (repeat of previous year)
+Manipur,2015,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2015,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2016,Solar,0.03,fresh
+Manipur,2016,Wind,0.0,stale (repeat of previous year)
+Manipur,2016,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2016,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2017,Solar,0.06,fresh
+Manipur,2017,Wind,0.0,stale (repeat of previous year)
+Manipur,2017,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2017,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2018,Solar,3.44,fresh
+Manipur,2018,Wind,0.0,stale (repeat of previous year)
+Manipur,2018,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2018,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2019,Solar,5.16,fresh
+Manipur,2019,Wind,0.0,stale (repeat of previous year)
+Manipur,2019,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2019,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2020,Solar,11.39,fresh
+Manipur,2020,Wind,0.0,stale (repeat of previous year)
+Manipur,2020,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2020,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2021,Solar,12.25,fresh
+Manipur,2021,Wind,0.0,stale (repeat of previous year)
+Manipur,2021,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2021,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2022,Solar,12.248731,stale (repeat of previous year)
+Manipur,2022,Wind,0.0,stale (repeat of previous year)
+Manipur,2022,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2022,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2023,Solar,12.248731,stale (repeat of previous year)
+Manipur,2023,Wind,0.0,stale (repeat of previous year)
+Manipur,2023,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2023,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Manipur,2024,Solar,12.248731,stale (repeat of previous year)
+Manipur,2024,Wind,0.0,stale (repeat of previous year)
+Manipur,2024,Bio-mass,0.0,stale (repeat of previous year)
+Manipur,2024,Small hydro,5.45,stale (repeat of previous year)
+Manipur,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2006,Solar,0.0,fresh
+Meghalaya,2006,Wind,0.0,fresh
+Meghalaya,2006,Bio-mass,0.0,fresh
+Meghalaya,2006,Small hydro,30.71,fresh
+Meghalaya,2006,Waste-to-energy,0.0,fresh
+Meghalaya,2007,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2007,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2007,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2007,Small hydro,31.03,fresh
+Meghalaya,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2008,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2008,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2008,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2008,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2009,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2009,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2009,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2009,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2010,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2010,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2010,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2010,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2011,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2011,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2011,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2011,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2012,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2012,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2012,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2012,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2013,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2013,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2013,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2013,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2014,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2014,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2014,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2014,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2015,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2015,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2015,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2015,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2016,Solar,0.01,stale (repeat of previous year)
+Meghalaya,2016,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2016,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2016,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2017,Solar,0.02,stale (repeat of previous year)
+Meghalaya,2017,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2017,Bio-mass,13.8,fresh
+Meghalaya,2017,Small hydro,31.03,stale (repeat of previous year)
+Meghalaya,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2018,Solar,0.12,fresh
+Meghalaya,2018,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2018,Bio-mass,13.8,stale (repeat of previous year)
+Meghalaya,2018,Small hydro,32.53,fresh
+Meghalaya,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2019,Solar,0.12,stale (repeat of previous year)
+Meghalaya,2019,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2019,Bio-mass,13.8,stale (repeat of previous year)
+Meghalaya,2019,Small hydro,32.53,stale (repeat of previous year)
+Meghalaya,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2020,Solar,3.85,fresh
+Meghalaya,2020,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2020,Bio-mass,13.8,stale (repeat of previous year)
+Meghalaya,2020,Small hydro,32.53,stale (repeat of previous year)
+Meghalaya,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2021,Solar,4.15,fresh
+Meghalaya,2021,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2021,Bio-mass,13.8,stale (repeat of previous year)
+Meghalaya,2021,Small hydro,32.53,stale (repeat of previous year)
+Meghalaya,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2022,Solar,0.0,fresh
+Meghalaya,2022,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2022,Bio-mass,0.0,fresh
+Meghalaya,2022,Small hydro,0.0,fresh
+Meghalaya,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2023,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2023,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2023,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2023,Small hydro,0.0,stale (repeat of previous year)
+Meghalaya,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Meghalaya,2024,Solar,0.0,stale (repeat of previous year)
+Meghalaya,2024,Wind,0.0,stale (repeat of previous year)
+Meghalaya,2024,Bio-mass,0.0,stale (repeat of previous year)
+Meghalaya,2024,Small hydro,0.0,stale (repeat of previous year)
+Meghalaya,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2006,Solar,0.0,fresh
+Mizoram,2006,Wind,0.0,fresh
+Mizoram,2006,Bio-mass,0.0,fresh
+Mizoram,2006,Small hydro,17.47,fresh
+Mizoram,2006,Waste-to-energy,0.0,fresh
+Mizoram,2007,Solar,0.0,stale (repeat of previous year)
+Mizoram,2007,Wind,0.0,stale (repeat of previous year)
+Mizoram,2007,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2007,Small hydro,17.47,stale (repeat of previous year)
+Mizoram,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2008,Solar,0.0,stale (repeat of previous year)
+Mizoram,2008,Wind,0.0,stale (repeat of previous year)
+Mizoram,2008,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2008,Small hydro,17.47,stale (repeat of previous year)
+Mizoram,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2009,Solar,0.0,stale (repeat of previous year)
+Mizoram,2009,Wind,0.0,stale (repeat of previous year)
+Mizoram,2009,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2009,Small hydro,36.47,fresh
+Mizoram,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2010,Solar,0.0,stale (repeat of previous year)
+Mizoram,2010,Wind,0.0,stale (repeat of previous year)
+Mizoram,2010,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2010,Small hydro,36.74,fresh
+Mizoram,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2011,Solar,0.0,stale (repeat of previous year)
+Mizoram,2011,Wind,0.0,stale (repeat of previous year)
+Mizoram,2011,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2011,Small hydro,36.47,fresh
+Mizoram,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2012,Solar,0.0,stale (repeat of previous year)
+Mizoram,2012,Wind,0.0,stale (repeat of previous year)
+Mizoram,2012,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2012,Small hydro,36.47,stale (repeat of previous year)
+Mizoram,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2013,Solar,0.0,stale (repeat of previous year)
+Mizoram,2013,Wind,0.0,stale (repeat of previous year)
+Mizoram,2013,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2013,Small hydro,36.47,stale (repeat of previous year)
+Mizoram,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2014,Solar,0.0,stale (repeat of previous year)
+Mizoram,2014,Wind,0.0,stale (repeat of previous year)
+Mizoram,2014,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2014,Small hydro,36.47,stale (repeat of previous year)
+Mizoram,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2015,Solar,0.1,fresh
+Mizoram,2015,Wind,0.0,stale (repeat of previous year)
+Mizoram,2015,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2015,Small hydro,36.47,stale (repeat of previous year)
+Mizoram,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2016,Solar,0.1,stale (repeat of previous year)
+Mizoram,2016,Wind,0.0,stale (repeat of previous year)
+Mizoram,2016,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2016,Small hydro,41.47,fresh
+Mizoram,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2017,Solar,0.2,fresh
+Mizoram,2017,Wind,0.0,stale (repeat of previous year)
+Mizoram,2017,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2017,Small hydro,36.47,fresh
+Mizoram,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2018,Solar,0.5,fresh
+Mizoram,2018,Wind,0.0,stale (repeat of previous year)
+Mizoram,2018,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2018,Small hydro,36.47,stale (repeat of previous year)
+Mizoram,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2019,Solar,1.52,fresh
+Mizoram,2019,Wind,0.0,stale (repeat of previous year)
+Mizoram,2019,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2019,Small hydro,36.47,stale (repeat of previous year)
+Mizoram,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2020,Solar,6.98,fresh
+Mizoram,2020,Wind,0.0,stale (repeat of previous year)
+Mizoram,2020,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2020,Small hydro,36.47,stale (repeat of previous year)
+Mizoram,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2021,Solar,7.9,fresh
+Mizoram,2021,Wind,0.0,stale (repeat of previous year)
+Mizoram,2021,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2021,Small hydro,36.47,stale (repeat of previous year)
+Mizoram,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2022,Solar,7.898763,stale (repeat of previous year)
+Mizoram,2022,Wind,0.0,stale (repeat of previous year)
+Mizoram,2022,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2022,Small hydro,36.470219,stale (repeat of previous year)
+Mizoram,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2023,Solar,7.898763,stale (repeat of previous year)
+Mizoram,2023,Wind,0.0,stale (repeat of previous year)
+Mizoram,2023,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2023,Small hydro,36.470219,stale (repeat of previous year)
+Mizoram,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Mizoram,2024,Solar,7.898763,stale (repeat of previous year)
+Mizoram,2024,Wind,0.0,stale (repeat of previous year)
+Mizoram,2024,Bio-mass,0.0,stale (repeat of previous year)
+Mizoram,2024,Small hydro,36.470219,stale (repeat of previous year)
+Mizoram,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2006,Solar,0.0,fresh
+Nagaland,2006,Wind,0.0,fresh
+Nagaland,2006,Bio-mass,0.0,fresh
+Nagaland,2006,Small hydro,20.67,fresh
+Nagaland,2006,Waste-to-energy,0.0,fresh
+Nagaland,2007,Solar,0.0,stale (repeat of previous year)
+Nagaland,2007,Wind,0.0,stale (repeat of previous year)
+Nagaland,2007,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2007,Small hydro,28.67,fresh
+Nagaland,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2008,Solar,0.0,stale (repeat of previous year)
+Nagaland,2008,Wind,0.0,stale (repeat of previous year)
+Nagaland,2008,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2008,Small hydro,28.67,stale (repeat of previous year)
+Nagaland,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2009,Solar,0.0,stale (repeat of previous year)
+Nagaland,2009,Wind,0.0,stale (repeat of previous year)
+Nagaland,2009,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2009,Small hydro,28.67,stale (repeat of previous year)
+Nagaland,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2010,Solar,0.0,stale (repeat of previous year)
+Nagaland,2010,Wind,0.0,stale (repeat of previous year)
+Nagaland,2010,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2010,Small hydro,28.67,stale (repeat of previous year)
+Nagaland,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2011,Solar,0.0,stale (repeat of previous year)
+Nagaland,2011,Wind,0.0,stale (repeat of previous year)
+Nagaland,2011,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2011,Small hydro,28.67,stale (repeat of previous year)
+Nagaland,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2012,Solar,0.0,stale (repeat of previous year)
+Nagaland,2012,Wind,0.0,stale (repeat of previous year)
+Nagaland,2012,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2012,Small hydro,28.67,stale (repeat of previous year)
+Nagaland,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2013,Solar,0.0,stale (repeat of previous year)
+Nagaland,2013,Wind,0.0,stale (repeat of previous year)
+Nagaland,2013,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2013,Small hydro,29.67,fresh
+Nagaland,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2014,Solar,0.0,stale (repeat of previous year)
+Nagaland,2014,Wind,0.0,stale (repeat of previous year)
+Nagaland,2014,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2014,Small hydro,29.67,stale (repeat of previous year)
+Nagaland,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2015,Solar,0.0,stale (repeat of previous year)
+Nagaland,2015,Wind,0.0,stale (repeat of previous year)
+Nagaland,2015,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2015,Small hydro,30.67,fresh
+Nagaland,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2016,Solar,0.5,fresh
+Nagaland,2016,Wind,0.0,stale (repeat of previous year)
+Nagaland,2016,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2016,Small hydro,30.67,stale (repeat of previous year)
+Nagaland,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2017,Solar,1.0,fresh
+Nagaland,2017,Wind,0.0,stale (repeat of previous year)
+Nagaland,2017,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2017,Small hydro,30.67,stale (repeat of previous year)
+Nagaland,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2018,Solar,1.0,stale (repeat of previous year)
+Nagaland,2018,Wind,0.0,stale (repeat of previous year)
+Nagaland,2018,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2018,Small hydro,30.67,stale (repeat of previous year)
+Nagaland,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2019,Solar,1.0,stale (repeat of previous year)
+Nagaland,2019,Wind,0.0,stale (repeat of previous year)
+Nagaland,2019,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2019,Small hydro,30.67,stale (repeat of previous year)
+Nagaland,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2020,Solar,2.91,fresh
+Nagaland,2020,Wind,0.0,stale (repeat of previous year)
+Nagaland,2020,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2020,Small hydro,30.67,stale (repeat of previous year)
+Nagaland,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2021,Solar,3.04,fresh
+Nagaland,2021,Wind,0.0,stale (repeat of previous year)
+Nagaland,2021,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2021,Small hydro,30.67,stale (repeat of previous year)
+Nagaland,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2022,Solar,0.0,fresh
+Nagaland,2022,Wind,0.0,stale (repeat of previous year)
+Nagaland,2022,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2022,Small hydro,0.0,fresh
+Nagaland,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2023,Solar,0.0,stale (repeat of previous year)
+Nagaland,2023,Wind,0.0,stale (repeat of previous year)
+Nagaland,2023,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2023,Small hydro,0.0,stale (repeat of previous year)
+Nagaland,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Nagaland,2024,Solar,0.0,stale (repeat of previous year)
+Nagaland,2024,Wind,0.0,stale (repeat of previous year)
+Nagaland,2024,Bio-mass,0.0,stale (repeat of previous year)
+Nagaland,2024,Small hydro,0.0,stale (repeat of previous year)
+Nagaland,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2006,Solar,0.0,fresh
+Odisha,2006,Wind,3.2,fresh
+Odisha,2006,Bio-mass,0.0,fresh
+Odisha,2006,Small hydro,7.3,fresh
+Odisha,2006,Waste-to-energy,0.0,fresh
+Odisha,2007,Solar,0.0,stale (repeat of previous year)
+Odisha,2007,Wind,3.2,stale (repeat of previous year)
+Odisha,2007,Bio-mass,0.0,stale (repeat of previous year)
+Odisha,2007,Small hydro,32.3,fresh
+Odisha,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2008,Solar,0.0,stale (repeat of previous year)
+Odisha,2008,Wind,3.2,stale (repeat of previous year)
+Odisha,2008,Bio-mass,0.0,stale (repeat of previous year)
+Odisha,2008,Small hydro,32.3,stale (repeat of previous year)
+Odisha,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2009,Solar,0.0,stale (repeat of previous year)
+Odisha,2009,Wind,0.0,fresh
+Odisha,2009,Bio-mass,0.0,stale (repeat of previous year)
+Odisha,2009,Small hydro,64.3,fresh
+Odisha,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2010,Solar,0.0,stale (repeat of previous year)
+Odisha,2010,Wind,0.0,stale (repeat of previous year)
+Odisha,2010,Bio-mass,0.0,stale (repeat of previous year)
+Odisha,2010,Small hydro,64.3,stale (repeat of previous year)
+Odisha,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2011,Solar,13.0,fresh
+Odisha,2011,Wind,0.0,stale (repeat of previous year)
+Odisha,2011,Bio-mass,20.0,fresh
+Odisha,2011,Small hydro,64.3,stale (repeat of previous year)
+Odisha,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2012,Solar,13.0,stale (repeat of previous year)
+Odisha,2012,Wind,0.0,stale (repeat of previous year)
+Odisha,2012,Bio-mass,20.0,stale (repeat of previous year)
+Odisha,2012,Small hydro,64.3,stale (repeat of previous year)
+Odisha,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2013,Solar,30.5,fresh
+Odisha,2013,Wind,0.0,stale (repeat of previous year)
+Odisha,2013,Bio-mass,20.0,stale (repeat of previous year)
+Odisha,2013,Small hydro,64.63,fresh
+Odisha,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2014,Solar,31.76,fresh
+Odisha,2014,Wind,0.0,stale (repeat of previous year)
+Odisha,2014,Bio-mass,20.0,stale (repeat of previous year)
+Odisha,2014,Small hydro,64.63,stale (repeat of previous year)
+Odisha,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2015,Solar,66.92,fresh
+Odisha,2015,Wind,0.0,stale (repeat of previous year)
+Odisha,2015,Bio-mass,20.0,stale (repeat of previous year)
+Odisha,2015,Small hydro,64.63,stale (repeat of previous year)
+Odisha,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2016,Solar,79.42,fresh
+Odisha,2016,Wind,0.0,stale (repeat of previous year)
+Odisha,2016,Bio-mass,50.4,fresh
+Odisha,2016,Small hydro,64.63,stale (repeat of previous year)
+Odisha,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2017,Solar,79.57,fresh
+Odisha,2017,Wind,0.0,stale (repeat of previous year)
+Odisha,2017,Bio-mass,59.22,fresh
+Odisha,2017,Small hydro,64.63,stale (repeat of previous year)
+Odisha,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2018,Solar,394.73,fresh
+Odisha,2018,Wind,0.0,stale (repeat of previous year)
+Odisha,2018,Bio-mass,59.22,stale (repeat of previous year)
+Odisha,2018,Small hydro,64.63,stale (repeat of previous year)
+Odisha,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2019,Solar,397.84,fresh
+Odisha,2019,Wind,0.0,stale (repeat of previous year)
+Odisha,2019,Bio-mass,59.22,stale (repeat of previous year)
+Odisha,2019,Small hydro,64.63,stale (repeat of previous year)
+Odisha,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2020,Solar,425.53,fresh
+Odisha,2020,Wind,0.0,stale (repeat of previous year)
+Odisha,2020,Bio-mass,59.22,stale (repeat of previous year)
+Odisha,2020,Small hydro,88.63,fresh
+Odisha,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2021,Solar,451.24,fresh
+Odisha,2021,Wind,0.0,stale (repeat of previous year)
+Odisha,2021,Bio-mass,59.22,stale (repeat of previous year)
+Odisha,2021,Small hydro,106.63,fresh
+Odisha,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2022,Solar,451.238708,stale (repeat of previous year)
+Odisha,2022,Wind,0.000111,stale (repeat of previous year)
+Odisha,2022,Bio-mass,59.219658,stale (repeat of previous year)
+Odisha,2022,Small hydro,106.628738,stale (repeat of previous year)
+Odisha,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2023,Solar,451.238708,stale (repeat of previous year)
+Odisha,2023,Wind,0.000111,stale (repeat of previous year)
+Odisha,2023,Bio-mass,59.219658,stale (repeat of previous year)
+Odisha,2023,Small hydro,106.628738,stale (repeat of previous year)
+Odisha,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Odisha,2024,Solar,451.238708,stale (repeat of previous year)
+Odisha,2024,Wind,0.000111,stale (repeat of previous year)
+Odisha,2024,Bio-mass,59.219658,stale (repeat of previous year)
+Odisha,2024,Small hydro,106.628738,stale (repeat of previous year)
+Odisha,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2006,Solar,0.02,fresh
+Puducherry,2006,Wind,0.0,fresh
+Puducherry,2006,Bio-mass,0.0,fresh
+Puducherry,2006,Small hydro,0.0,fresh
+Puducherry,2006,Waste-to-energy,0.0,fresh
+Puducherry,2007,Solar,0.02,stale (repeat of previous year)
+Puducherry,2007,Wind,0.0,stale (repeat of previous year)
+Puducherry,2007,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2007,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2008,Solar,0.02,stale (repeat of previous year)
+Puducherry,2008,Wind,0.0,stale (repeat of previous year)
+Puducherry,2008,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2008,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2009,Solar,0.03,stale (repeat of previous year)
+Puducherry,2009,Wind,0.0,stale (repeat of previous year)
+Puducherry,2009,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2009,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2010,Solar,0.79,fresh
+Puducherry,2010,Wind,0.0,stale (repeat of previous year)
+Puducherry,2010,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2010,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2011,Solar,0.03,fresh
+Puducherry,2011,Wind,0.0,stale (repeat of previous year)
+Puducherry,2011,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2011,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2012,Solar,0.03,stale (repeat of previous year)
+Puducherry,2012,Wind,0.0,stale (repeat of previous year)
+Puducherry,2012,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2012,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2013,Solar,0.03,stale (repeat of previous year)
+Puducherry,2013,Wind,0.0,stale (repeat of previous year)
+Puducherry,2013,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2013,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2014,Solar,0.03,stale (repeat of previous year)
+Puducherry,2014,Wind,0.0,stale (repeat of previous year)
+Puducherry,2014,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2014,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2015,Solar,0.03,stale (repeat of previous year)
+Puducherry,2015,Wind,0.0,stale (repeat of previous year)
+Puducherry,2015,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2015,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2016,Solar,0.08,fresh
+Puducherry,2016,Wind,0.0,stale (repeat of previous year)
+Puducherry,2016,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2016,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2017,Solar,0.16,fresh
+Puducherry,2017,Wind,0.0,stale (repeat of previous year)
+Puducherry,2017,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2017,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2018,Solar,3.14,fresh
+Puducherry,2018,Wind,0.0,stale (repeat of previous year)
+Puducherry,2018,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2018,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2019,Solar,5.51,fresh
+Puducherry,2019,Wind,0.0,stale (repeat of previous year)
+Puducherry,2019,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2019,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2020,Solar,9.51,fresh
+Puducherry,2020,Wind,0.0,stale (repeat of previous year)
+Puducherry,2020,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2020,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2021,Solar,13.69,fresh
+Puducherry,2021,Wind,0.0,stale (repeat of previous year)
+Puducherry,2021,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2021,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2022,Solar,13.688671,stale (repeat of previous year)
+Puducherry,2022,Wind,0.0,stale (repeat of previous year)
+Puducherry,2022,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2022,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2023,Solar,13.688671,stale (repeat of previous year)
+Puducherry,2023,Wind,0.0,stale (repeat of previous year)
+Puducherry,2023,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2023,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Puducherry,2024,Solar,13.688671,stale (repeat of previous year)
+Puducherry,2024,Wind,0.0,stale (repeat of previous year)
+Puducherry,2024,Bio-mass,0.0,stale (repeat of previous year)
+Puducherry,2024,Small hydro,0.0,stale (repeat of previous year)
+Puducherry,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2006,Solar,0.32,fresh
+Punjab,2006,Wind,0.0,fresh
+Punjab,2006,Bio-mass,28.0,fresh
+Punjab,2006,Small hydro,123.9,fresh
+Punjab,2006,Waste-to-energy,0.0,fresh
+Punjab,2007,Solar,0.32,stale (repeat of previous year)
+Punjab,2007,Wind,0.0,stale (repeat of previous year)
+Punjab,2007,Bio-mass,28.0,stale (repeat of previous year)
+Punjab,2007,Small hydro,123.911681,fresh
+Punjab,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2008,Solar,0.32,stale (repeat of previous year)
+Punjab,2008,Wind,0.0,stale (repeat of previous year)
+Punjab,2008,Bio-mass,28.0,stale (repeat of previous year)
+Punjab,2008,Small hydro,123.9,fresh
+Punjab,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2009,Solar,1.33,fresh
+Punjab,2009,Wind,0.0,stale (repeat of previous year)
+Punjab,2009,Bio-mass,62.5,fresh
+Punjab,2009,Small hydro,132.55,fresh
+Punjab,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2010,Solar,2.33,fresh
+Punjab,2010,Wind,0.0,stale (repeat of previous year)
+Punjab,2010,Bio-mass,74.5,fresh
+Punjab,2010,Small hydro,154.5,fresh
+Punjab,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2011,Solar,9.33,fresh
+Punjab,2011,Wind,0.0,stale (repeat of previous year)
+Punjab,2011,Bio-mass,90.5,fresh
+Punjab,2011,Small hydro,154.5,stale (repeat of previous year)
+Punjab,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2012,Solar,9.33,stale (repeat of previous year)
+Punjab,2012,Wind,0.0,stale (repeat of previous year)
+Punjab,2012,Bio-mass,124.5,fresh
+Punjab,2012,Small hydro,154.5,stale (repeat of previous year)
+Punjab,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2013,Solar,16.85,fresh
+Punjab,2013,Wind,0.0,stale (repeat of previous year)
+Punjab,2013,Bio-mass,140.5,fresh
+Punjab,2013,Small hydro,156.2,fresh
+Punjab,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2014,Solar,185.27,fresh
+Punjab,2014,Wind,0.0,stale (repeat of previous year)
+Punjab,2014,Bio-mass,140.5,stale (repeat of previous year)
+Punjab,2014,Small hydro,157.4,fresh
+Punjab,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2015,Solar,405.06,fresh
+Punjab,2015,Wind,0.0,stale (repeat of previous year)
+Punjab,2015,Bio-mass,155.5,fresh
+Punjab,2015,Small hydro,170.9,fresh
+Punjab,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2016,Solar,793.95,fresh
+Punjab,2016,Wind,0.0,stale (repeat of previous year)
+Punjab,2016,Bio-mass,179.0,fresh
+Punjab,2016,Small hydro,170.9,stale (repeat of previous year)
+Punjab,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2017,Solar,905.62,fresh
+Punjab,2017,Wind,0.0,stale (repeat of previous year)
+Punjab,2017,Bio-mass,317.1,fresh
+Punjab,2017,Small hydro,173.55,fresh
+Punjab,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Punjab,2018,Solar,905.62,stale (repeat of previous year)
+Punjab,2018,Wind,0.0,stale (repeat of previous year)
+Punjab,2018,Bio-mass,317.1,stale (repeat of previous year)
+Punjab,2018,Small hydro,173.55,stale (repeat of previous year)
+Punjab,2018,Waste-to-energy,9.25,fresh
+Punjab,2019,Solar,947.1,fresh
+Punjab,2019,Wind,0.0,stale (repeat of previous year)
+Punjab,2019,Bio-mass,317.1,stale (repeat of previous year)
+Punjab,2019,Small hydro,173.55,stale (repeat of previous year)
+Punjab,2019,Waste-to-energy,10.75,fresh
+Punjab,2020,Solar,982.3,fresh
+Punjab,2020,Wind,0.0,stale (repeat of previous year)
+Punjab,2020,Bio-mass,473.45,fresh
+Punjab,2020,Small hydro,173.55,stale (repeat of previous year)
+Punjab,2020,Waste-to-energy,18.2,fresh
+Punjab,2021,Solar,1100.07,fresh
+Punjab,2021,Wind,0.0,stale (repeat of previous year)
+Punjab,2021,Bio-mass,473.45,stale (repeat of previous year)
+Punjab,2021,Small hydro,176.1,fresh
+Punjab,2021,Waste-to-energy,18.2,stale (repeat of previous year)
+Punjab,2022,Solar,1100.068848,stale (repeat of previous year)
+Punjab,2022,Wind,0.0,stale (repeat of previous year)
+Punjab,2022,Bio-mass,473.44931,stale (repeat of previous year)
+Punjab,2022,Small hydro,176.09874,stale (repeat of previous year)
+Punjab,2022,Waste-to-energy,18.199312,stale (repeat of previous year)
+Punjab,2023,Solar,1100.068848,stale (repeat of previous year)
+Punjab,2023,Wind,0.0,stale (repeat of previous year)
+Punjab,2023,Bio-mass,473.44931,stale (repeat of previous year)
+Punjab,2023,Small hydro,176.09874,stale (repeat of previous year)
+Punjab,2023,Waste-to-energy,18.199312,stale (repeat of previous year)
+Punjab,2024,Solar,1100.068848,stale (repeat of previous year)
+Punjab,2024,Wind,0.0,stale (repeat of previous year)
+Punjab,2024,Bio-mass,473.44931,stale (repeat of previous year)
+Punjab,2024,Small hydro,176.09874,stale (repeat of previous year)
+Punjab,2024,Waste-to-energy,18.199312,stale (repeat of previous year)
+Rajasthan,2006,Solar,0.15,fresh
+Rajasthan,2006,Wind,469.8,fresh
+Rajasthan,2006,Bio-mass,23.3,fresh
+Rajasthan,2006,Small hydro,23.85,fresh
+Rajasthan,2006,Waste-to-energy,0.0,fresh
+Rajasthan,2007,Solar,0.15,stale (repeat of previous year)
+Rajasthan,2007,Wind,538.8,fresh
+Rajasthan,2007,Bio-mass,23.3,stale (repeat of previous year)
+Rajasthan,2007,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2008,Solar,0.15,stale (repeat of previous year)
+Rajasthan,2008,Wind,738.4,fresh
+Rajasthan,2008,Bio-mass,31.3,fresh
+Rajasthan,2008,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2009,Solar,0.15,stale (repeat of previous year)
+Rajasthan,2009,Wind,1088.3,fresh
+Rajasthan,2009,Bio-mass,31.3,stale (repeat of previous year)
+Rajasthan,2009,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2010,Solar,5.15,fresh
+Rajasthan,2010,Wind,1525.0,fresh
+Rajasthan,2010,Bio-mass,73.3,fresh
+Rajasthan,2010,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2011,Solar,197.65,fresh
+Rajasthan,2011,Wind,2070.65,fresh
+Rajasthan,2011,Bio-mass,83.3,fresh
+Rajasthan,2011,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2012,Solar,552.9,fresh
+Rajasthan,2012,Wind,2684.65,fresh
+Rajasthan,2012,Bio-mass,91.3,fresh
+Rajasthan,2012,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2013,Solar,730.1,fresh
+Rajasthan,2013,Wind,2784.9,fresh
+Rajasthan,2013,Bio-mass,101.3,fresh
+Rajasthan,2013,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2014,Solar,942.1,fresh
+Rajasthan,2014,Wind,3309.0,fresh
+Rajasthan,2014,Bio-mass,111.3,fresh
+Rajasthan,2014,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2015,Solar,1269.93,fresh
+Rajasthan,2015,Wind,3993.95,fresh
+Rajasthan,2015,Bio-mass,108.3,fresh
+Rajasthan,2015,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2016,Solar,1812.93,fresh
+Rajasthan,2016,Wind,4281.72,fresh
+Rajasthan,2016,Bio-mass,119.3,fresh
+Rajasthan,2016,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2017,Solar,2332.77,fresh
+Rajasthan,2017,Wind,4297.72,fresh
+Rajasthan,2017,Bio-mass,121.3,fresh
+Rajasthan,2017,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2018,Solar,3226.79,fresh
+Rajasthan,2018,Wind,4299.72,fresh
+Rajasthan,2018,Bio-mass,121.3,stale (repeat of previous year)
+Rajasthan,2018,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2019,Solar,5137.91,fresh
+Rajasthan,2019,Wind,4299.72,stale (repeat of previous year)
+Rajasthan,2019,Bio-mass,121.3,stale (repeat of previous year)
+Rajasthan,2019,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Rajasthan,2020,Solar,5925.6,fresh
+Rajasthan,2020,Wind,4326.82,fresh
+Rajasthan,2020,Bio-mass,121.25,fresh
+Rajasthan,2020,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2020,Waste-to-energy,3.83,fresh
+Rajasthan,2021,Solar,12564.87,fresh
+Rajasthan,2021,Wind,4326.82,stale (repeat of previous year)
+Rajasthan,2021,Bio-mass,121.25,stale (repeat of previous year)
+Rajasthan,2021,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2021,Waste-to-energy,3.83,stale (repeat of previous year)
+Rajasthan,2022,Solar,12564.867188,stale (repeat of previous year)
+Rajasthan,2022,Wind,4326.818848,stale (repeat of previous year)
+Rajasthan,2022,Bio-mass,121.250504,stale (repeat of previous year)
+Rajasthan,2022,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2022,Waste-to-energy,3.829236,stale (repeat of previous year)
+Rajasthan,2023,Solar,12564.867188,stale (repeat of previous year)
+Rajasthan,2023,Wind,4326.818848,stale (repeat of previous year)
+Rajasthan,2023,Bio-mass,121.250504,stale (repeat of previous year)
+Rajasthan,2023,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2023,Waste-to-energy,3.829236,stale (repeat of previous year)
+Rajasthan,2024,Solar,12564.867188,stale (repeat of previous year)
+Rajasthan,2024,Wind,4326.818848,stale (repeat of previous year)
+Rajasthan,2024,Bio-mass,121.250504,stale (repeat of previous year)
+Rajasthan,2024,Small hydro,23.85,stale (repeat of previous year)
+Rajasthan,2024,Waste-to-energy,3.829236,stale (repeat of previous year)
+Sikkim,2006,Solar,0.0,fresh
+Sikkim,2006,Wind,0.0,fresh
+Sikkim,2006,Bio-mass,0.0,fresh
+Sikkim,2006,Small hydro,39.11,fresh
+Sikkim,2006,Waste-to-energy,0.0,fresh
+Sikkim,2007,Solar,0.0,stale (repeat of previous year)
+Sikkim,2007,Wind,0.0,stale (repeat of previous year)
+Sikkim,2007,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2007,Small hydro,39.11,stale (repeat of previous year)
+Sikkim,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2008,Solar,0.0,stale (repeat of previous year)
+Sikkim,2008,Wind,0.0,stale (repeat of previous year)
+Sikkim,2008,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2008,Small hydro,39.11,stale (repeat of previous year)
+Sikkim,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2009,Solar,0.0,stale (repeat of previous year)
+Sikkim,2009,Wind,0.0,stale (repeat of previous year)
+Sikkim,2009,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2009,Small hydro,47.11,fresh
+Sikkim,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2010,Solar,0.0,stale (repeat of previous year)
+Sikkim,2010,Wind,0.0,stale (repeat of previous year)
+Sikkim,2010,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2010,Small hydro,52.11,fresh
+Sikkim,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2011,Solar,0.0,stale (repeat of previous year)
+Sikkim,2011,Wind,0.0,stale (repeat of previous year)
+Sikkim,2011,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2011,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2012,Solar,0.0,stale (repeat of previous year)
+Sikkim,2012,Wind,0.0,stale (repeat of previous year)
+Sikkim,2012,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2012,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2013,Solar,0.0,stale (repeat of previous year)
+Sikkim,2013,Wind,0.0,stale (repeat of previous year)
+Sikkim,2013,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2013,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2014,Solar,0.0,stale (repeat of previous year)
+Sikkim,2014,Wind,0.0,stale (repeat of previous year)
+Sikkim,2014,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2014,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2015,Solar,0.0,stale (repeat of previous year)
+Sikkim,2015,Wind,0.0,stale (repeat of previous year)
+Sikkim,2015,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2015,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2016,Solar,0.0,stale (repeat of previous year)
+Sikkim,2016,Wind,0.0,stale (repeat of previous year)
+Sikkim,2016,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2016,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2017,Solar,0.0,stale (repeat of previous year)
+Sikkim,2017,Wind,0.0,stale (repeat of previous year)
+Sikkim,2017,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2017,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2018,Solar,0.01,stale (repeat of previous year)
+Sikkim,2018,Wind,0.0,stale (repeat of previous year)
+Sikkim,2018,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2018,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2019,Solar,0.07,fresh
+Sikkim,2019,Wind,0.0,stale (repeat of previous year)
+Sikkim,2019,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2019,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2020,Solar,1.94,fresh
+Sikkim,2020,Wind,0.0,stale (repeat of previous year)
+Sikkim,2020,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2020,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2021,Solar,4.68,fresh
+Sikkim,2021,Wind,0.0,stale (repeat of previous year)
+Sikkim,2021,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2021,Small hydro,52.11,stale (repeat of previous year)
+Sikkim,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2022,Solar,4.678802,stale (repeat of previous year)
+Sikkim,2022,Wind,0.0,stale (repeat of previous year)
+Sikkim,2022,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2022,Small hydro,52.109871,stale (repeat of previous year)
+Sikkim,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2023,Solar,4.678802,stale (repeat of previous year)
+Sikkim,2023,Wind,0.0,stale (repeat of previous year)
+Sikkim,2023,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2023,Small hydro,52.109871,stale (repeat of previous year)
+Sikkim,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Sikkim,2024,Solar,4.678802,stale (repeat of previous year)
+Sikkim,2024,Wind,0.0,stale (repeat of previous year)
+Sikkim,2024,Bio-mass,0.0,stale (repeat of previous year)
+Sikkim,2024,Small hydro,52.109871,stale (repeat of previous year)
+Sikkim,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2006,Solar,0.05,fresh
+Tamil Nadu,2006,Wind,3492.79,fresh
+Tamil Nadu,2006,Bio-mass,215.5,fresh
+Tamil Nadu,2006,Small hydro,89.7,fresh
+Tamil Nadu,2006,Waste-to-energy,0.0,fresh
+Tamil Nadu,2007,Solar,0.05,stale (repeat of previous year)
+Tamil Nadu,2007,Wind,3873.4,fresh
+Tamil Nadu,2007,Bio-mass,290.5,fresh
+Tamil Nadu,2007,Small hydro,89.7,stale (repeat of previous year)
+Tamil Nadu,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2008,Solar,0.05,stale (repeat of previous year)
+Tamil Nadu,2008,Wind,4304.5,fresh
+Tamil Nadu,2008,Bio-mass,333.7,fresh
+Tamil Nadu,2008,Small hydro,89.7,stale (repeat of previous year)
+Tamil Nadu,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2009,Solar,0.05,stale (repeat of previous year)
+Tamil Nadu,2009,Wind,4906.72,fresh
+Tamil Nadu,2009,Bio-mass,395.7,fresh
+Tamil Nadu,2009,Small hydro,90.05,fresh
+Tamil Nadu,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2010,Solar,5.05,fresh
+Tamil Nadu,2010,Wind,5904.12,fresh
+Tamil Nadu,2010,Bio-mass,488.2,fresh
+Tamil Nadu,2010,Small hydro,96.55,fresh
+Tamil Nadu,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2011,Solar,15.05,fresh
+Tamil Nadu,2011,Wind,6987.58,fresh
+Tamil Nadu,2011,Bio-mass,532.7,fresh
+Tamil Nadu,2011,Small hydro,123.05,fresh
+Tamil Nadu,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2012,Solar,17.11,fresh
+Tamil Nadu,2012,Wind,7162.18,fresh
+Tamil Nadu,2012,Bio-mass,538.7,fresh
+Tamil Nadu,2012,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2013,Solar,98.36,fresh
+Tamil Nadu,2013,Wind,7269.5,fresh
+Tamil Nadu,2013,Bio-mass,571.3,fresh
+Tamil Nadu,2013,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2014,Solar,142.58,fresh
+Tamil Nadu,2014,Wind,7455.0,fresh
+Tamil Nadu,2014,Bio-mass,662.3,fresh
+Tamil Nadu,2014,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2015,Solar,1061.82,fresh
+Tamil Nadu,2015,Wind,7613.86,fresh
+Tamil Nadu,2015,Bio-mass,641.9,fresh
+Tamil Nadu,2015,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2016,Solar,1691.83,fresh
+Tamil Nadu,2016,Wind,7861.46,fresh
+Tamil Nadu,2016,Bio-mass,878.0,fresh
+Tamil Nadu,2016,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2017,Solar,1908.57,fresh
+Tamil Nadu,2017,Wind,8197.09,fresh
+Tamil Nadu,2017,Bio-mass,954.55,fresh
+Tamil Nadu,2017,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Tamil Nadu,2018,Solar,2575.22,fresh
+Tamil Nadu,2018,Wind,8968.91,fresh
+Tamil Nadu,2018,Bio-mass,997.55,fresh
+Tamil Nadu,2018,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2018,Waste-to-energy,6.4,fresh
+Tamil Nadu,2019,Solar,3915.88,fresh
+Tamil Nadu,2019,Wind,9304.34,fresh
+Tamil Nadu,2019,Bio-mass,997.55,stale (repeat of previous year)
+Tamil Nadu,2019,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2019,Waste-to-energy,6.4,stale (repeat of previous year)
+Tamil Nadu,2020,Solar,4527.47,fresh
+Tamil Nadu,2020,Wind,9608.04,fresh
+Tamil Nadu,2020,Bio-mass,1012.65,fresh
+Tamil Nadu,2020,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2020,Waste-to-energy,27.26,fresh
+Tamil Nadu,2021,Solar,5067.18,fresh
+Tamil Nadu,2021,Wind,9866.37,fresh
+Tamil Nadu,2021,Bio-mass,1012.65,stale (repeat of previous year)
+Tamil Nadu,2021,Small hydro,123.05,stale (repeat of previous year)
+Tamil Nadu,2021,Waste-to-energy,30.05,fresh
+Tamil Nadu,2022,Solar,5067.178711,stale (repeat of previous year)
+Tamil Nadu,2022,Wind,9866.366211,stale (repeat of previous year)
+Tamil Nadu,2022,Bio-mass,1012.649475,stale (repeat of previous year)
+Tamil Nadu,2022,Small hydro,123.049866,stale (repeat of previous year)
+Tamil Nadu,2022,Waste-to-energy,30.048792,stale (repeat of previous year)
+Tamil Nadu,2023,Solar,5067.178711,stale (repeat of previous year)
+Tamil Nadu,2023,Wind,9866.366211,stale (repeat of previous year)
+Tamil Nadu,2023,Bio-mass,1012.649475,stale (repeat of previous year)
+Tamil Nadu,2023,Small hydro,123.049866,stale (repeat of previous year)
+Tamil Nadu,2023,Waste-to-energy,30.048792,stale (repeat of previous year)
+Tamil Nadu,2024,Solar,5067.178711,stale (repeat of previous year)
+Tamil Nadu,2024,Wind,9866.366211,stale (repeat of previous year)
+Tamil Nadu,2024,Bio-mass,1012.649475,stale (repeat of previous year)
+Tamil Nadu,2024,Small hydro,123.049866,stale (repeat of previous year)
+Tamil Nadu,2024,Waste-to-energy,30.048792,stale (repeat of previous year)
+Telangana,2006,Solar,0.041385,fresh
+Telangana,2006,Wind,50.655123,fresh
+Telangana,2006,Bio-mass,124.672026,fresh
+Telangana,2006,Small hydro,74.016902,fresh
+Telangana,2006,Waste-to-energy,0.0,fresh
+Telangana,2007,Solar,0.041385,stale (repeat of previous year)
+Telangana,2007,Wind,50.696508,fresh
+Telangana,2007,Bio-mass,138.329044,fresh
+Telangana,2007,Small hydro,74.836323,fresh
+Telangana,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2008,Solar,0.041385,stale (repeat of previous year)
+Telangana,2008,Wind,50.696508,stale (repeat of previous year)
+Telangana,2008,Bio-mass,142.17784,fresh
+Telangana,2008,Small hydro,74.836323,stale (repeat of previous year)
+Telangana,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2009,Solar,0.041385,stale (repeat of previous year)
+Telangana,2009,Wind,50.696508,stale (repeat of previous year)
+Telangana,2009,Bio-mass,150.330667,fresh
+Telangana,2009,Small hydro,77.319418,fresh
+Telangana,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2010,Solar,0.869083,fresh
+Telangana,2010,Wind,79.252093,fresh
+Telangana,2010,Bio-mass,150.330667,stale (repeat of previous year)
+Telangana,2010,Small hydro,79.223123,fresh
+Telangana,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2011,Solar,9.001217,fresh
+Telangana,2011,Wind,101.620634,fresh
+Telangana,2011,Bio-mass,150.330667,stale (repeat of previous year)
+Telangana,2011,Small hydro,90.148738,fresh
+Telangana,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2012,Solar,9.663375,fresh
+Telangana,2012,Wind,185.259526,fresh
+Telangana,2012,Bio-mass,157.573025,fresh
+Telangana,2012,Small hydro,90.645357,fresh
+Telangana,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2014,Solar,61.25,fresh
+Telangana,2014,Wind,0.0,fresh
+Telangana,2014,Bio-mass,0.0,fresh
+Telangana,2014,Small hydro,0.0,fresh
+Telangana,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2015,Solar,527.84,fresh
+Telangana,2015,Wind,77.7,fresh
+Telangana,2015,Bio-mass,0.0,stale (repeat of previous year)
+Telangana,2015,Small hydro,0.0,stale (repeat of previous year)
+Telangana,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2016,Solar,1286.98,fresh
+Telangana,2016,Wind,100.8,fresh
+Telangana,2016,Bio-mass,158.1,fresh
+Telangana,2016,Small hydro,0.0,stale (repeat of previous year)
+Telangana,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2017,Solar,3291.25,fresh
+Telangana,2017,Wind,100.8,stale (repeat of previous year)
+Telangana,2017,Bio-mass,159.1,fresh
+Telangana,2017,Small hydro,90.87,fresh
+Telangana,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Telangana,2018,Solar,3592.09,fresh
+Telangana,2018,Wind,128.1,fresh
+Telangana,2018,Bio-mass,159.1,stale (repeat of previous year)
+Telangana,2018,Small hydro,90.87,stale (repeat of previous year)
+Telangana,2018,Waste-to-energy,18.5,fresh
+Telangana,2019,Solar,3620.75,fresh
+Telangana,2019,Wind,128.1,stale (repeat of previous year)
+Telangana,2019,Bio-mass,159.1,stale (repeat of previous year)
+Telangana,2019,Small hydro,90.87,stale (repeat of previous year)
+Telangana,2019,Waste-to-energy,26.0,fresh
+Telangana,2020,Solar,3961.54,fresh
+Telangana,2020,Wind,128.1,stale (repeat of previous year)
+Telangana,2020,Bio-mass,160.1,fresh
+Telangana,2020,Small hydro,90.87,stale (repeat of previous year)
+Telangana,2020,Waste-to-energy,50.38,fresh
+Telangana,2021,Solar,4520.48,fresh
+Telangana,2021,Wind,128.1,stale (repeat of previous year)
+Telangana,2021,Bio-mass,160.1,stale (repeat of previous year)
+Telangana,2021,Small hydro,90.87,stale (repeat of previous year)
+Telangana,2021,Waste-to-energy,59.64,fresh
+Telangana,2022,Solar,4520.478516,stale (repeat of previous year)
+Telangana,2022,Wind,128.099792,stale (repeat of previous year)
+Telangana,2022,Bio-mass,160.099579,stale (repeat of previous year)
+Telangana,2022,Small hydro,90.869911,stale (repeat of previous year)
+Telangana,2022,Waste-to-energy,59.638725,stale (repeat of previous year)
+Telangana,2023,Solar,4520.478516,stale (repeat of previous year)
+Telangana,2023,Wind,128.099792,stale (repeat of previous year)
+Telangana,2023,Bio-mass,160.099579,stale (repeat of previous year)
+Telangana,2023,Small hydro,90.869911,stale (repeat of previous year)
+Telangana,2023,Waste-to-energy,59.638725,stale (repeat of previous year)
+Telangana,2024,Solar,4520.478516,stale (repeat of previous year)
+Telangana,2024,Wind,128.099792,stale (repeat of previous year)
+Telangana,2024,Bio-mass,160.099579,stale (repeat of previous year)
+Telangana,2024,Small hydro,90.869911,stale (repeat of previous year)
+Telangana,2024,Waste-to-energy,59.638725,stale (repeat of previous year)
+Tripura,2006,Solar,0.0,fresh
+Tripura,2006,Wind,0.0,fresh
+Tripura,2006,Bio-mass,0.0,fresh
+Tripura,2006,Small hydro,16.01,fresh
+Tripura,2006,Waste-to-energy,0.0,fresh
+Tripura,2007,Solar,0.0,stale (repeat of previous year)
+Tripura,2007,Wind,0.0,stale (repeat of previous year)
+Tripura,2007,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2007,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2008,Solar,0.0,stale (repeat of previous year)
+Tripura,2008,Wind,0.0,stale (repeat of previous year)
+Tripura,2008,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2008,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2009,Solar,0.0,stale (repeat of previous year)
+Tripura,2009,Wind,0.0,stale (repeat of previous year)
+Tripura,2009,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2009,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2010,Solar,0.0,stale (repeat of previous year)
+Tripura,2010,Wind,0.0,stale (repeat of previous year)
+Tripura,2010,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2010,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2011,Solar,0.0,stale (repeat of previous year)
+Tripura,2011,Wind,0.0,stale (repeat of previous year)
+Tripura,2011,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2011,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2012,Solar,0.0,stale (repeat of previous year)
+Tripura,2012,Wind,0.0,stale (repeat of previous year)
+Tripura,2012,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2012,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2013,Solar,0.0,stale (repeat of previous year)
+Tripura,2013,Wind,0.0,stale (repeat of previous year)
+Tripura,2013,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2013,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2014,Solar,5.0,fresh
+Tripura,2014,Wind,0.0,stale (repeat of previous year)
+Tripura,2014,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2014,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2015,Solar,5.0,stale (repeat of previous year)
+Tripura,2015,Wind,0.0,stale (repeat of previous year)
+Tripura,2015,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2015,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2016,Solar,5.09,fresh
+Tripura,2016,Wind,0.0,stale (repeat of previous year)
+Tripura,2016,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2016,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2017,Solar,5.09,stale (repeat of previous year)
+Tripura,2017,Wind,0.0,stale (repeat of previous year)
+Tripura,2017,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2017,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2018,Solar,5.09,stale (repeat of previous year)
+Tripura,2018,Wind,0.0,stale (repeat of previous year)
+Tripura,2018,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2018,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2019,Solar,9.41,fresh
+Tripura,2019,Wind,0.0,stale (repeat of previous year)
+Tripura,2019,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2019,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2020,Solar,13.56,fresh
+Tripura,2020,Wind,0.0,stale (repeat of previous year)
+Tripura,2020,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2020,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2020,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2021,Solar,14.89,fresh
+Tripura,2021,Wind,0.0,stale (repeat of previous year)
+Tripura,2021,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2021,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2021,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2022,Solar,14.888741,stale (repeat of previous year)
+Tripura,2022,Wind,0.0,stale (repeat of previous year)
+Tripura,2022,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2022,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2022,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2023,Solar,14.888741,stale (repeat of previous year)
+Tripura,2023,Wind,0.0,stale (repeat of previous year)
+Tripura,2023,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2023,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2023,Waste-to-energy,0.0,stale (repeat of previous year)
+Tripura,2024,Solar,14.888741,stale (repeat of previous year)
+Tripura,2024,Wind,0.0,stale (repeat of previous year)
+Tripura,2024,Bio-mass,0.0,stale (repeat of previous year)
+Tripura,2024,Small hydro,16.01,stale (repeat of previous year)
+Tripura,2024,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2006,Solar,0.38,fresh
+Uttar Pradesh,2006,Wind,0.0,fresh
+Uttar Pradesh,2006,Bio-mass,121.5,fresh
+Uttar Pradesh,2006,Small hydro,25.1,fresh
+Uttar Pradesh,2006,Waste-to-energy,0.0,fresh
+Uttar Pradesh,2007,Solar,0.38,stale (repeat of previous year)
+Uttar Pradesh,2007,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2007,Bio-mass,200.5,fresh
+Uttar Pradesh,2007,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2008,Solar,0.38,stale (repeat of previous year)
+Uttar Pradesh,2008,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2008,Bio-mass,372.5,fresh
+Uttar Pradesh,2008,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2009,Solar,0.38,stale (repeat of previous year)
+Uttar Pradesh,2009,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2009,Bio-mass,567.0,fresh
+Uttar Pradesh,2009,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2010,Solar,0.38,stale (repeat of previous year)
+Uttar Pradesh,2010,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2010,Bio-mass,592.5,fresh
+Uttar Pradesh,2010,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2011,Solar,12.38,fresh
+Uttar Pradesh,2011,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2011,Bio-mass,644.5,fresh
+Uttar Pradesh,2011,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2012,Solar,17.38,fresh
+Uttar Pradesh,2012,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2012,Bio-mass,776.5,fresh
+Uttar Pradesh,2012,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2013,Solar,21.08,fresh
+Uttar Pradesh,2013,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2013,Bio-mass,776.5,stale (repeat of previous year)
+Uttar Pradesh,2013,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2014,Solar,71.26,fresh
+Uttar Pradesh,2014,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2014,Bio-mass,888.5,fresh
+Uttar Pradesh,2014,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2015,Solar,143.5,fresh
+Uttar Pradesh,2015,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2015,Bio-mass,870.0,fresh
+Uttar Pradesh,2015,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2016,Solar,336.73,fresh
+Uttar Pradesh,2016,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2016,Bio-mass,1933.0,fresh
+Uttar Pradesh,2016,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2017,Solar,694.41,fresh
+Uttar Pradesh,2017,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2017,Bio-mass,2115.51,fresh
+Uttar Pradesh,2017,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2018,Solar,960.1,fresh
+Uttar Pradesh,2018,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2018,Bio-mass,2115.51,stale (repeat of previous year)
+Uttar Pradesh,2018,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2019,Solar,1095.1,fresh
+Uttar Pradesh,2019,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2019,Bio-mass,2115.51,stale (repeat of previous year)
+Uttar Pradesh,2019,Small hydro,25.1,stale (repeat of previous year)
+Uttar Pradesh,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttar Pradesh,2020,Solar,1836.27,fresh
+Uttar Pradesh,2020,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2020,Bio-mass,2117.26,fresh
+Uttar Pradesh,2020,Small hydro,49.1,fresh
+Uttar Pradesh,2020,Waste-to-energy,58.84,fresh
+Uttar Pradesh,2021,Solar,2244.43,fresh
+Uttar Pradesh,2021,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2021,Bio-mass,2117.26,stale (repeat of previous year)
+Uttar Pradesh,2021,Small hydro,49.1,stale (repeat of previous year)
+Uttar Pradesh,2021,Waste-to-energy,72.73,fresh
+Uttar Pradesh,2022,Solar,2244.428711,stale (repeat of previous year)
+Uttar Pradesh,2022,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2022,Bio-mass,2117.259521,stale (repeat of previous year)
+Uttar Pradesh,2022,Small hydro,49.099361,stale (repeat of previous year)
+Uttar Pradesh,2022,Waste-to-energy,72.728867,stale (repeat of previous year)
+Uttar Pradesh,2023,Solar,2244.428711,stale (repeat of previous year)
+Uttar Pradesh,2023,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2023,Bio-mass,2117.259521,stale (repeat of previous year)
+Uttar Pradesh,2023,Small hydro,49.099361,stale (repeat of previous year)
+Uttar Pradesh,2023,Waste-to-energy,72.728867,stale (repeat of previous year)
+Uttar Pradesh,2024,Solar,2244.428711,stale (repeat of previous year)
+Uttar Pradesh,2024,Wind,0.0,stale (repeat of previous year)
+Uttar Pradesh,2024,Bio-mass,2117.259521,stale (repeat of previous year)
+Uttar Pradesh,2024,Small hydro,49.099361,stale (repeat of previous year)
+Uttar Pradesh,2024,Waste-to-energy,72.728867,stale (repeat of previous year)
+Uttarakhand,2006,Solar,0.05,fresh
+Uttarakhand,2006,Wind,0.0,fresh
+Uttarakhand,2006,Bio-mass,0.0,fresh
+Uttarakhand,2006,Small hydro,75.67,fresh
+Uttarakhand,2006,Waste-to-energy,0.0,fresh
+Uttarakhand,2007,Solar,0.05,stale (repeat of previous year)
+Uttarakhand,2007,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2007,Bio-mass,0.0,stale (repeat of previous year)
+Uttarakhand,2007,Small hydro,105.12,fresh
+Uttarakhand,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2008,Solar,0.05,stale (repeat of previous year)
+Uttarakhand,2008,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2008,Bio-mass,0.0,stale (repeat of previous year)
+Uttarakhand,2008,Small hydro,105.12,stale (repeat of previous year)
+Uttarakhand,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2009,Solar,0.05,stale (repeat of previous year)
+Uttarakhand,2009,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2009,Bio-mass,0.0,stale (repeat of previous year)
+Uttarakhand,2009,Small hydro,132.92,fresh
+Uttarakhand,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2010,Solar,0.05,stale (repeat of previous year)
+Uttarakhand,2010,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2010,Bio-mass,10.0,fresh
+Uttarakhand,2010,Small hydro,134.62,fresh
+Uttarakhand,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2011,Solar,5.05,fresh
+Uttarakhand,2011,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2011,Bio-mass,10.0,stale (repeat of previous year)
+Uttarakhand,2011,Small hydro,170.82,fresh
+Uttarakhand,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2012,Solar,5.05,stale (repeat of previous year)
+Uttarakhand,2012,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2012,Bio-mass,10.0,stale (repeat of previous year)
+Uttarakhand,2012,Small hydro,174.82,fresh
+Uttarakhand,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2013,Solar,5.05,stale (repeat of previous year)
+Uttarakhand,2013,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2013,Bio-mass,30.0,fresh
+Uttarakhand,2013,Small hydro,174.82,stale (repeat of previous year)
+Uttarakhand,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2014,Solar,5.0,fresh
+Uttarakhand,2014,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2014,Bio-mass,30.0,stale (repeat of previous year)
+Uttarakhand,2014,Small hydro,209.32,fresh
+Uttarakhand,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2015,Solar,41.15,fresh
+Uttarakhand,2015,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2015,Bio-mass,76.0,fresh
+Uttarakhand,2015,Small hydro,209.33,fresh
+Uttarakhand,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2016,Solar,233.49,fresh
+Uttarakhand,2016,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2016,Bio-mass,73.0,fresh
+Uttarakhand,2016,Small hydro,209.32,fresh
+Uttarakhand,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2017,Solar,260.08,fresh
+Uttarakhand,2017,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2017,Bio-mass,130.5,fresh
+Uttarakhand,2017,Small hydro,214.32,fresh
+Uttarakhand,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2018,Solar,306.75,fresh
+Uttarakhand,2018,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2018,Bio-mass,130.5,stale (repeat of previous year)
+Uttarakhand,2018,Small hydro,214.32,stale (repeat of previous year)
+Uttarakhand,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2019,Solar,315.9,fresh
+Uttarakhand,2019,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2019,Bio-mass,130.5,stale (repeat of previous year)
+Uttarakhand,2019,Small hydro,214.32,stale (repeat of previous year)
+Uttarakhand,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+Uttarakhand,2020,Solar,380.13,fresh
+Uttarakhand,2020,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2020,Bio-mass,130.22,fresh
+Uttarakhand,2020,Small hydro,214.32,stale (repeat of previous year)
+Uttarakhand,2020,Waste-to-energy,9.22,fresh
+Uttarakhand,2021,Solar,573.54,fresh
+Uttarakhand,2021,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2021,Bio-mass,130.22,stale (repeat of previous year)
+Uttarakhand,2021,Small hydro,218.82,fresh
+Uttarakhand,2021,Waste-to-energy,9.22,stale (repeat of previous year)
+Uttarakhand,2022,Solar,573.538757,stale (repeat of previous year)
+Uttarakhand,2022,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2022,Bio-mass,130.220566,stale (repeat of previous year)
+Uttarakhand,2022,Small hydro,218.818954,stale (repeat of previous year)
+Uttarakhand,2022,Waste-to-energy,9.219247,stale (repeat of previous year)
+Uttarakhand,2023,Solar,573.538757,stale (repeat of previous year)
+Uttarakhand,2023,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2023,Bio-mass,130.220566,stale (repeat of previous year)
+Uttarakhand,2023,Small hydro,218.818954,stale (repeat of previous year)
+Uttarakhand,2023,Waste-to-energy,9.219247,stale (repeat of previous year)
+Uttarakhand,2024,Solar,573.538757,stale (repeat of previous year)
+Uttarakhand,2024,Wind,0.0,stale (repeat of previous year)
+Uttarakhand,2024,Bio-mass,130.220566,stale (repeat of previous year)
+Uttarakhand,2024,Small hydro,218.818954,stale (repeat of previous year)
+Uttarakhand,2024,Waste-to-energy,9.219247,stale (repeat of previous year)
+West Bengal,2006,Solar,0.05,fresh
+West Bengal,2006,Wind,1.1,fresh
+West Bengal,2006,Bio-mass,0.0,fresh
+West Bengal,2006,Small hydro,98.4,fresh
+West Bengal,2006,Waste-to-energy,0.0,fresh
+West Bengal,2007,Solar,0.05,stale (repeat of previous year)
+West Bengal,2007,Wind,0.0,fresh
+West Bengal,2007,Bio-mass,0.0,stale (repeat of previous year)
+West Bengal,2007,Small hydro,98.4,stale (repeat of previous year)
+West Bengal,2007,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2008,Solar,0.05,stale (repeat of previous year)
+West Bengal,2008,Wind,0.0,stale (repeat of previous year)
+West Bengal,2008,Bio-mass,0.0,stale (repeat of previous year)
+West Bengal,2008,Small hydro,98.4,stale (repeat of previous year)
+West Bengal,2008,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2009,Solar,1.15,fresh
+West Bengal,2009,Wind,4.3,fresh
+West Bengal,2009,Bio-mass,16.0,fresh
+West Bengal,2009,Small hydro,98.4,stale (repeat of previous year)
+West Bengal,2009,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2010,Solar,1.15,stale (repeat of previous year)
+West Bengal,2010,Wind,4.3,stale (repeat of previous year)
+West Bengal,2010,Bio-mass,16.0,stale (repeat of previous year)
+West Bengal,2010,Small hydro,98.4,stale (repeat of previous year)
+West Bengal,2010,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2011,Solar,2.05,fresh
+West Bengal,2011,Wind,4.3,stale (repeat of previous year)
+West Bengal,2011,Bio-mass,16.0,stale (repeat of previous year)
+West Bengal,2011,Small hydro,98.4,stale (repeat of previous year)
+West Bengal,2011,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2012,Solar,2.05,stale (repeat of previous year)
+West Bengal,2012,Wind,0.0,fresh
+West Bengal,2012,Bio-mass,26.0,fresh
+West Bengal,2012,Small hydro,98.4,stale (repeat of previous year)
+West Bengal,2012,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2013,Solar,7.05,fresh
+West Bengal,2013,Wind,0.0,stale (repeat of previous year)
+West Bengal,2013,Bio-mass,26.0,stale (repeat of previous year)
+West Bengal,2013,Small hydro,98.4,stale (repeat of previous year)
+West Bengal,2013,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2014,Solar,7.21,fresh
+West Bengal,2014,Wind,0.0,stale (repeat of previous year)
+West Bengal,2014,Bio-mass,26.0,stale (repeat of previous year)
+West Bengal,2014,Small hydro,98.5,fresh
+West Bengal,2014,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2015,Solar,7.77,fresh
+West Bengal,2015,Wind,0.0,stale (repeat of previous year)
+West Bengal,2015,Bio-mass,26.0,stale (repeat of previous year)
+West Bengal,2015,Small hydro,98.5,stale (repeat of previous year)
+West Bengal,2015,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2016,Solar,26.14,fresh
+West Bengal,2016,Wind,0.0,stale (repeat of previous year)
+West Bengal,2016,Bio-mass,300.0,fresh
+West Bengal,2016,Small hydro,98.5,stale (repeat of previous year)
+West Bengal,2016,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2017,Solar,37.32,fresh
+West Bengal,2017,Wind,0.0,stale (repeat of previous year)
+West Bengal,2017,Bio-mass,319.92,fresh
+West Bengal,2017,Small hydro,98.5,stale (repeat of previous year)
+West Bengal,2017,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2018,Solar,75.95,fresh
+West Bengal,2018,Wind,0.0,stale (repeat of previous year)
+West Bengal,2018,Bio-mass,319.92,stale (repeat of previous year)
+West Bengal,2018,Small hydro,98.5,stale (repeat of previous year)
+West Bengal,2018,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2019,Solar,114.46,fresh
+West Bengal,2019,Wind,0.0,stale (repeat of previous year)
+West Bengal,2019,Bio-mass,319.92,stale (repeat of previous year)
+West Bengal,2019,Small hydro,98.5,stale (repeat of previous year)
+West Bengal,2019,Waste-to-energy,0.0,stale (repeat of previous year)
+West Bengal,2020,Solar,162.65,fresh
+West Bengal,2020,Wind,0.0,stale (repeat of previous year)
+West Bengal,2020,Bio-mass,319.92,stale (repeat of previous year)
+West Bengal,2020,Small hydro,98.5,stale (repeat of previous year)
+West Bengal,2020,Waste-to-energy,1.17,fresh
+West Bengal,2021,Solar,166.0,fresh
+West Bengal,2021,Wind,0.0,stale (repeat of previous year)
+West Bengal,2021,Bio-mass,319.92,stale (repeat of previous year)
+West Bengal,2021,Small hydro,98.5,stale (repeat of previous year)
+West Bengal,2021,Waste-to-energy,2.53,fresh
+West Bengal,2022,Solar,165.998749,stale (repeat of previous year)
+West Bengal,2022,Wind,0.000187,stale (repeat of previous year)
+West Bengal,2022,Bio-mass,319.919708,stale (repeat of previous year)
+West Bengal,2022,Small hydro,98.499748,stale (repeat of previous year)
+West Bengal,2022,Waste-to-energy,2.52887,stale (repeat of previous year)
+West Bengal,2023,Solar,165.998749,stale (repeat of previous year)
+West Bengal,2023,Wind,0.000187,stale (repeat of previous year)
+West Bengal,2023,Bio-mass,319.919708,stale (repeat of previous year)
+West Bengal,2023,Small hydro,98.499748,stale (repeat of previous year)
+West Bengal,2023,Waste-to-energy,2.52887,stale (repeat of previous year)
+West Bengal,2024,Solar,165.998749,stale (repeat of previous year)
+West Bengal,2024,Wind,0.000187,stale (repeat of previous year)
+West Bengal,2024,Bio-mass,319.919708,stale (repeat of previous year)
+West Bengal,2024,Small hydro,98.499748,stale (repeat of previous year)
+West Bengal,2024,Waste-to-energy,2.52887,stale (repeat of previous year)

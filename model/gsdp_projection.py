@@ -4,14 +4,19 @@ GSDP projection for the forecast years (2025-2047), state by state.
 Units: the dataset's GSDP is at CONSTANT 2011-12 prices (real). India's 2023 sum is about Rs 162 lakh crore,
 which matches official real GDP, not nominal GDP (~Rs 270-300 lakh crore). The capacity model learned its
 GSDP effects on these real values, so projections stay real. Government targets are quoted at CURRENT prices
-(nominal), e.g. Rs 2,500 lakh crore (about $30 trillion) by 2047; nominal() / real() convert between the two:
+(nominal) or in dollars, e.g. the $30 trillion Viksit Bharat target for 2047; the conversion is:
 
     nominal = real x K x (1 + inflation)^(year - 2024)
+    dollars = nominal / (Rs per $), with Rs per $ = 92.65 today (2026) x (1 + depreciation)^(year - 2026)
     K = official nominal GDP 2024-25 (Rs 330.68 lakh crore, MoSPI provisional estimates, 30 May 2025)
         / this dataset's 2024 national GSDP (Rs ~170 lakh crore at 2011-12 prices)
-    inflation = 4% a year (the RBI's inflation target), an assumption.
-K maps the dataset onto official current-price GDP, so it also absorbs the dataset's slightly lower coverage
-(official real GDP 2024-25 was Rs 187.97 lakh crore).
+    depreciation = 4.75% a year: the rupee's average fall against the dollar since 1991 (4.5-5%, per the project team)
+    inflation = (1 + 2% US inflation) x (1 + 4.75%) - 1 = 6.85% a year
+A currency falls against the dollar by roughly the gap between the two countries' inflation (relative
+purchasing power), so a rupee that keeps losing 4.75% a year goes with ~6.85% Indian inflation if US inflation
+is ~2%. Using 4.75% depreciation with a lower inflation figure would turn the dollar target into an
+implausible ~10% real growth. K maps the dataset onto official current-price GDP, so it also absorbs the
+dataset's slightly lower coverage (official real GDP 2024-25 was Rs 187.97 lakh crore).
 
 How a state's GSDP is projected
     national real growth path  (a scenario, below)
@@ -25,14 +30,14 @@ year to 2047, below the IMF's estimate of medium-term potential (6.5%). validate
 + a shrunk state differential also predicts each state's share better than its own CAGR.
 
 Scenarios (real GDP growth, % a year)
-    govt     the constant real growth that reaches the government's 2047 figure of Rs 2,500 lakh crore at current
-             prices (about $30 trillion, Viksit Bharat) under the conversion above: about 5% real (default)
-    imf      IMF medium-term potential: 6.5% to 2030, easing to 5.5% by 2047 (default)
+    viksit   the steady real growth that makes India's GDP $30 trillion in 2047 (the Viksit Bharat target) under the
+             conversion above: about 7.1% (default)
+    wb       7.8% every year: the average the World Bank says India needs to reach high income by 2047
+             (India Country Economic Memorandum, Feb 2025)
+    imf      IMF medium-term potential: 6.5% to 2030, easing to 5.5% by 2047
              (IMF 2025 Article IV staff report: medium-term potential growth 6.5%; India averaged 6.3% in
              2000-2024 per the World Bank. The easing after 2030 is this project's assumption: growth slows as
              income rises.)
-    viksit   7.8% every year: the average the World Bank says India needs to reach high income by 2047
-             (India Country Economic Memorandum, Feb 2025)
     dataset  the dataset's own GSDP trend (2014-2024 CAGR of the national total), held flat
 """
 from __future__ import annotations
@@ -49,20 +54,33 @@ CAP = 0.015
 HALF_LIFE = 10.0
 
 NOMINAL_GDP_2024 = 330.68e5   # crore, India GDP 2024-25 at current prices (MoSPI, 30 May 2025)
-INFLATION = 0.04              # assumed yearly inflation (RBI target)
-GOVT_TARGET_2047 = 2500e5     # crore at current prices, the government's 2047 figure (~$30 trillion)
+USD_INR_TODAY = 92.65         # Rs per US dollar today (Nov 2026, as given by the project team)
+RATE_YEAR = 2026
+INR_DEPRECIATION = 0.0475     # yearly fall of the rupee vs the dollar, 1991 onwards average (4.5-5%)
+US_INFLATION = 0.02           # assumed (the Federal Reserve's target)
+INFLATION = (1 + US_INFLATION) * (1 + INR_DEPRECIATION) - 1   # ~6.85% Indian inflation, consistent with the above
+VIKSIT_USD_2047 = 30e12       # the Viksit Bharat target: a $30 trillion economy in 2047
+
+
+def usd_inr(year: int) -> float:
+    """Rs per US dollar in `year`: today's rate falling at the long-run average."""
+    return USD_INR_TODAY * (1 + INR_DEPRECIATION) ** (year - RATE_YEAR)
+
+
+VIKSIT_TARGET_2047 = VIKSIT_USD_2047 * usd_inr(2047) / 1e7   # crore at current prices
 
 SCENARIOS = {
-    "govt": {"label": "Government 2047 target", "short": None,
-             "note": "the steady real growth that reaches Rs 2,500 lakh crore at current prices (about $30 trillion) by 2047"},
+    "viksit": {"label": "Viksit Bharat ($30 trillion)", "short": None,
+               "note": f"steady real growth that makes GDP $30 trillion in 2047 (Rs {VIKSIT_TARGET_2047 / 1e5:,.0f} lakh crore at "
+                       f"Rs {usd_inr(2047):.0f} per dollar: today's Rs {USD_INR_TODAY} falling {INR_DEPRECIATION:.2%} a year)"},
+    "wb": {"label": "World Bank high-income path", "short": "7.8% a year",
+           "note": "7.8% real growth a year, the average the World Bank says India needs to reach high income by 2047"},
     "imf": {"label": "IMF outlook", "short": "6.5% easing to 5.5%",
             "note": "IMF medium-term potential growth of 6.5% to 2030, easing to 5.5% by 2047"},
-    "viksit": {"label": "Viksit Bharat", "short": "7.8% a year",
-               "note": "7.8% a year, the average the World Bank says India needs to reach high income by 2047"},
     "dataset": {"label": "Dataset trend", "short": None,
                 "note": "the dataset's own 2014-2024 GSDP growth, held flat"},
 }
-DEFAULT_SCENARIO = "govt"
+DEFAULT_SCENARIO = "viksit"
 
 
 def _trend(series: pd.Series) -> float:
@@ -89,7 +107,7 @@ class GsdpProjector:
         self.dataset_growth = float((nat.loc[base_year] / nat.loc[base_year - n]) ** (1 / n) - 1)
         self.k = NOMINAL_GDP_2024 / float(self.g0.sum())     # current-price rupees per dataset rupee, 2024
         yrs = 2047 - base_year
-        self.govt_growth = float((GOVT_TARGET_2047 / (self.g0.sum() * self.k * (1 + INFLATION) ** yrs)) ** (1 / yrs) - 1)
+        self.viksit_growth = float((VIKSIT_TARGET_2047 / (self.g0.sum() * self.k * (1 + INFLATION) ** yrs)) ** (1 / yrs) - 1)
         t_nat = _trend(nat)
         diff = {}
         for s in self.states:
@@ -99,16 +117,16 @@ class GsdpProjector:
         self.years = np.arange(base_year, END_YEAR + 1)
         self.paths = {k: self._build(k) for k in SCENARIOS}
         SCENARIOS["dataset"]["short"] = f"{self.dataset_growth * 100:.1f}% a year"
-        SCENARIOS["govt"]["short"] = f"{self.govt_growth * 100:.1f}% a year"
+        SCENARIOS["viksit"]["short"] = f"{self.viksit_growth * 100:.1f}% a year"
 
     def nominal_factor(self, year: int) -> float:
         """Multiply real (dataset) GSDP in `year` by this to get current prices."""
         return self.k * (1 + INFLATION) ** (year - self.base_year)
 
     def national_growth(self, scenario: str, year: int) -> float:
-        if scenario == "govt":
-            return self.govt_growth
         if scenario == "viksit":
+            return self.viksit_growth
+        if scenario == "wb":
             return 0.078
         if scenario == "dataset":
             return self.dataset_growth
@@ -202,7 +220,8 @@ if __name__ == "__main__":
     hist = {s: g.set_index("Year").GSDP.to_dict() for s, g in df.groupby("State")}
     P = GsdpProjector(hist)
     print(f"\nDataset trend (national 2014-2024 CAGR): {P.dataset_growth:.2%}")
-    print(f"K = {P.k:.3f}, government path real growth {P.govt_growth:.2%}")
+    print(f"K = {P.k:.3f}, inflation {INFLATION:.2%}, Rs/$ 2047 {usd_inr(2047):.1f}, $30T = Rs {VIKSIT_TARGET_2047/1e5:,.0f} lakh crore, "
+          f"Viksit real growth {P.viksit_growth:.2%}")
     for k in SCENARIOS:
         print(f"{k:8s} real:", {y: round(P.national(y, k) / 1e5) for y in (2024, 2030, 2047)},
               " current prices:", {y: round(P.national(y, k) * P.nominal_factor(y) / 1e5) for y in (2024, 2030, 2047)}, "lakh crore")

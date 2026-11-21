@@ -1,0 +1,6 @@
+source,capacity_factor_cuf,capex_cr_per_mw,lcoe_inr_per_kwh,source_of_values
+Solar,0.21,4.5,2.5,CERC / MNRE benchmarks shipped with the original pipeline (backend_api.py COST_BENCHMARKS)
+Wind,0.3,7.9,3.2,CERC / MNRE benchmarks shipped with the original pipeline (backend_api.py COST_BENCHMARKS)
+Bio-mass,0.75,6.85,5.4,CERC / MNRE benchmarks shipped with the original pipeline (backend_api.py COST_BENCHMARKS)
+Small hydro,0.45,10.5,4.1,CERC / MNRE benchmarks shipped with the original pipeline (backend_api.py COST_BENCHMARKS)
+Waste-to-energy,0.7,11.0,6.2,CERC / MNRE benchmarks shipped with the original pipeline (backend_api.py COST_BENCHMARKS)

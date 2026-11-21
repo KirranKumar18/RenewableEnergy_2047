@@ -97,12 +97,19 @@ def impute_placeholder_gsdp(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def fresh_mask(df: pd.DataFrame) -> pd.DataFrame:
+def fresh_mask(df: pd.DataFrame, tolerance: bool = True) -> pd.DataFrame:
     """True where a state's value for a technology is a genuine new report: its first observation, or
-    a value that changed vs the previous year. Exact repeats are treated as stale (not re-reported):
-    in 2023-24 only 15 of 34 states report anything new, so repeats are mostly carry-forwards."""
+    a value that changed vs the previous year. Repeats are treated as stale (not re-reported): in 2023-24 only
+    15 of 34 states report anything new, so repeats are mostly carry-forwards.
+    tolerance: a change of at most 0.01 MW (or 1 part per million) is also a repeat. Many copied values were
+    stored at float32 precision, e.g. Rajasthan solar 12564.87 (2021) -> 12564.867188 (2022-24); without the
+    tolerance 59 copies (52 of them in 2022) were mistaken for new reports showing zero growth."""
     prev = df.groupby("State")[TECH].shift(1)
-    return pd.DataFrame({t: prev[t].isna() | (df[t] != prev[t]) for t in TECH}, index=df.index)
+    out = {}
+    for t in TECH:
+        changed = (df[t] - prev[t]).abs() > np.maximum(0.01, prev[t].abs() * 1e-6) if tolerance else df[t] != prev[t]
+        out[t] = prev[t].isna() | changed
+    return pd.DataFrame(out, index=df.index)
 
 
 def yoy_frame(df: pd.DataFrame) -> pd.DataFrame:

@@ -8,114 +8,107 @@
  },
  "solar_share_2024": 0.639,
  "states_with_new_values_by_year": {
-  "2018": 29,
+  "2018": 28,
   "2019": 31,
   "2020": 34,
   "2021": 33,
-  "2022": 34,
+  "2022": 18,
   "2023": 15,
   "2024": 15
  },
- "fresh_share_of_values": 0.342,
- "solar_corr_catchup": -0.67,
+ "fresh_share_of_values": 0.324,
+ "solar_corr_catchup": -0.73,
  "solar_corr_gsdp_growth": -0.09,
  "zone_intensity_2021": {
-  "Central": {
-   "Solar Power": 376.0,
-   "Wind Power": 292.8,
-   "Bio-Mass Power": 44.4,
-   "Small Hydro Power": 20.4,
-   "Waste to Energy": 2.8
-  },
   "East": {
-   "Solar Power": 46.7,
+   "Solar Power": 47.8,
    "Wind Power": 0.0,
-   "Bio-Mass Power": 26.5,
-   "Small Hydro Power": 14.6,
+   "Bio-Mass Power": 26.1,
+   "Small Hydro Power": 17.3,
    "Waste to Energy": 0.2
   },
   "North": {
-   "Solar Power": 160.2,
-   "Wind Power": 0.0,
-   "Bio-Mass Power": 91.1,
-   "Small Hydro Power": 50.8,
-   "Waste to Energy": 5.4
+   "Solar Power": 449.3,
+   "Wind Power": 109.3,
+   "Bio-Mass Power": 78.1,
+   "Small Hydro Power": 42.4,
+   "Waste to Energy": 4.6
   },
   "North-East": {
-   "Solar Power": 39.6,
+   "Solar Power": 40.5,
    "Wind Power": 0.0,
-   "Bio-Mass Power": 3.6,
-   "Small Hydro Power": 76.1,
+   "Bio-Mass Power": 3.7,
+   "Small Hydro Power": 67.7,
    "Waste to Energy": 0.0
   },
   "South": {
-   "Solar Power": 484.5,
-   "Wind Power": 425.2,
-   "Bio-Mass Power": 78.2,
-   "Small Hydro Power": 42.0,
+   "Solar Power": 484.7,
+   "Wind Power": 425.9,
+   "Bio-Mass Power": 78.3,
+   "Small Hydro Power": 41.9,
    "Waste to Energy": 4.1
   },
   "West": {
-   "Solar Power": 565.0,
-   "Wind Power": 468.0,
-   "Bio-Mass Power": 70.2,
-   "Small Hydro Power": 12.5,
-   "Waste to Energy": 2.1
+   "Solar Power": 316.6,
+   "Wind Power": 405.6,
+   "Bio-Mass Power": 73.7,
+   "Small Hydro Power": 15.7,
+   "Waste to Energy": 2.5
   }
  },
  "top5_share_2024": 0.712,
  "nowcast_vs_reported_gw": {
   "Rajasthan": {
    "reported": 17.0,
-   "nowcast": 29.0
+   "nowcast": 32.1
   },
   "Tamil Nadu": {
    "reported": 16.1,
-   "nowcast": 24.4
-  },
-  "Andhra Pradesh": {
-   "reported": 14.3,
-   "nowcast": 15.5
-  },
-  "Madhya Pradesh": {
-   "reported": 10.2,
-   "nowcast": 10.7
+   "nowcast": 27.9
   },
   "Telangana": {
    "reported": 5.0,
-   "nowcast": 7.7
+   "nowcast": 8.3
   },
   "Uttar Pradesh": {
    "reported": 4.5,
-   "nowcast": 6.0
+   "nowcast": 8.0
   },
   "Punjab": {
    "reported": 1.8,
-   "nowcast": 2.3
+   "nowcast": 3.0
   },
   "Uttarakhand": {
    "reported": 0.9,
-   "nowcast": 1.2
+   "nowcast": 1.5
   },
   "Delhi": {
    "reported": 0.3,
-   "nowcast": 0.6
+   "nowcast": 1.0
+  },
+  "Odisha": {
+   "reported": 0.6,
+   "nowcast": 0.9
+  },
+  "West Bengal": {
+   "reported": 0.6,
+   "nowcast": 0.8
   }
  },
  "national_2024_reported_vs_nowcast_gw": [
   168.9,
-  196.8
+  205.8
  ],
  "backtest_wape_fresh": {
-  "v2 + transmission, joint fit": 29.0,
-  "v2 convergence (production)": 29.0,
-  "v2 without transmission term": 30.9,
-  "v2, trend half-life 2y": 31.1,
-  "v2 pure (v2 dynamics for every tech)": 31.2,
-  "v2, no catch-up term": 33.3,
-  "v1 GSDP elasticity": 37.1,
-  "v2, trend half-life 5y": 37.9,
-  "Naive last value": 44.7,
-  "Original tree ensemble": 51.3
+  "v2, trend half-life 3y": 28.2,
+  "v2 + transmission, joint fit": 28.5,
+  "v2 convergence (production)": 28.6,
+  "v2, trend half-life 5y": 30.4,
+  "v2 without transmission term": 31.4,
+  "v2 pure (v2 dynamics for every tech)": 31.5,
+  "v2, no catch-up term": 34.1,
+  "v1 GSDP elasticity": 36.6,
+  "Naive last value": 46.1,
+  "Original tree ensemble": 51.4
  }
 }

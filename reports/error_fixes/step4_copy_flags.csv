@@ -1,0 +1,7 @@
+variant,cutoffs,headline_wape,signed_pct,far_signed_h5_8_pct,cutoff_2016,cutoff_2018,cutoff_2020,cutoff_2021,cutoff_2022
+production (copies counted as new),standard,28.24,-10.8,-23.4,30.3,29.1,25.3,,
+production (copies counted as new),recent,30.85,-25.5,,,,25.3,30.3,37.0
+copies treated as repeats,standard,28.24,-10.8,-23.3,30.3,29.2,25.3,,
+copies treated as repeats,recent,25.07,-17.8,,,,25.3,30.3,19.7
+copies treated as repeats + nowcast solar only,standard,28.19,-11.0,-23.5,30.3,29.1,25.1,,
+copies treated as repeats + nowcast solar only,recent,24.57,-18.7,,,,25.1,29.9,18.7

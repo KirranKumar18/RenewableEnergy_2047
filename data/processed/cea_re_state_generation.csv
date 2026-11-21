@@ -1,0 +1,2053 @@
+region,state,source,fy,from,mu
+East,Andaman & Nicobar,bagasse,2018,previous,0.0
+East,Andaman & Nicobar,bagasse,2019,current,0.0
+East,Andaman & Nicobar,bagasse,2020,previous,0.0
+East,Andaman & Nicobar,bagasse,2021,current,0.0
+East,Andaman & Nicobar,bagasse,2022,current,0.0
+East,Andaman & Nicobar,bagasse,2023,current,0.0
+East,Andaman & Nicobar,bagasse,2024,current,0.0
+East,Andaman & Nicobar,bagasse,2025,current,0.0
+East,Andaman & Nicobar,bagasse,2026,current,0.0
+East,Andaman & Nicobar,biomass,2018,previous,0.0
+East,Andaman & Nicobar,biomass,2019,current,0.0
+East,Andaman & Nicobar,biomass,2020,previous,0.0
+East,Andaman & Nicobar,biomass,2021,current,0.0
+East,Andaman & Nicobar,biomass,2022,current,0.0
+East,Andaman & Nicobar,biomass,2023,current,0.0
+East,Andaman & Nicobar,biomass,2024,current,0.0
+East,Andaman & Nicobar,biomass,2025,current,0.0
+East,Andaman & Nicobar,biomass,2026,current,0.0
+East,Andaman & Nicobar,large_hydro,2023,previous,0.0
+East,Andaman & Nicobar,large_hydro,2024,current,0.0
+East,Andaman & Nicobar,large_hydro,2025,current,0.0
+East,Andaman & Nicobar,large_hydro,2026,current,0.0
+East,Andaman & Nicobar,others,2018,previous,0.0
+East,Andaman & Nicobar,others,2019,current,0.0
+East,Andaman & Nicobar,others,2020,previous,0.0
+East,Andaman & Nicobar,others,2021,current,0.0
+East,Andaman & Nicobar,others,2022,current,0.0
+East,Andaman & Nicobar,others,2023,current,0.0
+East,Andaman & Nicobar,others,2024,current,0.0
+East,Andaman & Nicobar,others,2025,current,0.0
+East,Andaman & Nicobar,others,2026,current,0.0
+East,Andaman & Nicobar,small_hydro,2018,previous,12.77
+East,Andaman & Nicobar,small_hydro,2019,current,16.56
+East,Andaman & Nicobar,small_hydro,2020,previous,5.7
+East,Andaman & Nicobar,small_hydro,2021,current,14.69
+East,Andaman & Nicobar,small_hydro,2022,current,13.26
+East,Andaman & Nicobar,small_hydro,2023,current,13.94
+East,Andaman & Nicobar,small_hydro,2024,current,12.0
+East,Andaman & Nicobar,small_hydro,2025,current,14.4
+East,Andaman & Nicobar,small_hydro,2026,current,13.72
+East,Andaman & Nicobar,solar,2018,previous,6.88
+East,Andaman & Nicobar,solar,2019,current,8.04
+East,Andaman & Nicobar,solar,2020,previous,11.6
+East,Andaman & Nicobar,solar,2021,current,24.82
+East,Andaman & Nicobar,solar,2022,current,21.51
+East,Andaman & Nicobar,solar,2023,current,23.94
+East,Andaman & Nicobar,solar,2024,current,27.5
+East,Andaman & Nicobar,solar,2025,current,24.59
+East,Andaman & Nicobar,solar,2026,current,16.92
+East,Andaman & Nicobar,wind,2018,previous,0.0
+East,Andaman & Nicobar,wind,2019,current,0.0
+East,Andaman & Nicobar,wind,2020,previous,0.0
+East,Andaman & Nicobar,wind,2021,current,0.0
+East,Andaman & Nicobar,wind,2022,current,0.0
+East,Andaman & Nicobar,wind,2023,current,0.0
+East,Andaman & Nicobar,wind,2024,current,0.0
+East,Andaman & Nicobar,wind,2025,current,0.0
+East,Andaman & Nicobar,wind,2026,current,0.0
+East,Bihar,bagasse,2018,previous,152.84
+East,Bihar,bagasse,2019,current,257.63
+East,Bihar,bagasse,2020,previous,160.35
+East,Bihar,bagasse,2021,current,1.48
+East,Bihar,bagasse,2022,current,65.84
+East,Bihar,bagasse,2023,current,106.68
+East,Bihar,bagasse,2024,current,140.98
+East,Bihar,bagasse,2025,current,104.7
+East,Bihar,bagasse,2026,current,81.5
+East,Bihar,biomass,2018,previous,2.93
+East,Bihar,biomass,2019,current,10.59
+East,Bihar,biomass,2020,previous,19.19
+East,Bihar,biomass,2021,current,21.3
+East,Bihar,biomass,2022,current,2.14
+East,Bihar,biomass,2023,current,0.0
+East,Bihar,biomass,2024,current,0.0
+East,Bihar,biomass,2025,current,0.0
+East,Bihar,biomass,2026,current,0.0
+East,Bihar,large_hydro,2023,previous,0.0
+East,Bihar,large_hydro,2024,current,0.0
+East,Bihar,large_hydro,2025,current,0.0
+East,Bihar,large_hydro,2026,current,0.0
+East,Bihar,others,2018,previous,0.0
+East,Bihar,others,2019,current,0.0
+East,Bihar,others,2020,previous,0.0
+East,Bihar,others,2021,current,0.0
+East,Bihar,others,2022,current,0.0
+East,Bihar,others,2023,current,0.0
+East,Bihar,others,2024,current,0.0
+East,Bihar,others,2025,current,0.0
+East,Bihar,others,2026,current,0.0
+East,Bihar,small_hydro,2018,previous,7.95
+East,Bihar,small_hydro,2019,current,27.74
+East,Bihar,small_hydro,2020,previous,18.98
+East,Bihar,small_hydro,2021,current,43.2
+East,Bihar,small_hydro,2022,current,8.77
+East,Bihar,small_hydro,2023,current,12.63
+East,Bihar,small_hydro,2024,current,5.92
+East,Bihar,small_hydro,2025,current,14.54
+East,Bihar,small_hydro,2026,current,23.44
+East,Bihar,solar,2018,previous,145.34
+East,Bihar,solar,2019,current,179.89
+East,Bihar,solar,2020,previous,160.16
+East,Bihar,solar,2021,current,160.63
+East,Bihar,solar,2022,current,163.08
+East,Bihar,solar,2023,current,169.53
+East,Bihar,solar,2024,current,195.19
+East,Bihar,solar,2025,current,325.86
+East,Bihar,solar,2026,current,327.71
+East,Bihar,wind,2018,previous,0.0
+East,Bihar,wind,2019,current,12.28
+East,Bihar,wind,2020,previous,0.0
+East,Bihar,wind,2021,current,0.0
+East,Bihar,wind,2022,current,0.0
+East,Bihar,wind,2023,current,0.0
+East,Bihar,wind,2024,current,0.0
+East,Bihar,wind,2025,current,0.0
+East,Bihar,wind,2026,current,0.0
+East,Jharkhand,bagasse,2018,previous,0.0
+East,Jharkhand,bagasse,2019,current,0.0
+East,Jharkhand,bagasse,2020,previous,0.0
+East,Jharkhand,bagasse,2021,current,0.0
+East,Jharkhand,bagasse,2022,current,0.0
+East,Jharkhand,bagasse,2023,current,0.0
+East,Jharkhand,bagasse,2024,current,0.0
+East,Jharkhand,bagasse,2025,current,0.0
+East,Jharkhand,bagasse,2026,current,0.0
+East,Jharkhand,biomass,2018,previous,0.0
+East,Jharkhand,biomass,2019,current,0.0
+East,Jharkhand,biomass,2020,previous,0.0
+East,Jharkhand,biomass,2021,current,0.0
+East,Jharkhand,biomass,2022,current,0.0
+East,Jharkhand,biomass,2023,current,0.0
+East,Jharkhand,biomass,2024,current,0.0
+East,Jharkhand,biomass,2025,current,0.0
+East,Jharkhand,biomass,2026,current,0.0
+East,Jharkhand,large_hydro,2023,previous,305.47
+East,Jharkhand,large_hydro,2024,current,196.8
+East,Jharkhand,large_hydro,2025,current,269.12
+East,Jharkhand,large_hydro,2026,current,145.61
+East,Jharkhand,others,2018,previous,0.0
+East,Jharkhand,others,2019,current,0.0
+East,Jharkhand,others,2020,previous,0.0
+East,Jharkhand,others,2021,current,0.0
+East,Jharkhand,others,2022,current,0.0
+East,Jharkhand,others,2023,current,0.0
+East,Jharkhand,others,2024,current,0.0
+East,Jharkhand,others,2025,current,0.0
+East,Jharkhand,others,2026,current,0.0
+East,Jharkhand,small_hydro,2018,previous,0.0
+East,Jharkhand,small_hydro,2019,current,0.0
+East,Jharkhand,small_hydro,2020,previous,5.43
+East,Jharkhand,small_hydro,2021,current,1.13
+East,Jharkhand,small_hydro,2022,current,10.49
+East,Jharkhand,small_hydro,2023,current,2.4
+East,Jharkhand,small_hydro,2024,current,5.52
+East,Jharkhand,small_hydro,2025,current,6.25
+East,Jharkhand,small_hydro,2026,current,19.29
+East,Jharkhand,solar,2018,previous,19.47
+East,Jharkhand,solar,2019,current,19.14
+East,Jharkhand,solar,2020,previous,17.47
+East,Jharkhand,solar,2021,current,17.16
+East,Jharkhand,solar,2022,current,18.21
+East,Jharkhand,solar,2023,current,19.7
+East,Jharkhand,solar,2024,current,17.64
+East,Jharkhand,solar,2025,current,17.64
+East,Jharkhand,solar,2026,current,17.64
+East,Jharkhand,wind,2018,previous,0.0
+East,Jharkhand,wind,2019,current,0.0
+East,Jharkhand,wind,2020,previous,0.0
+East,Jharkhand,wind,2021,current,0.0
+East,Jharkhand,wind,2022,current,0.0
+East,Jharkhand,wind,2023,current,0.0
+East,Jharkhand,wind,2024,current,0.0
+East,Jharkhand,wind,2025,current,0.0
+East,Jharkhand,wind,2026,current,0.0
+East,Odisha,bagasse,2018,previous,0.0
+East,Odisha,bagasse,2019,current,0.0
+East,Odisha,bagasse,2020,previous,0.0
+East,Odisha,bagasse,2021,current,0.0
+East,Odisha,bagasse,2022,current,0.0
+East,Odisha,bagasse,2023,current,0.0
+East,Odisha,bagasse,2024,current,0.0
+East,Odisha,bagasse,2025,current,0.0
+East,Odisha,bagasse,2026,current,0.0
+East,Odisha,biomass,2018,previous,47.22
+East,Odisha,biomass,2019,current,66.08
+East,Odisha,biomass,2020,previous,66.59
+East,Odisha,biomass,2021,current,42.71
+East,Odisha,biomass,2022,current,100.08
+East,Odisha,biomass,2023,current,60.95
+East,Odisha,biomass,2024,current,96.07
+East,Odisha,biomass,2025,current,53.8
+East,Odisha,biomass,2026,current,86.53
+East,Odisha,large_hydro,2023,previous,5462.81
+East,Odisha,large_hydro,2024,current,6162.2
+East,Odisha,large_hydro,2025,current,6285.36
+East,Odisha,large_hydro,2026,current,7253.62
+East,Odisha,others,2018,previous,0.0
+East,Odisha,others,2019,current,0.0
+East,Odisha,others,2020,previous,0.0
+East,Odisha,others,2021,current,0.0
+East,Odisha,others,2022,current,0.0
+East,Odisha,others,2023,current,0.0
+East,Odisha,others,2024,current,0.0
+East,Odisha,others,2025,current,0.0
+East,Odisha,others,2026,current,0.0
+East,Odisha,small_hydro,2018,previous,265.57
+East,Odisha,small_hydro,2019,current,266.1
+East,Odisha,small_hydro,2020,previous,299.65
+East,Odisha,small_hydro,2021,current,358.8
+East,Odisha,small_hydro,2022,current,377.31
+East,Odisha,small_hydro,2023,current,424.92
+East,Odisha,small_hydro,2024,current,407.97
+East,Odisha,small_hydro,2025,current,457.2
+East,Odisha,small_hydro,2026,current,620.05
+East,Odisha,solar,2018,previous,204.77
+East,Odisha,solar,2019,current,249.13
+East,Odisha,solar,2020,previous,362.29
+East,Odisha,solar,2021,current,476.26
+East,Odisha,solar,2022,current,603.71
+East,Odisha,solar,2023,current,706.24
+East,Odisha,solar,2024,current,757.69
+East,Odisha,solar,2025,current,786.75
+East,Odisha,solar,2026,current,909.33
+East,Odisha,wind,2018,previous,0.0
+East,Odisha,wind,2019,current,58.23
+East,Odisha,wind,2020,previous,54.66
+East,Odisha,wind,2021,current,0.0
+East,Odisha,wind,2022,current,0.0
+East,Odisha,wind,2023,current,0.0
+East,Odisha,wind,2024,current,0.0
+East,Odisha,wind,2025,current,0.0
+East,Odisha,wind,2026,current,0.0
+East,Sikkim,bagasse,2018,previous,0.0
+East,Sikkim,bagasse,2019,current,0.0
+East,Sikkim,bagasse,2020,previous,0.0
+East,Sikkim,bagasse,2021,current,0.0
+East,Sikkim,bagasse,2022,current,0.0
+East,Sikkim,bagasse,2023,current,0.0
+East,Sikkim,bagasse,2024,current,0.0
+East,Sikkim,bagasse,2025,current,0.0
+East,Sikkim,bagasse,2026,current,0.0
+East,Sikkim,biomass,2018,previous,0.0
+East,Sikkim,biomass,2019,current,0.0
+East,Sikkim,biomass,2020,previous,0.0
+East,Sikkim,biomass,2021,current,0.0
+East,Sikkim,biomass,2022,current,0.0
+East,Sikkim,biomass,2023,current,0.0
+East,Sikkim,biomass,2024,current,0.0
+East,Sikkim,biomass,2025,current,0.0
+East,Sikkim,biomass,2026,current,0.0
+East,Sikkim,large_hydro,2023,previous,11696.79
+East,Sikkim,large_hydro,2024,current,8609.86
+East,Sikkim,large_hydro,2025,current,2012.67
+East,Sikkim,large_hydro,2026,current,2602.18
+East,Sikkim,others,2018,previous,0.0
+East,Sikkim,others,2019,current,0.0
+East,Sikkim,others,2020,previous,0.0
+East,Sikkim,others,2021,current,0.0
+East,Sikkim,others,2022,current,0.0
+East,Sikkim,others,2023,current,0.0
+East,Sikkim,others,2024,current,0.0
+East,Sikkim,others,2025,current,0.0
+East,Sikkim,others,2026,current,0.0
+East,Sikkim,small_hydro,2018,previous,30.54
+East,Sikkim,small_hydro,2019,current,28.1
+East,Sikkim,small_hydro,2020,previous,60.62
+East,Sikkim,small_hydro,2021,current,55.96
+East,Sikkim,small_hydro,2022,current,12.35
+East,Sikkim,small_hydro,2023,current,12.35
+East,Sikkim,small_hydro,2024,current,12.35
+East,Sikkim,small_hydro,2025,current,12.35
+East,Sikkim,small_hydro,2026,current,12.35
+East,Sikkim,solar,2018,previous,0.0
+East,Sikkim,solar,2019,current,0.0
+East,Sikkim,solar,2020,previous,0.0
+East,Sikkim,solar,2021,current,0.0
+East,Sikkim,solar,2022,current,0.0
+East,Sikkim,solar,2023,current,0.0
+East,Sikkim,solar,2024,current,0.0
+East,Sikkim,solar,2025,current,0.0
+East,Sikkim,solar,2026,current,0.0
+East,Sikkim,wind,2018,previous,0.0
+East,Sikkim,wind,2019,current,0.0
+East,Sikkim,wind,2020,previous,0.0
+East,Sikkim,wind,2021,current,0.0
+East,Sikkim,wind,2022,current,0.0
+East,Sikkim,wind,2023,current,0.0
+East,Sikkim,wind,2024,current,0.0
+East,Sikkim,wind,2025,current,0.0
+East,Sikkim,wind,2026,current,0.0
+East,West Bengal,bagasse,2018,previous,1387.01
+East,West Bengal,bagasse,2019,current,1283.69
+East,West Bengal,bagasse,2020,previous,1295.07
+East,West Bengal,bagasse,2021,current,148.73
+East,West Bengal,bagasse,2022,current,0.0
+East,West Bengal,bagasse,2023,current,0.0
+East,West Bengal,bagasse,2024,current,0.0
+East,West Bengal,bagasse,2025,current,0.0
+East,West Bengal,bagasse,2026,current,0.0
+East,West Bengal,biomass,2018,previous,0.0
+East,West Bengal,biomass,2019,current,0.0
+East,West Bengal,biomass,2020,previous,0.0
+East,West Bengal,biomass,2021,current,0.0
+East,West Bengal,biomass,2022,current,0.0
+East,West Bengal,biomass,2023,current,0.0
+East,West Bengal,biomass,2024,current,2.49
+East,West Bengal,biomass,2025,current,0.0
+East,West Bengal,biomass,2026,current,0.0
+East,West Bengal,large_hydro,2023,previous,3423.73
+East,West Bengal,large_hydro,2024,current,2816.49
+East,West Bengal,large_hydro,2025,current,2649.7
+East,West Bengal,large_hydro,2026,current,2609.26
+East,West Bengal,others,2018,previous,0.0
+East,West Bengal,others,2019,current,0.0
+East,West Bengal,others,2020,previous,0.0
+East,West Bengal,others,2021,current,1200.99
+East,West Bengal,others,2022,current,1593.96
+East,West Bengal,others,2023,current,1629.64
+East,West Bengal,others,2024,current,1545.13
+East,West Bengal,others,2025,current,1462.46
+East,West Bengal,others,2026,current,1461.93
+East,West Bengal,small_hydro,2018,previous,183.05
+East,West Bengal,small_hydro,2019,current,161.86
+East,West Bengal,small_hydro,2020,previous,115.68
+East,West Bengal,small_hydro,2021,current,107.06
+East,West Bengal,small_hydro,2022,current,152.89
+East,West Bengal,small_hydro,2023,current,204.44
+East,West Bengal,small_hydro,2024,current,204.46
+East,West Bengal,small_hydro,2025,current,183.3
+East,West Bengal,small_hydro,2026,current,184.4
+East,West Bengal,solar,2018,previous,20.47
+East,West Bengal,solar,2019,current,40.61
+East,West Bengal,solar,2020,previous,64.29
+East,West Bengal,solar,2021,current,73.89
+East,West Bengal,solar,2022,current,98.24
+East,West Bengal,solar,2023,current,125.04
+East,West Bengal,solar,2024,current,168.32
+East,West Bengal,solar,2025,current,320.75
+East,West Bengal,solar,2026,current,418.49
+East,West Bengal,wind,2018,previous,0.0
+East,West Bengal,wind,2019,current,0.0
+East,West Bengal,wind,2020,previous,0.0
+East,West Bengal,wind,2021,current,0.0
+East,West Bengal,wind,2022,current,0.0
+East,West Bengal,wind,2023,current,0.0
+East,West Bengal,wind,2024,current,0.0
+East,West Bengal,wind,2025,current,0.0
+East,West Bengal,wind,2026,current,0.0
+North,Chandigarh,bagasse,2018,previous,0.0
+North,Chandigarh,bagasse,2019,current,0.0
+North,Chandigarh,bagasse,2020,previous,0.0
+North,Chandigarh,bagasse,2021,current,0.0
+North,Chandigarh,bagasse,2022,current,0.0
+North,Chandigarh,bagasse,2023,current,0.0
+North,Chandigarh,bagasse,2024,current,0.0
+North,Chandigarh,bagasse,2025,current,0.0
+North,Chandigarh,bagasse,2026,current,0.0
+North,Chandigarh,biomass,2018,previous,0.0
+North,Chandigarh,biomass,2019,current,0.0
+North,Chandigarh,biomass,2020,previous,0.0
+North,Chandigarh,biomass,2021,current,0.0
+North,Chandigarh,biomass,2022,current,0.0
+North,Chandigarh,biomass,2023,current,0.0
+North,Chandigarh,biomass,2024,current,0.0
+North,Chandigarh,biomass,2025,current,0.0
+North,Chandigarh,biomass,2026,current,0.0
+North,Chandigarh,large_hydro,2023,previous,0.0
+North,Chandigarh,large_hydro,2024,current,0.0
+North,Chandigarh,large_hydro,2025,current,0.0
+North,Chandigarh,large_hydro,2026,current,0.0
+North,Chandigarh,others,2018,previous,0.0
+North,Chandigarh,others,2019,current,0.0
+North,Chandigarh,others,2020,previous,0.0
+North,Chandigarh,others,2021,current,0.0
+North,Chandigarh,others,2022,current,0.0
+North,Chandigarh,others,2023,current,0.0
+North,Chandigarh,others,2024,current,0.0
+North,Chandigarh,others,2025,current,0.0
+North,Chandigarh,others,2026,current,0.0
+North,Chandigarh,small_hydro,2018,previous,0.0
+North,Chandigarh,small_hydro,2019,current,0.0
+North,Chandigarh,small_hydro,2020,previous,0.0
+North,Chandigarh,small_hydro,2021,current,0.0
+North,Chandigarh,small_hydro,2022,current,0.0
+North,Chandigarh,small_hydro,2023,current,0.0
+North,Chandigarh,small_hydro,2024,current,0.0
+North,Chandigarh,small_hydro,2025,current,0.0
+North,Chandigarh,small_hydro,2026,current,0.0
+North,Chandigarh,solar,2018,previous,7.87
+North,Chandigarh,solar,2019,current,13.51
+North,Chandigarh,solar,2020,previous,13.33
+North,Chandigarh,solar,2021,current,10.16
+North,Chandigarh,solar,2022,current,14.19
+North,Chandigarh,solar,2023,current,12.61
+North,Chandigarh,solar,2024,current,11.7
+North,Chandigarh,solar,2025,current,8.79
+North,Chandigarh,solar,2026,current,7.94
+North,Chandigarh,wind,2018,previous,0.0
+North,Chandigarh,wind,2019,current,0.0
+North,Chandigarh,wind,2020,previous,0.0
+North,Chandigarh,wind,2021,current,0.0
+North,Chandigarh,wind,2022,current,0.0
+North,Chandigarh,wind,2023,current,0.0
+North,Chandigarh,wind,2024,current,0.0
+North,Chandigarh,wind,2025,current,0.0
+North,Chandigarh,wind,2026,current,0.0
+North,Delhi,bagasse,2018,previous,0.0
+North,Delhi,bagasse,2019,current,0.0
+North,Delhi,bagasse,2020,previous,0.0
+North,Delhi,bagasse,2021,current,0.0
+North,Delhi,bagasse,2022,current,0.0
+North,Delhi,bagasse,2023,current,0.0
+North,Delhi,bagasse,2024,current,0.0
+North,Delhi,bagasse,2025,current,0.0
+North,Delhi,bagasse,2026,current,0.0
+North,Delhi,biomass,2018,previous,0.0
+North,Delhi,biomass,2019,current,0.0
+North,Delhi,biomass,2020,previous,0.0
+North,Delhi,biomass,2021,current,0.0
+North,Delhi,biomass,2022,current,0.0
+North,Delhi,biomass,2023,current,0.0
+North,Delhi,biomass,2024,current,0.0
+North,Delhi,biomass,2025,current,0.0
+North,Delhi,biomass,2026,current,0.0
+North,Delhi,large_hydro,2023,previous,0.0
+North,Delhi,large_hydro,2024,current,0.0
+North,Delhi,large_hydro,2025,current,0.0
+North,Delhi,large_hydro,2026,current,0.0
+North,Delhi,others,2018,previous,227.68
+North,Delhi,others,2019,current,276.81
+North,Delhi,others,2020,previous,287.39
+North,Delhi,others,2021,current,236.71
+North,Delhi,others,2022,current,232.89
+North,Delhi,others,2023,current,294.09
+North,Delhi,others,2024,current,522.28
+North,Delhi,others,2025,current,542.41
+North,Delhi,others,2026,current,493.58
+North,Delhi,small_hydro,2018,previous,0.0
+North,Delhi,small_hydro,2019,current,0.0
+North,Delhi,small_hydro,2020,previous,0.0
+North,Delhi,small_hydro,2021,current,0.0
+North,Delhi,small_hydro,2022,current,0.0
+North,Delhi,small_hydro,2023,current,0.0
+North,Delhi,small_hydro,2024,current,0.0
+North,Delhi,small_hydro,2025,current,0.0
+North,Delhi,small_hydro,2026,current,0.0
+North,Delhi,solar,2018,previous,13.41
+North,Delhi,solar,2019,current,10.84
+North,Delhi,solar,2020,previous,136.3
+North,Delhi,solar,2021,current,189.99
+North,Delhi,solar,2022,current,225.84
+North,Delhi,solar,2023,current,236.11
+North,Delhi,solar,2024,current,206.53
+North,Delhi,solar,2025,current,206.53
+North,Delhi,solar,2026,current,206.53
+North,Delhi,wind,2018,previous,0.0
+North,Delhi,wind,2019,current,0.0
+North,Delhi,wind,2020,previous,0.0
+North,Delhi,wind,2021,current,0.0
+North,Delhi,wind,2022,current,0.0
+North,Delhi,wind,2023,current,0.0
+North,Delhi,wind,2024,current,0.0
+North,Delhi,wind,2025,current,0.0
+North,Delhi,wind,2026,current,0.0
+North,Haryana,bagasse,2018,previous,90.1
+North,Haryana,bagasse,2019,current,146.37
+North,Haryana,bagasse,2020,previous,94.57
+North,Haryana,bagasse,2021,current,142.34
+North,Haryana,bagasse,2022,current,96.75
+North,Haryana,bagasse,2023,current,203.01
+North,Haryana,bagasse,2024,current,83.6
+North,Haryana,bagasse,2025,current,44.6
+North,Haryana,bagasse,2026,current,62.92
+North,Haryana,biomass,2018,previous,195.66
+North,Haryana,biomass,2019,current,192.68
+North,Haryana,biomass,2020,previous,186.9
+North,Haryana,biomass,2021,current,178.88
+North,Haryana,biomass,2022,current,171.6
+North,Haryana,biomass,2023,current,356.07
+North,Haryana,biomass,2024,current,294.12
+North,Haryana,biomass,2025,current,359.23
+North,Haryana,biomass,2026,current,413.12
+North,Haryana,large_hydro,2023,previous,0.0
+North,Haryana,large_hydro,2024,current,0.0
+North,Haryana,large_hydro,2025,current,0.0
+North,Haryana,large_hydro,2026,current,0.0
+North,Haryana,others,2018,previous,0.0
+North,Haryana,others,2019,current,0.0
+North,Haryana,others,2020,previous,0.0
+North,Haryana,others,2021,current,0.0
+North,Haryana,others,2022,current,24.09
+North,Haryana,others,2023,current,63.55
+North,Haryana,others,2024,current,58.82
+North,Haryana,others,2025,current,49.13
+North,Haryana,others,2026,current,52.35
+North,Haryana,small_hydro,2018,previous,210.29
+North,Haryana,small_hydro,2019,current,250.84
+North,Haryana,small_hydro,2020,previous,326.89
+North,Haryana,small_hydro,2021,current,276.58
+North,Haryana,small_hydro,2022,current,270.13
+North,Haryana,small_hydro,2023,current,241.9
+North,Haryana,small_hydro,2024,current,222.05
+North,Haryana,small_hydro,2025,current,314.64
+North,Haryana,small_hydro,2026,current,239.74
+North,Haryana,solar,2018,previous,64.65
+North,Haryana,solar,2019,current,65.95
+North,Haryana,solar,2020,previous,125.14
+North,Haryana,solar,2021,current,162.95
+North,Haryana,solar,2022,current,572.85
+North,Haryana,solar,2023,current,555.2
+North,Haryana,solar,2024,current,992.91
+North,Haryana,solar,2025,current,1470.02
+North,Haryana,solar,2026,current,1612.32
+North,Haryana,wind,2018,previous,0.0
+North,Haryana,wind,2019,current,0.0
+North,Haryana,wind,2020,previous,0.0
+North,Haryana,wind,2021,current,0.0
+North,Haryana,wind,2022,current,0.0
+North,Haryana,wind,2023,current,0.0
+North,Haryana,wind,2024,current,0.0
+North,Haryana,wind,2025,current,0.0
+North,Haryana,wind,2026,current,0.0
+North,Himachal Pradesh,bagasse,2018,previous,0.0
+North,Himachal Pradesh,bagasse,2019,current,0.0
+North,Himachal Pradesh,bagasse,2020,previous,0.0
+North,Himachal Pradesh,bagasse,2021,current,0.0
+North,Himachal Pradesh,bagasse,2022,current,0.0
+North,Himachal Pradesh,bagasse,2023,current,0.0
+North,Himachal Pradesh,bagasse,2024,current,0.0
+North,Himachal Pradesh,bagasse,2025,current,0.0
+North,Himachal Pradesh,bagasse,2026,current,0.0
+North,Himachal Pradesh,biomass,2018,previous,0.0
+North,Himachal Pradesh,biomass,2019,current,0.0
+North,Himachal Pradesh,biomass,2020,previous,0.0
+North,Himachal Pradesh,biomass,2021,current,0.0
+North,Himachal Pradesh,biomass,2022,current,0.0
+North,Himachal Pradesh,biomass,2023,current,0.0
+North,Himachal Pradesh,biomass,2024,current,0.0
+North,Himachal Pradesh,biomass,2025,current,0.0
+North,Himachal Pradesh,biomass,2026,current,0.0
+North,Himachal Pradesh,large_hydro,2023,previous,38666.99
+North,Himachal Pradesh,large_hydro,2024,current,36365.85
+North,Himachal Pradesh,large_hydro,2025,current,39386.29
+North,Himachal Pradesh,large_hydro,2026,current,42827.62
+North,Himachal Pradesh,others,2018,previous,0.0
+North,Himachal Pradesh,others,2019,current,0.0
+North,Himachal Pradesh,others,2020,previous,0.0
+North,Himachal Pradesh,others,2021,current,0.0
+North,Himachal Pradesh,others,2022,current,0.0
+North,Himachal Pradesh,others,2023,current,0.0
+North,Himachal Pradesh,others,2024,current,0.0
+North,Himachal Pradesh,others,2025,current,0.0
+North,Himachal Pradesh,others,2026,current,0.0
+North,Himachal Pradesh,small_hydro,2018,previous,1903.05
+North,Himachal Pradesh,small_hydro,2019,current,2287.93
+North,Himachal Pradesh,small_hydro,2020,previous,2155.58
+North,Himachal Pradesh,small_hydro,2021,current,2123.78
+North,Himachal Pradesh,small_hydro,2022,current,1999.47
+North,Himachal Pradesh,small_hydro,2023,current,2854.07
+North,Himachal Pradesh,small_hydro,2024,current,2526.98
+North,Himachal Pradesh,small_hydro,2025,current,3040.9
+North,Himachal Pradesh,small_hydro,2026,current,2693.75
+North,Himachal Pradesh,solar,2018,previous,0.0
+North,Himachal Pradesh,solar,2019,current,0.0
+North,Himachal Pradesh,solar,2020,previous,11.66
+North,Himachal Pradesh,solar,2021,current,36.52
+North,Himachal Pradesh,solar,2022,current,44.29
+North,Himachal Pradesh,solar,2023,current,58.76
+North,Himachal Pradesh,solar,2024,current,59.54
+North,Himachal Pradesh,solar,2025,current,107.24
+North,Himachal Pradesh,solar,2026,current,201.53
+North,Himachal Pradesh,wind,2018,previous,0.0
+North,Himachal Pradesh,wind,2019,current,0.0
+North,Himachal Pradesh,wind,2020,previous,0.0
+North,Himachal Pradesh,wind,2021,current,0.0
+North,Himachal Pradesh,wind,2022,current,0.0
+North,Himachal Pradesh,wind,2023,current,0.0
+North,Himachal Pradesh,wind,2024,current,0.0
+North,Himachal Pradesh,wind,2025,current,0.0
+North,Himachal Pradesh,wind,2026,current,0.0
+North,Jammu & Kashmir,bagasse,2018,previous,0.0
+North,Jammu & Kashmir,bagasse,2019,current,0.0
+North,Jammu & Kashmir,bagasse,2020,previous,0.0
+North,Jammu & Kashmir,bagasse,2021,current,0.0
+North,Jammu & Kashmir,bagasse,2022,current,0.0
+North,Jammu & Kashmir,bagasse,2023,current,0.0
+North,Jammu & Kashmir,bagasse,2024,current,0.0
+North,Jammu & Kashmir,bagasse,2025,current,0.0
+North,Jammu & Kashmir,bagasse,2026,current,0.0
+North,Jammu & Kashmir,biomass,2018,previous,0.0
+North,Jammu & Kashmir,biomass,2019,current,0.0
+North,Jammu & Kashmir,biomass,2020,previous,0.0
+North,Jammu & Kashmir,biomass,2021,current,0.0
+North,Jammu & Kashmir,biomass,2022,current,0.0
+North,Jammu & Kashmir,biomass,2023,current,0.0
+North,Jammu & Kashmir,biomass,2024,current,0.0
+North,Jammu & Kashmir,biomass,2025,current,0.0
+North,Jammu & Kashmir,biomass,2026,current,0.0
+North,Jammu & Kashmir,large_hydro,2023,previous,16777.42
+North,Jammu & Kashmir,large_hydro,2024,current,15874.24
+North,Jammu & Kashmir,large_hydro,2025,current,15200.65
+North,Jammu & Kashmir,large_hydro,2026,current,15663.32
+North,Jammu & Kashmir,others,2018,previous,0.0
+North,Jammu & Kashmir,others,2019,current,0.0
+North,Jammu & Kashmir,others,2020,previous,0.0
+North,Jammu & Kashmir,others,2021,current,0.0
+North,Jammu & Kashmir,others,2022,current,0.0
+North,Jammu & Kashmir,others,2023,current,0.0
+North,Jammu & Kashmir,others,2024,current,0.0
+North,Jammu & Kashmir,others,2025,current,0.0
+North,Jammu & Kashmir,others,2026,current,0.0
+North,Jammu & Kashmir,small_hydro,2018,previous,324.37
+North,Jammu & Kashmir,small_hydro,2019,current,312.2
+North,Jammu & Kashmir,small_hydro,2020,previous,443.13
+North,Jammu & Kashmir,small_hydro,2021,current,429.88
+North,Jammu & Kashmir,small_hydro,2022,current,414.1
+North,Jammu & Kashmir,small_hydro,2023,current,393.2
+North,Jammu & Kashmir,small_hydro,2024,current,408.69
+North,Jammu & Kashmir,small_hydro,2025,current,395.17
+North,Jammu & Kashmir,small_hydro,2026,current,413.6
+North,Jammu & Kashmir,solar,2018,previous,0.0
+North,Jammu & Kashmir,solar,2019,current,0.0
+North,Jammu & Kashmir,solar,2020,previous,0.0
+North,Jammu & Kashmir,solar,2021,current,9.42
+North,Jammu & Kashmir,solar,2022,current,1.71
+North,Jammu & Kashmir,solar,2023,current,0.0
+North,Jammu & Kashmir,solar,2024,current,0.0
+North,Jammu & Kashmir,solar,2025,current,0.0
+North,Jammu & Kashmir,solar,2026,current,0.0
+North,Jammu & Kashmir,wind,2018,previous,0.0
+North,Jammu & Kashmir,wind,2019,current,0.0
+North,Jammu & Kashmir,wind,2020,previous,0.0
+North,Jammu & Kashmir,wind,2021,current,0.0
+North,Jammu & Kashmir,wind,2022,current,0.0
+North,Jammu & Kashmir,wind,2023,current,0.0
+North,Jammu & Kashmir,wind,2024,current,0.0
+North,Jammu & Kashmir,wind,2025,current,0.0
+North,Jammu & Kashmir,wind,2026,current,0.0
+North,Ladakh,bagasse,2020,previous,0.0
+North,Ladakh,bagasse,2021,current,0.0
+North,Ladakh,bagasse,2022,current,0.0
+North,Ladakh,bagasse,2023,current,0.0
+North,Ladakh,bagasse,2024,current,0.0
+North,Ladakh,bagasse,2025,current,0.0
+North,Ladakh,bagasse,2026,current,0.0
+North,Ladakh,biomass,2020,previous,0.0
+North,Ladakh,biomass,2021,current,0.0
+North,Ladakh,biomass,2022,current,0.0
+North,Ladakh,biomass,2023,current,0.0
+North,Ladakh,biomass,2024,current,0.0
+North,Ladakh,biomass,2025,current,0.0
+North,Ladakh,biomass,2026,current,0.0
+North,Ladakh,large_hydro,2023,previous,402.78
+North,Ladakh,large_hydro,2024,current,388.48
+North,Ladakh,large_hydro,2025,current,413.06
+North,Ladakh,large_hydro,2026,current,465.24
+North,Ladakh,others,2020,previous,0.0
+North,Ladakh,others,2021,current,0.0
+North,Ladakh,others,2022,current,0.0
+North,Ladakh,others,2023,current,0.0
+North,Ladakh,others,2024,current,0.0
+North,Ladakh,others,2025,current,0.0
+North,Ladakh,others,2026,current,0.0
+North,Ladakh,small_hydro,2020,previous,0.0
+North,Ladakh,small_hydro,2021,current,0.0
+North,Ladakh,small_hydro,2022,current,0.0
+North,Ladakh,small_hydro,2023,current,0.0
+North,Ladakh,small_hydro,2024,current,0.0
+North,Ladakh,small_hydro,2025,current,0.0
+North,Ladakh,small_hydro,2026,current,0.0
+North,Ladakh,solar,2020,previous,0.0
+North,Ladakh,solar,2021,current,0.0
+North,Ladakh,solar,2022,current,0.0
+North,Ladakh,solar,2023,current,0.0
+North,Ladakh,solar,2024,current,0.0
+North,Ladakh,solar,2025,current,0.0
+North,Ladakh,solar,2026,current,0.0
+North,Ladakh,wind,2020,previous,0.0
+North,Ladakh,wind,2021,current,0.0
+North,Ladakh,wind,2022,current,0.0
+North,Ladakh,wind,2023,current,0.0
+North,Ladakh,wind,2024,current,0.0
+North,Ladakh,wind,2025,current,0.0
+North,Ladakh,wind,2026,current,0.0
+North,Punjab,bagasse,2018,previous,204.5
+North,Punjab,bagasse,2019,current,245.18
+North,Punjab,bagasse,2020,previous,252.84
+North,Punjab,bagasse,2021,current,231.5
+North,Punjab,bagasse,2022,current,208.3
+North,Punjab,bagasse,2023,current,210.76
+North,Punjab,bagasse,2024,current,197.99
+North,Punjab,bagasse,2025,current,348.11
+North,Punjab,bagasse,2026,current,239.58
+North,Punjab,biomass,2018,previous,489.68
+North,Punjab,biomass,2019,current,355.9
+North,Punjab,biomass,2020,previous,398.37
+North,Punjab,biomass,2021,current,585.99
+North,Punjab,biomass,2022,current,576.83
+North,Punjab,biomass,2023,current,497.68
+North,Punjab,biomass,2024,current,613.44
+North,Punjab,biomass,2025,current,692.06
+North,Punjab,biomass,2026,current,690.11
+North,Punjab,large_hydro,2023,previous,4399.65
+North,Punjab,large_hydro,2024,current,4676.42
+North,Punjab,large_hydro,2025,current,4126.11
+North,Punjab,large_hydro,2026,current,4291.63
+North,Punjab,others,2018,previous,0.0
+North,Punjab,others,2019,current,0.0
+North,Punjab,others,2020,previous,0.32
+North,Punjab,others,2021,current,0.17
+North,Punjab,others,2022,current,0.24
+North,Punjab,others,2023,current,0.0
+North,Punjab,others,2024,current,0.0
+North,Punjab,others,2025,current,0.0
+North,Punjab,others,2026,current,0.0
+North,Punjab,small_hydro,2018,previous,217.62
+North,Punjab,small_hydro,2019,current,351.23
+North,Punjab,small_hydro,2020,previous,712.77
+North,Punjab,small_hydro,2021,current,690.33
+North,Punjab,small_hydro,2022,current,983.37
+North,Punjab,small_hydro,2023,current,682.48
+North,Punjab,small_hydro,2024,current,636.97
+North,Punjab,small_hydro,2025,current,734.01
+North,Punjab,small_hydro,2026,current,447.23
+North,Punjab,solar,2018,previous,1432.07
+North,Punjab,solar,2019,current,1492.9
+North,Punjab,solar,2020,previous,1358.22
+North,Punjab,solar,2021,current,1356.48
+North,Punjab,solar,2022,current,1473.41
+North,Punjab,solar,2023,current,2778.66
+North,Punjab,solar,2024,current,2673.99
+North,Punjab,solar,2025,current,1372.73
+North,Punjab,solar,2026,current,1361.9
+North,Punjab,wind,2018,previous,0.0
+North,Punjab,wind,2019,current,0.0
+North,Punjab,wind,2020,previous,16.9
+North,Punjab,wind,2021,current,0.0
+North,Punjab,wind,2022,current,0.0
+North,Punjab,wind,2023,current,0.0
+North,Punjab,wind,2024,current,0.0
+North,Punjab,wind,2025,current,0.0
+North,Punjab,wind,2026,current,0.0
+North,Rajasthan,bagasse,2018,previous,0.0
+North,Rajasthan,bagasse,2019,current,0.0
+North,Rajasthan,bagasse,2020,previous,0.0
+North,Rajasthan,bagasse,2021,current,0.0
+North,Rajasthan,bagasse,2022,current,0.0
+North,Rajasthan,bagasse,2023,current,0.0
+North,Rajasthan,bagasse,2024,current,0.0
+North,Rajasthan,bagasse,2025,current,0.0
+North,Rajasthan,bagasse,2026,current,0.0
+North,Rajasthan,biomass,2018,previous,340.84
+North,Rajasthan,biomass,2019,current,345.09
+North,Rajasthan,biomass,2020,previous,389.94
+North,Rajasthan,biomass,2021,current,413.24
+North,Rajasthan,biomass,2022,current,378.4
+North,Rajasthan,biomass,2023,current,397.05
+North,Rajasthan,biomass,2024,current,387.55
+North,Rajasthan,biomass,2025,current,400.85
+North,Rajasthan,biomass,2026,current,777.1
+North,Rajasthan,large_hydro,2023,previous,967.43
+North,Rajasthan,large_hydro,2024,current,1013.97
+North,Rajasthan,large_hydro,2025,current,905.8
+North,Rajasthan,large_hydro,2026,current,1070.61
+North,Rajasthan,others,2018,previous,0.0
+North,Rajasthan,others,2019,current,0.0
+North,Rajasthan,others,2020,previous,0.0
+North,Rajasthan,others,2021,current,0.0
+North,Rajasthan,others,2022,current,0.0
+North,Rajasthan,others,2023,current,0.0
+North,Rajasthan,others,2024,current,0.0
+North,Rajasthan,others,2025,current,0.0
+North,Rajasthan,others,2026,current,0.0
+North,Rajasthan,small_hydro,2018,previous,8.69
+North,Rajasthan,small_hydro,2019,current,5.17
+North,Rajasthan,small_hydro,2020,previous,9.75
+North,Rajasthan,small_hydro,2021,current,10.64
+North,Rajasthan,small_hydro,2022,current,7.85
+North,Rajasthan,small_hydro,2023,current,7.17
+North,Rajasthan,small_hydro,2024,current,7.45
+North,Rajasthan,small_hydro,2025,current,4.15
+North,Rajasthan,small_hydro,2026,current,6.52
+North,Rajasthan,solar,2018,previous,3494.71
+North,Rajasthan,solar,2019,current,4659.13
+North,Rajasthan,solar,2020,previous,7776.56
+North,Rajasthan,solar,2021,current,10384.24
+North,Rajasthan,solar,2022,current,17219.88
+North,Rajasthan,solar,2023,current,34474.43
+North,Rajasthan,solar,2024,current,38363.29
+North,Rajasthan,solar,2025,current,49101.62
+North,Rajasthan,solar,2026,current,59921.18
+North,Rajasthan,wind,2018,previous,5891.24
+North,Rajasthan,wind,2019,current,6403.79
+North,Rajasthan,wind,2020,previous,6155.8
+North,Rajasthan,wind,2021,current,5708.24
+North,Rajasthan,wind,2022,current,6493.19
+North,Rajasthan,wind,2023,current,6111.41
+North,Rajasthan,wind,2024,current,8390.67
+North,Rajasthan,wind,2025,current,6941.26
+North,Rajasthan,wind,2026,current,7345.17
+North,Uttar Pradesh,bagasse,2018,previous,3809.79
+North,Uttar Pradesh,bagasse,2019,current,4324.4
+North,Uttar Pradesh,bagasse,2020,previous,3530.11
+North,Uttar Pradesh,bagasse,2021,current,3590.87
+North,Uttar Pradesh,bagasse,2022,current,3160.39
+North,Uttar Pradesh,bagasse,2023,current,3183.67
+North,Uttar Pradesh,bagasse,2024,current,2923.55
+North,Uttar Pradesh,bagasse,2025,current,2457.35
+North,Uttar Pradesh,bagasse,2026,current,2362.59
+North,Uttar Pradesh,biomass,2018,previous,129.3
+North,Uttar Pradesh,biomass,2019,current,104.04
+North,Uttar Pradesh,biomass,2020,previous,129.63
+North,Uttar Pradesh,biomass,2021,current,135.82
+North,Uttar Pradesh,biomass,2022,current,85.2
+North,Uttar Pradesh,biomass,2023,current,66.35
+North,Uttar Pradesh,biomass,2024,current,46.65
+North,Uttar Pradesh,biomass,2025,current,76.48
+North,Uttar Pradesh,biomass,2026,current,106.55
+North,Uttar Pradesh,large_hydro,2023,previous,974.03
+North,Uttar Pradesh,large_hydro,2024,current,850.64
+North,Uttar Pradesh,large_hydro,2025,current,1273.74
+North,Uttar Pradesh,large_hydro,2026,current,1775.64
+North,Uttar Pradesh,others,2018,previous,0.0
+North,Uttar Pradesh,others,2019,current,0.0
+North,Uttar Pradesh,others,2020,previous,0.0
+North,Uttar Pradesh,others,2021,current,0.0
+North,Uttar Pradesh,others,2022,current,20.4
+North,Uttar Pradesh,others,2023,current,58.45
+North,Uttar Pradesh,others,2024,current,84.85
+North,Uttar Pradesh,others,2025,current,29.88
+North,Uttar Pradesh,others,2026,current,36.63
+North,Uttar Pradesh,small_hydro,2018,previous,30.18
+North,Uttar Pradesh,small_hydro,2019,current,19.01
+North,Uttar Pradesh,small_hydro,2020,previous,36.43
+North,Uttar Pradesh,small_hydro,2021,current,164.91
+North,Uttar Pradesh,small_hydro,2022,current,162.54
+North,Uttar Pradesh,small_hydro,2023,current,234.69
+North,Uttar Pradesh,small_hydro,2024,current,175.24
+North,Uttar Pradesh,small_hydro,2025,current,179.0
+North,Uttar Pradesh,small_hydro,2026,current,87.55
+North,Uttar Pradesh,solar,2018,previous,637.02
+North,Uttar Pradesh,solar,2019,current,1192.85
+North,Uttar Pradesh,solar,2020,previous,1447.05
+North,Uttar Pradesh,solar,2021,current,1856.19
+North,Uttar Pradesh,solar,2022,current,2900.41
+North,Uttar Pradesh,solar,2023,current,3674.02
+North,Uttar Pradesh,solar,2024,current,3971.31
+North,Uttar Pradesh,solar,2025,current,4966.06
+North,Uttar Pradesh,solar,2026,current,5302.73
+North,Uttar Pradesh,wind,2018,previous,0.0
+North,Uttar Pradesh,wind,2019,current,0.0
+North,Uttar Pradesh,wind,2020,previous,0.0
+North,Uttar Pradesh,wind,2021,current,0.0
+North,Uttar Pradesh,wind,2022,current,0.0
+North,Uttar Pradesh,wind,2023,current,0.0
+North,Uttar Pradesh,wind,2024,current,0.0
+North,Uttar Pradesh,wind,2025,current,0.0
+North,Uttar Pradesh,wind,2026,current,0.0
+North,Uttarakhand,bagasse,2018,previous,143.81
+North,Uttarakhand,bagasse,2019,current,109.89
+North,Uttarakhand,bagasse,2020,previous,110.26
+North,Uttarakhand,bagasse,2021,current,85.33
+North,Uttarakhand,bagasse,2022,current,244.02
+North,Uttarakhand,bagasse,2023,current,248.52
+North,Uttarakhand,bagasse,2024,current,248.52
+North,Uttarakhand,bagasse,2025,current,248.52
+North,Uttarakhand,bagasse,2026,current,248.52
+North,Uttarakhand,biomass,2018,previous,0.0
+North,Uttarakhand,biomass,2019,current,0.0
+North,Uttarakhand,biomass,2020,previous,0.0
+North,Uttarakhand,biomass,2021,current,0.0
+North,Uttarakhand,biomass,2022,current,0.0
+North,Uttarakhand,biomass,2023,current,0.0
+North,Uttarakhand,biomass,2024,current,0.0
+North,Uttarakhand,biomass,2025,current,0.0
+North,Uttarakhand,biomass,2026,current,0.0
+North,Uttarakhand,large_hydro,2023,previous,15435.77
+North,Uttarakhand,large_hydro,2024,current,13919.23
+North,Uttarakhand,large_hydro,2025,current,15183.82
+North,Uttarakhand,large_hydro,2026,current,16533.16
+North,Uttarakhand,others,2018,previous,0.0
+North,Uttarakhand,others,2019,current,0.0
+North,Uttarakhand,others,2020,previous,0.0
+North,Uttarakhand,others,2021,current,0.0
+North,Uttarakhand,others,2022,current,0.0
+North,Uttarakhand,others,2023,current,0.0
+North,Uttarakhand,others,2024,current,0.0
+North,Uttarakhand,others,2025,current,0.0
+North,Uttarakhand,others,2026,current,0.0
+North,Uttarakhand,small_hydro,2018,previous,749.61
+North,Uttarakhand,small_hydro,2019,current,676.79
+North,Uttarakhand,small_hydro,2020,previous,742.19
+North,Uttarakhand,small_hydro,2021,current,821.88
+North,Uttarakhand,small_hydro,2022,current,326.7
+North,Uttarakhand,small_hydro,2023,current,352.07
+North,Uttarakhand,small_hydro,2024,current,350.62
+North,Uttarakhand,small_hydro,2025,current,353.4
+North,Uttarakhand,small_hydro,2026,current,353.4
+North,Uttarakhand,solar,2018,previous,291.08
+North,Uttarakhand,solar,2019,current,318.29
+North,Uttarakhand,solar,2020,previous,341.51
+North,Uttarakhand,solar,2021,current,329.64
+North,Uttarakhand,solar,2022,current,301.6
+North,Uttarakhand,solar,2023,current,331.8
+North,Uttarakhand,solar,2024,current,331.8
+North,Uttarakhand,solar,2025,current,331.8
+North,Uttarakhand,solar,2026,current,331.8
+North,Uttarakhand,wind,2018,previous,0.0
+North,Uttarakhand,wind,2019,current,0.0
+North,Uttarakhand,wind,2020,previous,0.0
+North,Uttarakhand,wind,2021,current,0.0
+North,Uttarakhand,wind,2022,current,0.0
+North,Uttarakhand,wind,2023,current,0.0
+North,Uttarakhand,wind,2024,current,0.0
+North,Uttarakhand,wind,2025,current,0.0
+North,Uttarakhand,wind,2026,current,0.0
+North-East,Arunachal Pradesh,bagasse,2018,previous,0.0
+North-East,Arunachal Pradesh,bagasse,2019,current,0.0
+North-East,Arunachal Pradesh,bagasse,2020,previous,0.0
+North-East,Arunachal Pradesh,bagasse,2021,current,0.0
+North-East,Arunachal Pradesh,bagasse,2022,current,0.0
+North-East,Arunachal Pradesh,bagasse,2023,current,0.0
+North-East,Arunachal Pradesh,bagasse,2024,current,0.0
+North-East,Arunachal Pradesh,bagasse,2025,current,0.0
+North-East,Arunachal Pradesh,bagasse,2026,current,0.0
+North-East,Arunachal Pradesh,biomass,2018,previous,0.0
+North-East,Arunachal Pradesh,biomass,2019,current,0.0
+North-East,Arunachal Pradesh,biomass,2020,previous,0.0
+North-East,Arunachal Pradesh,biomass,2021,current,0.0
+North-East,Arunachal Pradesh,biomass,2022,current,0.0
+North-East,Arunachal Pradesh,biomass,2023,current,0.0
+North-East,Arunachal Pradesh,biomass,2024,current,0.0
+North-East,Arunachal Pradesh,biomass,2025,current,0.0
+North-East,Arunachal Pradesh,biomass,2026,current,0.0
+North-East,Arunachal Pradesh,large_hydro,2023,previous,4820.94
+North-East,Arunachal Pradesh,large_hydro,2024,current,4278.18
+North-East,Arunachal Pradesh,large_hydro,2025,current,4205.16
+North-East,Arunachal Pradesh,large_hydro,2026,current,4854.46
+North-East,Arunachal Pradesh,others,2018,previous,0.0
+North-East,Arunachal Pradesh,others,2019,current,0.0
+North-East,Arunachal Pradesh,others,2020,previous,0.0
+North-East,Arunachal Pradesh,others,2021,current,0.0
+North-East,Arunachal Pradesh,others,2022,current,0.0
+North-East,Arunachal Pradesh,others,2023,current,0.03
+North-East,Arunachal Pradesh,others,2024,current,0.0
+North-East,Arunachal Pradesh,others,2025,current,0.0
+North-East,Arunachal Pradesh,others,2026,current,0.0
+North-East,Arunachal Pradesh,small_hydro,2018,previous,0.47
+North-East,Arunachal Pradesh,small_hydro,2019,current,0.55
+North-East,Arunachal Pradesh,small_hydro,2020,previous,0.64
+North-East,Arunachal Pradesh,small_hydro,2021,current,0.55
+North-East,Arunachal Pradesh,small_hydro,2022,current,0.41
+North-East,Arunachal Pradesh,small_hydro,2023,current,2.55
+North-East,Arunachal Pradesh,small_hydro,2024,current,0.66
+North-East,Arunachal Pradesh,small_hydro,2025,current,0.58
+North-East,Arunachal Pradesh,small_hydro,2026,current,0.34
+North-East,Arunachal Pradesh,solar,2018,previous,0.23
+North-East,Arunachal Pradesh,solar,2019,current,1.21
+North-East,Arunachal Pradesh,solar,2020,previous,1.6
+North-East,Arunachal Pradesh,solar,2021,current,1.54
+North-East,Arunachal Pradesh,solar,2022,current,1.72
+North-East,Arunachal Pradesh,solar,2023,current,22.27
+North-East,Arunachal Pradesh,solar,2024,current,1.89
+North-East,Arunachal Pradesh,solar,2025,current,1.3
+North-East,Arunachal Pradesh,solar,2026,current,2.37
+North-East,Arunachal Pradesh,wind,2018,previous,0.0
+North-East,Arunachal Pradesh,wind,2019,current,0.0
+North-East,Arunachal Pradesh,wind,2020,previous,0.0
+North-East,Arunachal Pradesh,wind,2021,current,0.0
+North-East,Arunachal Pradesh,wind,2022,current,0.0
+North-East,Arunachal Pradesh,wind,2023,current,0.0
+North-East,Arunachal Pradesh,wind,2024,current,0.0
+North-East,Arunachal Pradesh,wind,2025,current,0.0
+North-East,Arunachal Pradesh,wind,2026,current,0.0
+North-East,Assam,bagasse,2018,previous,0.0
+North-East,Assam,bagasse,2019,current,0.0
+North-East,Assam,bagasse,2020,previous,0.0
+North-East,Assam,bagasse,2021,current,0.0
+North-East,Assam,bagasse,2022,current,0.0
+North-East,Assam,bagasse,2023,current,0.0
+North-East,Assam,bagasse,2024,current,0.0
+North-East,Assam,bagasse,2025,current,0.0
+North-East,Assam,bagasse,2026,current,0.0
+North-East,Assam,biomass,2018,previous,0.0
+North-East,Assam,biomass,2019,current,0.0
+North-East,Assam,biomass,2020,previous,0.0
+North-East,Assam,biomass,2021,current,0.0
+North-East,Assam,biomass,2022,current,0.0
+North-East,Assam,biomass,2023,current,0.0
+North-East,Assam,biomass,2024,current,0.0
+North-East,Assam,biomass,2025,current,0.0
+North-East,Assam,biomass,2026,current,0.0
+North-East,Assam,large_hydro,2023,previous,481.6
+North-East,Assam,large_hydro,2024,current,614.7
+North-East,Assam,large_hydro,2025,current,998.75
+North-East,Assam,large_hydro,2026,current,1424.54
+North-East,Assam,others,2018,previous,0.0
+North-East,Assam,others,2019,current,0.0
+North-East,Assam,others,2020,previous,0.0
+North-East,Assam,others,2021,current,0.0
+North-East,Assam,others,2022,current,0.0
+North-East,Assam,others,2023,current,0.0
+North-East,Assam,others,2024,current,0.75
+North-East,Assam,others,2025,current,0.3
+North-East,Assam,others,2026,current,0.59
+North-East,Assam,small_hydro,2018,previous,16.13
+North-East,Assam,small_hydro,2019,current,14.07
+North-East,Assam,small_hydro,2020,previous,52.62
+North-East,Assam,small_hydro,2021,current,38.15
+North-East,Assam,small_hydro,2022,current,40.46
+North-East,Assam,small_hydro,2023,current,62.66
+North-East,Assam,small_hydro,2024,current,64.2
+North-East,Assam,small_hydro,2025,current,208.55
+North-East,Assam,small_hydro,2026,current,139.39
+North-East,Assam,solar,2018,previous,8.36
+North-East,Assam,solar,2019,current,6.66
+North-East,Assam,solar,2020,previous,6.14
+North-East,Assam,solar,2021,current,13.37
+North-East,Assam,solar,2022,current,81.64
+North-East,Assam,solar,2023,current,216.35
+North-East,Assam,solar,2024,current,316.31
+North-East,Assam,solar,2025,current,305.52
+North-East,Assam,solar,2026,current,330.12
+North-East,Assam,wind,2018,previous,0.0
+North-East,Assam,wind,2019,current,0.0
+North-East,Assam,wind,2020,previous,0.0
+North-East,Assam,wind,2021,current,0.0
+North-East,Assam,wind,2022,current,0.0
+North-East,Assam,wind,2023,current,0.0
+North-East,Assam,wind,2024,current,0.0
+North-East,Assam,wind,2025,current,0.0
+North-East,Assam,wind,2026,current,0.0
+North-East,Manipur,bagasse,2018,previous,0.0
+North-East,Manipur,bagasse,2019,current,0.0
+North-East,Manipur,bagasse,2020,previous,0.0
+North-East,Manipur,bagasse,2021,current,0.0
+North-East,Manipur,bagasse,2022,current,0.0
+North-East,Manipur,bagasse,2023,current,0.0
+North-East,Manipur,bagasse,2024,current,0.0
+North-East,Manipur,bagasse,2025,current,0.0
+North-East,Manipur,bagasse,2026,current,0.0
+North-East,Manipur,biomass,2018,previous,0.0
+North-East,Manipur,biomass,2019,current,0.0
+North-East,Manipur,biomass,2020,previous,0.0
+North-East,Manipur,biomass,2021,current,0.0
+North-East,Manipur,biomass,2022,current,0.0
+North-East,Manipur,biomass,2023,current,0.0
+North-East,Manipur,biomass,2024,current,0.0
+North-East,Manipur,biomass,2025,current,0.0
+North-East,Manipur,biomass,2026,current,0.0
+North-East,Manipur,large_hydro,2023,previous,477.98
+North-East,Manipur,large_hydro,2024,current,298.18
+North-East,Manipur,large_hydro,2025,current,706.37
+North-East,Manipur,large_hydro,2026,current,576.01
+North-East,Manipur,others,2018,previous,0.0
+North-East,Manipur,others,2019,current,0.0
+North-East,Manipur,others,2020,previous,0.0
+North-East,Manipur,others,2021,current,0.0
+North-East,Manipur,others,2022,current,0.0
+North-East,Manipur,others,2023,current,0.63
+North-East,Manipur,others,2024,current,1.23
+North-East,Manipur,others,2025,current,0.0
+North-East,Manipur,others,2026,current,0.0
+North-East,Manipur,small_hydro,2018,previous,0.0
+North-East,Manipur,small_hydro,2019,current,0.0
+North-East,Manipur,small_hydro,2020,previous,1.57
+North-East,Manipur,small_hydro,2021,current,0.0
+North-East,Manipur,small_hydro,2022,current,0.0
+North-East,Manipur,small_hydro,2023,current,0.0
+North-East,Manipur,small_hydro,2024,current,0.0
+North-East,Manipur,small_hydro,2025,current,0.0
+North-East,Manipur,small_hydro,2026,current,0.0
+North-East,Manipur,solar,2018,previous,0.15
+North-East,Manipur,solar,2019,current,1.88
+North-East,Manipur,solar,2020,previous,2.63
+North-East,Manipur,solar,2021,current,7.71
+North-East,Manipur,solar,2022,current,6.72
+North-East,Manipur,solar,2023,current,8.17
+North-East,Manipur,solar,2024,current,7.73
+North-East,Manipur,solar,2025,current,8.68
+North-East,Manipur,solar,2026,current,8.6
+North-East,Manipur,wind,2018,previous,0.0
+North-East,Manipur,wind,2019,current,0.0
+North-East,Manipur,wind,2020,previous,0.0
+North-East,Manipur,wind,2021,current,0.0
+North-East,Manipur,wind,2022,current,0.0
+North-East,Manipur,wind,2023,current,0.0
+North-East,Manipur,wind,2024,current,0.0
+North-East,Manipur,wind,2025,current,0.0
+North-East,Manipur,wind,2026,current,0.0
+North-East,Meghalaya,bagasse,2018,previous,0.0
+North-East,Meghalaya,bagasse,2019,current,0.0
+North-East,Meghalaya,bagasse,2020,previous,0.0
+North-East,Meghalaya,bagasse,2021,current,0.0
+North-East,Meghalaya,bagasse,2022,current,0.0
+North-East,Meghalaya,bagasse,2023,current,0.0
+North-East,Meghalaya,bagasse,2024,current,0.0
+North-East,Meghalaya,bagasse,2025,current,0.0
+North-East,Meghalaya,bagasse,2026,current,0.0
+North-East,Meghalaya,biomass,2018,previous,0.0
+North-East,Meghalaya,biomass,2019,current,0.0
+North-East,Meghalaya,biomass,2020,previous,0.0
+North-East,Meghalaya,biomass,2021,current,0.0
+North-East,Meghalaya,biomass,2022,current,0.0
+North-East,Meghalaya,biomass,2023,current,0.0
+North-East,Meghalaya,biomass,2024,current,0.0
+North-East,Meghalaya,biomass,2025,current,0.0
+North-East,Meghalaya,biomass,2026,current,0.0
+North-East,Meghalaya,large_hydro,2023,previous,980.25
+North-East,Meghalaya,large_hydro,2024,current,808.58
+North-East,Meghalaya,large_hydro,2025,current,905.58
+North-East,Meghalaya,large_hydro,2026,current,879.22
+North-East,Meghalaya,others,2018,previous,0.0
+North-East,Meghalaya,others,2019,current,0.0
+North-East,Meghalaya,others,2020,previous,0.0
+North-East,Meghalaya,others,2021,current,0.0
+North-East,Meghalaya,others,2022,current,0.0
+North-East,Meghalaya,others,2023,current,0.0
+North-East,Meghalaya,others,2024,current,0.0
+North-East,Meghalaya,others,2025,current,0.0
+North-East,Meghalaya,others,2026,current,0.0
+North-East,Meghalaya,small_hydro,2018,previous,70.56
+North-East,Meghalaya,small_hydro,2019,current,50.51
+North-East,Meghalaya,small_hydro,2020,previous,62.73
+North-East,Meghalaya,small_hydro,2021,current,56.79
+North-East,Meghalaya,small_hydro,2022,current,44.21
+North-East,Meghalaya,small_hydro,2023,current,72.16
+North-East,Meghalaya,small_hydro,2024,current,66.55
+North-East,Meghalaya,small_hydro,2025,current,116.65
+North-East,Meghalaya,small_hydro,2026,current,159.9
+North-East,Meghalaya,solar,2018,previous,0.0
+North-East,Meghalaya,solar,2019,current,0.0
+North-East,Meghalaya,solar,2020,previous,0.0
+North-East,Meghalaya,solar,2021,current,0.0
+North-East,Meghalaya,solar,2022,current,0.47
+North-East,Meghalaya,solar,2023,current,0.0
+North-East,Meghalaya,solar,2024,current,0.0
+North-East,Meghalaya,solar,2025,current,0.0
+North-East,Meghalaya,solar,2026,current,0.0
+North-East,Meghalaya,wind,2018,previous,0.0
+North-East,Meghalaya,wind,2019,current,0.0
+North-East,Meghalaya,wind,2020,previous,0.0
+North-East,Meghalaya,wind,2021,current,0.0
+North-East,Meghalaya,wind,2022,current,0.0
+North-East,Meghalaya,wind,2023,current,0.0
+North-East,Meghalaya,wind,2024,current,0.0
+North-East,Meghalaya,wind,2025,current,0.0
+North-East,Meghalaya,wind,2026,current,0.0
+North-East,Mizoram,bagasse,2018,previous,0.0
+North-East,Mizoram,bagasse,2019,current,0.0
+North-East,Mizoram,bagasse,2020,previous,0.0
+North-East,Mizoram,bagasse,2021,current,0.0
+North-East,Mizoram,bagasse,2022,current,0.0
+North-East,Mizoram,bagasse,2023,current,0.0
+North-East,Mizoram,bagasse,2024,current,0.0
+North-East,Mizoram,bagasse,2025,current,0.0
+North-East,Mizoram,bagasse,2026,current,0.0
+North-East,Mizoram,biomass,2018,previous,0.0
+North-East,Mizoram,biomass,2019,current,0.0
+North-East,Mizoram,biomass,2020,previous,0.0
+North-East,Mizoram,biomass,2021,current,0.0
+North-East,Mizoram,biomass,2022,current,0.0
+North-East,Mizoram,biomass,2023,current,0.0
+North-East,Mizoram,biomass,2024,current,0.0
+North-East,Mizoram,biomass,2025,current,0.0
+North-East,Mizoram,biomass,2026,current,0.0
+North-East,Mizoram,large_hydro,2023,previous,204.13
+North-East,Mizoram,large_hydro,2024,current,118.63
+North-East,Mizoram,large_hydro,2025,current,240.3
+North-East,Mizoram,large_hydro,2026,current,263.98
+North-East,Mizoram,others,2018,previous,0.0
+North-East,Mizoram,others,2019,current,0.0
+North-East,Mizoram,others,2020,previous,0.0
+North-East,Mizoram,others,2021,current,0.0
+North-East,Mizoram,others,2022,current,0.0
+North-East,Mizoram,others,2023,current,0.0
+North-East,Mizoram,others,2024,current,0.0
+North-East,Mizoram,others,2025,current,0.0
+North-East,Mizoram,others,2026,current,0.0
+North-East,Mizoram,small_hydro,2018,previous,54.67
+North-East,Mizoram,small_hydro,2019,current,39.96
+North-East,Mizoram,small_hydro,2020,previous,49.56
+North-East,Mizoram,small_hydro,2021,current,31.07
+North-East,Mizoram,small_hydro,2022,current,26.41
+North-East,Mizoram,small_hydro,2023,current,59.06
+North-East,Mizoram,small_hydro,2024,current,95.93
+North-East,Mizoram,small_hydro,2025,current,52.11
+North-East,Mizoram,small_hydro,2026,current,25.51
+North-East,Mizoram,solar,2018,previous,0.0
+North-East,Mizoram,solar,2019,current,0.12
+North-East,Mizoram,solar,2020,previous,0.44
+North-East,Mizoram,solar,2021,current,2.45
+North-East,Mizoram,solar,2022,current,1.68
+North-East,Mizoram,solar,2023,current,3.21
+North-East,Mizoram,solar,2024,current,3.19
+North-East,Mizoram,solar,2025,current,25.38
+North-East,Mizoram,solar,2026,current,29.31
+North-East,Mizoram,wind,2018,previous,0.0
+North-East,Mizoram,wind,2019,current,0.0
+North-East,Mizoram,wind,2020,previous,0.0
+North-East,Mizoram,wind,2021,current,0.0
+North-East,Mizoram,wind,2022,current,0.0
+North-East,Mizoram,wind,2023,current,0.0
+North-East,Mizoram,wind,2024,current,0.0
+North-East,Mizoram,wind,2025,current,0.0
+North-East,Mizoram,wind,2026,current,0.0
+North-East,Nagaland,bagasse,2018,previous,0.0
+North-East,Nagaland,bagasse,2019,current,0.0
+North-East,Nagaland,bagasse,2020,previous,0.0
+North-East,Nagaland,bagasse,2021,current,0.0
+North-East,Nagaland,bagasse,2022,current,0.0
+North-East,Nagaland,bagasse,2023,current,0.0
+North-East,Nagaland,bagasse,2024,current,0.0
+North-East,Nagaland,bagasse,2025,current,0.0
+North-East,Nagaland,bagasse,2026,current,0.0
+North-East,Nagaland,biomass,2018,previous,0.0
+North-East,Nagaland,biomass,2019,current,0.0
+North-East,Nagaland,biomass,2020,previous,0.0
+North-East,Nagaland,biomass,2021,current,0.0
+North-East,Nagaland,biomass,2022,current,0.0
+North-East,Nagaland,biomass,2023,current,0.0
+North-East,Nagaland,biomass,2024,current,0.0
+North-East,Nagaland,biomass,2025,current,0.0
+North-East,Nagaland,biomass,2026,current,0.0
+North-East,Nagaland,large_hydro,2023,previous,177.37
+North-East,Nagaland,large_hydro,2024,current,165.47
+North-East,Nagaland,large_hydro,2025,current,215.02
+North-East,Nagaland,large_hydro,2026,current,228.33
+North-East,Nagaland,others,2018,previous,0.0
+North-East,Nagaland,others,2019,current,0.0
+North-East,Nagaland,others,2020,previous,0.0
+North-East,Nagaland,others,2021,current,0.0
+North-East,Nagaland,others,2022,current,0.0
+North-East,Nagaland,others,2023,current,0.0
+North-East,Nagaland,others,2024,current,0.0
+North-East,Nagaland,others,2025,current,0.0
+North-East,Nagaland,others,2026,current,0.0
+North-East,Nagaland,small_hydro,2018,previous,91.0
+North-East,Nagaland,small_hydro,2019,current,87.46
+North-East,Nagaland,small_hydro,2020,previous,75.87
+North-East,Nagaland,small_hydro,2021,current,69.77
+North-East,Nagaland,small_hydro,2022,current,63.47
+North-East,Nagaland,small_hydro,2023,current,111.95
+North-East,Nagaland,small_hydro,2024,current,81.14
+North-East,Nagaland,small_hydro,2025,current,98.62
+North-East,Nagaland,small_hydro,2026,current,97.9
+North-East,Nagaland,solar,2018,previous,0.0
+North-East,Nagaland,solar,2019,current,0.0
+North-East,Nagaland,solar,2020,previous,0.0
+North-East,Nagaland,solar,2021,current,0.0
+North-East,Nagaland,solar,2022,current,0.0
+North-East,Nagaland,solar,2023,current,0.0
+North-East,Nagaland,solar,2024,current,0.0
+North-East,Nagaland,solar,2025,current,0.0
+North-East,Nagaland,solar,2026,current,0.0
+North-East,Nagaland,wind,2018,previous,0.0
+North-East,Nagaland,wind,2019,current,0.0
+North-East,Nagaland,wind,2020,previous,0.0
+North-East,Nagaland,wind,2021,current,1.0
+North-East,Nagaland,wind,2022,current,0.0
+North-East,Nagaland,wind,2023,current,0.0
+North-East,Nagaland,wind,2024,current,0.0
+North-East,Nagaland,wind,2025,current,0.0
+North-East,Nagaland,wind,2026,current,0.0
+North-East,Tripura,bagasse,2018,previous,0.0
+North-East,Tripura,bagasse,2019,current,0.0
+North-East,Tripura,bagasse,2020,previous,0.0
+North-East,Tripura,bagasse,2021,current,0.0
+North-East,Tripura,bagasse,2022,current,0.0
+North-East,Tripura,bagasse,2023,current,0.0
+North-East,Tripura,bagasse,2024,current,0.0
+North-East,Tripura,bagasse,2025,current,0.0
+North-East,Tripura,bagasse,2026,current,0.0
+North-East,Tripura,biomass,2018,previous,0.0
+North-East,Tripura,biomass,2019,current,0.0
+North-East,Tripura,biomass,2020,previous,0.0
+North-East,Tripura,biomass,2021,current,0.0
+North-East,Tripura,biomass,2022,current,0.0
+North-East,Tripura,biomass,2023,current,0.0
+North-East,Tripura,biomass,2024,current,0.0
+North-East,Tripura,biomass,2025,current,0.0
+North-East,Tripura,biomass,2026,current,0.0
+North-East,Tripura,large_hydro,2023,previous,0.0
+North-East,Tripura,large_hydro,2024,current,0.0
+North-East,Tripura,large_hydro,2025,current,0.0
+North-East,Tripura,large_hydro,2026,current,0.0
+North-East,Tripura,others,2018,previous,0.0
+North-East,Tripura,others,2019,current,0.0
+North-East,Tripura,others,2020,previous,0.0
+North-East,Tripura,others,2021,current,0.0
+North-East,Tripura,others,2022,current,0.0
+North-East,Tripura,others,2023,current,0.0
+North-East,Tripura,others,2024,current,0.0
+North-East,Tripura,others,2025,current,0.0
+North-East,Tripura,others,2026,current,0.0
+North-East,Tripura,small_hydro,2018,previous,44.48
+North-East,Tripura,small_hydro,2019,current,42.98
+North-East,Tripura,small_hydro,2020,previous,24.67
+North-East,Tripura,small_hydro,2021,current,9.58
+North-East,Tripura,small_hydro,2022,current,1.44
+North-East,Tripura,small_hydro,2023,current,0.0
+North-East,Tripura,small_hydro,2024,current,0.0
+North-East,Tripura,small_hydro,2025,current,0.0
+North-East,Tripura,small_hydro,2026,current,0.0
+North-East,Tripura,solar,2018,previous,0.0
+North-East,Tripura,solar,2019,current,0.0
+North-East,Tripura,solar,2020,previous,3.43
+North-East,Tripura,solar,2021,current,6.04
+North-East,Tripura,solar,2022,current,6.18
+North-East,Tripura,solar,2023,current,6.58
+North-East,Tripura,solar,2024,current,7.01
+North-East,Tripura,solar,2025,current,5.97
+North-East,Tripura,solar,2026,current,8.97
+North-East,Tripura,wind,2018,previous,0.0
+North-East,Tripura,wind,2019,current,0.0
+North-East,Tripura,wind,2020,previous,0.0
+North-East,Tripura,wind,2021,current,0.0
+North-East,Tripura,wind,2022,current,0.0
+North-East,Tripura,wind,2023,current,0.0
+North-East,Tripura,wind,2024,current,0.0
+North-East,Tripura,wind,2025,current,0.0
+North-East,Tripura,wind,2026,current,0.0
+South,Andhra Pradesh,bagasse,2018,previous,189.03
+South,Andhra Pradesh,bagasse,2019,current,312.45
+South,Andhra Pradesh,bagasse,2020,previous,58.49
+South,Andhra Pradesh,bagasse,2021,current,67.66
+South,Andhra Pradesh,bagasse,2022,current,72.7
+South,Andhra Pradesh,bagasse,2023,current,99.93
+South,Andhra Pradesh,bagasse,2024,current,66.63
+South,Andhra Pradesh,bagasse,2025,current,52.34
+South,Andhra Pradesh,bagasse,2026,current,46.3
+South,Andhra Pradesh,biomass,2018,previous,206.49
+South,Andhra Pradesh,biomass,2019,current,201.86
+South,Andhra Pradesh,biomass,2020,previous,147.47
+South,Andhra Pradesh,biomass,2021,current,135.21
+South,Andhra Pradesh,biomass,2022,current,104.85
+South,Andhra Pradesh,biomass,2023,current,54.86
+South,Andhra Pradesh,biomass,2024,current,18.75
+South,Andhra Pradesh,biomass,2025,current,19.61
+South,Andhra Pradesh,biomass,2026,current,14.73
+South,Andhra Pradesh,large_hydro,2023,previous,3747.58
+South,Andhra Pradesh,large_hydro,2024,current,1373.19
+South,Andhra Pradesh,large_hydro,2025,current,3303.07
+South,Andhra Pradesh,large_hydro,2026,current,6190.06
+South,Andhra Pradesh,others,2018,previous,7.18
+South,Andhra Pradesh,others,2019,current,7.27
+South,Andhra Pradesh,others,2020,previous,7.31
+South,Andhra Pradesh,others,2021,current,65.88
+South,Andhra Pradesh,others,2022,current,133.88
+South,Andhra Pradesh,others,2023,current,279.04
+South,Andhra Pradesh,others,2024,current,307.97
+South,Andhra Pradesh,others,2025,current,307.4
+South,Andhra Pradesh,others,2026,current,425.1
+South,Andhra Pradesh,small_hydro,2018,previous,181.69
+South,Andhra Pradesh,small_hydro,2019,current,193.12
+South,Andhra Pradesh,small_hydro,2020,previous,298.19
+South,Andhra Pradesh,small_hydro,2021,current,351.23
+South,Andhra Pradesh,small_hydro,2022,current,384.08
+South,Andhra Pradesh,small_hydro,2023,current,410.9
+South,Andhra Pradesh,small_hydro,2024,current,127.1
+South,Andhra Pradesh,small_hydro,2025,current,294.36
+South,Andhra Pradesh,small_hydro,2026,current,438.46
+South,Andhra Pradesh,solar,2018,previous,3658.97
+South,Andhra Pradesh,solar,2019,current,4545.8
+South,Andhra Pradesh,solar,2020,previous,5855.11
+South,Andhra Pradesh,solar,2021,current,6956.1
+South,Andhra Pradesh,solar,2022,current,7832.51
+South,Andhra Pradesh,solar,2023,current,8140.72
+South,Andhra Pradesh,solar,2024,current,8300.03
+South,Andhra Pradesh,solar,2025,current,7993.48
+South,Andhra Pradesh,solar,2026,current,8773.06
+South,Andhra Pradesh,wind,2018,previous,6354.11
+South,Andhra Pradesh,wind,2019,current,8869.86
+South,Andhra Pradesh,wind,2020,previous,7626.63
+South,Andhra Pradesh,wind,2021,current,6557.74
+South,Andhra Pradesh,wind,2022,current,7134.58
+South,Andhra Pradesh,wind,2023,current,7426.46
+South,Andhra Pradesh,wind,2024,current,8644.0
+South,Andhra Pradesh,wind,2025,current,7235.04
+South,Andhra Pradesh,wind,2026,current,8902.94
+South,Karnataka,bagasse,2018,previous,1921.96
+South,Karnataka,bagasse,2019,current,2345.35
+South,Karnataka,bagasse,2020,previous,2205.38
+South,Karnataka,bagasse,2021,current,2589.09
+South,Karnataka,bagasse,2022,current,3338.24
+South,Karnataka,bagasse,2023,current,3037.31
+South,Karnataka,bagasse,2024,current,2754.06
+South,Karnataka,bagasse,2025,current,2474.25
+South,Karnataka,bagasse,2026,current,3357.17
+South,Karnataka,biomass,2018,previous,135.6
+South,Karnataka,biomass,2019,current,155.02
+South,Karnataka,biomass,2020,previous,171.27
+South,Karnataka,biomass,2021,current,211.79
+South,Karnataka,biomass,2022,current,174.08
+South,Karnataka,biomass,2023,current,106.9
+South,Karnataka,biomass,2024,current,47.45
+South,Karnataka,biomass,2025,current,32.15
+South,Karnataka,biomass,2026,current,45.85
+South,Karnataka,large_hydro,2023,previous,13157.34
+South,Karnataka,large_hydro,2024,current,8973.17
+South,Karnataka,large_hydro,2025,current,14056.0
+South,Karnataka,large_hydro,2026,current,15601.21
+South,Karnataka,others,2018,previous,0.0
+South,Karnataka,others,2019,current,0.0
+South,Karnataka,others,2020,previous,0.0
+South,Karnataka,others,2021,current,0.0
+South,Karnataka,others,2022,current,0.0
+South,Karnataka,others,2023,current,0.0
+South,Karnataka,others,2024,current,0.0
+South,Karnataka,others,2025,current,0.0
+South,Karnataka,others,2026,current,11.08
+South,Karnataka,small_hydro,2018,previous,1604.41
+South,Karnataka,small_hydro,2019,current,1803.09
+South,Karnataka,small_hydro,2020,previous,1901.91
+South,Karnataka,small_hydro,2021,current,2199.68
+South,Karnataka,small_hydro,2022,current,2460.91
+South,Karnataka,small_hydro,2023,current,2308.59
+South,Karnataka,small_hydro,2024,current,1370.76
+South,Karnataka,small_hydro,2025,current,2259.49
+South,Karnataka,small_hydro,2026,current,2800.48
+South,Karnataka,solar,2018,previous,2391.73
+South,Karnataka,solar,2019,current,7575.83
+South,Karnataka,solar,2020,previous,11221.2
+South,Karnataka,solar,2021,current,13238.86
+South,Karnataka,solar,2022,current,13169.43
+South,Karnataka,solar,2023,current,14153.79
+South,Karnataka,solar,2024,current,15404.09
+South,Karnataka,solar,2025,current,15699.63
+South,Karnataka,solar,2026,current,17923.81
+South,Karnataka,wind,2018,previous,7410.29
+South,Karnataka,wind,2019,current,9778.25
+South,Karnataka,wind,2020,previous,10148.66
+South,Karnataka,wind,2021,current,9610.89
+South,Karnataka,wind,2022,current,9491.62
+South,Karnataka,wind,2023,current,9967.89
+South,Karnataka,wind,2024,current,10950.2
+South,Karnataka,wind,2025,current,13620.33
+South,Karnataka,wind,2026,current,18804.62
+South,Kerala,bagasse,2018,previous,0.0
+South,Kerala,bagasse,2019,current,0.0
+South,Kerala,bagasse,2020,previous,11.03
+South,Kerala,bagasse,2021,current,45.68
+South,Kerala,bagasse,2022,current,48.92
+South,Kerala,bagasse,2023,current,62.85
+South,Kerala,bagasse,2024,current,78.08
+South,Kerala,bagasse,2025,current,20.53
+South,Kerala,bagasse,2026,current,0.0
+South,Kerala,biomass,2018,previous,0.0
+South,Kerala,biomass,2019,current,0.0
+South,Kerala,biomass,2020,previous,0.0
+South,Kerala,biomass,2021,current,0.0
+South,Kerala,biomass,2022,current,0.0
+South,Kerala,biomass,2023,current,0.0
+South,Kerala,biomass,2024,current,0.0
+South,Kerala,biomass,2025,current,0.0
+South,Kerala,biomass,2026,current,0.0
+South,Kerala,large_hydro,2023,previous,7989.0
+South,Kerala,large_hydro,2024,current,5155.72
+South,Kerala,large_hydro,2025,current,6733.99
+South,Kerala,large_hydro,2026,current,9187.59
+South,Kerala,others,2018,previous,0.0
+South,Kerala,others,2019,current,0.0
+South,Kerala,others,2020,previous,0.0
+South,Kerala,others,2021,current,0.01
+South,Kerala,others,2022,current,0.0
+South,Kerala,others,2023,current,0.0
+South,Kerala,others,2024,current,0.04
+South,Kerala,others,2025,current,56.64
+South,Kerala,others,2026,current,97.37
+South,Kerala,small_hydro,2018,previous,620.52
+South,Kerala,small_hydro,2019,current,551.55
+South,Kerala,small_hydro,2020,previous,530.37
+South,Kerala,small_hydro,2021,current,640.58
+South,Kerala,small_hydro,2022,current,932.37
+South,Kerala,small_hydro,2023,current,824.34
+South,Kerala,small_hydro,2024,current,716.31
+South,Kerala,small_hydro,2025,current,814.29
+South,Kerala,small_hydro,2026,current,952.97
+South,Kerala,solar,2018,previous,55.35
+South,Kerala,solar,2019,current,110.84
+South,Kerala,solar,2020,previous,143.59
+South,Kerala,solar,2021,current,275.44
+South,Kerala,solar,2022,current,496.93
+South,Kerala,solar,2023,current,879.75
+South,Kerala,solar,2024,current,1195.28
+South,Kerala,solar,2025,current,1711.83
+South,Kerala,solar,2026,current,2420.5
+South,Kerala,wind,2018,previous,98.46
+South,Kerala,wind,2019,current,107.94
+South,Kerala,wind,2020,previous,119.76
+South,Kerala,wind,2021,current,130.41
+South,Kerala,wind,2022,current,136.41
+South,Kerala,wind,2023,current,179.32
+South,Kerala,wind,2024,current,214.53
+South,Kerala,wind,2025,current,119.85
+South,Kerala,wind,2026,current,130.33
+South,Lakshadweep,bagasse,2018,previous,0.0
+South,Lakshadweep,bagasse,2019,current,0.0
+South,Lakshadweep,bagasse,2020,previous,0.0
+South,Lakshadweep,bagasse,2021,current,0.0
+South,Lakshadweep,bagasse,2022,current,0.0
+South,Lakshadweep,bagasse,2023,current,0.0
+South,Lakshadweep,bagasse,2024,current,0.0
+South,Lakshadweep,bagasse,2025,current,0.0
+South,Lakshadweep,bagasse,2026,current,0.0
+South,Lakshadweep,biomass,2018,previous,0.0
+South,Lakshadweep,biomass,2019,current,0.0
+South,Lakshadweep,biomass,2020,previous,0.0
+South,Lakshadweep,biomass,2021,current,0.0
+South,Lakshadweep,biomass,2022,current,0.0
+South,Lakshadweep,biomass,2023,current,0.0
+South,Lakshadweep,biomass,2024,current,0.0
+South,Lakshadweep,biomass,2025,current,0.0
+South,Lakshadweep,biomass,2026,current,0.0
+South,Lakshadweep,large_hydro,2023,previous,0.0
+South,Lakshadweep,large_hydro,2024,current,0.0
+South,Lakshadweep,large_hydro,2025,current,0.0
+South,Lakshadweep,large_hydro,2026,current,0.0
+South,Lakshadweep,others,2018,previous,0.0
+South,Lakshadweep,others,2019,current,0.0
+South,Lakshadweep,others,2020,previous,0.0
+South,Lakshadweep,others,2021,current,0.0
+South,Lakshadweep,others,2022,current,0.0
+South,Lakshadweep,others,2023,current,0.0
+South,Lakshadweep,others,2024,current,0.0
+South,Lakshadweep,others,2025,current,0.0
+South,Lakshadweep,others,2026,current,0.0
+South,Lakshadweep,small_hydro,2018,previous,0.0
+South,Lakshadweep,small_hydro,2019,current,0.0
+South,Lakshadweep,small_hydro,2020,previous,0.0
+South,Lakshadweep,small_hydro,2021,current,0.0
+South,Lakshadweep,small_hydro,2022,current,0.0
+South,Lakshadweep,small_hydro,2023,current,0.0
+South,Lakshadweep,small_hydro,2024,current,0.0
+South,Lakshadweep,small_hydro,2025,current,0.0
+South,Lakshadweep,small_hydro,2026,current,0.0
+South,Lakshadweep,solar,2018,previous,1.79
+South,Lakshadweep,solar,2019,current,1.12
+South,Lakshadweep,solar,2020,previous,0.66
+South,Lakshadweep,solar,2021,current,0.45
+South,Lakshadweep,solar,2022,current,0.3
+South,Lakshadweep,solar,2023,current,0.1
+South,Lakshadweep,solar,2024,current,0.09
+South,Lakshadweep,solar,2025,current,0.09
+South,Lakshadweep,solar,2026,current,0.09
+South,Lakshadweep,wind,2018,previous,0.0
+South,Lakshadweep,wind,2019,current,0.0
+South,Lakshadweep,wind,2020,previous,0.0
+South,Lakshadweep,wind,2021,current,0.0
+South,Lakshadweep,wind,2022,current,0.0
+South,Lakshadweep,wind,2023,current,0.0
+South,Lakshadweep,wind,2024,current,0.0
+South,Lakshadweep,wind,2025,current,0.0
+South,Lakshadweep,wind,2026,current,0.0
+South,Puducherry,bagasse,2020,previous,0.0
+South,Puducherry,bagasse,2021,current,0.0
+South,Puducherry,bagasse,2022,current,0.0
+South,Puducherry,bagasse,2023,current,0.0
+South,Puducherry,bagasse,2024,current,0.0
+South,Puducherry,bagasse,2025,current,0.0
+South,Puducherry,bagasse,2026,current,0.0
+South,Puducherry,biomass,2020,previous,0.0
+South,Puducherry,biomass,2021,current,0.0
+South,Puducherry,biomass,2022,current,0.0
+South,Puducherry,biomass,2023,current,0.0
+South,Puducherry,biomass,2024,current,0.0
+South,Puducherry,biomass,2025,current,0.0
+South,Puducherry,biomass,2026,current,0.0
+South,Puducherry,large_hydro,2023,previous,0.0
+South,Puducherry,large_hydro,2024,current,0.0
+South,Puducherry,large_hydro,2025,current,0.0
+South,Puducherry,large_hydro,2026,current,0.0
+South,Puducherry,others,2020,previous,0.0
+South,Puducherry,others,2021,current,0.0
+South,Puducherry,others,2022,current,0.0
+South,Puducherry,others,2023,current,0.0
+South,Puducherry,others,2024,current,0.0
+South,Puducherry,others,2025,current,0.0
+South,Puducherry,others,2026,current,0.0
+South,Puducherry,small_hydro,2020,previous,0.0
+South,Puducherry,small_hydro,2021,current,0.0
+South,Puducherry,small_hydro,2022,current,0.0
+South,Puducherry,small_hydro,2023,current,0.0
+South,Puducherry,small_hydro,2024,current,0.0
+South,Puducherry,small_hydro,2025,current,0.0
+South,Puducherry,small_hydro,2026,current,0.0
+South,Puducherry,solar,2020,previous,4.15
+South,Puducherry,solar,2021,current,6.39
+South,Puducherry,solar,2022,current,12.24
+South,Puducherry,solar,2023,current,12.24
+South,Puducherry,solar,2024,current,12.24
+South,Puducherry,solar,2025,current,12.24
+South,Puducherry,solar,2026,current,12.24
+South,Puducherry,wind,2020,previous,0.0
+South,Puducherry,wind,2021,current,0.0
+South,Puducherry,wind,2022,current,0.0
+South,Puducherry,wind,2023,current,0.0
+South,Puducherry,wind,2024,current,0.0
+South,Puducherry,wind,2025,current,0.0
+South,Puducherry,wind,2026,current,0.0
+South,Tamil Nadu,bagasse,2018,previous,551.39
+South,Tamil Nadu,bagasse,2019,current,268.0
+South,Tamil Nadu,bagasse,2020,previous,350.8
+South,Tamil Nadu,bagasse,2021,current,581.57
+South,Tamil Nadu,bagasse,2022,current,657.4
+South,Tamil Nadu,bagasse,2023,current,869.56
+South,Tamil Nadu,bagasse,2024,current,622.61
+South,Tamil Nadu,bagasse,2025,current,377.99
+South,Tamil Nadu,bagasse,2026,current,185.04
+South,Tamil Nadu,biomass,2018,previous,178.33
+South,Tamil Nadu,biomass,2019,current,127.16
+South,Tamil Nadu,biomass,2020,previous,103.78
+South,Tamil Nadu,biomass,2021,current,152.23
+South,Tamil Nadu,biomass,2022,current,116.66
+South,Tamil Nadu,biomass,2023,current,126.93
+South,Tamil Nadu,biomass,2024,current,129.14
+South,Tamil Nadu,biomass,2025,current,106.9
+South,Tamil Nadu,biomass,2026,current,8.97
+South,Tamil Nadu,large_hydro,2023,previous,5965.77
+South,Tamil Nadu,large_hydro,2024,current,3563.28
+South,Tamil Nadu,large_hydro,2025,current,4602.73
+South,Tamil Nadu,large_hydro,2026,current,5589.67
+South,Tamil Nadu,others,2018,previous,0.0
+South,Tamil Nadu,others,2019,current,0.0
+South,Tamil Nadu,others,2020,previous,0.0
+South,Tamil Nadu,others,2021,current,0.0
+South,Tamil Nadu,others,2022,current,0.0
+South,Tamil Nadu,others,2023,current,0.0
+South,Tamil Nadu,others,2024,current,0.0
+South,Tamil Nadu,others,2025,current,0.0
+South,Tamil Nadu,others,2026,current,0.0
+South,Tamil Nadu,small_hydro,2018,previous,186.14
+South,Tamil Nadu,small_hydro,2019,current,347.97
+South,Tamil Nadu,small_hydro,2020,previous,235.76
+South,Tamil Nadu,small_hydro,2021,current,244.77
+South,Tamil Nadu,small_hydro,2022,current,293.17
+South,Tamil Nadu,small_hydro,2023,current,296.71
+South,Tamil Nadu,small_hydro,2024,current,206.0
+South,Tamil Nadu,small_hydro,2025,current,256.6
+South,Tamil Nadu,small_hydro,2026,current,307.56
+South,Tamil Nadu,solar,2018,previous,2906.01
+South,Tamil Nadu,solar,2019,current,3554.5
+South,Tamil Nadu,solar,2020,previous,4946.63
+South,Tamil Nadu,solar,2021,current,6115.48
+South,Tamil Nadu,solar,2022,current,7172.88
+South,Tamil Nadu,solar,2023,current,9419.39
+South,Tamil Nadu,solar,2024,current,11737.48
+South,Tamil Nadu,solar,2025,current,15739.3
+South,Tamil Nadu,solar,2026,current,19690.99
+South,Tamil Nadu,wind,2018,previous,12358.01
+South,Tamil Nadu,wind,2019,current,12600.85
+South,Tamil Nadu,wind,2020,previous,14126.93
+South,Tamil Nadu,wind,2021,current,14564.91
+South,Tamil Nadu,wind,2022,current,15821.18
+South,Tamil Nadu,wind,2023,current,16913.85
+South,Tamil Nadu,wind,2024,current,16908.08
+South,Tamil Nadu,wind,2025,current,17326.66
+South,Tamil Nadu,wind,2026,current,24200.81
+South,Telangana,bagasse,2018,previous,114.02
+South,Telangana,bagasse,2019,current,166.21
+South,Telangana,bagasse,2020,previous,102.23
+South,Telangana,bagasse,2021,current,61.0
+South,Telangana,bagasse,2022,current,103.95
+South,Telangana,bagasse,2023,current,132.94
+South,Telangana,bagasse,2024,current,95.08
+South,Telangana,bagasse,2025,current,64.28
+South,Telangana,bagasse,2026,current,74.96
+South,Telangana,biomass,2018,previous,175.48
+South,Telangana,biomass,2019,current,152.24
+South,Telangana,biomass,2020,previous,124.3
+South,Telangana,biomass,2021,current,164.11
+South,Telangana,biomass,2022,current,111.13
+South,Telangana,biomass,2023,current,21.48
+South,Telangana,biomass,2024,current,10.57
+South,Telangana,biomass,2025,current,12.61
+South,Telangana,biomass,2026,current,23.13
+South,Telangana,large_hydro,2023,previous,6010.07
+South,Telangana,large_hydro,2024,current,1243.29
+South,Telangana,large_hydro,2025,current,5270.78
+South,Telangana,large_hydro,2026,current,6874.54
+South,Telangana,others,2018,previous,82.43
+South,Telangana,others,2019,current,89.28
+South,Telangana,others,2020,previous,19.25
+South,Telangana,others,2021,current,69.05
+South,Telangana,others,2022,current,227.2
+South,Telangana,others,2023,current,159.08
+South,Telangana,others,2024,current,155.29
+South,Telangana,others,2025,current,257.96
+South,Telangana,others,2026,current,325.67
+South,Telangana,small_hydro,2018,previous,51.27
+South,Telangana,small_hydro,2019,current,51.17
+South,Telangana,small_hydro,2020,previous,46.29
+South,Telangana,small_hydro,2021,current,67.27
+South,Telangana,small_hydro,2022,current,91.0
+South,Telangana,small_hydro,2023,current,91.71
+South,Telangana,small_hydro,2024,current,58.87
+South,Telangana,small_hydro,2025,current,74.48
+South,Telangana,small_hydro,2026,current,85.62
+South,Telangana,solar,2018,previous,4013.8
+South,Telangana,solar,2019,current,6297.53
+South,Telangana,solar,2020,previous,6263.92
+South,Telangana,solar,2021,current,6351.04
+South,Telangana,solar,2022,current,6536.94
+South,Telangana,solar,2023,current,6745.46
+South,Telangana,solar,2024,current,6884.68
+South,Telangana,solar,2025,current,6941.75
+South,Telangana,solar,2026,current,6920.53
+South,Telangana,wind,2018,previous,195.29
+South,Telangana,wind,2019,current,274.83
+South,Telangana,wind,2020,previous,238.25
+South,Telangana,wind,2021,current,220.64
+South,Telangana,wind,2022,current,275.69
+South,Telangana,wind,2023,current,279.23
+South,Telangana,wind,2024,current,304.63
+South,Telangana,wind,2025,current,290.6
+South,Telangana,wind,2026,current,292.46
+West,Chhattisgarh,bagasse,2018,previous,0.0
+West,Chhattisgarh,bagasse,2019,current,0.0
+West,Chhattisgarh,bagasse,2020,previous,0.0
+West,Chhattisgarh,bagasse,2021,current,28.25
+West,Chhattisgarh,bagasse,2022,current,8.7
+West,Chhattisgarh,bagasse,2023,current,17.1
+West,Chhattisgarh,bagasse,2024,current,19.54
+West,Chhattisgarh,bagasse,2025,current,20.05
+West,Chhattisgarh,bagasse,2026,current,7.69
+West,Chhattisgarh,biomass,2018,previous,909.72
+West,Chhattisgarh,biomass,2019,current,529.9
+West,Chhattisgarh,biomass,2020,previous,679.7
+West,Chhattisgarh,biomass,2021,current,1089.32
+West,Chhattisgarh,biomass,2022,current,1307.27
+West,Chhattisgarh,biomass,2023,current,1194.6
+West,Chhattisgarh,biomass,2024,current,1368.61
+West,Chhattisgarh,biomass,2025,current,1543.26
+West,Chhattisgarh,biomass,2026,current,1462.22
+West,Chhattisgarh,large_hydro,2023,previous,237.37
+West,Chhattisgarh,large_hydro,2024,current,321.76
+West,Chhattisgarh,large_hydro,2025,current,419.42
+West,Chhattisgarh,large_hydro,2026,current,351.61
+West,Chhattisgarh,others,2018,previous,0.0
+West,Chhattisgarh,others,2019,current,0.0
+West,Chhattisgarh,others,2020,previous,0.0
+West,Chhattisgarh,others,2021,current,0.0
+West,Chhattisgarh,others,2022,current,0.0
+West,Chhattisgarh,others,2023,current,0.0
+West,Chhattisgarh,others,2024,current,0.0
+West,Chhattisgarh,others,2025,current,0.0
+West,Chhattisgarh,others,2026,current,0.0
+West,Chhattisgarh,small_hydro,2018,previous,22.94
+West,Chhattisgarh,small_hydro,2019,current,80.06
+West,Chhattisgarh,small_hydro,2020,previous,101.75
+West,Chhattisgarh,small_hydro,2021,current,145.52
+West,Chhattisgarh,small_hydro,2022,current,185.67
+West,Chhattisgarh,small_hydro,2023,current,155.92
+West,Chhattisgarh,small_hydro,2024,current,145.54
+West,Chhattisgarh,small_hydro,2025,current,139.34
+West,Chhattisgarh,small_hydro,2026,current,244.97
+West,Chhattisgarh,solar,2018,previous,136.54
+West,Chhattisgarh,solar,2019,current,335.14
+West,Chhattisgarh,solar,2020,previous,326.42
+West,Chhattisgarh,solar,2021,current,370.8
+West,Chhattisgarh,solar,2022,current,436.56
+West,Chhattisgarh,solar,2023,current,635.42
+West,Chhattisgarh,solar,2024,current,943.75
+West,Chhattisgarh,solar,2025,current,1523.27
+West,Chhattisgarh,solar,2026,current,1913.17
+West,Chhattisgarh,wind,2018,previous,0.0
+West,Chhattisgarh,wind,2019,current,0.0
+West,Chhattisgarh,wind,2020,previous,0.0
+West,Chhattisgarh,wind,2021,current,0.0
+West,Chhattisgarh,wind,2022,current,0.0
+West,Chhattisgarh,wind,2023,current,0.0
+West,Chhattisgarh,wind,2024,current,0.0
+West,Chhattisgarh,wind,2025,current,0.0
+West,Chhattisgarh,wind,2026,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2018,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2019,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2020,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2021,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2022,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2023,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2024,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2025,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,bagasse,2026,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2018,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2019,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2020,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2021,current,10.53
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2022,current,12.32
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2023,current,3.22
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2024,current,13.12
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2025,current,12.76
+West,Dadra & Nagar Haveli and Daman & Diu,biomass,2026,current,12.64
+West,Dadra & Nagar Haveli and Daman & Diu,large_hydro,2023,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,large_hydro,2024,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,large_hydro,2025,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,large_hydro,2026,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2018,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2019,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2020,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2021,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2022,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2023,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2024,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2025,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,others,2026,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2018,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2019,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2020,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2021,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2022,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2023,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2024,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2025,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,small_hydro,2026,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2018,previous,23.76
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2019,current,24.700000000000003
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2020,previous,28.02
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2021,current,41.480000000000004
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2022,current,84.50999999999999
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2023,current,27.4
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2024,current,15.74
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2025,current,15.87
+West,Dadra & Nagar Haveli and Daman & Diu,solar,2026,current,20.18
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2018,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2019,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2020,previous,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2021,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2022,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2023,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2024,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2025,current,0.0
+West,Dadra & Nagar Haveli and Daman & Diu,wind,2026,current,0.0
+West,Goa,bagasse,2020,previous,0.0
+West,Goa,bagasse,2021,current,0.0
+West,Goa,bagasse,2022,current,0.0
+West,Goa,bagasse,2023,current,0.0
+West,Goa,bagasse,2024,current,0.0
+West,Goa,bagasse,2025,current,0.0
+West,Goa,bagasse,2026,current,0.0
+West,Goa,biomass,2020,previous,0.0
+West,Goa,biomass,2021,current,0.0
+West,Goa,biomass,2022,current,0.0
+West,Goa,biomass,2023,current,0.0
+West,Goa,biomass,2024,current,0.0
+West,Goa,biomass,2025,current,0.0
+West,Goa,biomass,2026,current,0.0
+West,Goa,large_hydro,2023,previous,0.0
+West,Goa,large_hydro,2024,current,0.0
+West,Goa,large_hydro,2025,current,0.0
+West,Goa,large_hydro,2026,current,0.0
+West,Goa,others,2020,previous,0.0
+West,Goa,others,2021,current,0.0
+West,Goa,others,2022,current,0.89
+West,Goa,others,2023,current,5.09
+West,Goa,others,2024,current,7.96
+West,Goa,others,2025,current,8.14
+West,Goa,others,2026,current,8.14
+West,Goa,small_hydro,2020,previous,0.0
+West,Goa,small_hydro,2021,current,0.0
+West,Goa,small_hydro,2022,current,0.0
+West,Goa,small_hydro,2023,current,0.0
+West,Goa,small_hydro,2024,current,0.0
+West,Goa,small_hydro,2025,current,0.0
+West,Goa,small_hydro,2026,current,0.0
+West,Goa,solar,2020,previous,0.82
+West,Goa,solar,2021,current,1.46
+West,Goa,solar,2022,current,15.93
+West,Goa,solar,2023,current,14.87
+West,Goa,solar,2024,current,59.99
+West,Goa,solar,2025,current,57.11
+West,Goa,solar,2026,current,57.11
+West,Goa,wind,2020,previous,0.0
+West,Goa,wind,2021,current,0.0
+West,Goa,wind,2022,current,0.0
+West,Goa,wind,2023,current,0.0
+West,Goa,wind,2024,current,0.0
+West,Goa,wind,2025,current,0.0
+West,Goa,wind,2026,current,0.0
+West,Gujarat,bagasse,2018,previous,0.0
+West,Gujarat,bagasse,2019,current,5.09
+West,Gujarat,bagasse,2020,previous,15.95
+West,Gujarat,bagasse,2021,current,19.37
+West,Gujarat,bagasse,2022,current,18.16
+West,Gujarat,bagasse,2023,current,5.76
+West,Gujarat,bagasse,2024,current,2.13
+West,Gujarat,bagasse,2025,current,0.0
+West,Gujarat,bagasse,2026,current,0.0
+West,Gujarat,biomass,2018,previous,32.65
+West,Gujarat,biomass,2019,current,75.28
+West,Gujarat,biomass,2020,previous,107.03
+West,Gujarat,biomass,2021,current,43.15
+West,Gujarat,biomass,2022,current,0.0
+West,Gujarat,biomass,2023,current,0.0
+West,Gujarat,biomass,2024,current,0.0
+West,Gujarat,biomass,2025,current,107.62
+West,Gujarat,biomass,2026,current,175.56
+West,Gujarat,large_hydro,2023,previous,6133.14
+West,Gujarat,large_hydro,2024,current,4556.33
+West,Gujarat,large_hydro,2025,current,6028.52
+West,Gujarat,large_hydro,2026,current,6372.91
+West,Gujarat,others,2018,previous,0.0
+West,Gujarat,others,2019,current,0.0
+West,Gujarat,others,2020,previous,18.77
+West,Gujarat,others,2021,current,10.61
+West,Gujarat,others,2022,current,0.0
+West,Gujarat,others,2023,current,2.24
+West,Gujarat,others,2024,current,0.0
+West,Gujarat,others,2025,current,0.0
+West,Gujarat,others,2026,current,0.0
+West,Gujarat,small_hydro,2018,previous,42.93
+West,Gujarat,small_hydro,2019,current,86.19
+West,Gujarat,small_hydro,2020,previous,194.8
+West,Gujarat,small_hydro,2021,current,211.94
+West,Gujarat,small_hydro,2022,current,192.1
+West,Gujarat,small_hydro,2023,current,213.1
+West,Gujarat,small_hydro,2024,current,217.68
+West,Gujarat,small_hydro,2025,current,205.98
+West,Gujarat,small_hydro,2026,current,196.59
+West,Gujarat,solar,2018,previous,2048.4
+West,Gujarat,solar,2019,current,2410.32
+West,Gujarat,solar,2020,previous,3631.86
+West,Gujarat,solar,2021,current,4633.81
+West,Gujarat,solar,2022,current,6774.5
+West,Gujarat,solar,2023,current,10335.32
+West,Gujarat,solar,2024,current,13468.91
+West,Gujarat,solar,2025,current,20219.48
+West,Gujarat,solar,2026,current,27379.65
+West,Gujarat,wind,2018,previous,9635.65
+West,Gujarat,wind,2019,current,11199.51
+West,Gujarat,wind,2020,previous,13748.53
+West,Gujarat,wind,2021,current,13058.12
+West,Gujarat,wind,2022,current,17854.77
+West,Gujarat,wind,2023,current,19206.22
+West,Gujarat,wind,2024,current,24794.5
+West,Gujarat,wind,2025,current,25440.9
+West,Gujarat,wind,2026,current,33706.2
+West,Madhya Pradesh,bagasse,2018,previous,54.17
+West,Madhya Pradesh,bagasse,2019,current,110.32
+West,Madhya Pradesh,bagasse,2020,previous,95.66
+West,Madhya Pradesh,bagasse,2021,current,82.57
+West,Madhya Pradesh,bagasse,2022,current,82.2
+West,Madhya Pradesh,bagasse,2023,current,113.05
+West,Madhya Pradesh,bagasse,2024,current,97.01
+West,Madhya Pradesh,bagasse,2025,current,121.55
+West,Madhya Pradesh,bagasse,2026,current,64.85
+West,Madhya Pradesh,biomass,2018,previous,21.94
+West,Madhya Pradesh,biomass,2019,current,2.01
+West,Madhya Pradesh,biomass,2020,previous,1.81
+West,Madhya Pradesh,biomass,2021,current,0.48
+West,Madhya Pradesh,biomass,2022,current,25.35
+West,Madhya Pradesh,biomass,2023,current,38.76
+West,Madhya Pradesh,biomass,2024,current,84.62
+West,Madhya Pradesh,biomass,2025,current,61.95
+West,Madhya Pradesh,biomass,2026,current,71.23
+West,Madhya Pradesh,large_hydro,2023,previous,7309.07
+West,Madhya Pradesh,large_hydro,2024,current,6444.78
+West,Madhya Pradesh,large_hydro,2025,current,7606.73
+West,Madhya Pradesh,large_hydro,2026,current,8088.74
+West,Madhya Pradesh,others,2018,previous,41.14
+West,Madhya Pradesh,others,2019,current,51.11
+West,Madhya Pradesh,others,2020,previous,32.02
+West,Madhya Pradesh,others,2021,current,37.57
+West,Madhya Pradesh,others,2022,current,34.4
+West,Madhya Pradesh,others,2023,current,36.93
+West,Madhya Pradesh,others,2024,current,28.83
+West,Madhya Pradesh,others,2025,current,65.06
+West,Madhya Pradesh,others,2026,current,59.49
+West,Madhya Pradesh,small_hydro,2018,previous,124.11
+West,Madhya Pradesh,small_hydro,2019,current,145.47
+West,Madhya Pradesh,small_hydro,2020,previous,246.16
+West,Madhya Pradesh,small_hydro,2021,current,281.76
+West,Madhya Pradesh,small_hydro,2022,current,221.43
+West,Madhya Pradesh,small_hydro,2023,current,357.97
+West,Madhya Pradesh,small_hydro,2024,current,469.6
+West,Madhya Pradesh,small_hydro,2025,current,482.19
+West,Madhya Pradesh,small_hydro,2026,current,514.87
+West,Madhya Pradesh,solar,2018,previous,1911.7
+West,Madhya Pradesh,solar,2019,current,2503.41
+West,Madhya Pradesh,solar,2020,previous,3496.23
+West,Madhya Pradesh,solar,2021,current,4202.03
+West,Madhya Pradesh,solar,2022,current,4006.7
+West,Madhya Pradesh,solar,2023,current,3839.3
+West,Madhya Pradesh,solar,2024,current,4025.19
+West,Madhya Pradesh,solar,2025,current,7123.73
+West,Madhya Pradesh,solar,2026,current,8076.98
+West,Madhya Pradesh,wind,2018,previous,4139.84
+West,Madhya Pradesh,wind,2019,current,4828.17
+West,Madhya Pradesh,wind,2020,previous,4425.99
+West,Madhya Pradesh,wind,2021,current,3913.44
+West,Madhya Pradesh,wind,2022,current,4346.66
+West,Madhya Pradesh,wind,2023,current,4486.72
+West,Madhya Pradesh,wind,2024,current,4949.78
+West,Madhya Pradesh,wind,2025,current,4712.84
+West,Madhya Pradesh,wind,2026,current,4706.66
+West,Maharashtra,bagasse,2018,previous,3228.72
+West,Maharashtra,bagasse,2019,current,3987.29
+West,Maharashtra,bagasse,2020,previous,2520.45
+West,Maharashtra,bagasse,2021,current,3627.43
+West,Maharashtra,bagasse,2022,current,4468.31
+West,Maharashtra,bagasse,2023,current,4572.03
+West,Maharashtra,bagasse,2024,current,3495.82
+West,Maharashtra,bagasse,2025,current,3001.04
+West,Maharashtra,bagasse,2026,current,3207.22
+West,Maharashtra,biomass,2018,previous,539.1
+West,Maharashtra,biomass,2019,current,445.98
+West,Maharashtra,biomass,2020,previous,411.99
+West,Maharashtra,biomass,2021,current,328.23
+West,Maharashtra,biomass,2022,current,316.79
+West,Maharashtra,biomass,2023,current,236.48
+West,Maharashtra,biomass,2024,current,304.61
+West,Maharashtra,biomass,2025,current,259.41
+West,Maharashtra,biomass,2026,current,255.98
+West,Maharashtra,large_hydro,2023,previous,5894.29
+West,Maharashtra,large_hydro,2024,current,5264.49
+West,Maharashtra,large_hydro,2025,current,5635.24
+West,Maharashtra,large_hydro,2026,current,5483.02
+West,Maharashtra,others,2018,previous,0.01
+West,Maharashtra,others,2019,current,0.8
+West,Maharashtra,others,2020,previous,0.84
+West,Maharashtra,others,2021,current,0.1
+West,Maharashtra,others,2022,current,0.22
+West,Maharashtra,others,2023,current,0.44
+West,Maharashtra,others,2024,current,33.4
+West,Maharashtra,others,2025,current,90.35
+West,Maharashtra,others,2026,current,60.88
+West,Maharashtra,small_hydro,2018,previous,627.12
+West,Maharashtra,small_hydro,2019,current,759.08
+West,Maharashtra,small_hydro,2020,previous,695.56
+West,Maharashtra,small_hydro,2021,current,802.71
+West,Maharashtra,small_hydro,2022,current,787.16
+West,Maharashtra,small_hydro,2023,current,766.73
+West,Maharashtra,small_hydro,2024,current,888.48
+West,Maharashtra,small_hydro,2025,current,855.48
+West,Maharashtra,small_hydro,2026,current,934.52
+West,Maharashtra,solar,2018,previous,1100.67
+West,Maharashtra,solar,2019,current,2206.62
+West,Maharashtra,solar,2020,previous,2372.68
+West,Maharashtra,solar,2021,current,3089.46
+West,Maharashtra,solar,2022,current,3187.18
+West,Maharashtra,solar,2023,current,4387.85
+West,Maharashtra,solar,2024,current,5814.13
+West,Maharashtra,solar,2025,current,7725.2
+West,Maharashtra,solar,2026,current,10552.84
+West,Maharashtra,wind,2018,previous,6541.35
+West,Maharashtra,wind,2019,current,7575.14
+West,Maharashtra,wind,2020,previous,7984.27
+West,Maharashtra,wind,2021,current,6384.56
+West,Maharashtra,wind,2022,current,7085.98
+West,Maharashtra,wind,2023,current,7243.06
+West,Maharashtra,wind,2024,current,8228.97
+West,Maharashtra,wind,2025,current,7659.71
+West,Maharashtra,wind,2026,current,8610.62

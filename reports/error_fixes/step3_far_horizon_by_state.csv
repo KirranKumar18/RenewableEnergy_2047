@@ -1,0 +1,24 @@
+state,rows,mean_log_error,gap_at_cutoff,mw_at_cutoff
+Rajasthan,2,-1.186,-1.115,1812.93
+Gujarat,5,-1.04,-0.414,1725.674
+Himachal Pradesh,5,-0.917,3.273,9.51
+Madhya Pradesh,5,-0.471,-0.825,1250.288
+Assam,6,-0.407,0.117,15.32
+Maharashtra,5,-0.387,0.906,924.838
+Karnataka,5,-0.231,0.099,3054.928
+Odisha,2,-0.207,-0.329,79.42
+Chhattisgarh,5,-0.027,0.328,169.856
+Andhra Pradesh,5,0.065,-0.536,2354.61
+Haryana,5,0.254,1.529,138.648
+Telangana,2,0.276,-0.407,1286.98
+Uttarakhand,2,0.325,-0.338,233.49
+Uttar Pradesh,2,0.359,1.07,336.73
+Jharkhand,6,0.521,0.506,27.163
+Bihar,5,0.592,-0.39,122.092
+Punjab,2,0.627,-0.816,793.95
+Tamil Nadu,2,0.725,0.031,1691.83
+Chandigarh,2,0.769,0.425,17.32
+Jammu And Kashmir,6,0.844,3.501,5.85
+West Bengal,2,0.879,1.262,26.14
+Kerala,5,1.114,2.476,99.956
+Delhi,2,1.78,2.423,40.27

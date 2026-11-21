@@ -63,7 +63,8 @@ END_YEAR = 2060
 class ConvergenceModel:
     min_mw: float = 10.0        # pairs starting below this are noise (0 -> 5 MW), not growth
     trend_years: int = 3        # recent year effects averaged into the current national trend
-    half_life: float = 3.0      # years for the national trend to halve after the base year
+    half_life: float = 4.0      # years for the national trend to halve after the base year: chosen so the backtest's
+                                # signed error 5-8 years ahead is near zero (3 years under-forecast those by ~20%)
     max_gap: float = 4.0        # cap on |log intensity gap| (avoid absurd catch-up from ~0)
     ridge: float = 0.05         # shrinkage on year effects only
     min_pairs: int = 15         # below this a technology is held flat (e.g. waste-to-energy)
@@ -83,6 +84,12 @@ class ConvergenceModel:
     tx_km: dict = field(default_factory=dict)           # state -> {year: km of renewable-related lines}
     tx_last: int | None = None                          # last year with transmission reports
     gsdp_outlook: str | None = None                     # GDP outlook behind gsdp_cagr (model/gsdp_projection.py)
+    gap_floor: float | None = None   # lower bound on the catch-up gap; 0 = catch-up lifts laggards but never slows leaders
+    fit_weight_power: float = 0.0    # weight fitting pairs by (starting MW + 1)^power; >0 favours big states
+    # Techs whose stale years are filled by the model (None = every v2 tech); others carry their last reported value
+    # forward. Solar only: after a run of repeats the next solar report jumps ~3.4x a normal year (a reporting
+    # delay), while wind, bio-mass and small hydro jump 0.4-0.8x (real pauses) - model/experiments/frozen_data.py.
+    nowcast_techs: list | None = field(default_factory=lambda: ["Solar Power"])
 
     # ───────────── fitting ─────────────
     def _zone_int_hist(self, df: pd.DataFrame, t: str) -> dict:
@@ -103,10 +110,10 @@ class ConvergenceModel:
                 k = b["Year"] - a["Year"]
                 i_s = a[t] / a["GSDP"] * 1e5
                 i_z = zint[a["Zone"]][a["Year"]]
-                rows.append({"st": a["State"], "y0": a["Year"], "y1": b["Year"], "k": k,
+                rows.append({"st": a["State"], "y0": a["Year"], "y1": b["Year"], "k": k, "mw0": a[t],
                              "r": (np.log1p(b[t]) - np.log1p(a[t])) / k,
                              "dg": (np.log(b["GSDP"]) - np.log(a["GSDP"])) / k,
-                             "gap": float(np.clip(np.log((i_z + EPS) / (i_s + EPS)), -self.max_gap, self.max_gap))})
+                             "gap": float(np.clip(np.log((i_z + EPS) / (i_s + EPS)), self._gap_lo(), self.max_gap))})
         return pd.DataFrame(rows)
 
     def fit(self, df: pd.DataFrame) -> "ConvergenceModel":
@@ -135,6 +142,9 @@ class ConvergenceModel:
             X = np.c_[D, P.dg.values, P.gap.values] if not joint else np.c_[D, P.dg.values, P.gap.values, x]
             nf = 3 if joint else 2
             w = np.sqrt(P.k.values)
+            if self.fit_weight_power:
+                cw = (P.mw0.values + 1.0) ** self.fit_weight_power
+                w = w * np.sqrt(cw / cw.mean())
             R = np.eye(X.shape[1]) * self.ridge
             R[-nf:, -nf:] = 0
             Xw = X * w[:, None]
@@ -224,12 +234,15 @@ class ConvergenceModel:
         ks = [k for k in z if k <= y]
         return z[max(ks)] if ks else 0.0
 
+    def _gap_lo(self) -> float:
+        return -self.max_gap if self.gap_floor is None else self.gap_floor
+
     def _step(self, t, cap, y, g_prev, g_cur, zint_prev, x=0.0):
         """One year of growth for arrays of states. Returns new capacity (never lower).
         x: transmission index for that year (scalar or per state)."""
         p = self.params[t]
         i_s = cap / g_prev * 1e5
-        gap = np.clip(np.log((zint_prev + EPS) / (i_s + EPS)), -self.max_gap, self.max_gap)
+        gap = np.clip(np.log((zint_prev + EPS) / (i_s + EPS)), self._gap_lo(), self.max_gap)
         r = self.trend(t, y) + p["beta"] * (np.log(g_cur) - np.log(g_prev)) + p["kappa"] * gap \
             + p.get("gamma", 0.0) * np.asarray(x, float)
         return np.maximum(np.expm1(np.log1p(cap) + r), cap)
@@ -251,7 +264,8 @@ class ConvergenceModel:
         for st, s in self.states.items():
             path = {}
             for t in TECH:
-                if self._is_v1(t):  # v1 starts from the last reported value, stale or not
+                if self._is_v1(t) or (self.nowcast_techs is not None and t not in self.nowcast_techs):
+                    # last reported value carried forward, stale or not
                     h = self.history[st]
                     for y in range(min(h), self.base_year + 1):
                         path.setdefault(y, {})[t] = h[max(yy for yy in h if yy <= y)][t]

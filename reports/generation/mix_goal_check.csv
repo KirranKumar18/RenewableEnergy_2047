@@ -1,0 +1,4 @@
+pathway,fy,thermal,nuclear,hydro,other_re,cea_thermal,cea_nuclear,cea_hydro,cea_other_re
+balanced,2030,0.5645,0.0378,0.0912,0.3065,0.5591,0.0378,0.0912,0.312
+accelerated,2030,0.5632,0.0378,0.0912,0.3078,0.5591,0.0378,0.0912,0.312
+trend,2030,0.6562,0.0298,0.0899,0.2241,0.5591,0.0378,0.0912,0.312

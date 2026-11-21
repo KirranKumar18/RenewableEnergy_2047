@@ -1,0 +1,6 @@
+source,year,states,nowcast_wape_pct,nowcast_signed_pct,carry_forward_wape_pct,carry_forward_signed_pct
+Solar,2023,14,20.5,-13.8,61.3,-61.3
+Solar,2024,14,22.4,-10.2,66.6,-66.6
+Wind,2023,2,6.1,-6.1,6.1,-6.1
+Wind,2024,2,13.4,-13.4,19.2,-19.2
+all,2023-24,14,19.4,-11.6,55.0,-55.0
