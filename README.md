@@ -1,70 +1,160 @@
-# India Electricity Generation to 2047
-### ExxonMobil Innothon: Forecasting India's Energy Production and Strategizing its Fulfillment by 2047
+<div align="center">
 
-The dashboard and model forecast India's **electricity generation (= production)**, nationally and for the five grid regions, to 2047. They account for population growth and urbanization, and propose a region-specific generation mix (coal, gas, nuclear, hydro, solar, wind, bio, waste) based on each region's resources.
+# ⚡ India Electricity Generation to 2047
 
-**Challenge rule:** only energy generated is used. No installed-capacity or consumption data enters any forecast or comparison.
+### Forecasting India's electricity future for **ExxonMobil Innothon**
 
-- Headline (Viksit Bharat GDP outlook): **5,778 TWh in 2047**, with an 80% band of 4,755–6,905. FY2025-26 was 1,840 TWh.
-- Backtest: 2.4% mean error 1–5 years ahead, against 5.8% for a naive trend.
-- Full method, assumptions and uncertainties: [`reports/generation/README.md`](reports/generation/README.md)
+[![Python](https://img.shields.io/badge/Python-50.6%25-3776AB?logo=python&logoColor=white)](https://github.com/KirranKumar18/RenewableEnergy_2047)
+[![JavaScript](https://img.shields.io/badge/JavaScript-49.1%25-F7DF1E?logo=javascript&logoColor=323330)](https://github.com/KirranKumar18/RenewableEnergy_2047)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 
-```bash
-.venv/bin/python model/generation/parse_cea_re.py && .venv/bin/python model/generation/build_dataset.py && .venv/bin/python model/generation/forecast.py
-npm run dev    # http://localhost:3000, a static dashboard reading public/generation_forecast.json
-```
+*A data-driven dashboard and forecasting system for India's national and regional electricity generation outlook.*
 
----
-
-## Archived: capacity model (not used for the challenge forecast)
-
-The sections below describe the earlier installed-capacity model. It is kept for reference only; the challenge rule rules out capacity as a forecasting basis.
-
-
-A reactive dashboard designed to forecast India's renewable energy growth through 2047 (India's Centenary Net-Zero Target) across **5 distinct energy technologies**:
-- ☀️ **Solar Power**
-- 💨 **Wind Power**
-- 🌿 **Bio-Mass Power**
-- 💧 **Small Hydro Power**
-- ♻️ **Waste to Energy**
+</div>
 
 ---
+
+## 🌏 The Vision
+
+India's centenary in 2047 demands a resilient, scalable electricity system. This project explores how **actual electricity generation** may grow across India and its five grid regions, accounting for economic growth and demographic change.
+
+> [!IMPORTANT]
+> The challenge forecast uses **energy generation only**. Installed capacity and electricity consumption are excluded from the forecast and comparisons.
+
+## 📈 2047 Forecast Snapshot
+
+| Metric | Projection |
+|:--|--:|
+| 🇮🇳 National generation | **5,778 TWh** |
+| 80% uncertainty band | **4,755–6,905 TWh** |
+| FY2025-26 generation | **1,840 TWh** |
+| Mean 1–5 year backtest error | **2.4%** |
+| Naive trend backtest error | **5.8%** |
+
+## ✨ What the Dashboard Offers
+
+- **National and regional forecasts** through 2047
+- **Five-grid-region analysis**: North, South, East, West and North-East
+- **GDP outlook scenarios** and economic assumptions
+- **Interactive demand forecasting** for the next 28 days
+- **Regional balance and mix analysis**
+- **Transparent methodology and backtest reports**
+- **FastAPI backend** with live forecasting endpoints
+
+## 🧭 Project Views
+
+| View | Purpose |
+|:--|:--|
+| **Generation** | Long-range electricity generation forecast to 2047 |
+| **Renewable capacity** | Regional renewable capacity analysis |
+| **Demand** | Short-term all-India daily electricity demand forecast |
+| **Reports** | Model outputs, backtests, assumptions and limitations |
+
+## 🛠️ Technology Stack
+
+| Frontend | Backend & ML | Visualization |
+|:--|:--|:--|
+| React 19 | Python | Chart.js |
+| Vite 7 | FastAPI | Leaflet |
+| Tailwind CSS | scikit-learn | Interactive SVG / JSON |
 
 ## 🚀 Quick Start
 
-### 1. Run the Frontend (React + Vite + Tailwind CSS)
-The Vite dev server runs at `http://localhost:3000`:
+### 1. Clone the repository
+
 ```bash
+git clone https://github.com/KirranKumar18/RenewableEnergy_2047.git
+cd RenewableEnergy_2047
+```
+
+### 2. Set up the Python environment
+
+```bash
+python -m venv .venv
+
+# macOS / Linux
+source .venv/bin/activate
+
+# Windows
+.venv\Scripts\activate
+
+pip install -r requirements.txt
+```
+
+### 3. Start the dashboard
+
+```bash
+npm install
 npm run dev
 ```
 
-### 2. Connect Your Model Pickle File (`model.pkl`)
-A FastAPI backend service is provided in `backend_api.py`.
-1. Place your `.pkl` or `.joblib` model file into this directory (or name it `model.pkl`).
-2. Start the API server:
+Open **http://localhost:3000**.
+
+### 4. Start the API backend
+
 ```bash
 python backend_api.py
 ```
-3. The server runs at `http://localhost:8000`. The frontend will automatically detect the active API and switch from client emulation to live pickle inference!
 
----
+The API runs at **http://localhost:8000**.
 
-## 📊 Features & Architecture
+## 🔬 Reproduce the Generation Forecast
 
-### Dynamic User Inputs (Frontend)
-- **Zone (Dropdown):** `South`, `North`, `West`, `East`, `Central`, `North-East`
-- **State (Dropdown):** 34 states/UTs or *"Entire Zone / All States"* auto-distribution
-- **Target Year (Slider):** 2026 to 2047 with milestone presets (2030 India 500 GW goal, 2047 Net Zero)
-- **Population & GSDP in Crore INR:** Interactive sliders with automatic historical trend projection buttons
+```bash
+.venv/bin/python model/generation/parse_cea_re.py
+.venv/bin/python model/generation/build_dataset.py
+.venv/bin/python model/generation/forecast.py
+```
 
-### Auto-Engineered Backend Features
-- **GSDP Per Capita:** `(GSDP * 10^7) / (Population + 1)`
-- **Years Since 2006:** `Year - 2006`
+The production dashboard reads `public/generation_forecast.json` for its main forecast display.
 
-### Financial CERC & MNRE Benchmarks
-- **Solar:** ₹4.50 Cr/MW | CUF 21% | LCOE ₹2.50/kWh
-- **Wind:** ₹6.50 Cr/MW | CUF 30% | LCOE ₹3.10/kWh
-- **Bio-Mass:** ₹6.00 Cr/MW | CUF 75% | LCOE ₹4.50/kWh
-- **Small Hydro:** ₹8.50 Cr/MW | CUF 45% | LCOE ₹3.80/kWh
-- **Waste-to-Energy:** ₹11.00 Cr/MW | CUF 75% | LCOE ₹6.20/kWh
-- **Regional Terrain Multipliers:** North-East (1.15x), East (1.05x), North (1.02x), Central (1.00x), South (1.00x), West (0.98x)
+## 📊 Model Data and Reports
+
+- [`reports/generation/`](reports/generation/) — generation forecasts, regional results and backtests
+- [`reports/demand/`](reports/demand/) — daily demand forecasting methodology and evaluation
+- [`reports/README.md`](reports/README.md) — detailed capacity-model research and limitations
+- [`public/`](public/) — dashboard data assets
+- [`model/`](model/) — forecasting and model-generation scripts
+
+## 🗂️ Repository Structure
+
+```text
+RenewableEnergy_2047/
+├── api/                     # Serverless API assets
+├── data/                    # Raw and processed datasets
+├── demand_forecast/         # 28-day demand forecasting model
+├── model/                   # Energy and generation models
+├── public/                  # Dashboard forecast JSON and assets
+├── reports/                 # Charts, forecasts and model reports
+├── src/                     # React dashboard source
+├── backend_api.py           # FastAPI backend
+├── index.html               # Application entry point
+└── package.json             # Frontend dependencies and scripts
+```
+
+## ⚠️ Modeling Limitations
+
+- Long-range forecasts remain extrapolations and become more uncertain toward 2047.
+- Historical reporting can contain stale or revised values.
+- GDP pathways, population assumptions and policy shifts can materially change results.
+- Daily demand forecasts are based on short historical coverage and do not include weather observations.
+
+## 🤝 Contributing
+
+Contributions, issues and suggestions are welcome.
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a pull request
+
+## 📄 License
+
+This project is available for educational and research use under the **MIT License**.
+
+<div align="center">
+
+**Built for a cleaner, smarter and more resilient India by 2047.** 🇮🇳
+
+</div>
